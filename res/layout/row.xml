@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/icon" android:paddingLeft="2dp" android:paddingTop="2dp" android:paddingRight="5dp" android:paddingBottom="2dp" android:layout_width="UNKNOWN_DATA_0x2801" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_alignParentLeft="true" />
+    <TextView android:textAppearance="@*android:style/TextAppearance.Medium" android:textColor="0x106000c" android:id="@+id/row_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/icon" android:layout_centerVertical="true" />
+</RelativeLayout>

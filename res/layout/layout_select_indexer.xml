@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/select_indexer_mainLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <GridView android:id="@+id/select_indexer_gridView" android:padding="@dimen/normal_10dp" android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:horizontalSpacing="@dimen/normal_10dp" android:verticalSpacing="@dimen/normal_10dp" android:stretchMode="none" android:columnWidth="48dp" android:numColumns="auto_fit" />
+</LinearLayout>

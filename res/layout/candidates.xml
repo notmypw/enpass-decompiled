@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@r$color/candidate_background" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/layout_candidate" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f070059">
+        <ImageView android:id="@+id/keyboard_unlock" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7f070059" android:src="@drawable/filling_extendkeyboard" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/autofill_strip_text" android:background="@drawable/close_candidates_hint_background" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/hint_tap_to_fill" android:layout_toRightOf="@+id/keyboard_unlock" android:layout_centerVertical="true" />
+        <in.sinew.enpass.keyboard.enpasskeyboard.CandidateView android:id="@+id/view_candidates" android:visibility="visible" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f070059" android:layout_toRightOf="@+id/autofill_strip_text" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/close_suggestions_strip_icon" android:background="0x106000d" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7f070059" android:layout_marginLeft="10dp" android:src="@drawable/ic_close_black_18dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/hint_tap_to_close" />
+    </RelativeLayout>
+    <View android:background="0x106000b" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x40000031" android:layout_below="@+id/layout_candidate" />
+</RelativeLayout>

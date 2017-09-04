@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="UNKNOWN_DATA_0x7f07006c" android:layout_height="match_parent" android:layout_margin="10dp"
+    <LinearLayout android:orientation="horizontal" android:id="@+id/pin_button_bar" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001">
+        <Button android:id="@+id/pin_refresh_button" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_marginRight="2dp" android:text="@string/refresh" android:layout_weight="1.0" />
+        <Button android:id="@+id/pin_copy_button" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:text="@string/copy" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:typeface="monospace" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/showPin" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:fontFamily="MONOSPACE" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/pin_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <TextView android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/pinText" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="@string/password_length" android:layout_weight="1.1" />
+        <SeekBar android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/pin_length" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:progress="4" android:layout_weight="3.0" />
+        <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/pinValue" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

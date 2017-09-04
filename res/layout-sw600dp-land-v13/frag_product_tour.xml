@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/child_view" android:layout_width="match_parent" android:layout_height="match_parent"
+    <RelativeLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/child_welcome_view_layout" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2.0">
+            <ImageView android:id="@+id/welcome_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:scaleType="fitCenter" android:layout_weight="1.0" android:layout_centerHorizontal="true" />
+            <TextView android:textAppearance="@r$style/TextAppearance_AppCompat_Medium" android:textColor="@r$color/white" android:id="@+id/welcome_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="Đăng nhập" type="login" iconid="1001">
+        <card templatetype="login.default" name="Đăng nhập" iconid="21">
+            <field uid="10" label="Tên người dùng" type="username"/>
+            <field uid="12" label="Email" type="email"/>
+            <field uid="11" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="14" label="Số điện thoại" type="phone"/>
+            <field uid="13" label="Url" type="url"/>
+            <field uid="15" label="Câu hỏi bảo mật" type="text"/>
+            <field uid="16" label="Câu trả lời bảo mật" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="Thẻ tín dụng" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="Thẻ tín dụng" iconid="20">
+            <field uid="0" label="Chủ thẻ" type="cardholder_name"/>
+            <field uid="17" label="Loại" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="Số thẻ" type="card_number"/>
+            <field uid="2" label="CVC" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="MÃ PIN" type="card_pin" sensitive="true"/>
+            <field uid="4" label="Ngày hết hạn" type="expiry_date"/>
+            <field uid="18" label="Hiệu lực từ" type="date"/>
+            <field uid="10" label="Hạn mức tín dụng" type="numeric"/>
+            <field uid="11" label="Hạn mức rút tiền" type="numeric"/>
+            <field uid="12" label="Lãi suất" type="numeric"/>
+            <field uid="6" label="Ngân hàng phát hành" type="bank_name"/>
+            <field uid="14" label="Trang web" type="url"/>
+            <field uid="15" label="Tên người dùng" type="username"/>
+            <field uid="16" label="Mật khẩu đăng nhập" type="password" sensitive="true"/>
+            <field uid="9" label="Mật khẩu giao dịch" type="txn_password" sensitive="true"/>
+            <field uid="7" label="Phát hành ngày" type="date"/>
+            <field uid="8" label="Nếu bị mất, hãy gọi" type="phone"/>
+        </card>
+    </category>
+
+    <category name="Tài chính" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="Tài khoản ngân hàng" iconid="45">
+            <field uid="4" label="Tên ngân hàng" type="bank_name"/>
+            <field uid="0" label="Chủ tài khoản" type="cardholder_name"/>
+            <field uid="1" label="Loại" type="text"/>
+            <field uid="2" label="Số tài khoản" type="numeric"/>
+            <field uid="16" label="ID Khách hàng" type="text"/>
+            <field uid="5" label="Số định tuyến" type="numeric"/>
+            <field uid="6" label="Tên Chi nhánh" type="text"/>
+            <field uid="7" label="Mã chi nhánh" type="numeric"/>
+            <field uid="8" label="SWIFT" type="text"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="Địa chỉ chi nhánh" type="text"/>
+            <field uid="25" label="Số điện thoại chi nhánh" type="phone"/>
+            
+            <field uid="11" label="Số thẻ ghi nợ" type="card_number"/>
+            <field uid="26" label="Loại" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="MÃ PIN" type="card_pin" sensitive="true"/>
+            <field uid="14" label="CVV" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="Ngày hết hạn" type="expiry_date"/>
+            <field uid="27" label="Hạn mức rút tiền" type="numeric"/>
+            
+            <field uid="17" label="Trang web" type="url"/>
+            <field uid="18" label="Tên người dùng" type="username"/>
+            <field uid="19" label="Mật khẩu đăng nhập" type="password" sensitive="true"/>
+            <field uid="20" label="Mật khẩu giao dịch" type="txn_password" sensitive="true"/>
+            <field uid="22" label="Đường dây trợ giúp" type="phone"/>
+            <field uid="23" label="T-PIN" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="Chính sách bảo hiểm" iconid="33">
+            <field uid="1" label="Tên Chính sách" type="text"/>
+            <field uid="0" label="Công ty" type="text"/>
+            <field uid="19" label="Người nắm giữ chính sách" type="text"/>
+            <field uid="2" label="Số thẻ" type="numeric"/>
+            <field uid="3" label="Loại" type="text"/>
+            <field uid="5" label="Phí bảo hiểm" type="numeric"/>
+            <field uid="6" label="Tiền bảo hiểm" type="numeric"/>
+            <field uid="7" label="Ngày phát hành" type="date"/>
+            <field uid="18" label="Ngày gia hạn" type="date"/>
+            <field uid="8" label="Ngày hết hạn" type="date"/>
+            <field uid="9" label="Điều khoản" type="numeric"/>
+            <field uid="20" label="Người đứng tên" type="text"/>
+            <field uid="11" label="ID Khách hàng" type="numeric"/>
+            <field uid="12" label="Trang web" type="url"/>
+            <field uid="13" label="Tên người dùng" type="username"/>
+            <field uid="14" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="16" label="Tên đại lý" type="text"/>
+            <field uid="17" label="Đường dây trợ giúp" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="Đầu tư chứng khoán" iconid="34">
+            <field uid="2" label="Biểu tượng" type="text"/>
+            <field uid="0" label="Số tài khoản" type="numeric"/>
+            <field uid="1" label="Loại" type="text"/>
+            <field uid="3" label="Thị trường" type="text"/>
+            <field uid="5" label="Ra mắt ngày" type="date"/>
+            <field uid="6" label="Mua vào ngày" type="date"/>
+            <field uid="7" label="Giá mua" type="numeric"/>
+            <field uid="8" label="Số lượng" type="numeric"/>
+            <field uid="9" label="Giá hiện tại" type="numeric"/>
+            <field uid="11" label="Trang web" type="url"/>
+            <field uid="12" label="Tên người dùng" type="username"/>
+            <field uid="13" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="15" label="Nhà môi giới" type="text"/>
+            <field uid="16" label="Số điện thoại" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="Quỹ tương trợ" iconid="43">
+            <field uid="0" label="Tên quỹ" type="text"/>
+            <field uid="1" label="Loại quỹ" type="text"/>
+            <field uid="2" label="Ra mắt ngày" type="date"/>
+            <field uid="3" label="Mua vào ngày" type="date"/>
+            <field uid="4" label="Số lượng" type="numeric"/>
+            <field uid="5" label="NAV đã mua" type="numeric"/>
+            <field uid="6" label="NAV hiện tại" type="numeric"/>
+            <field uid="8" label="Trang web" type="url"/>
+            <field uid="9" label="Tên người dùng" type="username"/>
+            <field uid="10" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="12" label="Nhà môi giới" type="text"/>
+            <field uid="13" label="Số điện thoại" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="Cho vay/Thế chấp" iconid="44">
+            <field uid="2" label="Người cho vay" type="text"/>
+            <field uid="1" label="Loại" type="text"/>
+            <field uid="0" label="Số tài khoản" type="numeric"/>
+            <field uid="4" label="Số tiền gốc" type="numeric"/>
+            <field uid="5" label="Lãi suất %" type="numeric"/>
+            <field uid="6" label="Ngày" type="date"/>
+            <field uid="7" label="Điều khoản" type="numeric"/>
+            <field uid="8" label="Số dư" type="numeric"/>
+            <field uid="9" label="Hạn thanh toán" type="numeric"/>
+            <field uid="10" label="Tài sản" type="text"/>
+            <field uid="12" label="Số điện thoại" type="phone"/>
+            <field uid="13" label="Trang web" type="url"/>
+            <field uid="14" label="Tên người dùng" type="username"/>
+            <field uid="15" label="Mật khẩu" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="Khoản tài chính khác" iconid="122">
+            <field uid="0" label="Trường 1" type="text"/>
+            <field uid="1" label="Trường 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Máy tính" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="Cơ sở dữ liệu" iconid="56">
+            <field uid="8" label="Loại" type="text"/>
+            <field uid="0" label="Máy chủ" type="text"/>
+            <field uid="1" label="Cổng" type="numeric"/>
+            <field uid="2" label="Cơ sở dữ liệu" type="text"/>
+            <field uid="3" label="Tên người dùng" type="username"/>
+            <field uid="4" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="5" label="SID" type="text"/>
+            <field uid="6" label="Bí danh" type="text"/>
+            <field uid="7" label="Tùy chọn" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="Tài khoản email" iconid="48">
+            <field uid="0" label="Email" type="email"/>
+            <field uid="1" label="Tên người dùng" type="username"/>
+            <field uid="2" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="9" label="Loại" type="text"/>
+            <field uid="3" label="Máy chủ POP3" type="text"/>
+            <field uid="4" label="Máy chủ IMAP" type="text"/>
+            <field uid="6" label="Cổng" type="numeric"/>
+            <field uid="10" label="Loại hình bảo mật" type="text"/>
+            <field uid="11" label="Phương pháp xác thực" type="text"/>
+            <field uid="21" label="Liên kết web" type="url"/>
+            <field uid="5" label="Máy chủ SMTP" type="text"/>
+            <field uid="7" label="Cổng" type="numeric"/>
+            <field uid="13" label="Tên người dùng" type="username"/>
+            <field uid="14" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="15" label="Loại hình bảo mật" type="text"/>
+            <field uid="16" label="Phương pháp xác thực" type="text"/>
+            <field uid="18" label="Nhà cung cấp" type="text"/>
+            <field uid="8" label="Trang web" type="url"/>
+            <field uid="19" label="Số điện thoại trong nước" type="phone"/>
+            <field uid="20" label="Đường dây trợ giúp" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="Tài khoản FTP" iconid="55">
+            <field uid="0" label="Máy chủ" type="text"/>
+            <field uid="1" label="Đường dẫn" type="text"/>
+            <field uid="2" label="Tên người dùng" type="username"/>
+            <field uid="3" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="4" label="Nhà cung cấp" type="text"/>
+            <field uid="5" label="Trang web" type="url"/>
+            <field uid="6" label="Số điện thoại" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="Nhắn tin tức thời" iconid="49">
+            <field uid="0" label="Loại" type="text"/>
+            <field uid="1" label="ID" type="text"/>
+            <field uid="2" label="Máy chủ" type="text"/>
+            <field uid="3" label="Cổng" type="numeric"/>
+            <field uid="4" label="Biệt hiệu" type="text"/>
+            <field uid="5" label="Tên người dùng" type="username"/>
+            <field uid="6" label="Mật khẩu" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="Nhà cung cấp Internet" iconid="63">
+            <field uid="0" label="Tên người dùng" type="username"/>
+            <field uid="1" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="3" label="Điện thoại quay số" type="phone"/>
+            <field uid="4" label="ISP/Hệ thống" type="text"/>
+            <field uid="5" label="Địa chỉ IP" type="numeric"/>
+            <field uid="6" label="Mặt nạ mạng phụ" type="numeric"/>
+            <field uid="20" label="Cổng" type="numeric"/>
+            <field uid="7" label="DNS chính" type="numeric"/>
+            <field uid="8" label="DNS Phụ" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Telnet" type="text"/>
+            <field uid="17" label="Đường dây trợ giúp" type="phone"/>
+            <field uid="18" label="Trang web" type="url"/>
+            <field uid="19" label="Thông tin lập hóa đơn" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="Máy chủ" iconid="51">
+            <field uid="11" label="Đăng nhập Quản trị viên" type="username"/>
+            <field uid="12" label="Mật khẩu quản trị viên" type="password" sensitive="true"/>
+            <field uid="16" label="URL quản trị" type="url"/>
+            <field uid="0" label="Dịch vụ" type="text"/>
+            <field uid="1" label="Nhiệm vụ" type="text"/>
+            <field uid="2" label="HỆ ĐIỀU HÀNH" type="text"/>
+            <field uid="3" label="RAM" type="numeric"/>
+            <field uid="4" label="Bộ nhớ" type="numeric"/>
+            <field uid="5" label="CPU" type="numeric"/>
+            <field uid="6" label="RAID" type="text"/>
+            <field uid="7" label="Địa điểm" type="text"/>
+            <field uid="8" label="Địa chỉ IP" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="Cổng" type="numeric"/>
+            <field uid="17" label="Nhà cung cấp dịch vụ máy chủ" type="text"/>
+            <field uid="14" label="Trang web hỗ trợ" type="url"/>
+            <field uid="18" label="Đường dây trợ giúp" type="phone"/>
+            <field uid="15" label="Thông tin lập hóa đơn" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="Bộ định tuyến không dây" iconid="35">
+            <field uid="0" label="Tên trạm" type="text"/>
+            <field uid="9" label="Mật khẩu trạm" type="password" sensitive="true"/>
+            <field uid="2" label="Tên mạng" type="text"/>
+            <field uid="5" label="Mật khẩu mạng" type="password" sensitive="true"/>
+            <field uid="3" label="Bảo mật" type="text"/>
+            <field uid="1" label="MAC/Sân bay #" type="numeric"/>
+            <field uid="12" label="Địa chỉ máy chủ/IP" type="url"/>
+            <field uid="13" label="Tên người dùng" type="username"/>
+            <field uid="4" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="6" label="Mật khẩu bộ nhớ" type="password" sensitive="true"/>
+            <field uid="7" label="Trang web hỗ trợ" type="url"/>
+            <field uid="8" label="Thông tin lập hóa đơn" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="Máy chủ trang Web" iconid="53">
+            <field uid="13" label="Nhà cung cấp" type="text"/>
+            <field uid="1" label="Tên người dùng" type="username"/>
+            <field uid="2" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="11" label="URL quản trị" type="url"/>
+            <field uid="0" label="HỆ ĐIỀU HÀNH" type="text"/>
+            <field uid="9" label="ID Khách hàng" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="Cơ sở dữ liệu" type="text"/>
+            <field uid="7" label="Dịch vụ" type="text"/>
+            <field uid="14" label="Trang web hỗ trợ" type="url"/>
+            <field uid="10" label="Đường dây trợ giúp" type="phone"/>
+            <field uid="12" label="Lệ phí" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="Máy tính khác" iconid="123">
+            <field uid="0" label="Trường 1" type="text"/>
+            <field uid="1" label="Trường 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Giấy phép" type="license" iconid="1005">
+        <card templatetype="license.driving" name="Giấy phép lái xe" iconid="60">
+            <field uid="1" label="Số thẻ" type="numeric"/>
+            <field uid="0" label="Tên" type="text"/>
+            <field uid="8" label="Giới tính" type="text"/>
+            <field uid="9" label="Ngày tháng năm sinh" type="date"/>
+            <field uid="10" label="Địa chỉ" type="text"/>
+            <field uid="11" label="Chiều cao" type="text"/>
+            <field uid="2" label="Hạng" type="text"/>
+            <field uid="13" label="Các giới hạn" type="text"/>
+            <field uid="3" label="Bang" type="text"/>
+            <field uid="4" label="Quốc gia" type="text"/>
+            <field uid="5" label="Ngày hết hạn" type="date"/>
+            <field uid="6" label="Phát hành ngày" type="date"/>
+            <field uid="7" label="Nếu bị mất, hãy gọi" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="Giấy phép ngoài trời" iconid="42">
+            <field uid="1" label="Số thẻ" type="numeric"/>
+            <field uid="0" label="Tên" type="text"/>
+            <field uid="2" label="Bang" type="text"/>
+            <field uid="3" label="Vùng" type="text"/>
+            <field uid="4" label="Quốc gia" type="text"/>
+            <field uid="5" label="Hiệu lực từ" type="date"/>
+            <field uid="6" label="Ngày hết hạn" type="date"/>
+            <field uid="7" label="Động vật hoang dã được chấp thuận" type="text"/>
+            <field uid="8" label="Hạn mức" type="text"/>
+        </card>
+        <card templatetype="license.software" name="Giấy phép phần mềm" iconid="52">
+            <field uid="0" label="Phiên bản" type="numeric"/>
+            <field uid="16" label="Tên sản phẩm" type="text"/>
+            <field uid="17" label="Số lượng người dùng" type="numeric"/>
+            <field uid="1" label="Khóa" type="text" sensitive="true"/>
+            <field uid="6" label="Trang Tải về" type="url"/>
+            <field uid="3" label="Được cấp phép cho" type="text"/>
+            <field uid="18" label="Trang đăng nhập" type="url"/>
+            <field uid="19" label="Tên người dùng" type="username"/>
+            <field uid="20" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="4" label="Email" type="email"/>
+            <field uid="5" label="Công ty" type="text"/>
+            <field uid="13" label="Ngày mua" type="date"/>
+            <field uid="14" label="Số đơn hàng" type="numeric"/>
+            <field uid="12" label="Giá bán lẻ" type="numeric"/>
+            <field uid="15" label="Tổng tiền" type="numeric"/>
+            <field uid="8" label="Nhà xuất bản" type="text"/>
+            <field uid="9" label="Trang web" type="url"/>
+            <field uid="10" label="Email hỗ trợ" type="email"/>
+            <field uid="21" label="Đường dây trợ giúp" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="Giấy phép khác" iconid="124">
+            <field uid="0" label="Trường 1" type="text"/>
+            <field uid="1" label="Trường 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Mật khẩu" type="password" iconid="1006">
+        <card templatetype="password.default" name="Mật khẩu" iconid="36">
+            <field uid="0" label="Đăng nhập" type="username"/>
+            <field uid="1" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="2" label="Truy cập" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Ghi chú Bảo mật" type="note" iconid="1007">
+        <card templatetype="note.default" name="Ghi chú" iconid="22">
+        </card>
+    </category>
+        
+    <category name="Du lịch" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="Hộ chiếu" iconid="37">
+            <field uid="2" label="Số thẻ" type="text"/>
+            <field uid="0" label="Tên đầy đủ" type="text"/>
+            <field uid="14" label="Giới tính" type="text"/>
+            <field uid="1" label="Loại" type="text"/>
+            <field uid="15" label="Quốc tịch" type="text"/>
+            <field uid="4" label="Nơi sinh" type="text"/>
+            <field uid="5" label="Sinh Nhật" type="date"/>
+            <field uid="6" label="Phát hành lúc" type="text"/>
+            <field uid="7" label="Phát hành ngày" type="date"/>
+            <field uid="8" label="Ngày hết hạn" type="date"/>
+            <field uid="9" label="Quốc gia phát hành" type="text"/>
+            <field uid="10" label="Cơ quan" type="text"/>
+            <field uid="12" label="Số lần thay thế" type="text"/>
+            <field uid="13" label="Nếu bị mất, hãy gọi" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="Thị thực du lịch" iconid="57">
+            <field uid="1" label="Loại" type="text"/>
+            <field uid="15" label="Quốc gia" type="text"/>
+            <field uid="0" label="Tên đầy đủ" type="text"/>
+            <field uid="2" label="Số thẻ" type="numeric"/>
+            <field uid="4" label="Hiệu lực cho" type="text"/>
+            <field uid="5" label="Hiệu lực từ" type="date"/>
+            <field uid="6" label="Hiệu lực đến" type="date"/>
+            <field uid="7" label="Thời hạn" type="numeric"/>
+            <field uid="8" label="Số lượng mục nhập" type="numeric"/>
+            <field uid="10" label="Phát hành bởi" type="text"/>
+            <field uid="11" label="Ngày phát hành" type="date"/>
+            <field uid="12" label="Số hộ chiếu" type="text"/>
+            <field uid="13" label="Ghi chú" type="text"/>
+            <field uid="14" label="Nếu bị mất, hãy gọi" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="Khách bay thường xuyên" iconid="39">
+            <field uid="1" label="Thành viên Số." type="numeric"/>
+            <field uid="0" label="Tên" type="text"/>
+            <field uid="8" label="Hãng hàng không" type="text"/>
+            <field uid="2" label="Ngày" type="date"/>
+            <field uid="3" label="Số Dặm bay" type="numeric"/>
+            <field uid="5" label="Trang web" type="url"/>
+            <field uid="6" label="Tên người dùng" type="username"/>
+            <field uid="7" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="9" label="Dịch vụ khách hàng" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="Đặt phòng khách sạn" iconid="27">
+            <field uid="0" label="Tên khách sạn" type="text"/>
+            <field uid="4" label="Số phòng" type="numeric"/>
+            <field uid="1" label="Địa chỉ" type="text"/>
+            <field uid="2" label="ID đặt phòng" type="numeric"/>
+            <field uid="3" label="Ngày" type="date"/>
+            <field uid="5" label="Số Đêm" type="numeric"/>
+            <field uid="15" label="Phần thưởng của Khách sạn" type="numeric"/>
+            <field uid="7" label="Số điện thoại" type="phone"/>
+            <field uid="8" label="Email" type="email"/>
+            <field uid="9" label="Trang web" type="url"/>
+            <field uid="10" label="Tên người dùng" type="username"/>
+            <field uid="11" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="13" label="Dịch vụ xách đồ" type="text"/>
+            <field uid="14" label="Nhà hàng" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="Chi tiết chuyến bay" iconid="38">
+            <field uid="2" label="Số chuyến bay" type="numeric"/>
+            <field uid="0" label="Hãng hàng không" type="text"/>
+            <field uid="1" label="Ngày" type="date"/>
+            <field uid="3" label="Từ" type="text"/>
+            <field uid="4" label="Đến" type="text"/>
+            <field uid="5" label="Thời gian/Cổng" type="text"/>
+            <field uid="6" label="Số vé điện tử" type="numeric"/>
+            <field uid="7" label="Xác nhận #" type="numeric"/>
+            <field uid="10" label="Trang web" type="url"/>
+            <field uid="11" label="Tên người dùng" type="username"/>
+            <field uid="12" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="9" label="Số điện thoại" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="Du lịch khác" iconid="125">
+            <field uid="0" label="Trường 1" type="text"/>
+            <field uid="1" label="Trường 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Linh tinh" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="Kích thước quần áo" iconid="23">
+            <field uid="9" label="Tên" type="text"/>
+            <field uid="0" label="Bộ quần áo" type="text"/>
+            <field uid="1" label="Giày" type="text"/>
+            <field uid="2" label="Áo sơ mi" type="text"/>
+            <field uid="3" label="Quần" type="text"/>
+            <field uid="4" label="Đường may bên trong" type="text"/>
+            <field uid="5" label="Váy" type="text"/>
+            <field uid="6" label="Găng tay" type="text"/>
+            <field uid="7" label="Thắt lưng" type="text"/>
+            <field uid="8" label="Cổ" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="Khóa kép" iconid="61">
+            <field uid="0" label="Địa điểm" type="text"/>
+            <field uid="1" label="Mã" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="Đơn thuốc" iconid="40">
+            <field uid="2" label="Bác sĩ" type="text"/>
+            <field uid="0" label="RX #" type="text"/>
+            <field uid="1" label="Tên" type="text"/>
+            <field uid="3" label="Dược phẩm" type="text"/>
+            <field uid="4" label="Số điện thoại" type="phone"/>
+            <field uid="6" label="Nhãn hiệu" type="text"/>
+            <field uid="7" label="Thuốc" type="text"/>
+            <field uid="8" label="Số lượng" type="numeric"/>
+            <field uid="9" label="Liều uống" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="Kính mắt theo đơn thuốc" iconid="26">
+            <field uid="0" label="Loại" type="text"/>
+            <field uid="1" label="Mắt phải(OD)" type="numeric"/>
+            <field uid="2" label="Mắt trái(OS)" type="numeric"/>
+            <field uid="3" label="Bác sĩ" type="text"/>
+            <field uid="4" label="Số điện thoại" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="Mã đăng ký" iconid="66">
+            <field uid="2" label="Tên" type="text"/>
+            <field uid="0" label="Số thẻ" type="numeric" sensitive="true"/>
+            <field uid="1" label="Ngày" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="Thông tin phương tiện" iconid="25">
+            <field uid="3" label="Số đăng ký" type="text"/>
+            <field uid="11" label="Chủ sở hữu" type="text"/>
+            <field uid="0" label="Model" type="text"/>
+            <field uid="12" label="Loại xe" type="text"/>
+            <field uid="13" label="Ngày mua" type="date"/>
+            <field uid="1" label="Ngày sản xuất" type="text"/>
+            <field uid="2" label="Năm" type="numeric"/>
+            <field uid="4" label="VIN" type="text"/>
+            <field uid="5" label="Số điện thoại dịch vụ" type="phone"/>
+            <field uid="14" label="Đường dây trợ giúp trên đường" type="phone"/>
+            <field uid="16" label="Nhà cung cấp bảo hiểm" type="text"/>
+            <field uid="7" label="Số tiền bảo hiểm" type="text"/>
+            <field uid="8" label="Số chính sách" type="numeric"/>
+            <field uid="10" label="Ngày hết hạn" type="date"/>
+            <field uid="9" label="Số điện thoại bảo hiểm" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="Thư thoại" iconid="62">
+            <field uid="0" label="Số truy cập" type="numeric"/>
+            <field uid="1" label="MÃ PIN" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="Địa chỉ" iconid="31">
+            <field uid="0" label="Tên" type="text"/>
+            <field uid="1" label="Cửa số" type="text"/>
+            <field uid="2" label="Phố" type="text"/>
+            <field uid="3" label="Địa phương" type="text"/>
+            <field uid="4" label="Thành phố" type="text"/>
+            <field uid="5" label="Bang" type="text"/>
+            <field uid="6" label="Số Zip" type="text"/>
+            <field uid="7" label="Quốc gia" type="text"/>
+            <field uid="9" label="Số điện thoại" type="phone"/>
+            <field uid="10" label="Email" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="Liên hệ" iconid="47">
+            <field uid="0" label="Tên" type="text"/>
+            <field uid="1" label="Họ" type="text"/>
+            <field uid="2" label="Công ty" type="text"/>
+            <field uid="3" label="Số điện thoại (Nhà riêng)" type="phone"/>
+            <field uid="4" label="Số điện thoại (Di động)" type="phone"/>
+            <field uid="5" label="Số điện thoại (Cơ quan)" type="phone"/>
+            <field uid="6" label="Email" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="Số gọi khẩn cấp" iconid="28">
+            <field uid="0" label="Cảnh sát" type="phone"/>
+            <field uid="1" label="Sở cứu hỏa" type="phone"/>
+            <field uid="2" label="Cấp cứu" type="phone"/>
+            <field uid="3" label="Bác sĩ" type="phone"/>
+            <field uid="4" label="Nha sỹ" type="phone"/>
+            <field uid="5" label="Bác sỹ thú y" type="phone"/>
+            <field uid="6" label="Công ty Điện lực" type="phone"/>
+            <field uid="7" label="Công ty Khí đốt" type="phone"/>
+            <field uid="8" label="Công ty Điện tín" type="phone"/>
+            <field uid="9" label="Chủ nhà" type="phone"/>
+            <field uid="10" label="Khác" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="Số An sinh Xã hội" iconid="64">
+            <field uid="1" label="Số thẻ" type="numeric"/>
+            <field uid="0" label="Tên" type="text"/>
+            <field uid="2" label="Ngày" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="Chương trình Phần thưởng" iconid="24">
+            <field uid="0" label="Công ty" type="text"/>
+            <field uid="1" label="Tên" type="text"/>
+            <field uid="10" label="ID thành viên" type="text"/>
+            <field uid="2" label="Số thẻ" type="numeric"/>
+            <field uid="3" label="MÃ PIN" type="pin" sensitive="true"/>
+            <field uid="5" label="Số 2" type="numeric"/>
+            <field uid="6" label="Kể từ" type="date"/>
+            <field uid="7" label="Đường dây trợ giúp" type="phone"/>
+            <field uid="8" label="Điện thoại Đặt phòng" type="phone"/>
+            <field uid="9" label="Trang web" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="Số sê-ri" iconid="32">
+            <field uid="1" label="Sê-ri" type="text" sensitive="true"/>
+            <field uid="0" label="Nhãn hiệu" type="text"/>
+            <field uid="2" label="Model" type="text"/>
+            <field uid="3" label="Giá" type="numeric"/>
+            <field uid="4" label="Mua vào ngày" type="date"/>
+            <field uid="6" label="Bảo hành" type="date"/>
+            <field uid="5" label="Địa điểm" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="Thông tin bất động sản" iconid="70">
+            <field uid="0" label="Chủ sở hữu" type="text"/>
+            <field uid="1" label="Địa chỉ" type="text"/>
+            <field uid="2" label="Loại" type="text"/>
+            <field uid="3" label="Số tiền bảo trì" type="numeric"/>
+            <field uid="5" label="ID bất động sản" type="text"/>
+            <field uid="6" label="Số tiền thuế" type="numeric"/>
+            <field uid="7" label="Ngày đến hạn thuế" type="date"/>
+            <field uid="8" label="Trang web" type="url"/>
+            <field uid="9" label="Tên người dùng" type="username"/>
+            <field uid="10" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="12" label="Bảo hiểm" type="text"/>
+            <field uid="13" label="Phí bảo hiểm" type="numeric"/>
+            <field uid="14" label="Số chính sách" type="numeric"/>
+            <field uid="15" label="Ngày hết hạn" type="date"/>
+            <field uid="16" label="Đường dẫy hỗ trợ bảo hiểm" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="Thẻ điện thoại đang gọi" iconid="54">
+            <field uid="1" label="Số truy cập" type="phone"/>
+            <field uid="0" label="Nhà cung cấp" type="text"/>
+            <field uid="2" label="Số Thẻ" type="numeric"/>
+            <field uid="3" label="MÃ PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="Nhịp tim" type="numeric"/>
+            <field uid="5" label="Ngày hết hạn" type="date"/>
+            <field uid="6" label="Sử dụng" type="numeric"/>
+            <field uid="8" label="Trang web" type="url"/>
+            <field uid="9" label="Tên người dùng" type="username"/>
+            <field uid="10" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="11" label="Nếu bị mất, hãy gọi" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="Thẻ nhận dạng" iconid="59">
+            <field uid="2" label="Số ID" type="numeric"/>
+            <field uid="0" label="Chức danh" type="text"/>
+            <field uid="1" label="Tên đầy đủ" type="text"/>
+            <field uid="3" label="MÃ PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="Quốc gia" type="text"/>
+            <field uid="5" label="Phát hành ngày" type="date"/>
+            <field uid="6" label="Ngày hết hạn" type="date"/>
+            <field uid="7" label="Nếu bị mất, hãy gọi" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="Thẻ ISIC" iconid="65">
+            <field uid="2" label="Số Thẻ" type="numeric"/>
+            <field uid="0" label="Các nghiên cứu tại" type="text"/>
+            <field uid="1" label="Tên đầy đủ" type="text"/>
+            <field uid="3" label="Sinh tại" type="date"/>
+            <field uid="4" label="Phát hành ngày" type="date"/>
+            <field uid="5" label="Ngày hết hạn" type="date"/>
+            <field uid="6" label="Nếu bị mất, hãy gọi" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="Thẻ ITIC" iconid="41">
+            <field uid="2" label="Số Thẻ" type="numeric"/>
+            <field uid="0" label="Dạy tại" type="text"/>
+            <field uid="1" label="Tên đầy đủ" type="text"/>
+            <field uid="3" label="Sinh tại" type="date"/>
+            <field uid="4" label="Phát hành ngày" type="date"/>
+            <field uid="5" label="Ngày hết hạn" type="date"/>
+            <field uid="6" label="Nếu bị mất, hãy gọi" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="Thẻ thư viện" iconid="58">
+            <field uid="1" label="Số Thẻ" type="numeric"/>
+            <field uid="0" label="Thư viện" type="text"/>
+            <field uid="2" label="MÃ PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Giờ" type="numeric"/>
+            <field uid="4" label="Địa chỉ" type="text"/>
+            <field uid="5" label="Phát hành ngày" type="date"/>
+            <field uid="6" label="Ngày hết hạn" type="date"/>
+            <field uid="8" label="Trang web" type="url"/>
+            <field uid="9" label="Tên người dùng" type="username"/>
+            <field uid="10" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="11" label="Nếu bị mất, hãy gọi" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="Thẻ cử tri" iconid="69">
+            <field uid="0" label="Tên đầy đủ" type="text"/>
+            <field uid="1" label="ID cử tri" type="numeric"/>
+            <field uid="2" label="Địa chỉ" type="text"/>
+            <field uid="3" label="Phường" type="text"/>
+            <field uid="4" label="Địa điểm" type="text"/>
+            <field uid="5" label="Quốc hội" type="text"/>
+            <field uid="6" label="Nhà nước Thượng viện" type="text"/>
+            <field uid="7" label="Đại diện" type="text"/>
+            <field uid="8" label="Địa chỉ" type="text"/>
+            <field uid="9" label="Phát hành ngày" type="date"/>
+            <field uid="11" label="Trang web" type="url"/>
+            <field uid="12" label="Tên người dùng" type="username"/>
+            <field uid="13" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="14" label="Nếu bị mất, hãy gọi" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="Thẻ ITZ" iconid="67">
+            <field uid="1" label="Số Thẻ" type="numeric"/>
+            <field uid="0" label="Chủ sở hữu" type="text"/>
+            <field uid="2" label="MÃ PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Giá trị" type="numeric"/>
+            <field uid="4" label="Ngày hết hạn" type="date"/>
+            <field uid="5" label="Sử dụng" type="numeric"/>
+            <field uid="7" label="Trang web" type="url"/>
+            <field uid="8" label="Tên người dùng" type="username"/>
+            <field uid="9" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="10" label="Nếu bị mất, hãy gọi" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="Thẻ hội viên" iconid="46">
+            <field uid="1" label="ID thành viên" type="numeric"/>
+            <field uid="10" label="Tên thành viên" type="text"/>
+            <field uid="0" label="Tổ chức" type="text"/>
+            <field uid="11" label="Nhóm" type="text"/>
+            <field uid="2" label="MÃ PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Số điện thoại" type="phone"/>
+            <field uid="12" label="Thành viên từ" type="date"/>
+            <field uid="4" label="Ngày hết hạn" type="date"/>
+            <field uid="6" label="Trang web" type="url"/>
+            <field uid="7" label="Tên người dùng" type="username"/>
+            <field uid="8" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="13" label="Email" type="email"/>
+            <field uid="9" label="Nếu bị mất, hãy gọi" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="Thẻ PAN" iconid="68">
+            <field uid="3" label="Số thẻ" type="numeric"/>
+            <field uid="0" label="Tên" type="text"/>
+            <field uid="1" label="Tên Bố" type="text"/>
+            <field uid="2" label="Ngày tháng năm sinh" type="date"/>
+            <field uid="5" label="Trang web" type="url"/>
+            <field uid="6" label="Tên người dùng" type="username"/>
+            <field uid="7" label="Mật khẩu" type="password" sensitive="true"/>
+            <field uid="8" label="Nếu bị mất, hãy gọi" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="Thông tin số điện thoại di động" iconid="120">
+            <field uid="0" label="Số Model Điện thoại di động" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="Mã khóa" type="numeric" sensitive="true"/>
+            <field uid="5" label="Loại SIM" type="text"/>
+            <field uid="6" label="Số SIM" type="numeric"/>
+            <field uid="7" label="MÃ PIN" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="Mua vào ngày" type="date"/>
+            <field uid="10" label="Bảo hành" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="Nhà cung cấp dịch vụ" iconid="121">
+            <field uid="0" label="Nhà cung cấp" type="text"/>
+            <field uid="1" label="Loại dịch vụ" type="text"/>
+            <field uid="2" label="ID người tiêu dùng" type="text"/>
+            <field uid="3" label="ID đăng ký" type="numeric"/>
+            <field uid="4" label="Địa chỉ" type="text"/>
+            <field uid="5" label="Trang web" type="url"/>
+            <field uid="6" label="Tên người dùng" type="username"/>
+            <field uid="7" label="Mật khẩu đăng nhập" type="password" sensitive="true"/>
+            <field uid="8" label="Đường dây trợ giúp" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="Những thứ khác" iconid="126">
+            <field uid="0" label="Trường 1" type="text"/>
+            <field uid="1" label="Trường 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="Giới tính" value="male" type="sex_options"/>
+            <field uid="4" label="Ngày tháng năm sinh" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="Công ty" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="Địa chỉ" type="address_firstline"/>
+            <field uid="10" label="Phố" type="address_street"/>
+            <field uid="11" label="Thành phố" type="address_city"/>
+            <field uid="12" label="Bang" type="address_state"/>
+            <field uid="13" label="Số Zip" type="address_zip"/>
+            <field uid="14" label="Quốc gia" value="US" type="country_options"/>
+            <field uid="15" label="Số điện thoại" type="phone"/>
+            <field uid="16" label="Câu hỏi bảo mật" type="text"/>
+            <field uid="17" label="Câu trả lời bảo mật" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

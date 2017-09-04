@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:icon="0x108002c" app:id="@+id/add_folder_menu_cancel" app:title="@string/menu_edit_cancel" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:icon="@drawable/ic_menu_delete" app:id="@+id/add_folder_menu_delete" app:title="@string/delete" app:showAsAction="always" />
+</menu>

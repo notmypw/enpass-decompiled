@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@r$color/share_fields_title" android:id="@+id/textview_item_title" android:background="0x106000d" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x3001" android:text="@string/select_watch_sharing_fields" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:textAllCaps="false" style="?unknown_attr_ref: 1010208" />
+    <CheckedTextView android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="@r$color/black" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/checkedtextview_field_label" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:checked="true" android:checkMark="?unknown_attr_ref: 101021a" android:layout_centerVertical="true" />
+</RelativeLayout>

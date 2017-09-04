@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="auto_lock_interval_entries">
+        <item>非アクティブの30秒</item>
+        <item>非アクティブ状態1分</item>
+        <item>非アクティブの5分</item>
+        <item>非アクティブの10分</item>
+        <item>非アクティブの30分</item>
+        <item>非アクティブの1時間</item>
+        <item>非アクティブの5時間</item>
+        <item>非アクティブの12時間</item>
+    </array>
+    <array name="auto_lock_interval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="browser_package_names">
+        <item>com.android.chrome</item>
+        <item>com.chrome.beta</item>
+        <item>com.google.android.browser</item>
+        <item>mobi.mgeek.TunnyBrowser</item>
+        <item>com.dolphin.browser.zero</item>
+        <item>com.opera.browser</item>
+        <item>com.opera.mini.android</item>
+        <item>com.nubelacorp.javelin</item>
+        <item>com.cloudmosa.puffinFree</item>
+        <item>com.cloudmosa.puffin</item>
+        <item>com.UCMobile.intl</item>
+        <item>com.uc.browser.en</item>
+        <item>com.uc.browser.hd</item>
+        <item>org.mozilla.firefox</item>
+        <item>org.mozilla.firefox_beta</item>
+        <item>com.ksmobile.cb</item>
+        <item>com.jiubang.browser</item>
+        <item>com.mx.browser</item>
+        <item>com.chrome.dev</item>
+    </array>
+    <array name="clearclipboard_intervals">
+        <item>30秒</item>
+        <item>1分</item>
+        <item>2分</item>
+        <item>5分</item>
+        <item>決してしない。</item>
+    </array>
+    <array name="clearclipboard_intervals_num">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="default_search_engine_entry_list">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>Yahoo</item>
+        <item>Ask</item>
+        <item>Baidu</item>
+        <item>DuckDuckGo</item>
+        <item>Qwant</item>
+    </array>
+    <array name="default_search_engine_values_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="detailopenLinkInEntries">
+        <item>Enpassブラウザ</item>
+        <item>既定のブラウザ</item>
+    </array>
+    <array name="dropdown">
+        <item>すべての項目</item>
+        <item>お気に入り</item>
+        <item>フォルダー</item>
+        <item>カテゴリ</item>
+        <item>ログイン</item>
+        <item>クレジットカード</item>
+        <item>ファイナンス</item>
+        <item>コンピューター</item>
+        <item>免許</item>
+        <item>パスワード</item>
+        <item>セキュリティー保護付きのメモ</item>
+        <item>旅行</item>
+        <item>その他</item>
+    </array>
+    <array name="new_features_array">
+        <item>速いPINロック解除</item>
+        <item>マルチタブブラウザ</item>
+        <item>改善されたパスワード・ジェネレーター</item>
+        <item>Boxにシンクロのサポートを追加しました</item>
+        <item>他のカスタマイズ設定</item>
+    </array>
+    <array name="openLinkInEntries">
+        <item>常に尋ねます。</item>
+        <item>Enpassブラウザ</item>
+        <item>既定のブラウザ</item>
+    </array>
+    <array name="openLinkInValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="searchInCards_entries">
+        <item>タイトルだけ</item>
+        <item>全てのフィールド</item>
+    </array>
+    <array name="searchInCards_values">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="seprator_list">
+        <item>読点</item>
+        <item>ドル</item>
+        <item>ハッシュ</item>
+        <item>ハイフン</item>
+        <item>句点</item>
+        <item>スペース</item>
+        <item>下線</item>
+    </array>
+    <array name="sex">
+        <item>男性</item>
+        <item>女性</item>
+    </array>
+    <array name="trail_version_text_array">
+        <item>無料のパソコン用のデスクトップ版</item>
+        <item>他のモバイル デバイスを使用するEnpass。</item>
+        <item>iCloudの、Dropboxが、ボックス、GoogleドライブとOneDriveでの独自のクラウドアカウントを使用して、複数のデバイス間でシンクしてる。</item>
+    </array>
+</resources>

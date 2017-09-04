@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.CardView card_view:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" card_view:id="@+id/edit_reorder_layout" card_view:background="#ffffff" card_view:layout_width="match_parent" card_view:layout_height="match_parent" card_view:cardCornerRadius="0dp">
+        <in.sinew.widget.DragSortListView card_view:id="0x102000a" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:divider="0x106000d" card_view:dividerHeight="0dp" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>

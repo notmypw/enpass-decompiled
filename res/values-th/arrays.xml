@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="auto_lock_interval_entries">
+        <item>30 วินาทีไม่มีกิจกรรม</item>
+        <item>1 นาทีไม่มีกิจกรรม</item>
+        <item>5 นาทีไม่มีกิจกรรม</item>
+        <item>10 นาทีไม่มีกิจกรรม</item>
+        <item>30 นาทีไม่มีกิจกรรม</item>
+        <item>1 ชั่วโมงที่ไม่มีกิจกรรม</item>
+        <item>5 ชั่วโมงไม่มีกิจกรรม</item>
+        <item>12 ชั่วโมงไม่มีกิจกรรม</item>
+    </array>
+    <array name="auto_lock_interval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="browser_package_names">
+        <item>com.android.chrome</item>
+        <item>com.chrome.beta</item>
+        <item>com.google.android.browser</item>
+        <item>mobi.mgeek.TunnyBrowser</item>
+        <item>com.dolphin.browser.zero</item>
+        <item>com.opera.browser</item>
+        <item>com.opera.mini.android</item>
+        <item>com.nubelacorp.javelin</item>
+        <item>com.cloudmosa.puffinFree</item>
+        <item>com.cloudmosa.puffin</item>
+        <item>com.UCMobile.intl</item>
+        <item>com.uc.browser.en</item>
+        <item>com.uc.browser.hd</item>
+        <item>org.mozilla.firefox</item>
+        <item>org.mozilla.firefox_beta</item>
+        <item>com.ksmobile.cb</item>
+        <item>com.jiubang.browser</item>
+        <item>com.mx.browser</item>
+        <item>com.chrome.dev</item>
+    </array>
+    <array name="clearclipboard_intervals">
+        <item>30 วินาที</item>
+        <item>1 นาที</item>
+        <item>2 นาที</item>
+        <item>5 นาที</item>
+        <item>ไม่เคย</item>
+    </array>
+    <array name="clearclipboard_intervals_num">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="default_search_engine_entry_list">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>Yahoo</item>
+        <item>Ask</item>
+        <item>Baidu</item>
+        <item>DuckDuckGo</item>
+        <item>Qwant</item>
+    </array>
+    <array name="default_search_engine_values_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="detailopenLinkInEntries">
+        <item>เบราว์เซอร์ Enpass</item>
+        <item>เบราว์เซอร์เริ่มต้น</item>
+    </array>
+    <array name="dropdown">
+        <item>รายการทั้งหมด</item>
+        <item>รายการโปรด</item>
+        <item>โฟลเดอร์</item>
+        <item>CATEGORIES</item>
+        <item>เข้าสู่ระบบ</item>
+        <item>บัตรเครดิต</item>
+        <item>ทางการเงิน</item>
+        <item>คอมพิวเตอร์</item>
+        <item>สิทธิ์การใช้งาน</item>
+        <item>รหัสผ่าน</item>
+        <item>หมายเหตุเพื่อความปลอดภัย</item>
+        <item>เดินทาง</item>
+        <item>เบ็ดเตล็ด</item>
+    </array>
+    <array name="new_features_array">
+        <item>ปลดล็อก PIN อย่างรวดเร็ว</item>
+        <item>เบราว์เซอร์แบบหลายแท็บ</item>
+        <item>ตัวสร้างรหัสผ่านถูกปรับปรุง</item>
+        <item>เพิ่มเติมการสนับสนุนการซิงค์สำหรับกล่อง</item>
+        <item>ตัวเลือกการกำหนดเองเพิ่มเติม</item>
+    </array>
+    <array name="openLinkInEntries">
+        <item>ถามเสมอ</item>
+        <item>เบราว์เซอร์ Enpass</item>
+        <item>เบราว์เซอร์เริ่มต้น</item>
+    </array>
+    <array name="openLinkInValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="searchInCards_entries">
+        <item>ชื่อเรื่องเท่านั้น</item>
+        <item>ฟิลด์ทั้งหมด</item>
+    </array>
+    <array name="searchInCards_values">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="seprator_list">
+        <item>เครื่องหมายจุลภาค</item>
+        <item>ดอลลาร์</item>
+        <item>เครื่องหมายแฮช</item>
+        <item>ยัติภังค์</item>
+        <item>จุด</item>
+        <item>เว้นวรรค</item>
+        <item>ขีดเส้นใต้</item>
+    </array>
+    <array name="sex">
+        <item>เพศชาย</item>
+        <item>เพศหญิง</item>
+    </array>
+    <array name="trail_version_text_array">
+        <item>ฟรีเวอร์ชันเดสก์ท็อปสำหรับเครื่องคอมพิวเตอร์ของคุณ</item>
+        <item>Enpass บนอุปกรณ์มือถืออื่นที่คุณใช้</item>
+        <item>ซิงก์ข้อมูลผ่านหลายอุปกรณ์โดยใช้บัญชีคลาวด์ของคุณเองบน iCloud, Dropbox, Box, Google Drive และ OneDrive</item>
+    </array>
+</resources>

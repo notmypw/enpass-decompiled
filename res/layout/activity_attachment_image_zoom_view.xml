@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/image_attachment_zoom_rootLayout" android:background="@r$color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <in.sinew.enpass.ZoomableImageView android:id="@+id/image_attachment_zoom_imgshow" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="matrix" />
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <xml name="accessibilityservice">res/xml/accessibilityservice.xml</xml>
+    <xml name="activity_chrome_connector">res/xml/activity_chrome_connector.xml</xml>
+    <xml name="activity_settings">res/xml/activity_settings.xml</xml>
+    <xml name="advanced_settings">res/xml/advanced_settings.xml</xml>
+    <xml name="android_wear_micro_apk">res/xml/android_wear_micro_apk.xml</xml>
+    <xml name="autofill_service">res/xml/autofill_service.xml</xml>
+    <xml name="autofill_settings">res/xml/autofill_settings.xml</xml>
+    <xml name="backup_and_restore_settings">res/xml/backup_and_restore_settings.xml</xml>
+    <xml name="browser_settings">res/xml/browser_settings.xml</xml>
+    <xml name="chrome_connecter_header">res/xml/chrome_connecter_header.xml</xml>
+    <xml name="customize_settings">res/xml/customize_settings.xml</xml>
+    <xml name="enpassbackupscheme">res/xml/enpassbackupscheme.xml</xml>
+    <xml name="filepaths">res/xml/filepaths.xml</xml>
+    <xml name="get_ready_settings">res/xml/get_ready_settings.xml</xml>
+    <xml name="help_settings">res/xml/help_settings.xml</xml>
+    <xml name="ime_preferences">res/xml/ime_preferences.xml</xml>
+    <xml name="keyboard_datetime">res/xml/keyboard_datetime.xml</xml>
+    <xml name="keyboard_method">res/xml/keyboard_method.xml</xml>
+    <xml name="keyboard_method">res/xml-v19/keyboard_method.xml</xml>
+    <xml name="keyboard_numeric">res/xml/keyboard_numeric.xml</xml>
+    <xml name="keyboard_popup_template">res/xml/keyboard_popup_template.xml</xml>
+    <xml name="keyboard_qwerty">res/xml/keyboard_qwerty.xml</xml>
+    <xml name="keyboard_symbols">res/xml/keyboard_symbols.xml</xml>
+    <xml name="keyboard_symbols_shift">res/xml/keyboard_symbols_shift.xml</xml>
+    <xml name="popup_qwerty_e">res/xml/popup_qwerty_e.xml</xml>
+    <xml name="popup_qwerty_u">res/xml/popup_qwerty_u.xml</xml>
+    <xml name="searchable">res/xml/searchable.xml</xml>
+    <xml name="security_settings">res/xml/security_settings.xml</xml>
+    <xml name="social_settings">res/xml/social_settings.xml</xml>
+    <xml name="watch_settings">res/xml/watch_settings.xml</xml>
+</resources>

@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="로그인" type="login" iconid="1001">
+        <card templatetype="login.default" name="로그인" iconid="21">
+            <field uid="10" label="사용자명" type="username"/>
+            <field uid="12" label="이메일" type="email"/>
+            <field uid="11" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="14" label="전화번호" type="phone"/>
+            <field uid="13" label="Url" type="url"/>
+            <field uid="15" label="보안 질문" type="text"/>
+            <field uid="16" label="보안 대답" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="신용 카드" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="신용 카드" iconid="20">
+            <field uid="0" label="카드 소지자" type="cardholder_name"/>
+            <field uid="17" label="타입" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="번호" type="card_number"/>
+            <field uid="2" label="CVC" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="4" label="만료 날짜" type="expiry_date"/>
+            <field uid="18" label="유효기간 시작" type="date"/>
+            <field uid="10" label="신용 한도" type="numeric"/>
+            <field uid="11" label="인출 한도" type="numeric"/>
+            <field uid="12" label="금리" type="numeric"/>
+            <field uid="6" label="발행 은행" type="bank_name"/>
+            <field uid="14" label="웹사이트" type="url"/>
+            <field uid="15" label="사용자명" type="username"/>
+            <field uid="16" label="로그인 비밀번호" type="password" sensitive="true"/>
+            <field uid="9" label="거래 비밀번호" type="txn_password" sensitive="true"/>
+            <field uid="7" label="발행" type="date"/>
+            <field uid="8" label="분실 시, 전화" type="phone"/>
+        </card>
+    </category>
+
+    <category name="금융" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="은행 계좌" iconid="45">
+            <field uid="4" label="은행명" type="bank_name"/>
+            <field uid="0" label="계좌 소유자" type="cardholder_name"/>
+            <field uid="1" label="타입" type="text"/>
+            <field uid="2" label="계좌 번호" type="numeric"/>
+            <field uid="16" label="고객 ID" type="text"/>
+            <field uid="5" label="라우팅 번호" type="numeric"/>
+            <field uid="6" label="지점명" type="text"/>
+            <field uid="7" label="지점 코드" type="numeric"/>
+            <field uid="8" label="SWIFT" type="text"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="지점 주소" type="text"/>
+            <field uid="25" label="지점 전화번호" type="phone"/>
+            
+            <field uid="11" label="직불 카드 번호" type="card_number"/>
+            <field uid="26" label="타입" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="14" label="CVV" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="만료 날짜" type="expiry_date"/>
+            <field uid="27" label="인출 한도" type="numeric"/>
+            
+            <field uid="17" label="웹사이트" type="url"/>
+            <field uid="18" label="사용자명" type="username"/>
+            <field uid="19" label="로그인 비밀번호" type="password" sensitive="true"/>
+            <field uid="20" label="거래 비밀번호" type="txn_password" sensitive="true"/>
+            <field uid="22" label="상담 전화" type="phone"/>
+            <field uid="23" label="T-PIN" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="보험 증권" iconid="33">
+            <field uid="1" label="보험명" type="text"/>
+            <field uid="0" label="회사" type="text"/>
+            <field uid="19" label="보험 계약자" type="text"/>
+            <field uid="2" label="번호" type="numeric"/>
+            <field uid="3" label="타입" type="text"/>
+            <field uid="5" label="프리미엄" type="numeric"/>
+            <field uid="6" label="보장 합계" type="numeric"/>
+            <field uid="7" label="발행 일자" type="date"/>
+            <field uid="18" label="갱신 날짜" type="date"/>
+            <field uid="8" label="만료 날짜" type="date"/>
+            <field uid="9" label="약관" type="numeric"/>
+            <field uid="20" label="대리인" type="text"/>
+            <field uid="11" label="고객 ID" type="numeric"/>
+            <field uid="12" label="웹사이트" type="url"/>
+            <field uid="13" label="사용자명" type="username"/>
+            <field uid="14" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="16" label="에이전트명" type="text"/>
+            <field uid="17" label="상담 전화" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="주식 투자" iconid="34">
+            <field uid="2" label="기호" type="text"/>
+            <field uid="0" label="계좌 번호" type="numeric"/>
+            <field uid="1" label="타입" type="text"/>
+            <field uid="3" label="시장" type="text"/>
+            <field uid="5" label="출시일" type="date"/>
+            <field uid="6" label="구입일" type="date"/>
+            <field uid="7" label="구입 가격" type="numeric"/>
+            <field uid="8" label="수량" type="numeric"/>
+            <field uid="9" label="현재 가격" type="numeric"/>
+            <field uid="11" label="웹사이트" type="url"/>
+            <field uid="12" label="사용자명" type="username"/>
+            <field uid="13" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="15" label="브로커" type="text"/>
+            <field uid="16" label="전화번호" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="뮤추얼 펀드" iconid="43">
+            <field uid="0" label="펀드명" type="text"/>
+            <field uid="1" label="펀드 타입" type="text"/>
+            <field uid="2" label="출시일" type="date"/>
+            <field uid="3" label="구입일" type="date"/>
+            <field uid="4" label="수량" type="numeric"/>
+            <field uid="5" label="구입 NAV" type="numeric"/>
+            <field uid="6" label="현재 NAV" type="numeric"/>
+            <field uid="8" label="웹사이트" type="url"/>
+            <field uid="9" label="사용자명" type="username"/>
+            <field uid="10" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="12" label="브로커" type="text"/>
+            <field uid="13" label="전화번호" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="대출/모기지" iconid="44">
+            <field uid="2" label="대출" type="text"/>
+            <field uid="1" label="타입" type="text"/>
+            <field uid="0" label="계좌 번호" type="numeric"/>
+            <field uid="4" label="원금" type="numeric"/>
+            <field uid="5" label="이자 %" type="numeric"/>
+            <field uid="6" label="날짜" type="date"/>
+            <field uid="7" label="약관" type="numeric"/>
+            <field uid="8" label="잔액" type="numeric"/>
+            <field uid="9" label="지불 기한" type="numeric"/>
+            <field uid="10" label="자산" type="text"/>
+            <field uid="12" label="전화번호" type="phone"/>
+            <field uid="13" label="웹사이트" type="url"/>
+            <field uid="14" label="사용자명" type="username"/>
+            <field uid="15" label="비밀번호" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="기타 금융" iconid="122">
+            <field uid="0" label="필드 1" type="text"/>
+            <field uid="1" label="필드 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="컴퓨터" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="데이터베이스" iconid="56">
+            <field uid="8" label="타입" type="text"/>
+            <field uid="0" label="서버" type="text"/>
+            <field uid="1" label="포트" type="numeric"/>
+            <field uid="2" label="데이터베이스" type="text"/>
+            <field uid="3" label="사용자명" type="username"/>
+            <field uid="4" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="5" label="SID" type="text"/>
+            <field uid="6" label="에일리어스" type="text"/>
+            <field uid="7" label="옵션" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="이메일 계정" iconid="48">
+            <field uid="0" label="이메일" type="email"/>
+            <field uid="1" label="사용자명" type="username"/>
+            <field uid="2" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="9" label="타입" type="text"/>
+            <field uid="3" label="POP3 서버" type="text"/>
+            <field uid="4" label="IMAP 서버" type="text"/>
+            <field uid="6" label="포트" type="numeric"/>
+            <field uid="10" label="보안 타입" type="text"/>
+            <field uid="11" label="인증 방법" type="text"/>
+            <field uid="21" label="웹링크" type="url"/>
+            <field uid="5" label="SMTP 서버" type="text"/>
+            <field uid="7" label="포트" type="numeric"/>
+            <field uid="13" label="사용자명" type="username"/>
+            <field uid="14" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="15" label="보안 타입" type="text"/>
+            <field uid="16" label="인증 방법" type="text"/>
+            <field uid="18" label="공급자" type="text"/>
+            <field uid="8" label="웹사이트" type="url"/>
+            <field uid="19" label="지역 전화" type="phone"/>
+            <field uid="20" label="상담 전화" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="FTP 계정" iconid="55">
+            <field uid="0" label="서버" type="text"/>
+            <field uid="1" label="경로" type="text"/>
+            <field uid="2" label="사용자명" type="username"/>
+            <field uid="3" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="4" label="공급자" type="text"/>
+            <field uid="5" label="웹사이트" type="url"/>
+            <field uid="6" label="전화번호" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="인스턴트 메시징" iconid="49">
+            <field uid="0" label="타입" type="text"/>
+            <field uid="1" label="ID" type="text"/>
+            <field uid="2" label="서버" type="text"/>
+            <field uid="3" label="포트" type="numeric"/>
+            <field uid="4" label="닉 네임" type="text"/>
+            <field uid="5" label="사용자명" type="username"/>
+            <field uid="6" label="비밀번호" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="인터넷 공급자" iconid="63">
+            <field uid="0" label="사용자명" type="username"/>
+            <field uid="1" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="3" label="전화 접속 전화" type="phone"/>
+            <field uid="4" label="ISP/시스템" type="text"/>
+            <field uid="5" label="IP 주소" type="numeric"/>
+            <field uid="6" label="서브넷 마스크" type="numeric"/>
+            <field uid="20" label="게이트웨이" type="numeric"/>
+            <field uid="7" label="주요 DNS" type="numeric"/>
+            <field uid="8" label="보조 DNS" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="텔넷" type="text"/>
+            <field uid="17" label="상담 전화" type="phone"/>
+            <field uid="18" label="웹사이트" type="url"/>
+            <field uid="19" label="결제 정보" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="서버" iconid="51">
+            <field uid="11" label="관리자 로그인" type="username"/>
+            <field uid="12" label="관리자 비밀번호" type="password" sensitive="true"/>
+            <field uid="16" label="관리 URL" type="url"/>
+            <field uid="0" label="서비스" type="text"/>
+            <field uid="1" label="작업" type="text"/>
+            <field uid="2" label="OS" type="text"/>
+            <field uid="3" label="RAM" type="numeric"/>
+            <field uid="4" label="스토리지" type="numeric"/>
+            <field uid="5" label="CPU" type="numeric"/>
+            <field uid="6" label="RAID" type="text"/>
+            <field uid="7" label="위치" type="text"/>
+            <field uid="8" label="IP 주소" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="포트" type="numeric"/>
+            <field uid="17" label="호스팅 공급자" type="text"/>
+            <field uid="14" label="지원 웹사이트" type="url"/>
+            <field uid="18" label="상담 전화" type="phone"/>
+            <field uid="15" label="결제 정보" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="무선 라우터" iconid="35">
+            <field uid="0" label="스테이션명" type="text"/>
+            <field uid="9" label="스테이션 비밀번호" type="password" sensitive="true"/>
+            <field uid="2" label="네트워크명" type="text"/>
+            <field uid="5" label="네트워크 비밀번호" type="password" sensitive="true"/>
+            <field uid="3" label="보안" type="text"/>
+            <field uid="1" label="MAC/Airport #" type="numeric"/>
+            <field uid="12" label="서버/IP 주소" type="url"/>
+            <field uid="13" label="사용자명" type="username"/>
+            <field uid="4" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="6" label="스토리지 비밀번호" type="password" sensitive="true"/>
+            <field uid="7" label="지원 웹사이트" type="url"/>
+            <field uid="8" label="결제 정보" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="웹 호스팅" iconid="53">
+            <field uid="13" label="공급자" type="text"/>
+            <field uid="1" label="사용자명" type="username"/>
+            <field uid="2" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="11" label="관리 URL" type="url"/>
+            <field uid="0" label="OS" type="text"/>
+            <field uid="9" label="고객 ID" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="데이터베이스" type="text"/>
+            <field uid="7" label="서비스" type="text"/>
+            <field uid="14" label="지원 웹사이트" type="url"/>
+            <field uid="10" label="상담 전화" type="phone"/>
+            <field uid="12" label="요금" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="기타 컴퓨터" iconid="123">
+            <field uid="0" label="필드 1" type="text"/>
+            <field uid="1" label="필드 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="라이센스" type="license" iconid="1005">
+        <card templatetype="license.driving" name="운전 면허" iconid="60">
+            <field uid="1" label="번호" type="numeric"/>
+            <field uid="0" label="이름" type="text"/>
+            <field uid="8" label="성별" type="text"/>
+            <field uid="9" label="생년월일" type="date"/>
+            <field uid="10" label="주소" type="text"/>
+            <field uid="11" label="신장" type="text"/>
+            <field uid="2" label="등급" type="text"/>
+            <field uid="13" label="제한 사항" type="text"/>
+            <field uid="3" label="주" type="text"/>
+            <field uid="4" label="국가" type="text"/>
+            <field uid="5" label="만료 날짜" type="date"/>
+            <field uid="6" label="발행" type="date"/>
+            <field uid="7" label="분실 시, 전화" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="아웃도어 라이센스" iconid="42">
+            <field uid="1" label="번호" type="numeric"/>
+            <field uid="0" label="이름" type="text"/>
+            <field uid="2" label="주" type="text"/>
+            <field uid="3" label="지역" type="text"/>
+            <field uid="4" label="국가" type="text"/>
+            <field uid="5" label="유효기간 시작" type="date"/>
+            <field uid="6" label="만료 날짜" type="date"/>
+            <field uid="7" label="승인 야생 동물" type="text"/>
+            <field uid="8" label="할당량" type="text"/>
+        </card>
+        <card templatetype="license.software" name="소프트웨어 라이센스" iconid="52">
+            <field uid="0" label="버전" type="numeric"/>
+            <field uid="16" label="제품명" type="text"/>
+            <field uid="17" label="사용자 수" type="numeric"/>
+            <field uid="1" label="키" type="text" sensitive="true"/>
+            <field uid="6" label="페이지 다운로드" type="url"/>
+            <field uid="3" label="허가" type="text"/>
+            <field uid="18" label="로그인 페이지" type="url"/>
+            <field uid="19" label="사용자명" type="username"/>
+            <field uid="20" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="4" label="이메일" type="email"/>
+            <field uid="5" label="회사" type="text"/>
+            <field uid="13" label="구입 날짜" type="date"/>
+            <field uid="14" label="주문 번호" type="numeric"/>
+            <field uid="12" label="소매 가격" type="numeric"/>
+            <field uid="15" label="합계" type="numeric"/>
+            <field uid="8" label="게시자" type="text"/>
+            <field uid="9" label="웹사이트" type="url"/>
+            <field uid="10" label="이메일 지원" type="email"/>
+            <field uid="21" label="상담 전화" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="기타 라이센스" iconid="124">
+            <field uid="0" label="필드 1" type="text"/>
+            <field uid="1" label="필드 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="비밀번호" type="password" iconid="1006">
+        <card templatetype="password.default" name="비밀번호" iconid="36">
+            <field uid="0" label="로그인" type="username"/>
+            <field uid="1" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="2" label="액세스" type="text"/>
+        </card>
+    </category>
+    
+    <category name="보안 노트" type="note" iconid="1007">
+        <card templatetype="note.default" name="노트" iconid="22">
+        </card>
+    </category>
+        
+    <category name="여행" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="여권" iconid="37">
+            <field uid="2" label="번호" type="text"/>
+            <field uid="0" label="이름" type="text"/>
+            <field uid="14" label="성별" type="text"/>
+            <field uid="1" label="타입" type="text"/>
+            <field uid="15" label="국적" type="text"/>
+            <field uid="4" label="출생지" type="text"/>
+            <field uid="5" label="생일" type="date"/>
+            <field uid="6" label="발행 기관" type="text"/>
+            <field uid="7" label="발행" type="date"/>
+            <field uid="8" label="만료 날짜" type="date"/>
+            <field uid="9" label="발행 국가" type="text"/>
+            <field uid="10" label="기관" type="text"/>
+            <field uid="12" label="교체" type="text"/>
+            <field uid="13" label="분실 시, 전화" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="여행 비자" iconid="57">
+            <field uid="1" label="타입" type="text"/>
+            <field uid="15" label="국가" type="text"/>
+            <field uid="0" label="이름" type="text"/>
+            <field uid="2" label="번호" type="numeric"/>
+            <field uid="4" label="유효 대상" type="text"/>
+            <field uid="5" label="유효기간 시작" type="date"/>
+            <field uid="6" label="유효기한 만료" type="date"/>
+            <field uid="7" label="기간" type="numeric"/>
+            <field uid="8" label="항목 수" type="numeric"/>
+            <field uid="10" label="발행 기관" type="text"/>
+            <field uid="11" label="발행 일자" type="date"/>
+            <field uid="12" label="여권 번호" type="text"/>
+            <field uid="13" label="비고" type="text"/>
+            <field uid="14" label="분실 시, 전화" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="상용 고객" iconid="39">
+            <field uid="1" label="회원 번호" type="numeric"/>
+            <field uid="0" label="이름" type="text"/>
+            <field uid="8" label="항공사" type="text"/>
+            <field uid="2" label="날짜" type="date"/>
+            <field uid="3" label="마일리지" type="numeric"/>
+            <field uid="5" label="웹사이트" type="url"/>
+            <field uid="6" label="사용자명" type="username"/>
+            <field uid="7" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="9" label="고객 서비스" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="호텔 예약" iconid="27">
+            <field uid="0" label="호텔명" type="text"/>
+            <field uid="4" label="객실 번호" type="numeric"/>
+            <field uid="1" label="주소" type="text"/>
+            <field uid="2" label="예약 ID" type="numeric"/>
+            <field uid="3" label="날짜" type="date"/>
+            <field uid="5" label="숙박일수" type="numeric"/>
+            <field uid="15" label="호텔 리워드" type="numeric"/>
+            <field uid="7" label="전화번호" type="phone"/>
+            <field uid="8" label="이메일" type="email"/>
+            <field uid="9" label="웹사이트" type="url"/>
+            <field uid="10" label="사용자명" type="username"/>
+            <field uid="11" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="13" label="컨시어지" type="text"/>
+            <field uid="14" label="레스토랑" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="항공편 세부 사항" iconid="38">
+            <field uid="2" label="항공편 번호" type="numeric"/>
+            <field uid="0" label="항공사" type="text"/>
+            <field uid="1" label="날짜" type="date"/>
+            <field uid="3" label="출발지" type="text"/>
+            <field uid="4" label="목적지" type="text"/>
+            <field uid="5" label="시간/게이트" type="text"/>
+            <field uid="6" label="E-티켓 번호" type="numeric"/>
+            <field uid="7" label="확인 번호" type="numeric"/>
+            <field uid="10" label="웹사이트" type="url"/>
+            <field uid="11" label="사용자명" type="username"/>
+            <field uid="12" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="9" label="전화번호" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="기타 여행" iconid="125">
+            <field uid="0" label="필드 1" type="text"/>
+            <field uid="1" label="필드 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="기타" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="옷 사이즈" iconid="23">
+            <field uid="9" label="이름" type="text"/>
+            <field uid="0" label="정장" type="text"/>
+            <field uid="1" label="신발" type="text"/>
+            <field uid="2" label="셔츠" type="text"/>
+            <field uid="3" label="바지" type="text"/>
+            <field uid="4" label="인심" type="text"/>
+            <field uid="5" label="치마" type="text"/>
+            <field uid="6" label="장갑" type="text"/>
+            <field uid="7" label="허리" type="text"/>
+            <field uid="8" label="목" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="번호 자물쇠" iconid="61">
+            <field uid="0" label="위치" type="text"/>
+            <field uid="1" label="코드" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="처방전" iconid="40">
+            <field uid="2" label="의사" type="text"/>
+            <field uid="0" label="RX 번호" type="text"/>
+            <field uid="1" label="이름" type="text"/>
+            <field uid="3" label="약국" type="text"/>
+            <field uid="4" label="전화번호" type="phone"/>
+            <field uid="6" label="브랜드" type="text"/>
+            <field uid="7" label="약" type="text"/>
+            <field uid="8" label="양" type="numeric"/>
+            <field uid="9" label="섭취" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="렌즈 처방" iconid="26">
+            <field uid="0" label="타입" type="text"/>
+            <field uid="1" label="오른쪽(OD)" type="numeric"/>
+            <field uid="2" label="왼쪽(OS)" type="numeric"/>
+            <field uid="3" label="의사" type="text"/>
+            <field uid="4" label="전화번호" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="등록 코드" iconid="66">
+            <field uid="2" label="이름" type="text"/>
+            <field uid="0" label="번호" type="numeric" sensitive="true"/>
+            <field uid="1" label="날짜" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="차량 정보" iconid="25">
+            <field uid="3" label="등록 번호" type="text"/>
+            <field uid="11" label="소유자" type="text"/>
+            <field uid="0" label="모델" type="text"/>
+            <field uid="12" label="차량 타입" type="text"/>
+            <field uid="13" label="구입 날짜" type="date"/>
+            <field uid="1" label="제조사" type="text"/>
+            <field uid="2" label="년도" type="numeric"/>
+            <field uid="4" label="VIN" type="text"/>
+            <field uid="5" label="서비스 전화번호" type="phone"/>
+            <field uid="14" label="온로드 상담 전화" type="phone"/>
+            <field uid="16" label="보험 공급자" type="text"/>
+            <field uid="7" label="보험 금액" type="text"/>
+            <field uid="8" label="보험 번호" type="numeric"/>
+            <field uid="10" label="만료 날짜" type="date"/>
+            <field uid="9" label="보험 전화번호" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="음성 메일" iconid="62">
+            <field uid="0" label="액세스 번호" type="numeric"/>
+            <field uid="1" label="PIN" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="주소" iconid="31">
+            <field uid="0" label="이름" type="text"/>
+            <field uid="1" label="호수" type="text"/>
+            <field uid="2" label="도로명" type="text"/>
+            <field uid="3" label="지역" type="text"/>
+            <field uid="4" label="도시" type="text"/>
+            <field uid="5" label="주" type="text"/>
+            <field uid="6" label="우편 번호" type="text"/>
+            <field uid="7" label="국가" type="text"/>
+            <field uid="9" label="전화번호" type="phone"/>
+            <field uid="10" label="이메일" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="연락처" iconid="47">
+            <field uid="0" label="이름" type="text"/>
+            <field uid="1" label="성" type="text"/>
+            <field uid="2" label="회사" type="text"/>
+            <field uid="3" label="전화번호 (자택)" type="phone"/>
+            <field uid="4" label="전화번호 (모바일)" type="phone"/>
+            <field uid="5" label="전화번호 (직장)" type="phone"/>
+            <field uid="6" label="이메일" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="비상 전화번호" iconid="28">
+            <field uid="0" label="경찰" type="phone"/>
+            <field uid="1" label="소방서" type="phone"/>
+            <field uid="2" label="구급차" type="phone"/>
+            <field uid="3" label="의사" type="phone"/>
+            <field uid="4" label="치과 의사" type="phone"/>
+            <field uid="5" label="수의사" type="phone"/>
+            <field uid="6" label="전기 회사" type="phone"/>
+            <field uid="7" label="가스 회사" type="phone"/>
+            <field uid="8" label="전화 회사" type="phone"/>
+            <field uid="9" label="집주인" type="phone"/>
+            <field uid="10" label="기타" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="사회 보장 번호" iconid="64">
+            <field uid="1" label="번호" type="numeric"/>
+            <field uid="0" label="이름" type="text"/>
+            <field uid="2" label="날짜" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="리워드 프로그램" iconid="24">
+            <field uid="0" label="회사" type="text"/>
+            <field uid="1" label="이름" type="text"/>
+            <field uid="10" label="회원 ID" type="text"/>
+            <field uid="2" label="번호" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="5" label="2 번" type="numeric"/>
+            <field uid="6" label="시작" type="date"/>
+            <field uid="7" label="상담 전화" type="phone"/>
+            <field uid="8" label="예약 전화" type="phone"/>
+            <field uid="9" label="웹사이트" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="시리얼 번호" iconid="32">
+            <field uid="1" label="시리얼" type="text" sensitive="true"/>
+            <field uid="0" label="브랜드" type="text"/>
+            <field uid="2" label="모델" type="text"/>
+            <field uid="3" label="가격" type="numeric"/>
+            <field uid="4" label="구입일" type="date"/>
+            <field uid="6" label="보증" type="date"/>
+            <field uid="5" label="위치" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="부동산 정보" iconid="70">
+            <field uid="0" label="소유자" type="text"/>
+            <field uid="1" label="주소" type="text"/>
+            <field uid="2" label="타입" type="text"/>
+            <field uid="3" label="유지비" type="numeric"/>
+            <field uid="5" label="부동산 ID" type="text"/>
+            <field uid="6" label="세액" type="numeric"/>
+            <field uid="7" label="세금 마감일" type="date"/>
+            <field uid="8" label="웹페이지" type="url"/>
+            <field uid="9" label="사용자명" type="username"/>
+            <field uid="10" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="12" label="보험" type="text"/>
+            <field uid="13" label="보험료" type="numeric"/>
+            <field uid="14" label="보험 번호" type="numeric"/>
+            <field uid="15" label="만료 날짜" type="date"/>
+            <field uid="16" label="보험 상담 전화" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="전화 카드" iconid="54">
+            <field uid="1" label="액세스 번호" type="phone"/>
+            <field uid="0" label="공급자" type="text"/>
+            <field uid="2" label="카드 번호" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="펄스 속도" type="numeric"/>
+            <field uid="5" label="만료 날짜" type="date"/>
+            <field uid="6" label="사용" type="numeric"/>
+            <field uid="8" label="웹사이트" type="url"/>
+            <field uid="9" label="사용자명" type="username"/>
+            <field uid="10" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="11" label="분실 시, 전화" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="신분증" iconid="59">
+            <field uid="2" label="ID 번호" type="numeric"/>
+            <field uid="0" label="칭호" type="text"/>
+            <field uid="1" label="이름" type="text"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="국가" type="text"/>
+            <field uid="5" label="발행" type="date"/>
+            <field uid="6" label="만료 날짜" type="date"/>
+            <field uid="7" label="분실 시, 전화" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="ISIC 카드" iconid="65">
+            <field uid="2" label="카드 번호" type="numeric"/>
+            <field uid="0" label="학습 장소" type="text"/>
+            <field uid="1" label="이름" type="text"/>
+            <field uid="3" label="출생" type="date"/>
+            <field uid="4" label="발행" type="date"/>
+            <field uid="5" label="만료 날짜" type="date"/>
+            <field uid="6" label="분실 시, 전화" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="ITIC 카드" iconid="41">
+            <field uid="2" label="카드 번호" type="numeric"/>
+            <field uid="0" label="교수 장소" type="text"/>
+            <field uid="1" label="이름" type="text"/>
+            <field uid="3" label="출생" type="date"/>
+            <field uid="4" label="발행" type="date"/>
+            <field uid="5" label="만료 날짜" type="date"/>
+            <field uid="6" label="분실 시, 전화" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="도서관 카드" iconid="58">
+            <field uid="1" label="카드 번호" type="numeric"/>
+            <field uid="0" label="도서관" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="시간" type="numeric"/>
+            <field uid="4" label="주소" type="text"/>
+            <field uid="5" label="발행" type="date"/>
+            <field uid="6" label="만료 날짜" type="date"/>
+            <field uid="8" label="웹사이트" type="url"/>
+            <field uid="9" label="사용자명" type="username"/>
+            <field uid="10" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="11" label="분실 시, 전화" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="유권자 카드" iconid="69">
+            <field uid="0" label="이름" type="text"/>
+            <field uid="1" label="유권자 ID" type="numeric"/>
+            <field uid="2" label="주소" type="text"/>
+            <field uid="3" label="선거구" type="text"/>
+            <field uid="4" label="위치" type="text"/>
+            <field uid="5" label="의회" type="text"/>
+            <field uid="6" label="주 상원" type="text"/>
+            <field uid="7" label="대표" type="text"/>
+            <field uid="8" label="주소" type="text"/>
+            <field uid="9" label="발행" type="date"/>
+            <field uid="11" label="웹사이트" type="url"/>
+            <field uid="12" label="사용자명" type="username"/>
+            <field uid="13" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="14" label="분실 시, 전화" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="ITZ 카드" iconid="67">
+            <field uid="1" label="카드 번호" type="numeric"/>
+            <field uid="0" label="소유자" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="가치" type="numeric"/>
+            <field uid="4" label="만료 날짜" type="date"/>
+            <field uid="5" label="사용" type="numeric"/>
+            <field uid="7" label="웹사이트" type="url"/>
+            <field uid="8" label="사용자명" type="username"/>
+            <field uid="9" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="10" label="분실 시, 전화" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="회원 카드" iconid="46">
+            <field uid="1" label="회원 ID" type="numeric"/>
+            <field uid="10" label="회원명" type="text"/>
+            <field uid="0" label="조직" type="text"/>
+            <field uid="11" label="그룹" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="전화번호" type="phone"/>
+            <field uid="12" label="회원 가입일" type="date"/>
+            <field uid="4" label="만료 날짜" type="date"/>
+            <field uid="6" label="웹사이트" type="url"/>
+            <field uid="7" label="사용자명" type="username"/>
+            <field uid="8" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="13" label="이메일" type="email"/>
+            <field uid="9" label="분실 시, 전화" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="PAN 카드" iconid="68">
+            <field uid="3" label="번호" type="numeric"/>
+            <field uid="0" label="이름" type="text"/>
+            <field uid="1" label="아버지 이름" type="text"/>
+            <field uid="2" label="생년월일" type="date"/>
+            <field uid="5" label="웹사이트" type="url"/>
+            <field uid="6" label="사용자명" type="username"/>
+            <field uid="7" label="비밀번호" type="password" sensitive="true"/>
+            <field uid="8" label="분실 시, 전화" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="휴대 전화  정보" iconid="120">
+            <field uid="0" label="휴대폰 모델" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="잠금 코드" type="numeric" sensitive="true"/>
+            <field uid="5" label="SIM 타입" type="text"/>
+            <field uid="6" label="SIM 번호" type="numeric"/>
+            <field uid="7" label="PIN" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="구입일" type="date"/>
+            <field uid="10" label="보증" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="서비스 공급자" iconid="121">
+            <field uid="0" label="공급자" type="text"/>
+            <field uid="1" label="서비스 타입" type="text"/>
+            <field uid="2" label="소비자 Id" type="text"/>
+            <field uid="3" label="등록 ID" type="numeric"/>
+            <field uid="4" label="주소" type="text"/>
+            <field uid="5" label="웹사이트" type="url"/>
+            <field uid="6" label="사용자명" type="username"/>
+            <field uid="7" label="로그인 비밀번호" type="password" sensitive="true"/>
+            <field uid="8" label="상담 전화" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="기타 등등" iconid="126">
+            <field uid="0" label="필드 1" type="text"/>
+            <field uid="1" label="필드 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="성별" value="male" type="sex_options"/>
+            <field uid="4" label="생년월일" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="회사" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="주소" type="address_firstline"/>
+            <field uid="10" label="도로명" type="address_street"/>
+            <field uid="11" label="도시" type="address_city"/>
+            <field uid="12" label="주" type="address_state"/>
+            <field uid="13" label="우편 번호" type="address_zip"/>
+            <field uid="14" label="국가" value="US" type="country_options"/>
+            <field uid="15" label="전화번호" type="phone"/>
+            <field uid="16" label="보안 질문" type="text"/>
+            <field uid="17" label="보안 대답" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

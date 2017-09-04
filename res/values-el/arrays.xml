@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="auto_lock_interval_entries">
+        <item>30 Δευτερόλεπτα αδράνειας</item>
+        <item>1 Λεπτό αδράνειας</item>
+        <item>5 Λεπτά αδράνειας</item>
+        <item>10 Λεπτά αδράνειας</item>
+        <item>30 Λεπτά αδράνειας</item>
+        <item>1 Ώρα αδράνειας</item>
+        <item>5 Ώρες αδράνειας</item>
+        <item>12 Ώρες αδράνειας</item>
+    </array>
+    <array name="auto_lock_interval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="browser_package_names">
+        <item>com.android.chrome</item>
+        <item>com.chrome.beta</item>
+        <item>com.google.android.browser</item>
+        <item>mobi.mgeek.TunnyBrowser</item>
+        <item>com.dolphin.browser.zero</item>
+        <item>com.opera.browser</item>
+        <item>com.opera.mini.android</item>
+        <item>com.nubelacorp.javelin</item>
+        <item>com.cloudmosa.puffinFree</item>
+        <item>com.cloudmosa.puffin</item>
+        <item>com.UCMobile.intl</item>
+        <item>com.uc.browser.en</item>
+        <item>com.uc.browser.hd</item>
+        <item>org.mozilla.firefox</item>
+        <item>org.mozilla.firefox_beta</item>
+        <item>com.ksmobile.cb</item>
+        <item>com.jiubang.browser</item>
+        <item>com.mx.browser</item>
+        <item>com.chrome.dev</item>
+    </array>
+    <array name="clearclipboard_intervals">
+        <item>30 Δευτερόλεπτα</item>
+        <item>1 Λεπτό</item>
+        <item>2 Λεπτά</item>
+        <item>5 Λεπτά</item>
+        <item>Ποτέ</item>
+    </array>
+    <array name="clearclipboard_intervals_num">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="default_search_engine_entry_list">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>Yahoo</item>
+        <item>Ask</item>
+        <item>Baidu</item>
+        <item>DuckDuckGo</item>
+        <item>Qwant</item>
+    </array>
+    <array name="default_search_engine_values_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="detailopenLinkInEntries">
+        <item>Περιηγητής Enpass</item>
+        <item>Προεπιλεγμένο πρόγραμμα περιήγησης</item>
+    </array>
+    <array name="dropdown">
+        <item>Όλα τα Αντικείμενα</item>
+        <item>Αγαπημένα</item>
+        <item>Φάκελοι</item>
+        <item>CATEGORIES</item>
+        <item>Σύνδεση</item>
+        <item>Πιστωτική Κάρτα</item>
+        <item>Χρηματοοικονομικά</item>
+        <item>Υπολογιστής</item>
+        <item>Άδεια</item>
+        <item>Κωδικός πρόσβασης</item>
+        <item>Σημείωση Ασφαλείας</item>
+        <item>Ταξίδια</item>
+        <item>Διάφορα</item>
+    </array>
+    <array name="new_features_array">
+        <item>Γρήγορο ξεκλείδωμα PIN</item>
+        <item>Περιηγητής πολλαπλών καρτελών</item>
+        <item>βελτιωμένος Δημιουργός Κωδικών Πρόσβασης</item>
+        <item>Πρόσθετη υποστήριξη συγχρονισμού για το Box</item>
+        <item>Περισσότερες επιλογές προσαρμογής</item>
+    </array>
+    <array name="openLinkInEntries">
+        <item>Να γίνεται πάντα ερώτηση</item>
+        <item>Περιηγητής Enpass</item>
+        <item>Προεπιλεγμένο πρόγραμμα περιήγησης</item>
+    </array>
+    <array name="openLinkInValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="searchInCards_entries">
+        <item>Μόνο τίτλος</item>
+        <item>Όλα τα πεδία</item>
+    </array>
+    <array name="searchInCards_values">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="seprator_list">
+        <item>Κόμμα</item>
+        <item>Δολάριο</item>
+        <item>Δίεση</item>
+        <item>Ενωτικό</item>
+        <item>Τελεία</item>
+        <item>Κενό διάστημα</item>
+        <item>Υπογράμμιση</item>
+    </array>
+    <array name="sex">
+        <item>Άνδρας</item>
+        <item>Γυναίκα</item>
+    </array>
+    <array name="trail_version_text_array">
+        <item>Δωρεάν έκδοση επιφάνειας εργασίας για τον υπολογιστή σας.</item>
+        <item>Το Enpass σε άλλες κινητές συσκευές που χρησιμοποιείτε.</item>
+        <item>Συγχρονισμός δεδομένων σε πολλαπλές συσκευές χρησιμοποιώντας τους δικούς σας λογαριασμούς συννέφου στο iCloud, στο Dropbox, στο Box, στο Google Drive και στο OneDrive.</item>
+    </array>
+</resources>

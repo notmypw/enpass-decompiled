@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:icon="@drawable/sm1011" app:id="@+id/action_home" app:title="" app:showAsAction="always" />
+    <item app:icon="@locationawarelogger/TRACE_INT" app:id="@+id/action_done" app:title="@string/menu_edit_done" app:showAsAction="always" />
+</menu>

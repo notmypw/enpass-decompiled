@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="auto_lock_interval_entries">
+        <item>30 ثانية من الخمول</item>
+        <item>1 دقيقة خمول</item>
+        <item>5 دقائق من الخمول</item>
+        <item>10 دقائق من الخمول</item>
+        <item>30 دقيقة من الخمول</item>
+        <item>1 ساعة من الخمول</item>
+        <item>5 ساعات من الخمول</item>
+        <item>12 ساعة من الخمول</item>
+    </array>
+    <array name="auto_lock_interval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="browser_package_names">
+        <item>com.android.chrome</item>
+        <item>com.chrome.beta</item>
+        <item>com.google.android.browser</item>
+        <item>mobi.mgeek.TunnyBrowser</item>
+        <item>com.dolphin.browser.zero</item>
+        <item>com.opera.browser</item>
+        <item>com.opera.mini.android</item>
+        <item>com.nubelacorp.javelin</item>
+        <item>com.cloudmosa.puffinFree</item>
+        <item>com.cloudmosa.puffin</item>
+        <item>com.UCMobile.intl</item>
+        <item>com.uc.browser.en</item>
+        <item>com.uc.browser.hd</item>
+        <item>org.mozilla.firefox</item>
+        <item>org.mozilla.firefox_beta</item>
+        <item>com.ksmobile.cb</item>
+        <item>com.jiubang.browser</item>
+        <item>com.mx.browser</item>
+        <item>com.chrome.dev</item>
+    </array>
+    <array name="clearclipboard_intervals">
+        <item>30 ثانية</item>
+        <item>1 دقيقة</item>
+        <item>دقيقتان</item>
+        <item>5 دقائق</item>
+        <item>ابدأ</item>
+    </array>
+    <array name="clearclipboard_intervals_num">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="default_search_engine_entry_list">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>Yahoo</item>
+        <item>Ask</item>
+        <item>Baidu</item>
+        <item>DuckDuckGo</item>
+        <item>Qwant</item>
+    </array>
+    <array name="default_search_engine_values_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="detailopenLinkInEntries">
+        <item>متصفح Enpass</item>
+        <item>المتصفح الافتراضي</item>
+    </array>
+    <array name="dropdown">
+        <item>كافة العناصر</item>
+        <item>المفضلة</item>
+        <item>المجلدات</item>
+        <item>CATEGORIES</item>
+        <item>تسجيل الدخول</item>
+        <item>بطاقات الإئتمان</item>
+        <item>ماليات</item>
+        <item>كمبيوتر</item>
+        <item>رخصة</item>
+        <item>كلمة السر</item>
+        <item>ملحوظة مؤمّنة</item>
+        <item>سفر</item>
+        <item>متفرقات</item>
+    </array>
+    <array name="new_features_array">
+        <item>إلغاء تأمين رمز الـ PIN بشكل سريع</item>
+        <item>متصفح يدعم علامات التبويب المتعددة</item>
+        <item>مولد مطور لكلمات المرور</item>
+        <item>دعم المزامنة المضاف لـ Box</item>
+        <item>المزيد من خيارات التخصيص</item>
+    </array>
+    <array name="openLinkInEntries">
+        <item>دائماً اسأل</item>
+        <item>متصفح Enpass</item>
+        <item>المتصفح الافتراضي</item>
+    </array>
+    <array name="openLinkInValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="searchInCards_entries">
+        <item>العنوان فقط</item>
+        <item>كافة الحقول</item>
+    </array>
+    <array name="searchInCards_values">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="seprator_list">
+        <item>فاصلة</item>
+        <item>دولار</item>
+        <item>تجزئة</item>
+        <item>وصلة</item>
+        <item>الفترة</item>
+        <item>المسافة</item>
+        <item>تسطير أسفل السطر</item>
+    </array>
+    <array name="sex">
+        <item>ذكر</item>
+        <item>أنثى</item>
+    </array>
+    <array name="trail_version_text_array">
+        <item>إصدار خاص بجهاز الحاسوب الخاص بك سطح المكتب ومجاني.</item>
+        <item>تطبيق Enpass على الأجهزة المحمولة الأخرى التي تستخدمها.</item>
+        <item>مزامنة البيانات عبر أجهزة متعددة باستخدام الحسابات السحابية الخاصة بك على iCloud، Dropbox، Box، Google Drive، و OneDrive.</item>
+    </array>
+</resources>

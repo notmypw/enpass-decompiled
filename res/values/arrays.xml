@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="auto_lock_interval_entries">
+        <item>30 Seconds of inactivity</item>
+        <item>1 Minute of inactivity</item>
+        <item>5 Minutes of inactivity</item>
+        <item>10 Minutes of inactivity</item>
+        <item>30 Minutes of inactivity</item>
+        <item>1 Hour of inactivity</item>
+        <item>5 Hours of inactivity</item>
+        <item>12 Hours of inactivity</item>
+    </array>
+    <array name="auto_lock_interval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="browser_package_names">
+        <item>com.android.chrome</item>
+        <item>com.chrome.beta</item>
+        <item>com.google.android.browser</item>
+        <item>mobi.mgeek.TunnyBrowser</item>
+        <item>com.dolphin.browser.zero</item>
+        <item>com.opera.browser</item>
+        <item>com.opera.mini.android</item>
+        <item>com.nubelacorp.javelin</item>
+        <item>com.cloudmosa.puffinFree</item>
+        <item>com.cloudmosa.puffin</item>
+        <item>com.UCMobile.intl</item>
+        <item>com.uc.browser.en</item>
+        <item>com.uc.browser.hd</item>
+        <item>org.mozilla.firefox</item>
+        <item>org.mozilla.firefox_beta</item>
+        <item>com.ksmobile.cb</item>
+        <item>com.jiubang.browser</item>
+        <item>com.mx.browser</item>
+        <item>com.chrome.dev</item>
+    </array>
+    <array name="clearclipboard_intervals">
+        <item>30 Seconds</item>
+        <item>1 Minute</item>
+        <item>2 Minutes</item>
+        <item>5 Minutes</item>
+        <item>Never</item>
+    </array>
+    <array name="clearclipboard_intervals_num">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="default_browser_agent_entry_list">
+        <item>Enpass</item>
+        <item>Chrome</item>
+        <item>Firefox</item>
+        <item>Opera</item>
+    </array>
+    <array name="default_browser_agent_values_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="default_search_engine_entry_list">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>Yahoo</item>
+        <item>Ask</item>
+        <item>Baidu</item>
+        <item>DuckDuckGo</item>
+        <item>Qwant</item>
+    </array>
+    <array name="default_search_engine_values_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="detailopenLinkInEntries">
+        <item>Enpass browser</item>
+        <item>Default browser</item>
+    </array>
+    <array name="dropdown">
+        <item>All Items</item>
+        <item>Favorites</item>
+        <item>Folders</item>
+        <item>CATEGORIES</item>
+        <item>Login</item>
+        <item>Credit Card</item>
+        <item>Finance</item>
+        <item>Computer</item>
+        <item>License</item>
+        <item>Password</item>
+        <item>Secure Note</item>
+        <item>Travel</item>
+        <item>Miscellaneous</item>
+    </array>
+    <array name="new_features_array">
+        <item>Quick PIN unlock</item>
+        <item>Multi-tabbed browser</item>
+        <item>Improved Password Generator</item>
+        <item>Added Sync support for Box</item>
+        <item>More customization options</item>
+    </array>
+    <array name="openLinkInEntries">
+        <item>Always ask</item>
+        <item>Enpass browser</item>
+        <item>Default browser</item>
+    </array>
+    <array name="openLinkInValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="searchInCards_entries">
+        <item>Title Only</item>
+        <item>All Fields</item>
+    </array>
+    <array name="searchInCards_values">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="seprator_list">
+        <item>Comma</item>
+        <item>Dollar</item>
+        <item>Hash</item>
+        <item>Hyphen</item>
+        <item>Period</item>
+        <item>Space</item>
+        <item>Underscore</item>
+    </array>
+    <array name="sex">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+    <array name="trail_version_text_array">
+        <item></item>
+        <item>Enpass on other mobile devices you use.</item>
+        <item>Syncing data across multiple devices using your own cloud accounts on iCloud, Dropbox, Box, Google Drive and OneDrive.</item>
+    </array>
+</resources>

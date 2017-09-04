@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:id="@+id/detail_frag_layout" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/detail_toolbar" app:background="@r$color/enpass_colorPrimary" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f040007" app:minHeight="?attr/actionBarSize" app:popupTheme="@r$style/EnpassToolbarThemePopup" app:theme="@r$style/EnpassToolbarTheme" />
+    <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:id="@+id/detail_title_layout" app:background="@r$color/enpass_colorPrimary" app:paddingLeft="30dp" app:paddingRight="15dp" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f070067">
+        <TextView app:textAppearance="@*app:style/TextAppearance.Large" app:textSize="28sp" app:textColor="@r$color/white" app:ellipsize="end" app:id="@+id/detail_card_title" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="15dp" app:text="ghdsfhjdsfa" app:maxLines="2" />
+    </LinearLayout>
+    <ScrollView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0" app:overScrollMode="always">
+        <LinearLayout app:orientation="vertical" app:id="@+id/detail_layout" app:paddingTop="10dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="30dp" app:layout_marginRight="15dp" />
+    </ScrollView> />

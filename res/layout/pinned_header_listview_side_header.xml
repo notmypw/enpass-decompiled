@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="20sp" android:textColor="@r$color/pinned_header_text" android:id="@+id/header_text" android:background="@locationawarelogger/TRACE_INT" android:paddingLeft="20dp" android:layout_width="UNKNOWN_DATA_0x3201" android:layout_height="UNKNOWN_DATA_0x3201" android:text="A" style="@r$style/PinnedHeader" />

@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="Přihlášení" type="login" iconid="1001">
+        <card templatetype="login.default" name="Přihlášení" iconid="21">
+            <field uid="10" label="Uživatelské jméno" type="username"/>
+            <field uid="12" label="E-mail" type="email"/>
+            <field uid="11" label="Heslo" type="password" sensitive="true"/>
+            <field uid="14" label="Telefon" type="phone"/>
+            <field uid="13" label="Adresa Url" type="url"/>
+            <field uid="15" label="Bezpečnostní otázka" type="text"/>
+            <field uid="16" label="Bezpečnostní odpověď" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="Kreditní karta" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="Kreditní karta" iconid="20">
+            <field uid="0" label="Držitel karty" type="cardholder_name"/>
+            <field uid="17" label="Typ" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="Číslo" type="card_number"/>
+            <field uid="2" label="CVC" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="4" label="Datum vypršení" type="expiry_date"/>
+            <field uid="18" label="Platné od" type="date"/>
+            <field uid="10" label="Kreditní limit" type="numeric"/>
+            <field uid="11" label="Limit pro výběr" type="numeric"/>
+            <field uid="12" label="Úroková sazba" type="numeric"/>
+            <field uid="6" label="Vydavatelská banka" type="bank_name"/>
+            <field uid="14" label="Webová stránka" type="url"/>
+            <field uid="15" label="Uživatelské jméno" type="username"/>
+            <field uid="16" label="Přihlašovací heslo" type="password" sensitive="true"/>
+            <field uid="9" label="Transakční heslo" type="txn_password" sensitive="true"/>
+            <field uid="7" label="Vydáno na" type="date"/>
+            <field uid="8" label="Při ztrátě volejte" type="phone"/>
+        </card>
+    </category>
+
+    <category name="Finance" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="Bankovní účet" iconid="45">
+            <field uid="4" label="Název banky" type="bank_name"/>
+            <field uid="0" label="Držitel účtu" type="cardholder_name"/>
+            <field uid="1" label="Typ" type="text"/>
+            <field uid="2" label="Číslo účtu" type="numeric"/>
+            <field uid="16" label="ID zákazníka" type="text"/>
+            <field uid="5" label="Číslo postupu" type="numeric"/>
+            <field uid="6" label="Název pobočky" type="text"/>
+            <field uid="7" label="Kód pobočky" type="numeric"/>
+            <field uid="8" label="SWIFT" type="text"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="Adresa pobočky" type="text"/>
+            <field uid="25" label="Telefon pobočky" type="phone"/>
+            
+            <field uid="11" label="Číslo debetní karty" type="card_number"/>
+            <field uid="26" label="Typ" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="14" label="CVV" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="Datum vypršení" type="expiry_date"/>
+            <field uid="27" label="Limit pro výběr" type="numeric"/>
+            
+            <field uid="17" label="Webová stránka" type="url"/>
+            <field uid="18" label="Uživatelské jméno" type="username"/>
+            <field uid="19" label="Přihlašovací heslo" type="password" sensitive="true"/>
+            <field uid="20" label="Transakční heslo" type="txn_password" sensitive="true"/>
+            <field uid="22" label="Linka pomoci" type="phone"/>
+            <field uid="23" label="T-PIN" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="Politika pojištění" iconid="33">
+            <field uid="1" label="Název politiky" type="text"/>
+            <field uid="0" label="Společnost" type="text"/>
+            <field uid="19" label="Pojistník" type="text"/>
+            <field uid="2" label="Číslo" type="numeric"/>
+            <field uid="3" label="Typ" type="text"/>
+            <field uid="5" label="Prémiové" type="numeric"/>
+            <field uid="6" label="Pojistná částka" type="numeric"/>
+            <field uid="7" label="Datum vydání" type="date"/>
+            <field uid="18" label="Datum obnovení" type="date"/>
+            <field uid="8" label="Datum vypršení" type="date"/>
+            <field uid="9" label="Období" type="numeric"/>
+            <field uid="20" label="Kandidát" type="text"/>
+            <field uid="11" label="ID zákazníka" type="numeric"/>
+            <field uid="12" label="Webová stránka" type="url"/>
+            <field uid="13" label="Uživatelské jméno" type="username"/>
+            <field uid="14" label="Heslo" type="password" sensitive="true"/>
+            <field uid="16" label="Jméno agenta" type="text"/>
+            <field uid="17" label="Linka pomoci" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="Kapitálová investice" iconid="34">
+            <field uid="2" label="Symbol" type="text"/>
+            <field uid="0" label="Číslo účtu" type="numeric"/>
+            <field uid="1" label="Typ" type="text"/>
+            <field uid="3" label="Trh" type="text"/>
+            <field uid="5" label="Vydáno" type="date"/>
+            <field uid="6" label="Koupeno" type="date"/>
+            <field uid="7" label="Kupní cena" type="numeric"/>
+            <field uid="8" label="Množství" type="numeric"/>
+            <field uid="9" label="Aktuální cena" type="numeric"/>
+            <field uid="11" label="Webová stránka" type="url"/>
+            <field uid="12" label="Uživatelské jméno" type="username"/>
+            <field uid="13" label="Heslo" type="password" sensitive="true"/>
+            <field uid="15" label="Makléř" type="text"/>
+            <field uid="16" label="Telefon" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="Podílový fond" iconid="43">
+            <field uid="0" label="Název fondu" type="text"/>
+            <field uid="1" label="Typ fondu" type="text"/>
+            <field uid="2" label="Vydáno" type="date"/>
+            <field uid="3" label="Koupeno" type="date"/>
+            <field uid="4" label="Množství" type="numeric"/>
+            <field uid="5" label="Substanční hodnota při nákupu" type="numeric"/>
+            <field uid="6" label="Aktuální substanční hodnota" type="numeric"/>
+            <field uid="8" label="Webová stránka" type="url"/>
+            <field uid="9" label="Uživatelské jméno" type="username"/>
+            <field uid="10" label="Heslo" type="password" sensitive="true"/>
+            <field uid="12" label="Makléř" type="text"/>
+            <field uid="13" label="Telefon" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="Úvěr/Hypotéka" iconid="44">
+            <field uid="2" label="Věřitel" type="text"/>
+            <field uid="1" label="Typ" type="text"/>
+            <field uid="0" label="Číslo účtu" type="numeric"/>
+            <field uid="4" label="Jistina" type="numeric"/>
+            <field uid="5" label="Úrok %" type="numeric"/>
+            <field uid="6" label="Datum" type="date"/>
+            <field uid="7" label="Období" type="numeric"/>
+            <field uid="8" label="Zůstatek" type="numeric"/>
+            <field uid="9" label="Datum splatnosti" type="numeric"/>
+            <field uid="10" label="Aktiva" type="text"/>
+            <field uid="12" label="Telefon" type="phone"/>
+            <field uid="13" label="Webová stránka" type="url"/>
+            <field uid="14" label="Uživatelské jméno" type="username"/>
+            <field uid="15" label="Heslo" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="Ostatní finance" iconid="122">
+            <field uid="0" label="Pole 1" type="text"/>
+            <field uid="1" label="Pole 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Počítač" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="Databáze" iconid="56">
+            <field uid="8" label="Typ" type="text"/>
+            <field uid="0" label="Server" type="text"/>
+            <field uid="1" label="Port" type="numeric"/>
+            <field uid="2" label="Databáze" type="text"/>
+            <field uid="3" label="Uživatelské jméno" type="username"/>
+            <field uid="4" label="Heslo" type="password" sensitive="true"/>
+            <field uid="5" label="SID" type="text"/>
+            <field uid="6" label="Alias" type="text"/>
+            <field uid="7" label="Možnosti" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="E-mailový účet" iconid="48">
+            <field uid="0" label="E-mail" type="email"/>
+            <field uid="1" label="Uživatelské jméno" type="username"/>
+            <field uid="2" label="Heslo" type="password" sensitive="true"/>
+            <field uid="9" label="Typ" type="text"/>
+            <field uid="3" label="POP3 server" type="text"/>
+            <field uid="4" label="IMAP server" type="text"/>
+            <field uid="6" label="Port" type="numeric"/>
+            <field uid="10" label="Typ zabezpečení" type="text"/>
+            <field uid="11" label="Způsob autorizace" type="text"/>
+            <field uid="21" label="Weblink" type="url"/>
+            <field uid="5" label="SMTP server" type="text"/>
+            <field uid="7" label="Port" type="numeric"/>
+            <field uid="13" label="Uživatelské jméno" type="username"/>
+            <field uid="14" label="Heslo" type="password" sensitive="true"/>
+            <field uid="15" label="Typ zabezpečení" type="text"/>
+            <field uid="16" label="Způsob autorizace" type="text"/>
+            <field uid="18" label="Poskytovatel" type="text"/>
+            <field uid="8" label="Webová stránka" type="url"/>
+            <field uid="19" label="Místní telefon" type="phone"/>
+            <field uid="20" label="Linka pomoci" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="FTP účet" iconid="55">
+            <field uid="0" label="Server" type="text"/>
+            <field uid="1" label="Cesta" type="text"/>
+            <field uid="2" label="Uživatelské jméno" type="username"/>
+            <field uid="3" label="Heslo" type="password" sensitive="true"/>
+            <field uid="4" label="Poskytovatel" type="text"/>
+            <field uid="5" label="Webová stránka" type="url"/>
+            <field uid="6" label="Telefon" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="Rychlé zasílání zpráv" iconid="49">
+            <field uid="0" label="Typ" type="text"/>
+            <field uid="1" label="ID" type="text"/>
+            <field uid="2" label="Server" type="text"/>
+            <field uid="3" label="Port" type="numeric"/>
+            <field uid="4" label="Přezdívka" type="text"/>
+            <field uid="5" label="Uživatelské jméno" type="username"/>
+            <field uid="6" label="Heslo" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="Poskytovatel internetu" iconid="63">
+            <field uid="0" label="Uživatelské jméno" type="username"/>
+            <field uid="1" label="Heslo" type="password" sensitive="true"/>
+            <field uid="3" label="Vytáčení telefonu" type="phone"/>
+            <field uid="4" label="ISP/Systém" type="text"/>
+            <field uid="5" label="IP adresa" type="numeric"/>
+            <field uid="6" label="Maska podsítě" type="numeric"/>
+            <field uid="20" label="Brána" type="numeric"/>
+            <field uid="7" label="Primární DNS" type="numeric"/>
+            <field uid="8" label="Sekundární DNS" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Telnet" type="text"/>
+            <field uid="17" label="Linka pomoci" type="phone"/>
+            <field uid="18" label="Webová stránka" type="url"/>
+            <field uid="19" label="Fakturační údaje" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="Server" iconid="51">
+            <field uid="11" label="Přihlášení správce" type="username"/>
+            <field uid="12" label="Heslo správce" type="password" sensitive="true"/>
+            <field uid="16" label="URL správce" type="url"/>
+            <field uid="0" label="Služba" type="text"/>
+            <field uid="1" label="Úkoly" type="text"/>
+            <field uid="2" label="OS" type="text"/>
+            <field uid="3" label="RAM" type="numeric"/>
+            <field uid="4" label="Paměť" type="numeric"/>
+            <field uid="5" label="CPU" type="numeric"/>
+            <field uid="6" label="RAID" type="text"/>
+            <field uid="7" label="Umístění" type="text"/>
+            <field uid="8" label="IP adresa" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="Port" type="numeric"/>
+            <field uid="17" label="Poskytovatel hostingu" type="text"/>
+            <field uid="14" label="Webové stránky podpory" type="url"/>
+            <field uid="18" label="Linka pomoci" type="phone"/>
+            <field uid="15" label="Fakturační údaje" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="Bezdrátový router" iconid="35">
+            <field uid="0" label="Název stanice" type="text"/>
+            <field uid="9" label="Heslo stanice" type="password" sensitive="true"/>
+            <field uid="2" label="Název sítě" type="text"/>
+            <field uid="5" label="Heslo sítě" type="password" sensitive="true"/>
+            <field uid="3" label="Zabezpečení" type="text"/>
+            <field uid="1" label="MAC/Vzduchový port #" type="numeric"/>
+            <field uid="12" label="Server/IP adresa" type="url"/>
+            <field uid="13" label="Uživatelské jméno" type="username"/>
+            <field uid="4" label="Heslo" type="password" sensitive="true"/>
+            <field uid="6" label="Heslo paměti" type="password" sensitive="true"/>
+            <field uid="7" label="Webové stránky podpory" type="url"/>
+            <field uid="8" label="Fakturační údaje" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="Web hosting" iconid="53">
+            <field uid="13" label="Poskytovatel" type="text"/>
+            <field uid="1" label="Uživatelské jméno" type="username"/>
+            <field uid="2" label="Heslo" type="password" sensitive="true"/>
+            <field uid="11" label="URL správce" type="url"/>
+            <field uid="0" label="OS" type="text"/>
+            <field uid="9" label="ID zákazníka" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="Databáze" type="text"/>
+            <field uid="7" label="Služby" type="text"/>
+            <field uid="14" label="Webové stránky podpory" type="url"/>
+            <field uid="10" label="Linka pomoci" type="phone"/>
+            <field uid="12" label="Poplatek" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="Jiný počítač" iconid="123">
+            <field uid="0" label="Pole 1" type="text"/>
+            <field uid="1" label="Pole 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Licence" type="license" iconid="1005">
+        <card templatetype="license.driving" name="Řidičský průkaz" iconid="60">
+            <field uid="1" label="Číslo" type="numeric"/>
+            <field uid="0" label="Jméno" type="text"/>
+            <field uid="8" label="Pohlaví" type="text"/>
+            <field uid="9" label="Datum narození" type="date"/>
+            <field uid="10" label="Adresa" type="text"/>
+            <field uid="11" label="Výška" type="text"/>
+            <field uid="2" label="Třída" type="text"/>
+            <field uid="13" label="Omezení" type="text"/>
+            <field uid="3" label="Stát" type="text"/>
+            <field uid="4" label="Země" type="text"/>
+            <field uid="5" label="Datum vypršení" type="date"/>
+            <field uid="6" label="Vydáno na" type="date"/>
+            <field uid="7" label="Při ztrátě volejte" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="Průkaz myslivce" iconid="42">
+            <field uid="1" label="Číslo" type="numeric"/>
+            <field uid="0" label="Jméno" type="text"/>
+            <field uid="2" label="Stát" type="text"/>
+            <field uid="3" label="Region" type="text"/>
+            <field uid="4" label="Země" type="text"/>
+            <field uid="5" label="Platné od" type="date"/>
+            <field uid="6" label="Datum vypršení" type="date"/>
+            <field uid="7" label="Schválená zvěř" type="text"/>
+            <field uid="8" label="Povolené množství" type="text"/>
+        </card>
+        <card templatetype="license.software" name="Softwarová licence" iconid="52">
+            <field uid="0" label="Verze" type="numeric"/>
+            <field uid="16" label="Název produktu" type="text"/>
+            <field uid="17" label="Počet uživatelů" type="numeric"/>
+            <field uid="1" label="Klíč" type="text" sensitive="true"/>
+            <field uid="6" label="Stránka pro stažení" type="url"/>
+            <field uid="3" label="Vlastník licence" type="text"/>
+            <field uid="18" label="Přihlašovací stránka" type="url"/>
+            <field uid="19" label="Uživatelské jméno" type="username"/>
+            <field uid="20" label="Heslo" type="password" sensitive="true"/>
+            <field uid="4" label="E-mail" type="email"/>
+            <field uid="5" label="Společnost" type="text"/>
+            <field uid="13" label="Datum koupě" type="date"/>
+            <field uid="14" label="Číslo objednávky" type="numeric"/>
+            <field uid="12" label="Maloobchodní cena" type="numeric"/>
+            <field uid="15" label="Celkem" type="numeric"/>
+            <field uid="8" label="Vydavatel" type="text"/>
+            <field uid="9" label="Webová stránka" type="url"/>
+            <field uid="10" label="Podpora e-mailu" type="email"/>
+            <field uid="21" label="Linka pomoci" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="Jiná licence" iconid="124">
+            <field uid="0" label="Pole 1" type="text"/>
+            <field uid="1" label="Pole 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Heslo" type="password" iconid="1006">
+        <card templatetype="password.default" name="Heslo" iconid="36">
+            <field uid="0" label="Přihlášení" type="username"/>
+            <field uid="1" label="Heslo" type="password" sensitive="true"/>
+            <field uid="2" label="Přístup" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Bezpečná poznámka" type="note" iconid="1007">
+        <card templatetype="note.default" name="Poznámka" iconid="22">
+        </card>
+    </category>
+        
+    <category name="Cestování" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="Cestovní pas" iconid="37">
+            <field uid="2" label="Číslo" type="text"/>
+            <field uid="0" label="Celé jméno" type="text"/>
+            <field uid="14" label="Pohlaví" type="text"/>
+            <field uid="1" label="Typ" type="text"/>
+            <field uid="15" label="Národnost" type="text"/>
+            <field uid="4" label="Místo narození" type="text"/>
+            <field uid="5" label="Datum narození" type="date"/>
+            <field uid="6" label="Vydáno v" type="text"/>
+            <field uid="7" label="Vydáno na" type="date"/>
+            <field uid="8" label="Datum vypršení" type="date"/>
+            <field uid="9" label="Vydávající země" type="text"/>
+            <field uid="10" label="Úřad" type="text"/>
+            <field uid="12" label="Nahrazení" type="text"/>
+            <field uid="13" label="Při ztrátě volejte" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="Cestovní víza" iconid="57">
+            <field uid="1" label="Typ" type="text"/>
+            <field uid="15" label="Země" type="text"/>
+            <field uid="0" label="Celé jméno" type="text"/>
+            <field uid="2" label="Číslo" type="numeric"/>
+            <field uid="4" label="Platné pro" type="text"/>
+            <field uid="5" label="Platné od" type="date"/>
+            <field uid="6" label="Platné do" type="date"/>
+            <field uid="7" label="Doba trvání" type="numeric"/>
+            <field uid="8" label="Počet vstupů" type="numeric"/>
+            <field uid="10" label="Vydal" type="text"/>
+            <field uid="11" label="Datum vydání" type="date"/>
+            <field uid="12" label="Číslo cestovního pasu" type="text"/>
+            <field uid="13" label="Poznámky" type="text"/>
+            <field uid="14" label="Při ztrátě volejte" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="Věrnostní program" iconid="39">
+            <field uid="1" label="Členské číslo." type="numeric"/>
+            <field uid="0" label="Jméno" type="text"/>
+            <field uid="8" label="Letecká společnost" type="text"/>
+            <field uid="2" label="Datum" type="date"/>
+            <field uid="3" label="Počet mil" type="numeric"/>
+            <field uid="5" label="Webová stránka" type="url"/>
+            <field uid="6" label="Uživatelské jméno" type="username"/>
+            <field uid="7" label="Heslo" type="password" sensitive="true"/>
+            <field uid="9" label="Zákaznická podpora" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="Rezervace hotelu" iconid="27">
+            <field uid="0" label="Název hotelu" type="text"/>
+            <field uid="4" label="Číslo pokoje" type="numeric"/>
+            <field uid="1" label="Adresa" type="text"/>
+            <field uid="2" label="KÓD rezervace" type="numeric"/>
+            <field uid="3" label="Datum" type="date"/>
+            <field uid="5" label="Počet nocí" type="numeric"/>
+            <field uid="15" label="Odměna Hotelu" type="numeric"/>
+            <field uid="7" label="Telefon" type="phone"/>
+            <field uid="8" label="E-mail" type="email"/>
+            <field uid="9" label="Webová stránka" type="url"/>
+            <field uid="10" label="Uživatelské jméno" type="username"/>
+            <field uid="11" label="Heslo" type="password" sensitive="true"/>
+            <field uid="13" label="Recepce" type="text"/>
+            <field uid="14" label="Restaurace" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="Detaily letu" iconid="38">
+            <field uid="2" label="Číslo letu" type="numeric"/>
+            <field uid="0" label="Letecká společnost" type="text"/>
+            <field uid="1" label="Datum" type="date"/>
+            <field uid="3" label="Z" type="text"/>
+            <field uid="4" label="Do" type="text"/>
+            <field uid="5" label="Čas/Východ" type="text"/>
+            <field uid="6" label="Číslo elektronické letenky" type="numeric"/>
+            <field uid="7" label="Rezervační kód" type="numeric"/>
+            <field uid="10" label="Webová stránka" type="url"/>
+            <field uid="11" label="Uživatelské jméno" type="username"/>
+            <field uid="12" label="Heslo" type="password" sensitive="true"/>
+            <field uid="9" label="Telefon" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="Jíný druh dopravy" iconid="125">
+            <field uid="0" label="Pole 1" type="text"/>
+            <field uid="1" label="Pole 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Různé" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="Velikost oblečení" iconid="23">
+            <field uid="9" label="Jméno" type="text"/>
+            <field uid="0" label="Oblek" type="text"/>
+            <field uid="1" label="Obuv" type="text"/>
+            <field uid="2" label="Tričko" type="text"/>
+            <field uid="3" label="Kalhoty" type="text"/>
+            <field uid="4" label="Vnitřní šev" type="text"/>
+            <field uid="5" label="Sukně" type="text"/>
+            <field uid="6" label="Rukavice" type="text"/>
+            <field uid="7" label="Pas" type="text"/>
+            <field uid="8" label="Krk" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="Kombinační zámek" iconid="61">
+            <field uid="0" label="Umístění" type="text"/>
+            <field uid="1" label="Kód" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="Předpis" iconid="40">
+            <field uid="2" label="Lékař" type="text"/>
+            <field uid="0" label="Číslo předpisu" type="text"/>
+            <field uid="1" label="Jméno" type="text"/>
+            <field uid="3" label="Lékárna" type="text"/>
+            <field uid="4" label="Telefon" type="phone"/>
+            <field uid="6" label="Značka" type="text"/>
+            <field uid="7" label="Lék" type="text"/>
+            <field uid="8" label="Množství" type="numeric"/>
+            <field uid="9" label="Dávkování" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="Předpis na čočky" iconid="26">
+            <field uid="0" label="Typ" type="text"/>
+            <field uid="1" label="Pravé(OD)" type="numeric"/>
+            <field uid="2" label="Levé(OS)" type="numeric"/>
+            <field uid="3" label="Lékař" type="text"/>
+            <field uid="4" label="Telefon" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="Registrační kód" iconid="66">
+            <field uid="2" label="Jméno" type="text"/>
+            <field uid="0" label="Číslo" type="numeric" sensitive="true"/>
+            <field uid="1" label="Datum" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="Informace o vozidle" iconid="25">
+            <field uid="3" label="Registrační číslo" type="text"/>
+            <field uid="11" label="Vlastník" type="text"/>
+            <field uid="0" label="Model" type="text"/>
+            <field uid="12" label="Typ vozidla" type="text"/>
+            <field uid="13" label="Datum koupě" type="date"/>
+            <field uid="1" label="Tovární značka" type="text"/>
+            <field uid="2" label="Rok" type="numeric"/>
+            <field uid="4" label="VIN" type="text"/>
+            <field uid="5" label="Servisní telefon" type="phone"/>
+            <field uid="14" label="Telefon asistenční služby" type="phone"/>
+            <field uid="16" label="Poskytovatel pojištění" type="text"/>
+            <field uid="7" label="Pojistná částka" type="text"/>
+            <field uid="8" label="Číslo pojistky" type="numeric"/>
+            <field uid="10" label="Datum vypršení" type="date"/>
+            <field uid="9" label="Telefon pojišťovny" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="Hlasová schránka" iconid="62">
+            <field uid="0" label="Přístupové číslo" type="numeric"/>
+            <field uid="1" label="PIN" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="Adresa" iconid="31">
+            <field uid="0" label="Jméno" type="text"/>
+            <field uid="1" label="Číslo dveří" type="text"/>
+            <field uid="2" label="Ulice" type="text"/>
+            <field uid="3" label="Městská část" type="text"/>
+            <field uid="4" label="Město" type="text"/>
+            <field uid="5" label="Stát" type="text"/>
+            <field uid="6" label="PSČ" type="text"/>
+            <field uid="7" label="Země" type="text"/>
+            <field uid="9" label="Telefon" type="phone"/>
+            <field uid="10" label="E-mail" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="Kontakt" iconid="47">
+            <field uid="0" label="Křestní jméno" type="text"/>
+            <field uid="1" label="Příjmení" type="text"/>
+            <field uid="2" label="Společnost" type="text"/>
+            <field uid="3" label="Pevná linka" type="phone"/>
+            <field uid="4" label="Mobilní telefon" type="phone"/>
+            <field uid="5" label="Telefon (práce)" type="phone"/>
+            <field uid="6" label="E-mail" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="Nouzová telefonní čísla" iconid="28">
+            <field uid="0" label="Policie" type="phone"/>
+            <field uid="1" label="Hasiči" type="phone"/>
+            <field uid="2" label="Zdravotnická záchranná služba" type="phone"/>
+            <field uid="3" label="Lékař" type="phone"/>
+            <field uid="4" label="Zubař" type="phone"/>
+            <field uid="5" label="Veterinář" type="phone"/>
+            <field uid="6" label="Dodavatel elektřiny" type="phone"/>
+            <field uid="7" label="Dodavatel plynu" type="phone"/>
+            <field uid="8" label="Telefonní společnost" type="phone"/>
+            <field uid="9" label="Pronajímatel" type="phone"/>
+            <field uid="10" label="Jiné" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="Číslo Sociálního Pojištění" iconid="64">
+            <field uid="1" label="Číslo" type="numeric"/>
+            <field uid="0" label="Jméno" type="text"/>
+            <field uid="2" label="Datum" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="Věrnostní program" iconid="24">
+            <field uid="0" label="Společnost" type="text"/>
+            <field uid="1" label="Jméno" type="text"/>
+            <field uid="10" label="ID Člena" type="text"/>
+            <field uid="2" label="Číslo" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="5" label="Číslo 2" type="numeric"/>
+            <field uid="6" label="Od" type="date"/>
+            <field uid="7" label="Linka pomoci" type="phone"/>
+            <field uid="8" label="Rezervace telefon" type="phone"/>
+            <field uid="9" label="Webová stránka" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="Sériové číslo" iconid="32">
+            <field uid="1" label="Sériový" type="text" sensitive="true"/>
+            <field uid="0" label="Značka" type="text"/>
+            <field uid="2" label="Model" type="text"/>
+            <field uid="3" label="Cena" type="numeric"/>
+            <field uid="4" label="Koupeno" type="date"/>
+            <field uid="6" label="Záruka" type="date"/>
+            <field uid="5" label="Umístění" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="Informace o nemovitosti" iconid="70">
+            <field uid="0" label="Vlastník" type="text"/>
+            <field uid="1" label="Adresa" type="text"/>
+            <field uid="2" label="Typ" type="text"/>
+            <field uid="3" label="Výše údržby" type="numeric"/>
+            <field uid="5" label="ID Nemovitosti" type="text"/>
+            <field uid="6" label="Úhrn daně" type="numeric"/>
+            <field uid="7" label="Datum splatnosti daně" type="date"/>
+            <field uid="8" label="Webová stránka" type="url"/>
+            <field uid="9" label="Uživatelské jméno" type="username"/>
+            <field uid="10" label="Heslo" type="password" sensitive="true"/>
+            <field uid="12" label="Pojištění" type="text"/>
+            <field uid="13" label="Prémiové pojištění" type="numeric"/>
+            <field uid="14" label="Číslo pojistky" type="numeric"/>
+            <field uid="15" label="Datum vypršení" type="date"/>
+            <field uid="16" label="Linka pomoci Pojištění" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="Volací karta" iconid="54">
+            <field uid="1" label="Přístupové číslo" type="phone"/>
+            <field uid="0" label="Poskytovatel" type="text"/>
+            <field uid="2" label="Číslo Karty" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="Tepová frekvence" type="numeric"/>
+            <field uid="5" label="Datum vypršení" type="date"/>
+            <field uid="6" label="Použití" type="numeric"/>
+            <field uid="8" label="Webová stránka" type="url"/>
+            <field uid="9" label="Uživatelské jméno" type="username"/>
+            <field uid="10" label="Heslo" type="password" sensitive="true"/>
+            <field uid="11" label="Při ztrátě volejte" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="Průkaz totožnosti" iconid="59">
+            <field uid="2" label="Číslo OP" type="numeric"/>
+            <field uid="0" label="Titul" type="text"/>
+            <field uid="1" label="Celé jméno" type="text"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="Země" type="text"/>
+            <field uid="5" label="Vydáno na" type="date"/>
+            <field uid="6" label="Datum vypršení" type="date"/>
+            <field uid="7" label="Při ztrátě volejte" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="ISIC karta" iconid="65">
+            <field uid="2" label="Číslo karty" type="numeric"/>
+            <field uid="0" label="Studuje na" type="text"/>
+            <field uid="1" label="Celé jméno" type="text"/>
+            <field uid="3" label="Narozen" type="date"/>
+            <field uid="4" label="Vydáno na" type="date"/>
+            <field uid="5" label="Datum vypršení" type="date"/>
+            <field uid="6" label="Při ztrátě volejte" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="Karta ITIC" iconid="41">
+            <field uid="2" label="Číslo Karty" type="numeric"/>
+            <field uid="0" label="Vyučuje na" type="text"/>
+            <field uid="1" label="Celé jméno" type="text"/>
+            <field uid="3" label="Narozen" type="date"/>
+            <field uid="4" label="Vydáno na" type="date"/>
+            <field uid="5" label="Datum vypršení" type="date"/>
+            <field uid="6" label="Při ztrátě volejte" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="Čtenářský průkaz" iconid="58">
+            <field uid="1" label="Číslo Karty" type="numeric"/>
+            <field uid="0" label="Knihovna" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Hodiny" type="numeric"/>
+            <field uid="4" label="Adresa" type="text"/>
+            <field uid="5" label="Vydáno na" type="date"/>
+            <field uid="6" label="Datum vypršení" type="date"/>
+            <field uid="8" label="Webová stránka" type="url"/>
+            <field uid="9" label="Uživatelské jméno" type="username"/>
+            <field uid="10" label="Heslo" type="password" sensitive="true"/>
+            <field uid="11" label="Při ztrátě volejte" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="Volební karta" iconid="69">
+            <field uid="0" label="Celé jméno" type="text"/>
+            <field uid="1" label="ID Voliče" type="numeric"/>
+            <field uid="2" label="Adresa" type="text"/>
+            <field uid="3" label="Volební okrsek" type="text"/>
+            <field uid="4" label="Umístění" type="text"/>
+            <field uid="5" label="Kongres" type="text"/>
+            <field uid="6" label="Státní senát" type="text"/>
+            <field uid="7" label="Zastupitel" type="text"/>
+            <field uid="8" label="Adresa" type="text"/>
+            <field uid="9" label="Vydáno na" type="date"/>
+            <field uid="11" label="Webová stránka" type="url"/>
+            <field uid="12" label="Uživatelské jméno" type="username"/>
+            <field uid="13" label="Heslo" type="password" sensitive="true"/>
+            <field uid="14" label="Při ztrátě volejte" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="ITZ karta" iconid="67">
+            <field uid="1" label="Číslo Karty" type="numeric"/>
+            <field uid="0" label="Vlastník" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Hodnota" type="numeric"/>
+            <field uid="4" label="Datum vypršení" type="date"/>
+            <field uid="5" label="Použití" type="numeric"/>
+            <field uid="7" label="Webová stránka" type="url"/>
+            <field uid="8" label="Uživatelské jméno" type="username"/>
+            <field uid="9" label="Heslo" type="password" sensitive="true"/>
+            <field uid="10" label="Při ztrátě volejte" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="Členská karta" iconid="46">
+            <field uid="1" label="ID Člena" type="numeric"/>
+            <field uid="10" label="Jméno člena" type="text"/>
+            <field uid="0" label="Organizace" type="text"/>
+            <field uid="11" label="Skupina" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Telefon" type="phone"/>
+            <field uid="12" label="Členem od" type="date"/>
+            <field uid="4" label="Datum vypršení" type="date"/>
+            <field uid="6" label="Webová stránka" type="url"/>
+            <field uid="7" label="Uživatelské jméno" type="username"/>
+            <field uid="8" label="Heslo" type="password" sensitive="true"/>
+            <field uid="13" label="E-mail" type="email"/>
+            <field uid="9" label="Při ztrátě volejte" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="PAN karta" iconid="68">
+            <field uid="3" label="Číslo" type="numeric"/>
+            <field uid="0" label="Jméno" type="text"/>
+            <field uid="1" label="Jméno otce" type="text"/>
+            <field uid="2" label="Datum narození" type="date"/>
+            <field uid="5" label="Webová stránka" type="url"/>
+            <field uid="6" label="Uživatelské jméno" type="username"/>
+            <field uid="7" label="Heslo" type="password" sensitive="true"/>
+            <field uid="8" label="Při ztrátě volejte" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="Info o mobilním telefonu" iconid="120">
+            <field uid="0" label="Model Sluchátka" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="Kód zámku" type="numeric" sensitive="true"/>
+            <field uid="5" label="Typ SIM" type="text"/>
+            <field uid="6" label="Číslo SIM" type="numeric"/>
+            <field uid="7" label="PIN" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="Koupeno" type="date"/>
+            <field uid="10" label="Záruka" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="Poskytovatel služeb" iconid="121">
+            <field uid="0" label="Poskytovatel" type="text"/>
+            <field uid="1" label="Typ služby" type="text"/>
+            <field uid="2" label="ID zákazníka" type="text"/>
+            <field uid="3" label="ID odběru" type="numeric"/>
+            <field uid="4" label="Adresa" type="text"/>
+            <field uid="5" label="Webová stránka" type="url"/>
+            <field uid="6" label="Uživatelské jméno" type="username"/>
+            <field uid="7" label="Přihlašovací heslo" type="password" sensitive="true"/>
+            <field uid="8" label="Linka pomoci" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="Další Různé" iconid="126">
+            <field uid="0" label="Pole 1" type="text"/>
+            <field uid="1" label="Pole 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="Pohlaví" value="male" type="sex_options"/>
+            <field uid="4" label="Datum narození" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="Společnost" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="Adresa" type="address_firstline"/>
+            <field uid="10" label="Ulice" type="address_street"/>
+            <field uid="11" label="Město" type="address_city"/>
+            <field uid="12" label="Stát" type="address_state"/>
+            <field uid="13" label="PSČ" type="address_zip"/>
+            <field uid="14" label="Země" value="US" type="country_options"/>
+            <field uid="15" label="Telefon" type="phone"/>
+            <field uid="16" label="Bezpečnostní otázka" type="text"/>
+            <field uid="17" label="Bezpečnostní odpověď" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

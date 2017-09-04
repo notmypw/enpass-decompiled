@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <raw name="android_wear_micro_apk">res/raw/android_wear_micro_apk.apk</raw>
+    <raw name="index">res/raw/index.html</raw>
+    <raw name="post">res/raw/post.html</raw>
+    <raw name="sample_data">res/raw/sample_data.xml</raw>
+    <raw name="soundrrror">res/raw/soundrrror.wav</raw>
+    <raw name="soundunlock">res/raw/soundunlock.wav</raw>
+    <raw name="templates">res/raw/templates.xml</raw>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" fab:id="@+id/commonListContainer" fab:layout_width="match_parent" fab:layout_height="match_parent">
+    <in.sinew.enpass.headerlistview.PinnedHeaderListView fab:id="0x102000a" fab:background="@drawable/pin_header_bg_color" fab:layout_width="match_parent" fab:layout_height="match_parent" fab:listSelector="@drawable/listview_selector" fab:scrollingCache="false" fab:cacheColorHint="0x106000d" fab:divider="@locationawarelogger/TRACE_INT" fab:dividerHeight="0px" fab:fastScrollEnabled="true" fab:fadeScrollbars="false" />
+    <ImageButton fab:id="@+id/add_category_button" fab:background="@drawable/add_item_button" fab:layout_width="UNKNOWN_DATA_0x3c01" fab:layout_height="UNKNOWN_DATA_0x3c01" fab:layout_marginRight="20dp" fab:layout_marginBottom="10dp" fab:src="@drawable/ic_add_white" fab:tint="0x106000b" fab:layout_alignParentRight="true" fab:layout_alignParentBottom="true" />
+    <include fab:id="@+id/emptyIndicator" layout="@layout/empty_indicator" />
+</RelativeLayout>

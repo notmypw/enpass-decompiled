@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="10dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3c01">
+    <ImageView android:id="@+id/choose_card_icon" android:layout_width="UNKNOWN_DATA_0x2801" android:layout_height="UNKNOWN_DATA_0x2801" android:src="@drawable/ic_launcher" android:layout_alignParentLeft="true" />
+    <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:ellipsize="end" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/choose_card_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="choose cards" android:layout_toRightOf="@+id/choose_card_icon" android:layout_centerVertical="true" android:fontFamily="sans-serif-light" />
+    <ImageView android:id="@+id/choose_card_forword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/forward" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

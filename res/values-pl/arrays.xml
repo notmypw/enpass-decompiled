@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="auto_lock_interval_entries">
+        <item>30 Sekund bezczynności</item>
+        <item>1 Minut bezczynności</item>
+        <item>5 Minut bezczynności</item>
+        <item>10 Minut bezczynności</item>
+        <item>30 Minut bezczynności</item>
+        <item>1 Godzina bezczynności</item>
+        <item>5 Godzin bezczynności</item>
+        <item>12 Godzin bezczynności</item>
+    </array>
+    <array name="auto_lock_interval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="browser_package_names">
+        <item>com.android.chrome</item>
+        <item>com.chrome.beta</item>
+        <item>com.google.android.browser</item>
+        <item>mobi.mgeek.TunnyBrowser</item>
+        <item>com.dolphin.browser.zero</item>
+        <item>com.opera.browser</item>
+        <item>com.opera.mini.android</item>
+        <item>com.nubelacorp.javelin</item>
+        <item>com.cloudmosa.puffinFree</item>
+        <item>com.cloudmosa.puffin</item>
+        <item>com.UCMobile.intl</item>
+        <item>com.uc.browser.en</item>
+        <item>com.uc.browser.hd</item>
+        <item>org.mozilla.firefox</item>
+        <item>org.mozilla.firefox_beta</item>
+        <item>com.ksmobile.cb</item>
+        <item>com.jiubang.browser</item>
+        <item>com.mx.browser</item>
+        <item>com.chrome.dev</item>
+    </array>
+    <array name="clearclipboard_intervals">
+        <item>30 Sekund</item>
+        <item>1 Minuta</item>
+        <item>2 Minuty</item>
+        <item>5 Minut</item>
+        <item>Nigdy</item>
+    </array>
+    <array name="clearclipboard_intervals_num">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="default_search_engine_entry_list">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>Yahoo</item>
+        <item>Ask</item>
+        <item>Baidu</item>
+        <item>DuckDuckGo</item>
+        <item>Qwant</item>
+    </array>
+    <array name="default_search_engine_values_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="detailopenLinkInEntries">
+        <item>Przeglądarka Enpass</item>
+        <item>Domyślna przeglądarka</item>
+    </array>
+    <array name="dropdown">
+        <item>Wszystkie elementy</item>
+        <item>Ulubione</item>
+        <item>Foldery</item>
+        <item>KATEGORIE</item>
+        <item>Login</item>
+        <item>Karta Kredytowa</item>
+        <item>Finanse</item>
+        <item>Komputer</item>
+        <item>Licencja</item>
+        <item>Hasło</item>
+        <item>Bezpieczne Notatki</item>
+        <item>Podróże</item>
+        <item>Różne</item>
+    </array>
+    <array name="new_features_array">
+        <item>Szybkie Odblokowanie PIN</item>
+        <item>Przeglądarka z wieloma kartami</item>
+        <item>Ulepszony Generator Haseł</item>
+        <item>Dodano obsługę synchronizacji dla Box</item>
+        <item>Więcej opcji personalizacji</item>
+    </array>
+    <array name="openLinkInEntries">
+        <item>Pytaj za każdym razem</item>
+        <item>Przeglądarka Enpass</item>
+        <item>Domyślna przeglądarka</item>
+    </array>
+    <array name="openLinkInValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="searchInCards_entries">
+        <item>Tylko Tytuł</item>
+        <item>Wszystkie Pola</item>
+    </array>
+    <array name="searchInCards_values">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="seprator_list">
+        <item>Przecinek</item>
+        <item>Dolar</item>
+        <item>Kratka</item>
+        <item>Łącznik</item>
+        <item>Kropka</item>
+        <item>Spacja</item>
+        <item>Podkreślnik</item>
+    </array>
+    <array name="sex">
+        <item>Mężczyzna</item>
+        <item>Kobieta</item>
+    </array>
+    <array name="trail_version_text_array">
+        <item>Darmowa Wersję Desktop na swoim komputerze.</item>
+        <item>Enpass na twoich pozostałych urzadzeniach mobilnych.</item>
+        <item>Synchronizacja danych między wieloma urzadzeniami za pośrednictwem konta na iCloud, Dropbox, Box, Google Drive i One Drive.</item>
+    </array>
+</resources>

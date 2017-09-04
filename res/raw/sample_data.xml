@@ -1,0 +1,101 @@
+<walletx>
+    
+    <category name="Login" type="login" iconid="1001">
+        <card templatetype="login.default" name="Google (Sample)" iconid="3">
+            <field uid="10" label="Username" type="username" value=""/>
+            <field uid="12" label="Email" type="email" value="s.smithpaull@gmail.com"/>
+            <field uid="11" label="Password" type="password" sensitive="true" value="ktf2fi4aT(y_q22wBytu"/>
+            <field uid="14" label="Phone" type="phone"/>
+            <field uid="13" label="Url" type="url" value="www.google.com"/>
+            <field uid="15" label="Security question" type="text" value="What is your first pet name?"/>
+            <field uid="16" label="Security answer" type="text" sensitive="true" value="Ben"/>
+        </card>
+        <card templatetype="login.default" name="Twitter (Sample)" iconid="2">
+            <field uid="10" label="Username" type="username" value=""/>
+            <field uid="12" label="Email" type="email" value="s.smithpaull@gmail.com"/>
+            <field uid="11" label="Password" type="password" sensitive="true" value="Sage-tint-school-peg-soot"/>
+            <field uid="14" label="Phone" type="phone" value="+1234569872"/>
+            <field uid="13" label="Url" type="url" value="www.twitter.com"/>
+            <field uid="15" label="Security question" type="text"/>
+            <field uid="16" label="Security answer" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="Credit card" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="Credit card (Sample)" iconid="13">
+            <field uid="0" label="Cardholder" type="cardholder_name" value="Paull Smith"/>
+            <field uid="17" label="Type" value="visa-Visa Card" type="cardtype_options"/>
+            <field uid="1" label="Number" type="card_number" value="4455 2211 4455 2211"/>
+            <field uid="2" label="CVC" type="card_cvc" sensitive="true" value="102"/>
+            <field uid="3" label="PIN" type="card_pin" sensitive="true" value="9512"/>
+            <field uid="4" label="Expiry date" type="expiry_date" value="07/20"/>
+            <field uid="18" label="Valid from" type="date" value="06/17"/>
+            <field uid="10" label="Credit limit" type="numeric" value="60000"/>
+            <field uid="11" label="Withdrawal limit" type="numeric" value="20000"/>
+            <field uid="12" label="Interest rate" type="numeric" value="10.6"/>
+            <field uid="6" label="Issuing bank" type="bank_name" value="Citi"/>
+            <field uid="14" label="Website" type="url"/>
+            <field uid="15" label="Username" type="username" value="Paull_1258"/>
+            <field uid="16" label="Login password" type="password" sensitive="true" value="fkicvdmy8fA4w-k"/>
+            <field uid="9" label="Transaction password" type="txn_password" sensitive="true" value="5ifqd@vv8Mudrui"/>
+            <field uid="7" label="Issued on" type="date" value="15/06/2017"/>
+            <field uid="8" label="If lost, call" type="phone" value="+1234569872"/>
+        </card>
+    </category>
+    
+    <category name="Finance" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="Bank account (Sample)" iconid="45">
+            <field uid="4" label="Bank name" type="bank_name" value=""/>
+            <field uid="0" label="Account holder" type="cardholder_name" value="Paull Smith"/>
+            <field uid="1" label="Type" type="text" value="Savings"/>
+            <field uid="2" label="Account number" type="numeric" value="2211 3344 5566 9900"/>
+            <field uid="16" label="Customer ID" type="text" value="25146358"/>
+            <field uid="5" label="Routing number" type="numeric" value="123456"/>
+            <field uid="6" label="Branch name" type="text" value="New York"/>
+            <field uid="7" label="Branch code" type="numeric" value="122331"/>
+            <field uid="8" label="SWIFT" type="text" value="CITIABC000"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="Branch address" type="text" value="Town street, New York"/>
+            <field uid="25" label="Branch phone" type="phone" value="+1589748985"/>
+            <field uid="11" label="Debit Card number" type="card_number" value="1111 2345 6789 0000"/>
+            <field uid="26" label="Type" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="PIN" type="card_pin" sensitive="true" value="3580"/>
+            <field uid="14" label="CVV" type="card_cvc" sensitive="true" value="513"/>
+            <field uid="13" label="Expiry date" type="expiry_date" value="01/20"/>
+            <field uid="27" label="Withdrawal limit" type="numeric"/>
+            <field uid="17" label="Website" type="url"/>
+            <field uid="18" label="Username" type="username"/>
+            <field uid="19" label="Login password" type="password" sensitive="true"/>
+            <field uid="20" label="Transaction password" type="txn_password" sensitive="true"/>
+            <field uid="22" label="Helpline" type="phone"/>
+            <field uid="23" label="T-PIN" type="pin" sensitive="true"/>
+            
+        </card>
+    </category>
+
+ <category name="Secure note" type="note" iconid="1007">
+        <card templatetype="note.default" name="Note (Sample)" iconid="22" note="This is a sample note.">
+        </card>
+    </category>
+
+ <category name="Travel" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="Passport (Sample)" iconid="37">
+            <field uid="2" label="Number" type="text" value="US112233 "/>
+            <field uid="0" label="Full name" type="text" value="Paull Smith"/>
+            <field uid="14" label="Sex" type="text" value="Male"/>
+            <field uid="1" label="Type" type="text"/>
+            <field uid="15" label="Nationality" type="text"/>
+            <field uid="4" label="Birth place" type="text"/>
+            <field uid="5" label="Birthday" type="date" value="01/01/1980" />
+            <field uid="6" label="Issued at" type="text"/>
+            <field uid="7" label="Issued on" type="date" value="12/12/2007"/>
+            <field uid="8" label="Expiry date" type="date" value="12/12/2017"/>
+            <field uid="9" label="Issuing country" type="text"/>
+            <field uid="10" label="Authority" type="text"/>
+            <field uid="12" label="Replacements" type="text"/>
+            <field uid="13" label="If lost, call" type="phone"/>
+        </card>
+    </category>
+    
+</walletx>
+

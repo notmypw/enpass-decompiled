@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="auto_lock_interval_entries">
+        <item>30 Segons d&apos;inactivitat</item>
+        <item>1 Minut d&apos;inactivitat</item>
+        <item>5 Minuts d&apos;inactivitat</item>
+        <item>10 Minuts d&apos;inactivitat</item>
+        <item>30 Minuts d&apos;inactivitat</item>
+        <item>1 Hora d&apos;inactivitat</item>
+        <item>5 Hores d&apos;inactivitat</item>
+        <item>12 Hores d&apos;inactivitat</item>
+    </array>
+    <array name="auto_lock_interval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="browser_package_names">
+        <item>com.android.chrome</item>
+        <item>com.chrome.beta</item>
+        <item>com.google.android.browser</item>
+        <item>mobi.mgeek.TunnyBrowser</item>
+        <item>com.dolphin.browser.zero</item>
+        <item>com.opera.browser</item>
+        <item>com.opera.mini.android</item>
+        <item>com.nubelacorp.javelin</item>
+        <item>com.cloudmosa.puffinFree</item>
+        <item>com.cloudmosa.puffin</item>
+        <item>com.UCMobile.intl</item>
+        <item>com.uc.browser.en</item>
+        <item>com.uc.browser.hd</item>
+        <item>org.mozilla.firefox</item>
+        <item>org.mozilla.firefox_beta</item>
+        <item>com.ksmobile.cb</item>
+        <item>com.jiubang.browser</item>
+        <item>com.mx.browser</item>
+        <item>com.chrome.dev</item>
+    </array>
+    <array name="clearclipboard_intervals">
+        <item>30 Segons</item>
+        <item>1 Minut</item>
+        <item>2 minuts</item>
+        <item>5 minuts</item>
+        <item>Mai</item>
+    </array>
+    <array name="clearclipboard_intervals_num">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="default_search_engine_entry_list">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>Yahoo</item>
+        <item>Ask</item>
+        <item>Baidu</item>
+        <item>DuckDuckGo</item>
+        <item>Qwant</item>
+    </array>
+    <array name="default_search_engine_values_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="detailopenLinkInEntries">
+        <item>Navegador Enpass</item>
+        <item>Navegador per defecte</item>
+    </array>
+    <array name="dropdown">
+        <item>Tots els Ítems</item>
+        <item>Favorits</item>
+        <item>Carpetes</item>
+        <item>CATEGORIES</item>
+        <item>Inici de Sessió</item>
+        <item>Tarjeta de Crèdit</item>
+        <item>Finances</item>
+        <item>Ordinador</item>
+        <item>Llicència</item>
+        <item>Contrasenya</item>
+        <item>Talonari</item>
+        <item>Viatge</item>
+        <item>Miscel·lània</item>
+    </array>
+    <array name="new_features_array">
+        <item>Desbloqueig ràpid PIN</item>
+        <item>Navegador multi pestanya</item>
+        <item>Generador de Contrasenyes Millorat</item>
+        <item>Afegit suport per a la sincronització amb Box</item>
+        <item>Més opcions de personalització</item>
+    </array>
+    <array name="openLinkInEntries">
+        <item>Pregunta-ho sempre</item>
+        <item>Navegador Enpass</item>
+        <item>Navegador per defecte</item>
+    </array>
+    <array name="openLinkInValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="searchInCards_entries">
+        <item>Només Títols</item>
+        <item>Tots els Camps</item>
+    </array>
+    <array name="searchInCards_values">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="seprator_list">
+        <item>Coma</item>
+        <item>Dòlar</item>
+        <item>Hash</item>
+        <item>Guió</item>
+        <item>Punt</item>
+        <item>Espai</item>
+        <item>Guió baix</item>
+    </array>
+    <array name="sex">
+        <item>Home</item>
+        <item>Dona</item>
+    </array>
+    <array name="trail_version_text_array">
+        <item></item>
+        <item>Enpass en altres dispositius que utilitzes.</item>
+        <item>Sincronització de dades a través de múltiples dispositius utilitzant els teus propis compltes al núvol a iCloud, Dropbox, Box, Google Drive i OneDrive.</item>
+    </array>
+</resources>

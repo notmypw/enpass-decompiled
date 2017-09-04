@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <animator name="close_slide_down">res/animator/close_slide_down.xml</animator>
+    <animator name="close_slide_up">res/animator/close_slide_up.xml</animator>
+    <animator name="in_from_left">res/animator/in_from_left.xml</animator>
+    <animator name="in_from_right">res/animator/in_from_right.xml</animator>
+    <animator name="move_left">res/animator/move_left.xml</animator>
+    <animator name="move_right">res/animator/move_right.xml</animator>
+    <animator name="open_slide_down">res/animator/open_slide_down.xml</animator>
+    <animator name="open_slide_up">res/animator/open_slide_up.xml</animator>
+    <animator name="out_to_left">res/animator/out_to_left.xml</animator>
+    <animator name="out_to_right">res/animator/out_to_right.xml</animator>
+    <animator name="rotate_anticlock">res/animator/rotate_anticlock.xml</animator>
+    <animator name="rotate_clockwise">res/animator/rotate_clockwise.xml</animator>
+    <animator name="shake">res/animator/shake.xml</animator>
+    <animator name="slide_left_in">res/animator/slide_left_in.xml</animator>
+    <animator name="slide_left_out">res/animator/slide_left_out.xml</animator>
+    <animator name="slide_right_in">res/animator/slide_right_in.xml</animator>
+    <animator name="slide_right_out">res/animator/slide_right_out.xml</animator>
+</resources>

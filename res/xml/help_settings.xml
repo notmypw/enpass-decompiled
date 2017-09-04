@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/user_manual" android:key="user_manual" />
+    <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/faq" android:key="faq" />
+    <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/bolg_title" android:key="blog" />
+    <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/forum" android:key="forum" />
+    <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/write_to_us_title" android:key="writeToUs" android:summary="@string/write_to_us_summ" />
+</PreferenceScreen>

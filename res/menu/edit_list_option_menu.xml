@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:icon="@drawable/ic_action_add" app:id="@+id/menu_edit_list_addField" app:title="@string/add_field" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:icon="@locationawarelogger/TRACE_INT" app:id="@+id/menu_edit_list_totp" app:visible="false" app:title="@string/add_totp" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:icon="@locationawarelogger/TRACE_INT" app:id="@+id/menu_edit_list_addAttachment" app:title="@string/add_attachment" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:icon="@locationawarelogger/TRACE_INT" app:id="@+id/menu_edit_list_chromebookAddAttachment" app:title="@string/chromebook_add_attachment" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:icon="@locationawarelogger/TRACE_INT" app:id="@+id/menu_edit_reorder_fields" app:title="@string/menu_edit_reorder_fields_title" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:icon="0x108002c" app:id="@+id/menu_edit_list_cancel" app:title="@string/menu_edit_cancel" app:showAsAction="UNKNOWN_DATA_0x0" />
+</menu>

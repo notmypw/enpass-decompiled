@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="Логін" type="login" iconid="1001">
+        <card templatetype="login.default" name="Логін" iconid="21">
+            <field uid="10" label="Ім'я користувача" type="username"/>
+            <field uid="12" label="Email" type="email"/>
+            <field uid="11" label="Пароль" type="password" sensitive="true"/>
+            <field uid="14" label="Телефон" type="phone"/>
+            <field uid="13" label="URL-адреса" type="url"/>
+            <field uid="15" label="Контрольне запитання" type="text"/>
+            <field uid="16" label="Відповідь на контрольне запитання" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="Кредитна картка" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="Кредитна картка" iconid="20">
+            <field uid="0" label="Власник картки" type="cardholder_name"/>
+            <field uid="17" label="Тип" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="Номер" type="card_number"/>
+            <field uid="2" label="CVC" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="ПІН" type="card_pin" sensitive="true"/>
+            <field uid="4" label="Термін дії" type="expiry_date"/>
+            <field uid="18" label="Дійсний з" type="date"/>
+            <field uid="10" label="Кредитний ліміт" type="numeric"/>
+            <field uid="11" label="Обмеження на зняття готiвки" type="numeric"/>
+            <field uid="12" label="Процентна ставка" type="numeric"/>
+            <field uid="6" label="Банк-емітент" type="bank_name"/>
+            <field uid="14" label="Веб-сайт" type="url"/>
+            <field uid="15" label="Ім'я користувача" type="username"/>
+            <field uid="16" label="Логін пароль" type="password" sensitive="true"/>
+            <field uid="9" label="Пароль транзакції" type="txn_password" sensitive="true"/>
+            <field uid="7" label="Видана" type="date"/>
+            <field uid="8" label="У випадку втрати, дзвоніть" type="phone"/>
+        </card>
+    </category>
+
+    <category name="Фінанси" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="Банківський рахунок" iconid="45">
+            <field uid="4" label="Назва банку" type="bank_name"/>
+            <field uid="0" label="Власник рахунку" type="cardholder_name"/>
+            <field uid="1" label="Тип" type="text"/>
+            <field uid="2" label="Номер рахунку" type="numeric"/>
+            <field uid="16" label="ID користувача" type="text"/>
+            <field uid="5" label="Номер маршрутизації" type="numeric"/>
+            <field uid="6" label="Назва філіалу" type="text"/>
+            <field uid="7" label="Код філіалу" type="numeric"/>
+            <field uid="8" label="SWIFT" type="text"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="Адреса філіалу" type="text"/>
+            <field uid="25" label="Телефон філіалу" type="phone"/>
+            
+            <field uid="11" label="Номер дебетової картки" type="card_number"/>
+            <field uid="26" label="Тип" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="14" label="CVV" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="Термін дії" type="expiry_date"/>
+            <field uid="27" label="Обмеження на зняття готiвки" type="numeric"/>
+            
+            <field uid="17" label="Веб-сайт" type="url"/>
+            <field uid="18" label="Ім'я користувача" type="username"/>
+            <field uid="19" label="Логін пароль" type="password" sensitive="true"/>
+            <field uid="20" label="Пароль транзакції" type="txn_password" sensitive="true"/>
+            <field uid="22" label="Телефон служби підтримки" type="phone"/>
+            <field uid="23" label="T-ПIH" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="Страховий поліс" iconid="33">
+            <field uid="1" label="Назва полісу" type="text"/>
+            <field uid="0" label="Компанія" type="text"/>
+            <field uid="19" label="Страхувальник" type="text"/>
+            <field uid="2" label="Номер" type="numeric"/>
+            <field uid="3" label="Тип" type="text"/>
+            <field uid="5" label="Преміум" type="numeric"/>
+            <field uid="6" label="Сума страхування" type="numeric"/>
+            <field uid="7" label="Дата випуску" type="date"/>
+            <field uid="18" label="Дата завершення строку дії" type="date"/>
+            <field uid="8" label="Термін дії" type="date"/>
+            <field uid="9" label="Термін" type="numeric"/>
+            <field uid="20" label="Номінант" type="text"/>
+            <field uid="11" label="ID користувача" type="numeric"/>
+            <field uid="12" label="Веб-сайт" type="url"/>
+            <field uid="13" label="Ім'я користувача" type="username"/>
+            <field uid="14" label="Пароль" type="password" sensitive="true"/>
+            <field uid="16" label="Ім'я агента" type="text"/>
+            <field uid="17" label="Телефон служби підтримки" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="Інвестиції у товарні запаси" iconid="34">
+            <field uid="2" label="Символ" type="text"/>
+            <field uid="0" label="Номер рахунку" type="numeric"/>
+            <field uid="1" label="Тип" type="text"/>
+            <field uid="3" label="Ринок" type="text"/>
+            <field uid="5" label="Засновано у" type="date"/>
+            <field uid="6" label="Придбано" type="date"/>
+            <field uid="7" label="Покупна вартість" type="numeric"/>
+            <field uid="8" label="Кількість" type="numeric"/>
+            <field uid="9" label="Поточна вартість" type="numeric"/>
+            <field uid="11" label="Веб-сайт" type="url"/>
+            <field uid="12" label="Ім'я користувача" type="username"/>
+            <field uid="13" label="Пароль" type="password" sensitive="true"/>
+            <field uid="15" label="Брокер" type="text"/>
+            <field uid="16" label="Телефон" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="Інвестиційний фонд" iconid="43">
+            <field uid="0" label="Назва фонду" type="text"/>
+            <field uid="1" label="Тип фонду" type="text"/>
+            <field uid="2" label="Засновано у" type="date"/>
+            <field uid="3" label="Придбано" type="date"/>
+            <field uid="4" label="Кількість" type="numeric"/>
+            <field uid="5" label="Вартість чистих активів на момент купівлі" type="numeric"/>
+            <field uid="6" label="Поточна вартість чистих активів" type="numeric"/>
+            <field uid="8" label="Веб-сайт" type="url"/>
+            <field uid="9" label="Ім'я користувача" type="username"/>
+            <field uid="10" label="Пароль" type="password" sensitive="true"/>
+            <field uid="12" label="Брокер" type="text"/>
+            <field uid="13" label="Телефон" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="Кредит/іпотека" iconid="44">
+            <field uid="2" label="Кредитор" type="text"/>
+            <field uid="1" label="Тип" type="text"/>
+            <field uid="0" label="Номер рахунку" type="numeric"/>
+            <field uid="4" label="Капітал" type="numeric"/>
+            <field uid="5" label="Відсоткова ставка %" type="numeric"/>
+            <field uid="6" label="Дата" type="date"/>
+            <field uid="7" label="Термін" type="numeric"/>
+            <field uid="8" label="Баланс" type="numeric"/>
+            <field uid="9" label="Строк здійснення оплати" type="numeric"/>
+            <field uid="10" label="Актив" type="text"/>
+            <field uid="12" label="Телефон" type="phone"/>
+            <field uid="13" label="Веб-сайт" type="url"/>
+            <field uid="14" label="Ім'я користувача" type="username"/>
+            <field uid="15" label="Пароль" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="Інші фінанси" iconid="122">
+            <field uid="0" label="Поле 1" type="text"/>
+            <field uid="1" label="Поля 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Комп'ютер" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="База даних" iconid="56">
+            <field uid="8" label="Тип" type="text"/>
+            <field uid="0" label="Сервер" type="text"/>
+            <field uid="1" label="Порт" type="numeric"/>
+            <field uid="2" label="База даних" type="text"/>
+            <field uid="3" label="Ім'я користувача" type="username"/>
+            <field uid="4" label="Пароль" type="password" sensitive="true"/>
+            <field uid="5" label="SID" type="text"/>
+            <field uid="6" label="Альтернативна точка входу" type="text"/>
+            <field uid="7" label="Параметри" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="Email адреса" iconid="48">
+            <field uid="0" label="Email" type="email"/>
+            <field uid="1" label="Ім'я користувача" type="username"/>
+            <field uid="2" label="Пароль" type="password" sensitive="true"/>
+            <field uid="9" label="Тип" type="text"/>
+            <field uid="3" label="POP3 сервер" type="text"/>
+            <field uid="4" label="IMAP сервер" type="text"/>
+            <field uid="6" label="Порт" type="numeric"/>
+            <field uid="10" label="Тип системи безпеки" type="text"/>
+            <field uid="11" label="Метод перевірки оригінальності" type="text"/>
+            <field uid="21" label="Веб-посилання" type="url"/>
+            <field uid="5" label="SMTP сервер" type="text"/>
+            <field uid="7" label="Порт" type="numeric"/>
+            <field uid="13" label="Ім'я користувача" type="username"/>
+            <field uid="14" label="Пароль" type="password" sensitive="true"/>
+            <field uid="15" label="Тип системи безпеки" type="text"/>
+            <field uid="16" label="Метод перевірки оригінальності" type="text"/>
+            <field uid="18" label="Провайдер" type="text"/>
+            <field uid="8" label="Веб-сайт" type="url"/>
+            <field uid="19" label="Місцевий телефон" type="phone"/>
+            <field uid="20" label="Телефон служби підтримки" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="FTP акаунт" iconid="55">
+            <field uid="0" label="Сервер" type="text"/>
+            <field uid="1" label="Шлях" type="text"/>
+            <field uid="2" label="Ім'я користувача" type="username"/>
+            <field uid="3" label="Пароль" type="password" sensitive="true"/>
+            <field uid="4" label="Провайдер" type="text"/>
+            <field uid="5" label="Веб-сайт" type="url"/>
+            <field uid="6" label="Телефон" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="Миттєві повідомлення" iconid="49">
+            <field uid="0" label="Тип" type="text"/>
+            <field uid="1" label="ID" type="text"/>
+            <field uid="2" label="Сервер" type="text"/>
+            <field uid="3" label="Порт" type="numeric"/>
+            <field uid="4" label="Нік" type="text"/>
+            <field uid="5" label="Ім'я користувача" type="username"/>
+            <field uid="6" label="Пароль" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="Інтернет-провайдер" iconid="63">
+            <field uid="0" label="Ім'я користувача" type="username"/>
+            <field uid="1" label="Пароль" type="password" sensitive="true"/>
+            <field uid="3" label="Комутований доступ" type="phone"/>
+            <field uid="4" label="Протокол безпеки інтернету/Система" type="text"/>
+            <field uid="5" label="IP адреса" type="numeric"/>
+            <field uid="6" label="Маска подмережі" type="numeric"/>
+            <field uid="20" label="Шлюз" type="numeric"/>
+            <field uid="7" label="Первинний DNS" type="numeric"/>
+            <field uid="8" label="Вторинний DNS" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Telnet" type="text"/>
+            <field uid="17" label="Телефон служби підтримки" type="phone"/>
+            <field uid="18" label="Веб-сайт" type="url"/>
+            <field uid="19" label="Платіжні дані" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="Сервер" iconid="51">
+            <field uid="11" label="Логін адміністратора" type="username"/>
+            <field uid="12" label="Пароль адміністратора" type="password" sensitive="true"/>
+            <field uid="16" label="URL адміністратора" type="url"/>
+            <field uid="0" label="Сервіс" type="text"/>
+            <field uid="1" label="Завдання" type="text"/>
+            <field uid="2" label="Операційна система" type="text"/>
+            <field uid="3" label="Оперативна пам'ять" type="numeric"/>
+            <field uid="4" label="Пам'ять" type="numeric"/>
+            <field uid="5" label="ЦПК" type="numeric"/>
+            <field uid="6" label="RAID-масив" type="text"/>
+            <field uid="7" label="Місцезнаходження" type="text"/>
+            <field uid="8" label="IP адреса" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="Порт" type="numeric"/>
+            <field uid="17" label="Хостинг-провайдер" type="text"/>
+            <field uid="14" label="Підтримати веб-сайт" type="url"/>
+            <field uid="18" label="Телефон служби підтримки" type="phone"/>
+            <field uid="15" label="Платіжні дані" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="Безпроводовий маршрутизатор" iconid="35">
+            <field uid="0" label="Назва станції" type="text"/>
+            <field uid="9" label="Пароль станції" type="password" sensitive="true"/>
+            <field uid="2" label="Ім'я мережі" type="text"/>
+            <field uid="5" label="Пароль мережi" type="password" sensitive="true"/>
+            <field uid="3" label="Безпека" type="text"/>
+            <field uid="1" label="Номер Mac/AirPort" type="numeric"/>
+            <field uid="12" label="Сервер/IP-адреса" type="url"/>
+            <field uid="13" label="Ім'я користувача" type="username"/>
+            <field uid="4" label="Пароль" type="password" sensitive="true"/>
+            <field uid="6" label="Пароль сховища" type="password" sensitive="true"/>
+            <field uid="7" label="Підтримати веб-сайт" type="url"/>
+            <field uid="8" label="Платіжні дані" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="Веб-хостинг" iconid="53">
+            <field uid="13" label="Провайдер" type="text"/>
+            <field uid="1" label="Ім'я користувача" type="username"/>
+            <field uid="2" label="Пароль" type="password" sensitive="true"/>
+            <field uid="11" label="URL адміністратора" type="url"/>
+            <field uid="0" label="Операційна система" type="text"/>
+            <field uid="9" label="ID користувача" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="База даних" type="text"/>
+            <field uid="7" label="Послуги" type="text"/>
+            <field uid="14" label="Підтримати веб-сайт" type="url"/>
+            <field uid="10" label="Телефон служби підтримки" type="phone"/>
+            <field uid="12" label="Внесок" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="Інший комп'ютер" iconid="123">
+            <field uid="0" label="Поле 1" type="text"/>
+            <field uid="1" label="Поля 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Ліцензія" type="license" iconid="1005">
+        <card templatetype="license.driving" name="Водійське посвідчення" iconid="60">
+            <field uid="1" label="Номер" type="numeric"/>
+            <field uid="0" label="Ім'я" type="text"/>
+            <field uid="8" label="Стать" type="text"/>
+            <field uid="9" label="Дата народження" type="date"/>
+            <field uid="10" label="Адреса" type="text"/>
+            <field uid="11" label="Зріст" type="text"/>
+            <field uid="2" label="Клас" type="text"/>
+            <field uid="13" label="Обмеження" type="text"/>
+            <field uid="3" label="Адміністративна одиниця" type="text"/>
+            <field uid="4" label="КраЇна" type="text"/>
+            <field uid="5" label="Термін дії" type="date"/>
+            <field uid="6" label="Видана" type="date"/>
+            <field uid="7" label="У випадку втрати, дзвоніть" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="Мисливський білет" iconid="42">
+            <field uid="1" label="Номер" type="numeric"/>
+            <field uid="0" label="Ім'я" type="text"/>
+            <field uid="2" label="Адміністративна одиниця" type="text"/>
+            <field uid="3" label="Регіон" type="text"/>
+            <field uid="4" label="КраЇна" type="text"/>
+            <field uid="5" label="Дійсний з" type="date"/>
+            <field uid="6" label="Термін дії" type="date"/>
+            <field uid="7" label="Дозвiл на полювання" type="text"/>
+            <field uid="8" label="Квота" type="text"/>
+        </card>
+        <card templatetype="license.software" name="Ліцензія на програмне забезпечення" iconid="52">
+            <field uid="0" label="Версія" type="numeric"/>
+            <field uid="16" label="Назва продукту" type="text"/>
+            <field uid="17" label="Кількість користувачів" type="numeric"/>
+            <field uid="1" label="Ключ" type="text" sensitive="true"/>
+            <field uid="6" label="Завантажити сторінку" type="url"/>
+            <field uid="3" label="Ліцензія видана" type="text"/>
+            <field uid="18" label="Сторінка входу" type="url"/>
+            <field uid="19" label="Ім'я користувача" type="username"/>
+            <field uid="20" label="Пароль" type="password" sensitive="true"/>
+            <field uid="4" label="Email" type="email"/>
+            <field uid="5" label="Компанія" type="text"/>
+            <field uid="13" label="Дата придбання" type="date"/>
+            <field uid="14" label="Номер замовлення" type="numeric"/>
+            <field uid="12" label="Роздрібна ціна" type="numeric"/>
+            <field uid="15" label="Підсумок" type="numeric"/>
+            <field uid="8" label="Видавець" type="text"/>
+            <field uid="9" label="Веб-сайт" type="url"/>
+            <field uid="10" label="Email служби пiдтримки" type="email"/>
+            <field uid="21" label="Телефон служби підтримки" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="Інші посвідчення" iconid="124">
+            <field uid="0" label="Поле 1" type="text"/>
+            <field uid="1" label="Поля 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Пароль" type="password" iconid="1006">
+        <card templatetype="password.default" name="Пароль" iconid="36">
+            <field uid="0" label="Логін" type="username"/>
+            <field uid="1" label="Пароль" type="password" sensitive="true"/>
+            <field uid="2" label="Доступ" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Захищені записи" type="note" iconid="1007">
+        <card templatetype="note.default" name="Примітка" iconid="22">
+        </card>
+    </category>
+        
+    <category name="Подорожі" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="Паспорт" iconid="37">
+            <field uid="2" label="Номер" type="text"/>
+            <field uid="0" label="Повне ім'я" type="text"/>
+            <field uid="14" label="Стать" type="text"/>
+            <field uid="1" label="Тип" type="text"/>
+            <field uid="15" label="Громадянство" type="text"/>
+            <field uid="4" label="Місце народження" type="text"/>
+            <field uid="5" label="День народження" type="date"/>
+            <field uid="6" label="Виданий на" type="text"/>
+            <field uid="7" label="Видана" type="date"/>
+            <field uid="8" label="Термін дії" type="date"/>
+            <field uid="9" label="Країна видачі" type="text"/>
+            <field uid="10" label="Орган" type="text"/>
+            <field uid="12" label="Заміни" type="text"/>
+            <field uid="13" label="У випадку втрати, дзвоніть" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="Віза" iconid="57">
+            <field uid="1" label="Тип" type="text"/>
+            <field uid="15" label="КраЇна" type="text"/>
+            <field uid="0" label="Повне ім'я" type="text"/>
+            <field uid="2" label="Номер" type="numeric"/>
+            <field uid="4" label="Дійсний для" type="text"/>
+            <field uid="5" label="Дійсний з" type="date"/>
+            <field uid="6" label="Дійсна до" type="date"/>
+            <field uid="7" label="Тривалість" type="numeric"/>
+            <field uid="8" label="Номер записiв" type="numeric"/>
+            <field uid="10" label="Виданий" type="text"/>
+            <field uid="11" label="Дата випуску" type="date"/>
+            <field uid="12" label="Номер паспорту" type="text"/>
+            <field uid="13" label="Примітки" type="text"/>
+            <field uid="14" label="У випадку втрати, дзвоніть" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="Бонусна програма авіакомпанії" iconid="39">
+            <field uid="1" label="Номер учасника програми." type="numeric"/>
+            <field uid="0" label="Ім'я" type="text"/>
+            <field uid="8" label="Авіакомпанія" type="text"/>
+            <field uid="2" label="Дата" type="date"/>
+            <field uid="3" label="Відстань" type="numeric"/>
+            <field uid="5" label="Веб-сайт" type="url"/>
+            <field uid="6" label="Ім'я користувача" type="username"/>
+            <field uid="7" label="Пароль" type="password" sensitive="true"/>
+            <field uid="9" label="Обслуговування клієнтів" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="Бронювання готеля" iconid="27">
+            <field uid="0" label="Назва готелю" type="text"/>
+            <field uid="4" label="Номер №" type="numeric"/>
+            <field uid="1" label="Адреса" type="text"/>
+            <field uid="2" label="ID замовлення" type="numeric"/>
+            <field uid="3" label="Дата" type="date"/>
+            <field uid="5" label="Кількість ночей" type="numeric"/>
+            <field uid="15" label="Заохочуючі програми" type="numeric"/>
+            <field uid="7" label="Телефон" type="phone"/>
+            <field uid="8" label="Email" type="email"/>
+            <field uid="9" label="Веб-сайт" type="url"/>
+            <field uid="10" label="Ім'я користувача" type="username"/>
+            <field uid="11" label="Пароль" type="password" sensitive="true"/>
+            <field uid="13" label="Консьєрж" type="text"/>
+            <field uid="14" label="Ресторан" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="Деталі польоту" iconid="38">
+            <field uid="2" label="Номер рейсу" type="numeric"/>
+            <field uid="0" label="Авіакомпанія" type="text"/>
+            <field uid="1" label="Дата" type="date"/>
+            <field uid="3" label="Звідки" type="text"/>
+            <field uid="4" label="Куди" type="text"/>
+            <field uid="5" label="Час/Вихід" type="text"/>
+            <field uid="6" label="Номер електронного квитка" type="numeric"/>
+            <field uid="7" label="Підтвердити #" type="numeric"/>
+            <field uid="10" label="Веб-сайт" type="url"/>
+            <field uid="11" label="Ім'я користувача" type="username"/>
+            <field uid="12" label="Пароль" type="password" sensitive="true"/>
+            <field uid="9" label="Телефон" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="Інші подорожі" iconid="125">
+            <field uid="0" label="Поле 1" type="text"/>
+            <field uid="1" label="Поля 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Різне" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="Розмір одягу" iconid="23">
+            <field uid="9" label="Ім'я" type="text"/>
+            <field uid="0" label="Костюм" type="text"/>
+            <field uid="1" label="Взуття" type="text"/>
+            <field uid="2" label="Сорочка" type="text"/>
+            <field uid="3" label="Штани" type="text"/>
+            <field uid="4" label="Внутрішній шов" type="text"/>
+            <field uid="5" label="Спідниця" type="text"/>
+            <field uid="6" label="Рукавички" type="text"/>
+            <field uid="7" label="Талія" type="text"/>
+            <field uid="8" label="Шия" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="Кодовий замок" iconid="61">
+            <field uid="0" label="Місцезнаходження" type="text"/>
+            <field uid="1" label="Код" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="Рецепт лікаря" iconid="40">
+            <field uid="2" label="Лікар" type="text"/>
+            <field uid="0" label="RX #" type="text"/>
+            <field uid="1" label="Ім'я" type="text"/>
+            <field uid="3" label="Аптека" type="text"/>
+            <field uid="4" label="Телефон" type="phone"/>
+            <field uid="6" label="Бренд" type="text"/>
+            <field uid="7" label="Препарат" type="text"/>
+            <field uid="8" label="Кількість" type="numeric"/>
+            <field uid="9" label="Прийом" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="Рецепт на лінзи" iconid="26">
+            <field uid="0" label="Тип" type="text"/>
+            <field uid="1" label="Правий(OD)" type="numeric"/>
+            <field uid="2" label="Лівий(OS)" type="numeric"/>
+            <field uid="3" label="Лікар" type="text"/>
+            <field uid="4" label="Телефон" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="Реєстраційний код" iconid="66">
+            <field uid="2" label="Ім'я" type="text"/>
+            <field uid="0" label="Номер" type="numeric" sensitive="true"/>
+            <field uid="1" label="Дата" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="Інформація про транспортний засіб" iconid="25">
+            <field uid="3" label="Номер реєстрації" type="text"/>
+            <field uid="11" label="Власник" type="text"/>
+            <field uid="0" label="Модель" type="text"/>
+            <field uid="12" label="Тип транспортного засобу" type="text"/>
+            <field uid="13" label="Дата придбання" type="date"/>
+            <field uid="1" label="Виготовлений" type="text"/>
+            <field uid="2" label="Рік" type="numeric"/>
+            <field uid="4" label="VIN" type="text"/>
+            <field uid="5" label="Телефон сервісу" type="phone"/>
+            <field uid="14" label="Дорожна служба підтримки" type="phone"/>
+            <field uid="16" label="Постачальник страхування" type="text"/>
+            <field uid="7" label="Страхова сума" type="text"/>
+            <field uid="8" label="Номер поліса" type="numeric"/>
+            <field uid="10" label="Термін дії" type="date"/>
+            <field uid="9" label="Телефон страхувальника" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="Голосова пошта" iconid="62">
+            <field uid="0" label="Номер доступу" type="numeric"/>
+            <field uid="1" label="ПІН" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="Адреса" iconid="31">
+            <field uid="0" label="Ім'я" type="text"/>
+            <field uid="1" label="Номер квартири" type="text"/>
+            <field uid="2" label="Вулиця" type="text"/>
+            <field uid="3" label="Район" type="text"/>
+            <field uid="4" label="Місто" type="text"/>
+            <field uid="5" label="Адміністративна одиниця" type="text"/>
+            <field uid="6" label="Індекс" type="text"/>
+            <field uid="7" label="КраЇна" type="text"/>
+            <field uid="9" label="Телефон" type="phone"/>
+            <field uid="10" label="Email" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="Контакт" iconid="47">
+            <field uid="0" label="Ім'я" type="text"/>
+            <field uid="1" label="Прізвище" type="text"/>
+            <field uid="2" label="Компанія" type="text"/>
+            <field uid="3" label="Телефон(Домашній)" type="phone"/>
+            <field uid="4" label="Телефон (Мобільний)" type="phone"/>
+            <field uid="5" label="Телефон (Офіс)" type="phone"/>
+            <field uid="6" label="Email" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="Номер служб екстренної допомоги" iconid="28">
+            <field uid="0" label="Поліція" type="phone"/>
+            <field uid="1" label="Пожежна служба" type="phone"/>
+            <field uid="2" label="Швидка допомога" type="phone"/>
+            <field uid="3" label="Лікар" type="phone"/>
+            <field uid="4" label="Стоматолог" type="phone"/>
+            <field uid="5" label="Ветеринар" type="phone"/>
+            <field uid="6" label="Електроенергетична компанія" type="phone"/>
+            <field uid="7" label="Компанія по газозабезпеченню" type="phone"/>
+            <field uid="8" label="Телефонна компанія" type="phone"/>
+            <field uid="9" label="Домовласник" type="phone"/>
+            <field uid="10" label="Інші" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="Номер соціального страхування" iconid="64">
+            <field uid="1" label="Номер" type="numeric"/>
+            <field uid="0" label="Ім'я" type="text"/>
+            <field uid="2" label="Дата" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="Программа виплати винагород" iconid="24">
+            <field uid="0" label="Компанія" type="text"/>
+            <field uid="1" label="Ім'я" type="text"/>
+            <field uid="10" label="Ідентифікаційний номер учасника програми" type="text"/>
+            <field uid="2" label="Номер" type="numeric"/>
+            <field uid="3" label="ПІН" type="pin" sensitive="true"/>
+            <field uid="5" label="Номер 2" type="numeric"/>
+            <field uid="6" label="Починаючи з" type="date"/>
+            <field uid="7" label="Телефон служби підтримки" type="phone"/>
+            <field uid="8" label="Телефон бронювання" type="phone"/>
+            <field uid="9" label="Веб-сайт" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="Серійний номер" iconid="32">
+            <field uid="1" label="Серiйний номер" type="text" sensitive="true"/>
+            <field uid="0" label="Бренд" type="text"/>
+            <field uid="2" label="Модель" type="text"/>
+            <field uid="3" label="Вартість" type="numeric"/>
+            <field uid="4" label="Придбано" type="date"/>
+            <field uid="6" label="Гарантія" type="date"/>
+            <field uid="5" label="Місцезнаходження" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="Інформація про власність" iconid="70">
+            <field uid="0" label="Власник" type="text"/>
+            <field uid="1" label="Адреса" type="text"/>
+            <field uid="2" label="Тип" type="text"/>
+            <field uid="3" label="Сума на утримання" type="numeric"/>
+            <field uid="5" label="Назва власності" type="text"/>
+            <field uid="6" label="Сума податку" type="numeric"/>
+            <field uid="7" label="Дата оплати податків" type="date"/>
+            <field uid="8" label="Веб-сторінка" type="url"/>
+            <field uid="9" label="Ім'я користувача" type="username"/>
+            <field uid="10" label="Пароль" type="password" sensitive="true"/>
+            <field uid="12" label="Страхування" type="text"/>
+            <field uid="13" label="Страховий внесок" type="numeric"/>
+            <field uid="14" label="Номер поліса" type="numeric"/>
+            <field uid="15" label="Термін дії" type="date"/>
+            <field uid="16" label="Телефон пiдтримки страхової компанії" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="Телефонна картка" iconid="54">
+            <field uid="1" label="Номер доступу" type="phone"/>
+            <field uid="0" label="Провайдер" type="text"/>
+            <field uid="2" label="Номер картки" type="numeric"/>
+            <field uid="3" label="ПІН" type="pin" sensitive="true"/>
+            <field uid="4" label="Імпульсний набір" type="numeric"/>
+            <field uid="5" label="Термін дії" type="date"/>
+            <field uid="6" label="Частота використання" type="numeric"/>
+            <field uid="8" label="Веб-сайт" type="url"/>
+            <field uid="9" label="Ім'я користувача" type="username"/>
+            <field uid="10" label="Пароль" type="password" sensitive="true"/>
+            <field uid="11" label="У випадку втрати, дзвоніть" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="Посвідчення особи" iconid="59">
+            <field uid="2" label="Ідентифікаційний номер" type="numeric"/>
+            <field uid="0" label="Назва" type="text"/>
+            <field uid="1" label="Повне ім'я" type="text"/>
+            <field uid="3" label="ПІН" type="pin" sensitive="true"/>
+            <field uid="4" label="КраЇна" type="text"/>
+            <field uid="5" label="Видана" type="date"/>
+            <field uid="6" label="Термін дії" type="date"/>
+            <field uid="7" label="У випадку втрати, дзвоніть" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="Картка ISIC" iconid="65">
+            <field uid="2" label="Номер картки" type="numeric"/>
+            <field uid="0" label="Навчається в" type="text"/>
+            <field uid="1" label="Повне ім'я" type="text"/>
+            <field uid="3" label="Народився" type="date"/>
+            <field uid="4" label="Видана" type="date"/>
+            <field uid="5" label="Термін дії" type="date"/>
+            <field uid="6" label="У випадку втрати, дзвоніть" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="Картка ITIC" iconid="41">
+            <field uid="2" label="Номер картки" type="numeric"/>
+            <field uid="0" label="Викладає у" type="text"/>
+            <field uid="1" label="Повне ім'я" type="text"/>
+            <field uid="3" label="Народився" type="date"/>
+            <field uid="4" label="Видана" type="date"/>
+            <field uid="5" label="Термін дії" type="date"/>
+            <field uid="6" label="У випадку втрати, дзвоніть" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="Читацький квиток" iconid="58">
+            <field uid="1" label="Номер картки" type="numeric"/>
+            <field uid="0" label="Бібліотека" type="text"/>
+            <field uid="2" label="ПІН" type="pin" sensitive="true"/>
+            <field uid="3" label="Час роботи" type="numeric"/>
+            <field uid="4" label="Адреса" type="text"/>
+            <field uid="5" label="Видана" type="date"/>
+            <field uid="6" label="Термін дії" type="date"/>
+            <field uid="8" label="Веб-сайт" type="url"/>
+            <field uid="9" label="Ім'я користувача" type="username"/>
+            <field uid="10" label="Пароль" type="password" sensitive="true"/>
+            <field uid="11" label="У випадку втрати, дзвоніть" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="Картка виборця" iconid="69">
+            <field uid="0" label="Повне ім'я" type="text"/>
+            <field uid="1" label="Ідентифікаційний номер виборця" type="numeric"/>
+            <field uid="2" label="Адреса" type="text"/>
+            <field uid="3" label="Міський виборчий округ" type="text"/>
+            <field uid="4" label="Місцезнаходження" type="text"/>
+            <field uid="5" label="Конгрес" type="text"/>
+            <field uid="6" label="Сенат штату" type="text"/>
+            <field uid="7" label="Представник" type="text"/>
+            <field uid="8" label="Адреса" type="text"/>
+            <field uid="9" label="Видана" type="date"/>
+            <field uid="11" label="Веб-сайт" type="url"/>
+            <field uid="12" label="Ім'я користувача" type="username"/>
+            <field uid="13" label="Пароль" type="password" sensitive="true"/>
+            <field uid="14" label="У випадку втрати, дзвоніть" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="Картка ITZ" iconid="67">
+            <field uid="1" label="Номер картки" type="numeric"/>
+            <field uid="0" label="Власник" type="text"/>
+            <field uid="2" label="ПІН" type="pin" sensitive="true"/>
+            <field uid="3" label="Вартість" type="numeric"/>
+            <field uid="4" label="Термін дії" type="date"/>
+            <field uid="5" label="Частота використання" type="numeric"/>
+            <field uid="7" label="Веб-сайт" type="url"/>
+            <field uid="8" label="Ім'я користувача" type="username"/>
+            <field uid="9" label="Пароль" type="password" sensitive="true"/>
+            <field uid="10" label="У випадку втрати, дзвоніть" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="Членський квиток" iconid="46">
+            <field uid="1" label="Ідентифікаційний номер учасника програми" type="numeric"/>
+            <field uid="10" label="Ім'я учасника" type="text"/>
+            <field uid="0" label="Організація" type="text"/>
+            <field uid="11" label="Група" type="text"/>
+            <field uid="2" label="ПІН" type="pin" sensitive="true"/>
+            <field uid="3" label="Телефон" type="phone"/>
+            <field uid="12" label="Учасник з" type="date"/>
+            <field uid="4" label="Термін дії" type="date"/>
+            <field uid="6" label="Веб-сайт" type="url"/>
+            <field uid="7" label="Ім'я користувача" type="username"/>
+            <field uid="8" label="Пароль" type="password" sensitive="true"/>
+            <field uid="13" label="Email" type="email"/>
+            <field uid="9" label="У випадку втрати, дзвоніть" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="PAN картка" iconid="68">
+            <field uid="3" label="Номер" type="numeric"/>
+            <field uid="0" label="Ім'я" type="text"/>
+            <field uid="1" label="По-батькові" type="text"/>
+            <field uid="2" label="Дата народження" type="date"/>
+            <field uid="5" label="Веб-сайт" type="url"/>
+            <field uid="6" label="Ім'я користувача" type="username"/>
+            <field uid="7" label="Пароль" type="password" sensitive="true"/>
+            <field uid="8" label="У випадку втрати, дзвоніть" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="Інформація про мобільний телефон" iconid="120">
+            <field uid="0" label="Модель телефону" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="Код блокування" type="numeric" sensitive="true"/>
+            <field uid="5" label="Тип СІМ-картки" type="text"/>
+            <field uid="6" label="Номер SIM" type="numeric"/>
+            <field uid="7" label="ПІН" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="Придбано" type="date"/>
+            <field uid="10" label="Гарантія" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="Постачальник послуг" iconid="121">
+            <field uid="0" label="Провайдер" type="text"/>
+            <field uid="1" label="Тип послуг" type="text"/>
+            <field uid="2" label="ID споживача" type="text"/>
+            <field uid="3" label="ID підписки" type="numeric"/>
+            <field uid="4" label="Адреса" type="text"/>
+            <field uid="5" label="Веб-сайт" type="url"/>
+            <field uid="6" label="Ім'я користувача" type="username"/>
+            <field uid="7" label="Логін пароль" type="password" sensitive="true"/>
+            <field uid="8" label="Телефон служби підтримки" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="Решта" iconid="126">
+            <field uid="0" label="Поле 1" type="text"/>
+            <field uid="1" label="Поля 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="Стать" value="male" type="sex_options"/>
+            <field uid="4" label="Дата народження" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="Компанія" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="Адреса" type="address_firstline"/>
+            <field uid="10" label="Вулиця" type="address_street"/>
+            <field uid="11" label="Місто" type="address_city"/>
+            <field uid="12" label="Адміністративна одиниця" type="address_state"/>
+            <field uid="13" label="Індекс" type="address_zip"/>
+            <field uid="14" label="КраЇна" value="US" type="country_options"/>
+            <field uid="15" label="Телефон" type="phone"/>
+            <field uid="16" label="Контрольне запитання" type="text"/>
+            <field uid="17" label="Відповідь на контрольне запитання" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

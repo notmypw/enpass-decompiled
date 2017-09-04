@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/general" android:key="keychain_general">
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/upgrade" android:key="upgrade" />
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/security_title" android:key="security" android:summary="" />
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/keyboard_autofilling" android:key="keyboard_filling" />
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/sync" android:key="startsync" />
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/backup_n_restore" android:key="backupAndRestore" />
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/android_watch" android:key="android_watch" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/behaviour" android:key="category_behaviour">
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/browser_title" android:key="browser" android:summary="" />
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/customize_title" android:key="customize" />
+        <Preference android:title="@string/settings_advanced" android:key="adavanced_support" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/support_and_help">
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/help_title" android:key="help" />
+        <Preference android:title="@string/social_title" android:key="social" />
+        <Preference android:title="@string/tell_a_friend_title" android:key="tell_a_friend" />
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/recommend_enpass_title" android:key="recommend_enpass" android:summary="@string/recommend_enpass_summ" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Open Source Licences">
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="Open Source Licences" android:key="open_source_licences" />
+    </PreferenceCategory>
+</PreferenceScreen>

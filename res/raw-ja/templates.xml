@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="ログイン" type="login" iconid="1001">
+        <card templatetype="login.default" name="ログイン" iconid="21">
+            <field uid="10" label="ユーザー名" type="username"/>
+            <field uid="12" label="メール" type="email"/>
+            <field uid="11" label="パスワード" type="password" sensitive="true"/>
+            <field uid="14" label="電話番号" type="phone"/>
+            <field uid="13" label="URL" type="url"/>
+            <field uid="15" label="セキュリティ質問" type="text"/>
+            <field uid="16" label="セキュリティ質問の回答" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="クレジットカード" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="クレジットカード" iconid="20">
+            <field uid="0" label="カード保有者" type="cardholder_name"/>
+            <field uid="17" label="タイプ" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="番号" type="card_number"/>
+            <field uid="2" label="CVC" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="4" label="有効期限" type="expiry_date"/>
+            <field uid="18" label="有効日" type="date"/>
+            <field uid="10" label="限度額" type="numeric"/>
+            <field uid="11" label="引出限度額" type="numeric"/>
+            <field uid="12" label="金利" type="numeric"/>
+            <field uid="6" label="発行銀行" type="bank_name"/>
+            <field uid="14" label="ウェブサイト" type="url"/>
+            <field uid="15" label="ユーザー名" type="username"/>
+            <field uid="16" label="ログインパスワード" type="password" sensitive="true"/>
+            <field uid="9" label="取引パスワード" type="txn_password" sensitive="true"/>
+            <field uid="7" label="発行日" type="date"/>
+            <field uid="8" label="紛失した場合、電話してください" type="phone"/>
+        </card>
+    </category>
+
+    <category name="ファイナンス" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="銀行口座" iconid="45">
+            <field uid="4" label="銀行名" type="bank_name"/>
+            <field uid="0" label="口座名義人" type="cardholder_name"/>
+            <field uid="1" label="タイプ" type="text"/>
+            <field uid="2" label="口座番号" type="numeric"/>
+            <field uid="16" label="顧客ID" type="text"/>
+            <field uid="5" label="金融機関コード" type="numeric"/>
+            <field uid="6" label="支店名" type="text"/>
+            <field uid="7" label="支店コード" type="numeric"/>
+            <field uid="8" label="SWIFT" type="text"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="支店住所" type="text"/>
+            <field uid="25" label="支店電話番号" type="phone"/>
+            
+            <field uid="11" label="デビットカード番号" type="card_number"/>
+            <field uid="26" label="タイプ" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="14" label="CVV" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="有効期限" type="expiry_date"/>
+            <field uid="27" label="引出限度額" type="numeric"/>
+            
+            <field uid="17" label="ウェブサイト" type="url"/>
+            <field uid="18" label="ユーザー名" type="username"/>
+            <field uid="19" label="ログインパスワード" type="password" sensitive="true"/>
+            <field uid="20" label="取引パスワード" type="txn_password" sensitive="true"/>
+            <field uid="22" label="ヘルプライン" type="phone"/>
+            <field uid="23" label="T-PIN" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="保険契約" iconid="33">
+            <field uid="1" label="規約名" type="text"/>
+            <field uid="0" label="会社名" type="text"/>
+            <field uid="19" label="保険契約者" type="text"/>
+            <field uid="2" label="番号" type="numeric"/>
+            <field uid="3" label="タイプ" type="text"/>
+            <field uid="5" label="プレミアム" type="numeric"/>
+            <field uid="6" label="発行日" type="numeric"/>
+            <field uid="7" label="発行日" type="date"/>
+            <field uid="18" label="更新日" type="date"/>
+            <field uid="8" label="有効期限" type="date"/>
+            <field uid="9" label="用語" type="numeric"/>
+            <field uid="20" label="候補者" type="text"/>
+            <field uid="11" label="顧客ID" type="numeric"/>
+            <field uid="12" label="ウェブサイト" type="url"/>
+            <field uid="13" label="ユーザー名" type="username"/>
+            <field uid="14" label="パスワード" type="password" sensitive="true"/>
+            <field uid="16" label="エージェント名" type="text"/>
+            <field uid="17" label="ヘルプライン" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="株式投資" iconid="34">
+            <field uid="2" label="シンボル" type="text"/>
+            <field uid="0" label="口座番号" type="numeric"/>
+            <field uid="1" label="タイプ" type="text"/>
+            <field uid="3" label="マーケット" type="text"/>
+            <field uid="5" label="開始日" type="date"/>
+            <field uid="6" label="購入日" type="date"/>
+            <field uid="7" label="購入価格" type="numeric"/>
+            <field uid="8" label="数量" type="numeric"/>
+            <field uid="9" label="現在の価格" type="numeric"/>
+            <field uid="11" label="ウェブサイト" type="url"/>
+            <field uid="12" label="ユーザー名" type="username"/>
+            <field uid="13" label="パスワード" type="password" sensitive="true"/>
+            <field uid="15" label="ブローカー" type="text"/>
+            <field uid="16" label="電話番号" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="投資信託" iconid="43">
+            <field uid="0" label="ファンド名" type="text"/>
+            <field uid="1" label="ファンドの種類" type="text"/>
+            <field uid="2" label="開始日" type="date"/>
+            <field uid="3" label="購入日" type="date"/>
+            <field uid="4" label="数量" type="numeric"/>
+            <field uid="5" label="購入したNAV" type="numeric"/>
+            <field uid="6" label="現在のNAV" type="numeric"/>
+            <field uid="8" label="ウェブサイト" type="url"/>
+            <field uid="9" label="ユーザー名" type="username"/>
+            <field uid="10" label="パスワード" type="password" sensitive="true"/>
+            <field uid="12" label="ブローカー" type="text"/>
+            <field uid="13" label="電話番号" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="融資/住宅ローン" iconid="44">
+            <field uid="2" label="貸し手" type="text"/>
+            <field uid="1" label="タイプ" type="text"/>
+            <field uid="0" label="口座番号" type="numeric"/>
+            <field uid="4" label="元金" type="numeric"/>
+            <field uid="5" label="金利％" type="numeric"/>
+            <field uid="6" label="日付" type="date"/>
+            <field uid="7" label="用語" type="numeric"/>
+            <field uid="8" label="残額" type="numeric"/>
+            <field uid="9" label="支払期日" type="numeric"/>
+            <field uid="10" label="資産" type="text"/>
+            <field uid="12" label="電話番号" type="phone"/>
+            <field uid="13" label="ウェブサイト" type="url"/>
+            <field uid="14" label="ユーザー名" type="username"/>
+            <field uid="15" label="パスワード" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="他のファイナンス" iconid="122">
+            <field uid="0" label="フィールド1" type="text"/>
+            <field uid="1" label="フィールド2" type="text"/>
+        </card>
+    </category>
+
+    <category name="コンピューター" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="データベース" iconid="56">
+            <field uid="8" label="タイプ" type="text"/>
+            <field uid="0" label="サーバー" type="text"/>
+            <field uid="1" label="ポート" type="numeric"/>
+            <field uid="2" label="データベース" type="text"/>
+            <field uid="3" label="ユーザー名" type="username"/>
+            <field uid="4" label="パスワード" type="password" sensitive="true"/>
+            <field uid="5" label="SID" type="text"/>
+            <field uid="6" label="エイリアス" type="text"/>
+            <field uid="7" label="オプション" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="メールアカウント" iconid="48">
+            <field uid="0" label="メール" type="email"/>
+            <field uid="1" label="ユーザー名" type="username"/>
+            <field uid="2" label="パスワード" type="password" sensitive="true"/>
+            <field uid="9" label="タイプ" type="text"/>
+            <field uid="3" label="POP3サーバー" type="text"/>
+            <field uid="4" label="IMAPサーバー" type="text"/>
+            <field uid="6" label="ポート" type="numeric"/>
+            <field uid="10" label="セキュリティの種類" type="text"/>
+            <field uid="11" label="認証方法" type="text"/>
+            <field uid="21" label="ウェブリンク" type="url"/>
+            <field uid="5" label="SMTPサーバー" type="text"/>
+            <field uid="7" label="ポート" type="numeric"/>
+            <field uid="13" label="ユーザー名" type="username"/>
+            <field uid="14" label="パスワード" type="password" sensitive="true"/>
+            <field uid="15" label="セキュリティの種類" type="text"/>
+            <field uid="16" label="認証方法" type="text"/>
+            <field uid="18" label="プロバイダー" type="text"/>
+            <field uid="8" label="ウェブサイト" type="url"/>
+            <field uid="19" label="県内電話" type="phone"/>
+            <field uid="20" label="ヘルプライン" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="FTPアカウント" iconid="55">
+            <field uid="0" label="サーバー" type="text"/>
+            <field uid="1" label="パス" type="text"/>
+            <field uid="2" label="ユーザー名" type="username"/>
+            <field uid="3" label="パスワード" type="password" sensitive="true"/>
+            <field uid="4" label="プロバイダー" type="text"/>
+            <field uid="5" label="ウェブサイト" type="url"/>
+            <field uid="6" label="電話番号" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="インスタントメッセージング" iconid="49">
+            <field uid="0" label="タイプ" type="text"/>
+            <field uid="1" label="ID" type="text"/>
+            <field uid="2" label="サーバー" type="text"/>
+            <field uid="3" label="ポート" type="numeric"/>
+            <field uid="4" label="ニックネーム" type="text"/>
+            <field uid="5" label="ユーザー名" type="username"/>
+            <field uid="6" label="パスワード" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="インターネットプロバイダー" iconid="63">
+            <field uid="0" label="ユーザー名" type="username"/>
+            <field uid="1" label="パスワード" type="password" sensitive="true"/>
+            <field uid="3" label="ダイヤルアップ接続" type="phone"/>
+            <field uid="4" label="ISP/システム" type="text"/>
+            <field uid="5" label="IPアドレス" type="numeric"/>
+            <field uid="6" label="サブネットマスク" type="numeric"/>
+            <field uid="20" label="ゲートウェイ" type="numeric"/>
+            <field uid="7" label="プライマリDNS" type="numeric"/>
+            <field uid="8" label="セカンダリDNS" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Telnet" type="text"/>
+            <field uid="17" label="ヘルプライン" type="phone"/>
+            <field uid="18" label="ウェブサイト" type="url"/>
+            <field uid="19" label="課金情報" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="サーバー" iconid="51">
+            <field uid="11" label="管理者ログイン" type="username"/>
+            <field uid="12" label="管理者パスワード" type="password" sensitive="true"/>
+            <field uid="16" label="管理URL" type="url"/>
+            <field uid="0" label="サービス" type="text"/>
+            <field uid="1" label="タスク" type="text"/>
+            <field uid="2" label="OS" type="text"/>
+            <field uid="3" label="RAM" type="numeric"/>
+            <field uid="4" label="ストレージ" type="numeric"/>
+            <field uid="5" label="CPU" type="numeric"/>
+            <field uid="6" label="RAID" type="text"/>
+            <field uid="7" label="場所" type="text"/>
+            <field uid="8" label="IPアドレス" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="ポート" type="numeric"/>
+            <field uid="17" label="ホスティングプロバイダー" type="text"/>
+            <field uid="14" label="サポートウェブサイト" type="url"/>
+            <field uid="18" label="ヘルプライン" type="phone"/>
+            <field uid="15" label="課金情報" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="無線LANルータ" iconid="35">
+            <field uid="0" label="ステーション名" type="text"/>
+            <field uid="9" label="ステーションのパスワード" type="password" sensitive="true"/>
+            <field uid="2" label="ネットワーク名" type="text"/>
+            <field uid="5" label="ネットワークパスワード" type="password" sensitive="true"/>
+            <field uid="3" label="セキュリティ" type="text"/>
+            <field uid="1" label="MAC/Airport #" type="numeric"/>
+            <field uid="12" label="サーバー/IPアドレス" type="url"/>
+            <field uid="13" label="ユーザー名" type="username"/>
+            <field uid="4" label="パスワード" type="password" sensitive="true"/>
+            <field uid="6" label="ストレージのパスワード" type="password" sensitive="true"/>
+            <field uid="7" label="サポートウェブサイト" type="url"/>
+            <field uid="8" label="課金情報" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="ウェブホスティング" iconid="53">
+            <field uid="13" label="プロバイダー" type="text"/>
+            <field uid="1" label="ユーザー名" type="username"/>
+            <field uid="2" label="パスワード" type="password" sensitive="true"/>
+            <field uid="11" label="管理URL" type="url"/>
+            <field uid="0" label="OS" type="text"/>
+            <field uid="9" label="顧客ID" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="データベース" type="text"/>
+            <field uid="7" label="サービス" type="text"/>
+            <field uid="14" label="サポートウェブサイト" type="url"/>
+            <field uid="10" label="ヘルプライン" type="phone"/>
+            <field uid="12" label="料金" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="他のコンピューター" iconid="123">
+            <field uid="0" label="フィールド1" type="text"/>
+            <field uid="1" label="フィールド2" type="text"/>
+        </card>
+    </category>
+
+    <category name="免許" type="license" iconid="1005">
+        <card templatetype="license.driving" name="運転免許証" iconid="60">
+            <field uid="1" label="番号" type="numeric"/>
+            <field uid="0" label="名前" type="text"/>
+            <field uid="8" label="性別" type="text"/>
+            <field uid="9" label="出生年月日" type="date"/>
+            <field uid="10" label="住所" type="text"/>
+            <field uid="11" label="身長" type="text"/>
+            <field uid="2" label="クラス" type="text"/>
+            <field uid="13" label="制限" type="text"/>
+            <field uid="3" label="都道府県" type="text"/>
+            <field uid="4" label="国" type="text"/>
+            <field uid="5" label="有効期限" type="date"/>
+            <field uid="6" label="発行日" type="date"/>
+            <field uid="7" label="紛失した場合、電話してください" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="狩猟許可証" iconid="42">
+            <field uid="1" label="番号" type="numeric"/>
+            <field uid="0" label="名前" type="text"/>
+            <field uid="2" label="都道府県" type="text"/>
+            <field uid="3" label="地域" type="text"/>
+            <field uid="4" label="国" type="text"/>
+            <field uid="5" label="有効日" type="date"/>
+            <field uid="6" label="有効期限" type="date"/>
+            <field uid="7" label="承認された野生動物" type="text"/>
+            <field uid="8" label="割り当て" type="text"/>
+        </card>
+        <card templatetype="license.software" name="ソフトウェアライセンス" iconid="52">
+            <field uid="0" label="バージョン" type="numeric"/>
+            <field uid="16" label="製品名" type="text"/>
+            <field uid="17" label="ユーザー数" type="numeric"/>
+            <field uid="1" label="キー" type="text" sensitive="true"/>
+            <field uid="6" label="ダウンロードページ" type="url"/>
+            <field uid="3" label="ライセンスを持っている者" type="text"/>
+            <field uid="18" label="ログインページ" type="url"/>
+            <field uid="19" label="ユーザー名" type="username"/>
+            <field uid="20" label="パスワード" type="password" sensitive="true"/>
+            <field uid="4" label="メール" type="email"/>
+            <field uid="5" label="会社名" type="text"/>
+            <field uid="13" label="購入日" type="date"/>
+            <field uid="14" label="注文番号" type="numeric"/>
+            <field uid="12" label="小売価格" type="numeric"/>
+            <field uid="15" label="合計" type="numeric"/>
+            <field uid="8" label="出版社" type="text"/>
+            <field uid="9" label="ウェブサイト" type="url"/>
+            <field uid="10" label="サポートのメール" type="email"/>
+            <field uid="21" label="ヘルプライン" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="他のライセンス" iconid="124">
+            <field uid="0" label="フィールド1" type="text"/>
+            <field uid="1" label="フィールド2" type="text"/>
+        </card>
+    </category>
+
+    <category name="パスワード" type="password" iconid="1006">
+        <card templatetype="password.default" name="パスワード" iconid="36">
+            <field uid="0" label="ログイン" type="username"/>
+            <field uid="1" label="パスワード" type="password" sensitive="true"/>
+            <field uid="2" label="アクセス" type="text"/>
+        </card>
+    </category>
+    
+    <category name="セキュリティーメモ" type="note" iconid="1007">
+        <card templatetype="note.default" name="メモ" iconid="22">
+        </card>
+    </category>
+        
+    <category name="旅行" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="パスポート" iconid="37">
+            <field uid="2" label="番号" type="text"/>
+            <field uid="0" label="氏名" type="text"/>
+            <field uid="14" label="性別" type="text"/>
+            <field uid="1" label="タイプ" type="text"/>
+            <field uid="15" label="国籍" type="text"/>
+            <field uid="4" label="出生地" type="text"/>
+            <field uid="5" label="誕生日" type="date"/>
+            <field uid="6" label="発行地" type="text"/>
+            <field uid="7" label="発行日" type="date"/>
+            <field uid="8" label="有効期限" type="date"/>
+            <field uid="9" label="発行国" type="text"/>
+            <field uid="10" label="機関" type="text"/>
+            <field uid="12" label="入れ替え" type="text"/>
+            <field uid="13" label="紛失した場合、電話してください" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="観光ビザ" iconid="57">
+            <field uid="1" label="タイプ" type="text"/>
+            <field uid="15" label="国" type="text"/>
+            <field uid="0" label="氏名" type="text"/>
+            <field uid="2" label="番号" type="numeric"/>
+            <field uid="4" label="使用開始日" type="text"/>
+            <field uid="5" label="有効日" type="date"/>
+            <field uid="6" label="有効期限" type="date"/>
+            <field uid="7" label="期間" type="numeric"/>
+            <field uid="8" label="エントリ数" type="numeric"/>
+            <field uid="10" label="発行者" type="text"/>
+            <field uid="11" label="発行日" type="date"/>
+            <field uid="12" label="パスポート番号" type="text"/>
+            <field uid="13" label="注意" type="text"/>
+            <field uid="14" label="紛失した場合、電話してください" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="フリークエント・フライヤー" iconid="39">
+            <field uid="1" label="会員番号" type="numeric"/>
+            <field uid="0" label="名前" type="text"/>
+            <field uid="8" label="航空会社" type="text"/>
+            <field uid="2" label="日付" type="date"/>
+            <field uid="3" label="マイレージ" type="numeric"/>
+            <field uid="5" label="ウェブサイト" type="url"/>
+            <field uid="6" label="ユーザー名" type="username"/>
+            <field uid="7" label="パスワード" type="password" sensitive="true"/>
+            <field uid="9" label="カスタマーサービス" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="ホテルの予約" iconid="27">
+            <field uid="0" label="ホテル名" type="text"/>
+            <field uid="4" label="部屋番号" type="numeric"/>
+            <field uid="1" label="住所" type="text"/>
+            <field uid="2" label="予約ID" type="numeric"/>
+            <field uid="3" label="日付" type="date"/>
+            <field uid="5" label="宿泊数" type="numeric"/>
+            <field uid="15" label="ホテル特典" type="numeric"/>
+            <field uid="7" label="電話番号" type="phone"/>
+            <field uid="8" label="メール" type="email"/>
+            <field uid="9" label="ウェブサイト" type="url"/>
+            <field uid="10" label="ユーザー名" type="username"/>
+            <field uid="11" label="パスワード" type="password" sensitive="true"/>
+            <field uid="13" label="コンシェルジュ" type="text"/>
+            <field uid="14" label="レストラン" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="フライト詳細" iconid="38">
+            <field uid="2" label="便名" type="numeric"/>
+            <field uid="0" label="航空会社" type="text"/>
+            <field uid="1" label="日付" type="date"/>
+            <field uid="3" label="出発地" type="text"/>
+            <field uid="4" label="目的地" type="text"/>
+            <field uid="5" label="時間/ゲート" type="text"/>
+            <field uid="6" label="Eチケット番号" type="numeric"/>
+            <field uid="7" label="予約番号" type="numeric"/>
+            <field uid="10" label="ウェブサイト" type="url"/>
+            <field uid="11" label="ユーザー名" type="username"/>
+            <field uid="12" label="パスワード" type="password" sensitive="true"/>
+            <field uid="9" label="電話番号" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="他の旅行" iconid="125">
+            <field uid="0" label="フィールド1" type="text"/>
+            <field uid="1" label="フィールド2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="雑多" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="洋服のサイズ" iconid="23">
+            <field uid="9" label="名前" type="text"/>
+            <field uid="0" label="スーツ" type="text"/>
+            <field uid="1" label="靴" type="text"/>
+            <field uid="2" label="シャツ" type="text"/>
+            <field uid="3" label="ズボン" type="text"/>
+            <field uid="4" label="股下" type="text"/>
+            <field uid="5" label="スカート" type="text"/>
+            <field uid="6" label="手袋" type="text"/>
+            <field uid="7" label="ウエスト" type="text"/>
+            <field uid="8" label="首回り" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="組み合わせ錠" iconid="61">
+            <field uid="0" label="場所" type="text"/>
+            <field uid="1" label="コード" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="処方薬" iconid="40">
+            <field uid="2" label="医師" type="text"/>
+            <field uid="0" label="RX番号" type="text"/>
+            <field uid="1" label="名前" type="text"/>
+            <field uid="3" label="薬局" type="text"/>
+            <field uid="4" label="電話番号" type="phone"/>
+            <field uid="6" label="ブランド" type="text"/>
+            <field uid="7" label="薬" type="text"/>
+            <field uid="8" label="量" type="numeric"/>
+            <field uid="9" label="摂取" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="レンズの処方" iconid="26">
+            <field uid="0" label="タイプ" type="text"/>
+            <field uid="1" label="右(OD)" type="numeric"/>
+            <field uid="2" label="左(OS)" type="numeric"/>
+            <field uid="3" label="医師" type="text"/>
+            <field uid="4" label="電話番号" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="登録コード" iconid="66">
+            <field uid="2" label="名前" type="text"/>
+            <field uid="0" label="番号" type="numeric" sensitive="true"/>
+            <field uid="1" label="日付" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="車両情報" iconid="25">
+            <field uid="3" label="登録番号" type="text"/>
+            <field uid="11" label="所有者" type="text"/>
+            <field uid="0" label="モデル" type="text"/>
+            <field uid="12" label="車両タイプ" type="text"/>
+            <field uid="13" label="購入日" type="date"/>
+            <field uid="1" label="メーカー" type="text"/>
+            <field uid="2" label="年" type="numeric"/>
+            <field uid="4" label="VIN" type="text"/>
+            <field uid="5" label="サービスの電話番号" type="phone"/>
+            <field uid="14" label="車両ヘルプライン" type="phone"/>
+            <field uid="16" label="保険会社" type="text"/>
+            <field uid="7" label="保険金額" type="text"/>
+            <field uid="8" label="保険証券番号" type="numeric"/>
+            <field uid="10" label="有効期限" type="date"/>
+            <field uid="9" label="保険会社電話番号" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="ボイスメール" iconid="62">
+            <field uid="0" label="アクセス番号" type="numeric"/>
+            <field uid="1" label="PIN" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="住所" iconid="31">
+            <field uid="0" label="名前" type="text"/>
+            <field uid="1" label="部屋番号" type="text"/>
+            <field uid="2" label="通り" type="text"/>
+            <field uid="3" label="地区" type="text"/>
+            <field uid="4" label="街" type="text"/>
+            <field uid="5" label="都道府県" type="text"/>
+            <field uid="6" label="郵便番号" type="text"/>
+            <field uid="7" label="国" type="text"/>
+            <field uid="9" label="電話番号" type="phone"/>
+            <field uid="10" label="メール" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="連絡先" iconid="47">
+            <field uid="0" label="名" type="text"/>
+            <field uid="1" label="姓" type="text"/>
+            <field uid="2" label="会社名" type="text"/>
+            <field uid="3" label="自宅電話(H)" type="phone"/>
+            <field uid="4" label="携帯電話(M)" type="phone"/>
+            <field uid="5" label="職場の電話 (O)" type="phone"/>
+            <field uid="6" label="メール" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="緊急連絡番号" iconid="28">
+            <field uid="0" label="警察" type="phone"/>
+            <field uid="1" label="消防" type="phone"/>
+            <field uid="2" label="救急車" type="phone"/>
+            <field uid="3" label="医師" type="phone"/>
+            <field uid="4" label="歯科医" type="phone"/>
+            <field uid="5" label="獣医" type="phone"/>
+            <field uid="6" label="電気会社" type="phone"/>
+            <field uid="7" label="ガス会社" type="phone"/>
+            <field uid="8" label="電話会社" type="phone"/>
+            <field uid="9" label="家主" type="phone"/>
+            <field uid="10" label="その他" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="社会保障番号" iconid="64">
+            <field uid="1" label="番号" type="numeric"/>
+            <field uid="0" label="名前" type="text"/>
+            <field uid="2" label="日付" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="リワードプログラム" iconid="24">
+            <field uid="0" label="会社名" type="text"/>
+            <field uid="1" label="名前" type="text"/>
+            <field uid="10" label="メンバーID" type="text"/>
+            <field uid="2" label="番号" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="5" label="第2" type="numeric"/>
+            <field uid="6" label="入会日" type="date"/>
+            <field uid="7" label="ヘルプライン" type="phone"/>
+            <field uid="8" label="予約情報電話" type="phone"/>
+            <field uid="9" label="ウェブサイト" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="通し番号" iconid="32">
+            <field uid="1" label="シリアル" type="text" sensitive="true"/>
+            <field uid="0" label="ブランド" type="text"/>
+            <field uid="2" label="モデル" type="text"/>
+            <field uid="3" label="価格" type="numeric"/>
+            <field uid="4" label="購入日" type="date"/>
+            <field uid="6" label="保証" type="date"/>
+            <field uid="5" label="場所" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="不動産情報" iconid="70">
+            <field uid="0" label="所有者" type="text"/>
+            <field uid="1" label="住所" type="text"/>
+            <field uid="2" label="タイプ" type="text"/>
+            <field uid="3" label="メンテナンスの価格" type="numeric"/>
+            <field uid="5" label="不動産ID" type="text"/>
+            <field uid="6" label="課税額" type="numeric"/>
+            <field uid="7" label="納税期日" type="date"/>
+            <field uid="8" label="ウェブページ" type="url"/>
+            <field uid="9" label="ユーザー名" type="username"/>
+            <field uid="10" label="パスワード" type="password" sensitive="true"/>
+            <field uid="12" label="保険" type="text"/>
+            <field uid="13" label="保険料" type="numeric"/>
+            <field uid="14" label="保険証券番号" type="numeric"/>
+            <field uid="15" label="有効期限" type="date"/>
+            <field uid="16" label="保険のヘルプライン" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="テレフォンカード" iconid="54">
+            <field uid="1" label="アクセス番号" type="phone"/>
+            <field uid="0" label="プロバイダー" type="text"/>
+            <field uid="2" label="カード番号" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="パルスレート" type="numeric"/>
+            <field uid="5" label="有効期限" type="date"/>
+            <field uid="6" label="使用量" type="numeric"/>
+            <field uid="8" label="ウェブサイト" type="url"/>
+            <field uid="9" label="ユーザー名" type="username"/>
+            <field uid="10" label="パスワード" type="password" sensitive="true"/>
+            <field uid="11" label="紛失した場合、電話してください" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="IDカード" iconid="59">
+            <field uid="2" label="ID番号" type="numeric"/>
+            <field uid="0" label="タイトル" type="text"/>
+            <field uid="1" label="氏名" type="text"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="国" type="text"/>
+            <field uid="5" label="発行日" type="date"/>
+            <field uid="6" label="有効期限" type="date"/>
+            <field uid="7" label="紛失した場合、電話してください" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="ISICカード" iconid="65">
+            <field uid="2" label="カード番号" type="numeric"/>
+            <field uid="0" label="学校名" type="text"/>
+            <field uid="1" label="氏名" type="text"/>
+            <field uid="3" label="生年月日" type="date"/>
+            <field uid="4" label="発行日" type="date"/>
+            <field uid="5" label="有効期限" type="date"/>
+            <field uid="6" label="紛失した場合、電話してください" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="ITICカード" iconid="41">
+            <field uid="2" label="カード番号" type="numeric"/>
+            <field uid="0" label="学校名" type="text"/>
+            <field uid="1" label="氏名" type="text"/>
+            <field uid="3" label="生年月日" type="date"/>
+            <field uid="4" label="発行日" type="date"/>
+            <field uid="5" label="有効期限" type="date"/>
+            <field uid="6" label="紛失した場合、電話してください" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="図書館カード" iconid="58">
+            <field uid="1" label="カード番号" type="numeric"/>
+            <field uid="0" label="図書館" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="時間" type="numeric"/>
+            <field uid="4" label="住所" type="text"/>
+            <field uid="5" label="発行日" type="date"/>
+            <field uid="6" label="有効期限" type="date"/>
+            <field uid="8" label="ウェブサイト" type="url"/>
+            <field uid="9" label="ユーザー名" type="username"/>
+            <field uid="10" label="パスワード" type="password" sensitive="true"/>
+            <field uid="11" label="紛失した場合、電話してください" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="有権者カード" iconid="69">
+            <field uid="0" label="氏名" type="text"/>
+            <field uid="1" label="有権者ID" type="numeric"/>
+            <field uid="2" label="住所" type="text"/>
+            <field uid="3" label="区" type="text"/>
+            <field uid="4" label="場所" type="text"/>
+            <field uid="5" label="議会" type="text"/>
+            <field uid="6" label="州上院" type="text"/>
+            <field uid="7" label="代表者" type="text"/>
+            <field uid="8" label="住所" type="text"/>
+            <field uid="9" label="発行日" type="date"/>
+            <field uid="11" label="ウェブサイト" type="url"/>
+            <field uid="12" label="ユーザー名" type="username"/>
+            <field uid="13" label="パスワード" type="password" sensitive="true"/>
+            <field uid="14" label="紛失した場合、電話してください" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="ITZカード" iconid="67">
+            <field uid="1" label="カード番号" type="numeric"/>
+            <field uid="0" label="所有者" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="プリペイド金額" type="numeric"/>
+            <field uid="4" label="有効期限" type="date"/>
+            <field uid="5" label="使用量" type="numeric"/>
+            <field uid="7" label="ウェブサイト" type="url"/>
+            <field uid="8" label="ユーザー名" type="username"/>
+            <field uid="9" label="パスワード" type="password" sensitive="true"/>
+            <field uid="10" label="紛失した場合、電話してください" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="会員カード" iconid="46">
+            <field uid="1" label="メンバーID" type="numeric"/>
+            <field uid="10" label="メンバー名" type="text"/>
+            <field uid="0" label="組織" type="text"/>
+            <field uid="11" label="グループ" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="電話番号" type="phone"/>
+            <field uid="12" label="入会日" type="date"/>
+            <field uid="4" label="有効期限" type="date"/>
+            <field uid="6" label="ウェブサイト" type="url"/>
+            <field uid="7" label="ユーザー名" type="username"/>
+            <field uid="8" label="パスワード" type="password" sensitive="true"/>
+            <field uid="13" label="メール" type="email"/>
+            <field uid="9" label="紛失した場合、電話してください" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="PANカード" iconid="68">
+            <field uid="3" label="番号" type="numeric"/>
+            <field uid="0" label="名前" type="text"/>
+            <field uid="1" label="父親の名前" type="text"/>
+            <field uid="2" label="出生年月日" type="date"/>
+            <field uid="5" label="ウェブサイト" type="url"/>
+            <field uid="6" label="ユーザー名" type="username"/>
+            <field uid="7" label="パスワード" type="password" sensitive="true"/>
+            <field uid="8" label="紛失した場合、電話してください" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="携帯電話の情報" iconid="120">
+            <field uid="0" label="携帯電話のモデル" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="ロックコード" type="numeric" sensitive="true"/>
+            <field uid="5" label="SIMタイプ" type="text"/>
+            <field uid="6" label="SIM番号" type="numeric"/>
+            <field uid="7" label="PIN" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="購入日" type="date"/>
+            <field uid="10" label="保証" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="サービスプロバイダー" iconid="121">
+            <field uid="0" label="プロバイダー" type="text"/>
+            <field uid="1" label="サービスタイプ" type="text"/>
+            <field uid="2" label="顧客ID" type="text"/>
+            <field uid="3" label="サブスクリプションID" type="numeric"/>
+            <field uid="4" label="住所" type="text"/>
+            <field uid="5" label="ウェブサイト" type="url"/>
+            <field uid="6" label="ユーザー名" type="username"/>
+            <field uid="7" label="ログインパスワード" type="password" sensitive="true"/>
+            <field uid="8" label="ヘルプライン" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="雑多" iconid="126">
+            <field uid="0" label="フィールド1" type="text"/>
+            <field uid="1" label="フィールド2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="性別" value="male" type="sex_options"/>
+            <field uid="4" label="出生年月日" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="会社名" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="住所" type="address_firstline"/>
+            <field uid="10" label="通り" type="address_street"/>
+            <field uid="11" label="街" type="address_city"/>
+            <field uid="12" label="都道府県" type="address_state"/>
+            <field uid="13" label="郵便番号" type="address_zip"/>
+            <field uid="14" label="国" value="US" type="country_options"/>
+            <field uid="15" label="電話番号" type="phone"/>
+            <field uid="16" label="セキュリティ質問" type="text"/>
+            <field uid="17" label="セキュリティ質問の回答" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

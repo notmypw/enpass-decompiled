@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:icon="@drawable/ic_send_white_24dp" app:id="@+id/action_field_sharing" app:title="@string/menu_share" app:showAsAction="always" />
+</menu>

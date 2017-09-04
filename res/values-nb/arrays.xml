@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="auto_lock_interval_entries">
+        <item>30 Sekunders inaktivitet</item>
+        <item>1 Minutters inaktivitet</item>
+        <item>5 Minutters inaktivitet</item>
+        <item>10 Minutters inaktivitet</item>
+        <item>30 Minutters inaktivitiet</item>
+        <item>1 Times inaktivitet</item>
+        <item>5 Timers inaktivitet</item>
+        <item>12 Timers inaktivitet</item>
+    </array>
+    <array name="auto_lock_interval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="browser_package_names">
+        <item>com.android.chrome</item>
+        <item>com.chrome.beta</item>
+        <item>com.google.android.browser</item>
+        <item>mobi.mgeek.TunnyBrowser</item>
+        <item>com.dolphin.browser.zero</item>
+        <item>com.opera.browser</item>
+        <item>com.opera.mini.android</item>
+        <item>com.nubelacorp.javelin</item>
+        <item>com.cloudmosa.puffinFree</item>
+        <item>com.cloudmosa.puffin</item>
+        <item>com.UCMobile.intl</item>
+        <item>com.uc.browser.en</item>
+        <item>com.uc.browser.hd</item>
+        <item>org.mozilla.firefox</item>
+        <item>org.mozilla.firefox_beta</item>
+        <item>com.ksmobile.cb</item>
+        <item>com.jiubang.browser</item>
+        <item>com.mx.browser</item>
+        <item>com.chrome.dev</item>
+    </array>
+    <array name="clearclipboard_intervals">
+        <item>30 Sekunder</item>
+        <item>1 Minutt</item>
+        <item>2 Minutter</item>
+        <item>5 Minutter</item>
+        <item>Aldri</item>
+    </array>
+    <array name="clearclipboard_intervals_num">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="default_search_engine_entry_list">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>Yahoo</item>
+        <item>Ask</item>
+        <item>Baidu</item>
+        <item>DuckDuckGo</item>
+        <item>Qwant</item>
+    </array>
+    <array name="default_search_engine_values_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="detailopenLinkInEntries">
+        <item>Enpass-nettleser</item>
+        <item>Standardnettleser</item>
+    </array>
+    <array name="dropdown">
+        <item>Alle elementer</item>
+        <item>Favoritter</item>
+        <item>Mapper</item>
+        <item>CATEGORIES</item>
+        <item>Logg inn</item>
+        <item>Kredittkort</item>
+        <item>Økonomi</item>
+        <item>Datamaskin</item>
+        <item>Lisens</item>
+        <item>Passord</item>
+        <item>Sikker Bemerkning</item>
+        <item>Reise</item>
+        <item>Diverse</item>
+    </array>
+    <array name="new_features_array">
+        <item>Raskt lås opp PIN</item>
+        <item>Nettleser med flere faner</item>
+        <item>Forbedret Passordgenerator</item>
+        <item>Lagt til Sync støtte for Box</item>
+        <item>Flere tilpasningsalternativer</item>
+    </array>
+    <array name="openLinkInEntries">
+        <item>Spør alltid</item>
+        <item>Enpass-nettleser</item>
+        <item>Standardnettleser</item>
+    </array>
+    <array name="openLinkInValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="searchInCards_entries">
+        <item>Kun Tittel</item>
+        <item>Alle felt</item>
+    </array>
+    <array name="searchInCards_values">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="seprator_list">
+        <item>Komma</item>
+        <item>Dollartegn</item>
+        <item>Hashtegn</item>
+        <item>Bindestrek</item>
+        <item>Punktum</item>
+        <item>Mellomrom</item>
+        <item>Understrek</item>
+    </array>
+    <array name="sex">
+        <item>Mann</item>
+        <item>Kvinne</item>
+    </array>
+    <array name="trail_version_text_array">
+        <item>Gratis Desktop-versjon for PC.</item>
+        <item>Enpass på andre mobile enheter du bruker.</item>
+        <item>Synkroniser data over flere enheter ved hjelp av sky-kontoene dine på iCloud, Dropbox, Box, Google Drive og OneDrive.</item>
+    </array>
+</resources>

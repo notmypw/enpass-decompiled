@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent"
+        <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:padding="@dimen/normal_10dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <ImageButton app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/file_chooser_img_back" app:background="@locationawarelogger/TRACE_INT" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/folder_sync_back_btn" />
+            <TextView app:textAppearance="@r$style/TextAppearance_AppCompat_Medium" app:ellipsize="start" app:id="@+id/file_chooser_tv_path" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/normal_10dp" app:singleLine="true" />
+        </LinearLayout>
+        <ListView app:id="@+id/list_file_chooser" app:layout_width="match_parent" app:layout_height="match_parent" />
+    </LinearLayout>
+    <ImageButton app:id="@+id/file_chooser_img_addFolder" app:background="@drawable/add_item_button" app:layout_width="UNKNOWN_DATA_0x3c01" app:layout_height="UNKNOWN_DATA_0x3c01" app:layout_marginRight="20dp" app:layout_marginBottom="10dp" app:src="@drawable/ic_add_white" app:tint="0x106000b" app:layout_alignParentRight="true" app:layout_alignParentBottom="true" app:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="Inloggen" type="login" iconid="1001">
+        <card templatetype="login.default" name="Inloggen" iconid="21">
+            <field uid="10" label="Gebruikersnaam" type="username"/>
+            <field uid="12" label="E-mail" type="email"/>
+            <field uid="11" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="14" label="Telefoon" type="phone"/>
+            <field uid="13" label="Url" type="url"/>
+            <field uid="15" label="Beveiligingsvraag" type="text"/>
+            <field uid="16" label="Beveiligingsantwoord" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="Creditcard" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="Creditcard" iconid="20">
+            <field uid="0" label="Kaarthouder" type="cardholder_name"/>
+            <field uid="17" label="Type" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="Nummer" type="card_number"/>
+            <field uid="2" label="CVC" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="4" label="Vervaldatum" type="expiry_date"/>
+            <field uid="18" label="Geldig vanaf" type="date"/>
+            <field uid="10" label="Kredietlimiet" type="numeric"/>
+            <field uid="11" label="Limiet" type="numeric"/>
+            <field uid="12" label="Rente" type="numeric"/>
+            <field uid="6" label="Uitvoerende bank" type="bank_name"/>
+            <field uid="14" label="Website" type="url"/>
+            <field uid="15" label="Gebruikersnaam" type="username"/>
+            <field uid="16" label="Inlogwachtwoord" type="password" sensitive="true"/>
+            <field uid="9" label="Transactie wachtwoord" type="txn_password" sensitive="true"/>
+            <field uid="7" label="Uitgegeven op" type="date"/>
+            <field uid="8" label="Als verloren, bel" type="phone"/>
+        </card>
+    </category>
+
+    <category name="Financiën" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="Bankrekening" iconid="45">
+            <field uid="4" label="Banknaam" type="bank_name"/>
+            <field uid="0" label="Rekeninghouder" type="cardholder_name"/>
+            <field uid="1" label="Type" type="text"/>
+            <field uid="2" label="Rekeningnummer" type="numeric"/>
+            <field uid="16" label="Klant-ID" type="text"/>
+            <field uid="5" label="Routingnummer" type="numeric"/>
+            <field uid="6" label="Filiaalnaam" type="text"/>
+            <field uid="7" label="Filiaalcode" type="numeric"/>
+            <field uid="8" label="SWIFT" type="text"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="Filiaaladres" type="text"/>
+            <field uid="25" label="Filiaaltelefoon" type="phone"/>
+            
+            <field uid="11" label="Betaalkaartnummer" type="card_number"/>
+            <field uid="26" label="Type" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="14" label="CVV" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="Vervaldatum" type="expiry_date"/>
+            <field uid="27" label="Limiet" type="numeric"/>
+            
+            <field uid="17" label="Website" type="url"/>
+            <field uid="18" label="Gebruikersnaam" type="username"/>
+            <field uid="19" label="Inlogwachtwoord" type="password" sensitive="true"/>
+            <field uid="20" label="Transactie wachtwoord" type="txn_password" sensitive="true"/>
+            <field uid="22" label="Hulplijn" type="phone"/>
+            <field uid="23" label="T-PIN" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="Verzekeringspolis" iconid="33">
+            <field uid="1" label="Polisnaam" type="text"/>
+            <field uid="0" label="Bedrijf" type="text"/>
+            <field uid="19" label="Verzekeringnemer" type="text"/>
+            <field uid="2" label="Nummer" type="numeric"/>
+            <field uid="3" label="Type" type="text"/>
+            <field uid="5" label="Premie" type="numeric"/>
+            <field uid="6" label="Verzekerd bedrag" type="numeric"/>
+            <field uid="7" label="Datum van uitgifte" type="date"/>
+            <field uid="18" label="Verlengingsdatum" type="date"/>
+            <field uid="8" label="Vervaldatum" type="date"/>
+            <field uid="9" label="Termijn" type="numeric"/>
+            <field uid="20" label="Begunstigde" type="text"/>
+            <field uid="11" label="Klant-ID" type="numeric"/>
+            <field uid="12" label="Website" type="url"/>
+            <field uid="13" label="Gebruikersnaam" type="username"/>
+            <field uid="14" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="16" label="Agentnaam" type="text"/>
+            <field uid="17" label="Hulplijn" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="Aandelen investering" iconid="34">
+            <field uid="2" label="Symbool" type="text"/>
+            <field uid="0" label="Rekeningnummer" type="numeric"/>
+            <field uid="1" label="Type" type="text"/>
+            <field uid="3" label="Markt" type="text"/>
+            <field uid="5" label="Gelanceerd op" type="date"/>
+            <field uid="6" label="Gekocht op" type="date"/>
+            <field uid="7" label="Aankoopprijs" type="numeric"/>
+            <field uid="8" label="Hoeveelheid" type="numeric"/>
+            <field uid="9" label="Huidige prijs" type="numeric"/>
+            <field uid="11" label="Website" type="url"/>
+            <field uid="12" label="Gebruikersnaam" type="username"/>
+            <field uid="13" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="15" label="Makelaar" type="text"/>
+            <field uid="16" label="Telefoon" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="Beleggingsfonds" iconid="43">
+            <field uid="0" label="Beleggersnaam" type="text"/>
+            <field uid="1" label="Beleggingstype" type="text"/>
+            <field uid="2" label="Gelanceerd op" type="date"/>
+            <field uid="3" label="Gekocht op" type="date"/>
+            <field uid="4" label="Hoeveelheid" type="numeric"/>
+            <field uid="5" label="NAV Gekocht" type="numeric"/>
+            <field uid="6" label="Huidig NAV" type="numeric"/>
+            <field uid="8" label="Website" type="url"/>
+            <field uid="9" label="Gebruikersnaam" type="username"/>
+            <field uid="10" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="12" label="Makelaar" type="text"/>
+            <field uid="13" label="Telefoon" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="Lening/Hypotheek" iconid="44">
+            <field uid="2" label="Kredietgever" type="text"/>
+            <field uid="1" label="Type" type="text"/>
+            <field uid="0" label="Rekeningnummer" type="numeric"/>
+            <field uid="4" label="Belangrijkste" type="numeric"/>
+            <field uid="5" label="Rente %" type="numeric"/>
+            <field uid="6" label="Datum" type="date"/>
+            <field uid="7" label="Termijn" type="numeric"/>
+            <field uid="8" label="Saldo" type="numeric"/>
+            <field uid="9" label="Betaling verschuldigd op" type="numeric"/>
+            <field uid="10" label="Activa" type="text"/>
+            <field uid="12" label="Telefoon" type="phone"/>
+            <field uid="13" label="Website" type="url"/>
+            <field uid="14" label="Gebruikersnaam" type="username"/>
+            <field uid="15" label="Wachtwoord" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="Andere financiën" iconid="122">
+            <field uid="0" label="Veld 1" type="text"/>
+            <field uid="1" label="Veld 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Computer" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="Database" iconid="56">
+            <field uid="8" label="Type" type="text"/>
+            <field uid="0" label="Server" type="text"/>
+            <field uid="1" label="Poort" type="numeric"/>
+            <field uid="2" label="Database" type="text"/>
+            <field uid="3" label="Gebruikersnaam" type="username"/>
+            <field uid="4" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="5" label="SID" type="text"/>
+            <field uid="6" label="Alias" type="text"/>
+            <field uid="7" label="Opties" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="E-mailaccount" iconid="48">
+            <field uid="0" label="E-mail" type="email"/>
+            <field uid="1" label="Gebruikersnaam" type="username"/>
+            <field uid="2" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="9" label="Type" type="text"/>
+            <field uid="3" label="POP3-server" type="text"/>
+            <field uid="4" label="IMAP server" type="text"/>
+            <field uid="6" label="Poort" type="numeric"/>
+            <field uid="10" label="Beveiligingstype" type="text"/>
+            <field uid="11" label="Auth. methode" type="text"/>
+            <field uid="21" label="Weblink" type="url"/>
+            <field uid="5" label="SMTP-server" type="text"/>
+            <field uid="7" label="Poort" type="numeric"/>
+            <field uid="13" label="Gebruikersnaam" type="username"/>
+            <field uid="14" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="15" label="Beveiligingstype" type="text"/>
+            <field uid="16" label="Auth. methode" type="text"/>
+            <field uid="18" label="Provider" type="text"/>
+            <field uid="8" label="Website" type="url"/>
+            <field uid="19" label="Lokale telefoon" type="phone"/>
+            <field uid="20" label="Hulplijn" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="FTP-account" iconid="55">
+            <field uid="0" label="Server" type="text"/>
+            <field uid="1" label="Pad" type="text"/>
+            <field uid="2" label="Gebruikersnaam" type="username"/>
+            <field uid="3" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="4" label="Provider" type="text"/>
+            <field uid="5" label="Website" type="url"/>
+            <field uid="6" label="Telefoon" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="Instant messaging" iconid="49">
+            <field uid="0" label="Type" type="text"/>
+            <field uid="1" label="ID" type="text"/>
+            <field uid="2" label="Server" type="text"/>
+            <field uid="3" label="Poort" type="numeric"/>
+            <field uid="4" label="Bijnaam" type="text"/>
+            <field uid="5" label="Gebruikersnaam" type="username"/>
+            <field uid="6" label="Wachtwoord" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="Internetprovider" iconid="63">
+            <field uid="0" label="Gebruikersnaam" type="username"/>
+            <field uid="1" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="3" label="Dialup telefoon" type="phone"/>
+            <field uid="4" label="ISP/systeem" type="text"/>
+            <field uid="5" label="IP-adres" type="numeric"/>
+            <field uid="6" label="Subnetmasker" type="numeric"/>
+            <field uid="20" label="Gateway" type="numeric"/>
+            <field uid="7" label="Primaire DNS" type="numeric"/>
+            <field uid="8" label="Secundaire DNS" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Telnet" type="text"/>
+            <field uid="17" label="Hulplijn" type="phone"/>
+            <field uid="18" label="Website" type="url"/>
+            <field uid="19" label="Factuurinfo" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="Server" iconid="51">
+            <field uid="11" label="Beheerder login" type="username"/>
+            <field uid="12" label="Beheerder wachtwoord" type="password" sensitive="true"/>
+            <field uid="16" label="Beheerder URL" type="url"/>
+            <field uid="0" label="Service" type="text"/>
+            <field uid="1" label="Taken" type="text"/>
+            <field uid="2" label="OS" type="text"/>
+            <field uid="3" label="RAM" type="numeric"/>
+            <field uid="4" label="Opslag" type="numeric"/>
+            <field uid="5" label="CPU" type="numeric"/>
+            <field uid="6" label="RAID" type="text"/>
+            <field uid="7" label="Locatie" type="text"/>
+            <field uid="8" label="IP-adres" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="Poort" type="numeric"/>
+            <field uid="17" label="Hostingprovider" type="text"/>
+            <field uid="14" label="Support website" type="url"/>
+            <field uid="18" label="Hulplijn" type="phone"/>
+            <field uid="15" label="Factuurinfo" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="Draadloze router" iconid="35">
+            <field uid="0" label="Naam station" type="text"/>
+            <field uid="9" label="Wachtwoord station" type="password" sensitive="true"/>
+            <field uid="2" label="Netwerknaam" type="text"/>
+            <field uid="5" label="Netwerkwachtwoord" type="password" sensitive="true"/>
+            <field uid="3" label="Beveiliging" type="text"/>
+            <field uid="1" label="MAC/Airport #" type="numeric"/>
+            <field uid="12" label="Server/IP-adres" type="url"/>
+            <field uid="13" label="Gebruikersnaam" type="username"/>
+            <field uid="4" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="6" label="Opslag wachtwoord" type="password" sensitive="true"/>
+            <field uid="7" label="Support website" type="url"/>
+            <field uid="8" label="Factuurinfo" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="Webhosting" iconid="53">
+            <field uid="13" label="Provider" type="text"/>
+            <field uid="1" label="Gebruikersnaam" type="username"/>
+            <field uid="2" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="11" label="Beheerder URL" type="url"/>
+            <field uid="0" label="OS" type="text"/>
+            <field uid="9" label="Klant-ID" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="Database" type="text"/>
+            <field uid="7" label="Services" type="text"/>
+            <field uid="14" label="Support website" type="url"/>
+            <field uid="10" label="Hulplijn" type="phone"/>
+            <field uid="12" label="Vergoeding" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="Andere computer" iconid="123">
+            <field uid="0" label="Veld 1" type="text"/>
+            <field uid="1" label="Veld 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Licentie" type="license" iconid="1005">
+        <card templatetype="license.driving" name="Rijbewijs" iconid="60">
+            <field uid="1" label="Nummer" type="numeric"/>
+            <field uid="0" label="Naam" type="text"/>
+            <field uid="8" label="Geslacht" type="text"/>
+            <field uid="9" label="Geboortedatum" type="date"/>
+            <field uid="10" label="Adres" type="text"/>
+            <field uid="11" label="Lengte" type="text"/>
+            <field uid="2" label="Klasse" type="text"/>
+            <field uid="13" label="Beperkingen" type="text"/>
+            <field uid="3" label="Provincie" type="text"/>
+            <field uid="4" label="Land" type="text"/>
+            <field uid="5" label="Vervaldatum" type="date"/>
+            <field uid="6" label="Uitgegeven op" type="date"/>
+            <field uid="7" label="Als verloren, bel" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="Outdoor licentie" iconid="42">
+            <field uid="1" label="Nummer" type="numeric"/>
+            <field uid="0" label="Naam" type="text"/>
+            <field uid="2" label="Provincie" type="text"/>
+            <field uid="3" label="Regio" type="text"/>
+            <field uid="4" label="Land" type="text"/>
+            <field uid="5" label="Geldig vanaf" type="date"/>
+            <field uid="6" label="Vervaldatum" type="date"/>
+            <field uid="7" label="Goedgekeurde wildlife" type="text"/>
+            <field uid="8" label="Quotum" type="text"/>
+        </card>
+        <card templatetype="license.software" name="Softwarelicentie" iconid="52">
+            <field uid="0" label="Versie" type="numeric"/>
+            <field uid="16" label="Productnaam" type="text"/>
+            <field uid="17" label="Aantal gebruikers" type="numeric"/>
+            <field uid="1" label="Sleutel" type="text" sensitive="true"/>
+            <field uid="6" label="Download Pagina" type="url"/>
+            <field uid="3" label="In licentie gegeven aan" type="text"/>
+            <field uid="18" label="Inlogpagina" type="url"/>
+            <field uid="19" label="Gebruikersnaam" type="username"/>
+            <field uid="20" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="4" label="E-mail" type="email"/>
+            <field uid="5" label="Bedrijf" type="text"/>
+            <field uid="13" label="Aankoopdatum" type="date"/>
+            <field uid="14" label="Bestelnummer" type="numeric"/>
+            <field uid="12" label="Verkoopprijs" type="numeric"/>
+            <field uid="15" label="Totaal" type="numeric"/>
+            <field uid="8" label="Uitgever" type="text"/>
+            <field uid="9" label="Website" type="url"/>
+            <field uid="10" label="Support E-mail" type="email"/>
+            <field uid="21" label="Hulplijn" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="Andere licentie" iconid="124">
+            <field uid="0" label="Veld 1" type="text"/>
+            <field uid="1" label="Veld 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Wachtwoord" type="password" iconid="1006">
+        <card templatetype="password.default" name="Wachtwoord" iconid="36">
+            <field uid="0" label="Inloggen" type="username"/>
+            <field uid="1" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="2" label="Toegang" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Beveiligde Notitie" type="note" iconid="1007">
+        <card templatetype="note.default" name="Notitie" iconid="22">
+        </card>
+    </category>
+        
+    <category name="Reizen" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="Paspoort" iconid="37">
+            <field uid="2" label="Nummer" type="text"/>
+            <field uid="0" label="Volledige naam" type="text"/>
+            <field uid="14" label="Geslacht" type="text"/>
+            <field uid="1" label="Type" type="text"/>
+            <field uid="15" label="Nationaliteit" type="text"/>
+            <field uid="4" label="Geboorteplaats" type="text"/>
+            <field uid="5" label="Verjaardag" type="date"/>
+            <field uid="6" label="Uitgegeven op" type="text"/>
+            <field uid="7" label="Uitgegeven op" type="date"/>
+            <field uid="8" label="Vervaldatum" type="date"/>
+            <field uid="9" label="Land van uitgifte" type="text"/>
+            <field uid="10" label="Instelling" type="text"/>
+            <field uid="12" label="Vervangingen" type="text"/>
+            <field uid="13" label="Als verloren, bel" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="Reisvisum" iconid="57">
+            <field uid="1" label="Type" type="text"/>
+            <field uid="15" label="Land" type="text"/>
+            <field uid="0" label="Volledige naam" type="text"/>
+            <field uid="2" label="Nummer" type="numeric"/>
+            <field uid="4" label="Geldig voor" type="text"/>
+            <field uid="5" label="Geldig vanaf" type="date"/>
+            <field uid="6" label="Geldig tot" type="date"/>
+            <field uid="7" label="Duur" type="numeric"/>
+            <field uid="8" label="Aantal ingevoerde items" type="numeric"/>
+            <field uid="10" label="Uitgegeven door" type="text"/>
+            <field uid="11" label="Datum van uitgifte" type="date"/>
+            <field uid="12" label="Paspoortnummer" type="text"/>
+            <field uid="13" label="Opmerkingen" type="text"/>
+            <field uid="14" label="Als verloren, bel" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="Frequent flyer" iconid="39">
+            <field uid="1" label="Lidnummer" type="numeric"/>
+            <field uid="0" label="Naam" type="text"/>
+            <field uid="8" label="Vliegmaatschappij" type="text"/>
+            <field uid="2" label="Datum" type="date"/>
+            <field uid="3" label="Kilometerstand" type="numeric"/>
+            <field uid="5" label="Website" type="url"/>
+            <field uid="6" label="Gebruikersnaam" type="username"/>
+            <field uid="7" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="9" label="Klantenservice" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="Hotelreservering" iconid="27">
+            <field uid="0" label="Hotelnaam" type="text"/>
+            <field uid="4" label="Kamernummer" type="numeric"/>
+            <field uid="1" label="Adres" type="text"/>
+            <field uid="2" label="Reservering ID" type="numeric"/>
+            <field uid="3" label="Datum" type="date"/>
+            <field uid="5" label="Nachten" type="numeric"/>
+            <field uid="15" label="Hotelkorting" type="numeric"/>
+            <field uid="7" label="Telefoon" type="phone"/>
+            <field uid="8" label="E-mail" type="email"/>
+            <field uid="9" label="Website" type="url"/>
+            <field uid="10" label="Gebruikersnaam" type="username"/>
+            <field uid="11" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="13" label="Conciërge" type="text"/>
+            <field uid="14" label="Restaurant" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="Vluchtgegevens" iconid="38">
+            <field uid="2" label="Vluchtnummer" type="numeric"/>
+            <field uid="0" label="Vliegmaatschappij" type="text"/>
+            <field uid="1" label="Datum" type="date"/>
+            <field uid="3" label="Van" type="text"/>
+            <field uid="4" label="Naar" type="text"/>
+            <field uid="5" label="Tijd/Gate" type="text"/>
+            <field uid="6" label="E-Ticket nummer" type="numeric"/>
+            <field uid="7" label="Bevestiging #" type="numeric"/>
+            <field uid="10" label="Website" type="url"/>
+            <field uid="11" label="Gebruikersnaam" type="username"/>
+            <field uid="12" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="9" label="Telefoon" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="Andere reizen" iconid="125">
+            <field uid="0" label="Veld 1" type="text"/>
+            <field uid="1" label="Veld 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Diversen" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="Kledingmaat" iconid="23">
+            <field uid="9" label="Naam" type="text"/>
+            <field uid="0" label="Pak" type="text"/>
+            <field uid="1" label="Schoen" type="text"/>
+            <field uid="2" label="Shirt" type="text"/>
+            <field uid="3" label="Broek" type="text"/>
+            <field uid="4" label="Binnenbeenlengte" type="text"/>
+            <field uid="5" label="Rok" type="text"/>
+            <field uid="6" label="Handschoenen" type="text"/>
+            <field uid="7" label="Taille" type="text"/>
+            <field uid="8" label="Hals" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="Combinatieslot" iconid="61">
+            <field uid="0" label="Locatie" type="text"/>
+            <field uid="1" label="Code" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="Recept" iconid="40">
+            <field uid="2" label="Arts" type="text"/>
+            <field uid="0" label="RX #" type="text"/>
+            <field uid="1" label="Naam" type="text"/>
+            <field uid="3" label="Apotheek" type="text"/>
+            <field uid="4" label="Telefoon" type="phone"/>
+            <field uid="6" label="Merk" type="text"/>
+            <field uid="7" label="Medicijn" type="text"/>
+            <field uid="8" label="Aantal" type="numeric"/>
+            <field uid="9" label="Nemen" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="Lensrecept" iconid="26">
+            <field uid="0" label="Type" type="text"/>
+            <field uid="1" label="Rechts(OD)" type="numeric"/>
+            <field uid="2" label="Links(OS)" type="numeric"/>
+            <field uid="3" label="Arts" type="text"/>
+            <field uid="4" label="Telefoon" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="Registratiecode" iconid="66">
+            <field uid="2" label="Naam" type="text"/>
+            <field uid="0" label="Nummer" type="numeric" sensitive="true"/>
+            <field uid="1" label="Datum" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="Voertuig info" iconid="25">
+            <field uid="3" label="Registratie nr." type="text"/>
+            <field uid="11" label="Eigenaar" type="text"/>
+            <field uid="0" label="Model" type="text"/>
+            <field uid="12" label="Voertuigtype" type="text"/>
+            <field uid="13" label="Aankoopdatum" type="date"/>
+            <field uid="1" label="Bouwjaar" type="text"/>
+            <field uid="2" label="Jaar" type="numeric"/>
+            <field uid="4" label="VIN" type="text"/>
+            <field uid="5" label="Service telefoon" type="phone"/>
+            <field uid="14" label="Wegenwacht" type="phone"/>
+            <field uid="16" label="Verzekeraar" type="text"/>
+            <field uid="7" label="Verzekeringsbedrag" type="text"/>
+            <field uid="8" label="Polisnummer" type="numeric"/>
+            <field uid="10" label="Vervaldatum" type="date"/>
+            <field uid="9" label="Verzekering telefoon" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="Voicemail" iconid="62">
+            <field uid="0" label="Toegangsnummer" type="numeric"/>
+            <field uid="1" label="PIN" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="Adres" iconid="31">
+            <field uid="0" label="Naam" type="text"/>
+            <field uid="1" label="Huisnummer" type="text"/>
+            <field uid="2" label="Straat" type="text"/>
+            <field uid="3" label="Gemeente" type="text"/>
+            <field uid="4" label="Plaats" type="text"/>
+            <field uid="5" label="Provincie" type="text"/>
+            <field uid="6" label="Postcode" type="text"/>
+            <field uid="7" label="Land" type="text"/>
+            <field uid="9" label="Telefoon" type="phone"/>
+            <field uid="10" label="E-mail" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="Contact" iconid="47">
+            <field uid="0" label="Voornaam" type="text"/>
+            <field uid="1" label="Achternaam" type="text"/>
+            <field uid="2" label="Bedrijf" type="text"/>
+            <field uid="3" label="Telefoon (H)" type="phone"/>
+            <field uid="4" label="Telefoon (M)" type="phone"/>
+            <field uid="5" label="Telefoon (A)" type="phone"/>
+            <field uid="6" label="E-mail" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="Alarmnummers" iconid="28">
+            <field uid="0" label="Politie" type="phone"/>
+            <field uid="1" label="Brandweer" type="phone"/>
+            <field uid="2" label="Ambulance" type="phone"/>
+            <field uid="3" label="Arts" type="phone"/>
+            <field uid="4" label="Tandarts" type="phone"/>
+            <field uid="5" label="Dierenarts" type="phone"/>
+            <field uid="6" label="Electriciteitsbedrijf" type="phone"/>
+            <field uid="7" label="Gasbedrijf" type="phone"/>
+            <field uid="8" label="Telefoonmaatschappij" type="phone"/>
+            <field uid="9" label="Verhuurder" type="phone"/>
+            <field uid="10" label="Anders" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="Sofi-nummer" iconid="64">
+            <field uid="1" label="Nummer" type="numeric"/>
+            <field uid="0" label="Naam" type="text"/>
+            <field uid="2" label="Datum" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="Beloningsprogramma" iconid="24">
+            <field uid="0" label="Bedrijf" type="text"/>
+            <field uid="1" label="Naam" type="text"/>
+            <field uid="10" label="Lid ID" type="text"/>
+            <field uid="2" label="Nummer" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="5" label="Nummer 2" type="numeric"/>
+            <field uid="6" label="Sinds" type="date"/>
+            <field uid="7" label="Hulplijn" type="phone"/>
+            <field uid="8" label="Reserveringen telefoon" type="phone"/>
+            <field uid="9" label="Website" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="Serienummer" iconid="32">
+            <field uid="1" label="Seriële" type="text" sensitive="true"/>
+            <field uid="0" label="Merk" type="text"/>
+            <field uid="2" label="Model" type="text"/>
+            <field uid="3" label="Prijs" type="numeric"/>
+            <field uid="4" label="Gekocht op" type="date"/>
+            <field uid="6" label="Garantie" type="date"/>
+            <field uid="5" label="Locatie" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="Eigendomsinfo" iconid="70">
+            <field uid="0" label="Eigenaar" type="text"/>
+            <field uid="1" label="Adres" type="text"/>
+            <field uid="2" label="Type" type="text"/>
+            <field uid="3" label="Onderhoudsbedrag" type="numeric"/>
+            <field uid="5" label="Eigendom ID" type="text"/>
+            <field uid="6" label="BTW-bedrag" type="numeric"/>
+            <field uid="7" label="Fiscale vervaldatum" type="date"/>
+            <field uid="8" label="Webpagina" type="url"/>
+            <field uid="9" label="Gebruikersnaam" type="username"/>
+            <field uid="10" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="12" label="Verzekering" type="text"/>
+            <field uid="13" label="Verzekeringspremie" type="numeric"/>
+            <field uid="14" label="Polisnummer" type="numeric"/>
+            <field uid="15" label="Vervaldatum" type="date"/>
+            <field uid="16" label="Verzekering hulplijn" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="Telefoonkaart" iconid="54">
+            <field uid="1" label="Toegangsnummer" type="phone"/>
+            <field uid="0" label="Provider" type="text"/>
+            <field uid="2" label="Kaartnummer" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="Polsslag" type="numeric"/>
+            <field uid="5" label="Vervaldatum" type="date"/>
+            <field uid="6" label="Gebruik" type="numeric"/>
+            <field uid="8" label="Website" type="url"/>
+            <field uid="9" label="Gebruikersnaam" type="username"/>
+            <field uid="10" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="11" label="Als verloren, bel" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="Identiteitskaart" iconid="59">
+            <field uid="2" label="ID-nummer" type="numeric"/>
+            <field uid="0" label="Titel" type="text"/>
+            <field uid="1" label="Volledige naam" type="text"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="Land" type="text"/>
+            <field uid="5" label="Uitgegeven op" type="date"/>
+            <field uid="6" label="Vervaldatum" type="date"/>
+            <field uid="7" label="Als verloren, bel" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="ISIC-kaart" iconid="65">
+            <field uid="2" label="Kaartnummer" type="numeric"/>
+            <field uid="0" label="Studeert aan" type="text"/>
+            <field uid="1" label="Volledige naam" type="text"/>
+            <field uid="3" label="Geboren" type="date"/>
+            <field uid="4" label="Uitgegeven op" type="date"/>
+            <field uid="5" label="Vervaldatum" type="date"/>
+            <field uid="6" label="Als verloren, bel" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="ITIC kaart" iconid="41">
+            <field uid="2" label="Kaartnummer" type="numeric"/>
+            <field uid="0" label="Doceert aan" type="text"/>
+            <field uid="1" label="Volledige naam" type="text"/>
+            <field uid="3" label="Geboren" type="date"/>
+            <field uid="4" label="Uitgegeven op" type="date"/>
+            <field uid="5" label="Vervaldatum" type="date"/>
+            <field uid="6" label="Als verloren, bel" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="Bibliotheekpas" iconid="58">
+            <field uid="1" label="Kaartnummer" type="numeric"/>
+            <field uid="0" label="Bibliotheek" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Uren" type="numeric"/>
+            <field uid="4" label="Adres" type="text"/>
+            <field uid="5" label="Uitgegeven op" type="date"/>
+            <field uid="6" label="Vervaldatum" type="date"/>
+            <field uid="8" label="Website" type="url"/>
+            <field uid="9" label="Gebruikersnaam" type="username"/>
+            <field uid="10" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="11" label="Als verloren, bel" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="Kiezerskaart" iconid="69">
+            <field uid="0" label="Volledige naam" type="text"/>
+            <field uid="1" label="Kiezer ID" type="numeric"/>
+            <field uid="2" label="Adres" type="text"/>
+            <field uid="3" label="Voogd" type="text"/>
+            <field uid="4" label="Locatie" type="text"/>
+            <field uid="5" label="Tweede Kamer" type="text"/>
+            <field uid="6" label="Eerste Kamer" type="text"/>
+            <field uid="7" label="Vertegenwoordiger" type="text"/>
+            <field uid="8" label="Adres" type="text"/>
+            <field uid="9" label="Uitgegeven op" type="date"/>
+            <field uid="11" label="Website" type="url"/>
+            <field uid="12" label="Gebruikersnaam" type="username"/>
+            <field uid="13" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="14" label="Als verloren, bel" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="ITZ kaart" iconid="67">
+            <field uid="1" label="Kaartnummer" type="numeric"/>
+            <field uid="0" label="Eigenaar" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Waarde" type="numeric"/>
+            <field uid="4" label="Vervaldatum" type="date"/>
+            <field uid="5" label="Gebruik" type="numeric"/>
+            <field uid="7" label="Website" type="url"/>
+            <field uid="8" label="Gebruikersnaam" type="username"/>
+            <field uid="9" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="10" label="Als verloren, bel" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="Lidkaart" iconid="46">
+            <field uid="1" label="Lid ID" type="numeric"/>
+            <field uid="10" label="Lidnaam" type="text"/>
+            <field uid="0" label="Organisatie" type="text"/>
+            <field uid="11" label="Groep" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Telefoon" type="phone"/>
+            <field uid="12" label="Lid sinds" type="date"/>
+            <field uid="4" label="Vervaldatum" type="date"/>
+            <field uid="6" label="Website" type="url"/>
+            <field uid="7" label="Gebruikersnaam" type="username"/>
+            <field uid="8" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="13" label="E-mail" type="email"/>
+            <field uid="9" label="Als verloren, bel" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="PAN kaart" iconid="68">
+            <field uid="3" label="Nummer" type="numeric"/>
+            <field uid="0" label="Naam" type="text"/>
+            <field uid="1" label="Naam vader" type="text"/>
+            <field uid="2" label="Geboortedatum" type="date"/>
+            <field uid="5" label="Website" type="url"/>
+            <field uid="6" label="Gebruikersnaam" type="username"/>
+            <field uid="7" label="Wachtwoord" type="password" sensitive="true"/>
+            <field uid="8" label="Als verloren, bel" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="Mobiel info" iconid="120">
+            <field uid="0" label="Handset Model" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="Blokkeringscode" type="numeric" sensitive="true"/>
+            <field uid="5" label="SIM-type" type="text"/>
+            <field uid="6" label="SIM nummer" type="numeric"/>
+            <field uid="7" label="PIN" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK-code" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="Gekocht op" type="date"/>
+            <field uid="10" label="Garantie" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="Serviceprovider" iconid="121">
+            <field uid="0" label="Provider" type="text"/>
+            <field uid="1" label="Servicetype" type="text"/>
+            <field uid="2" label="Consument Id" type="text"/>
+            <field uid="3" label="Abonnement-ID" type="numeric"/>
+            <field uid="4" label="Adres" type="text"/>
+            <field uid="5" label="Website" type="url"/>
+            <field uid="6" label="Gebruikersnaam" type="username"/>
+            <field uid="7" label="Inlogwachtwoord" type="password" sensitive="true"/>
+            <field uid="8" label="Hulplijn" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="Diverse andere" iconid="126">
+            <field uid="0" label="Veld 1" type="text"/>
+            <field uid="1" label="Veld 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="Geslacht" value="male" type="sex_options"/>
+            <field uid="4" label="Geboortedatum" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="Bedrijf" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="Adres" type="address_firstline"/>
+            <field uid="10" label="Straat" type="address_street"/>
+            <field uid="11" label="Plaats" type="address_city"/>
+            <field uid="12" label="Provincie" type="address_state"/>
+            <field uid="13" label="Postcode" type="address_zip"/>
+            <field uid="14" label="Land" value="US" type="country_options"/>
+            <field uid="15" label="Telefoon" type="phone"/>
+            <field uid="16" label="Beveiligingsvraag" type="text"/>
+            <field uid="17" label="Beveiligingsantwoord" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="Σύνδεση" type="login" iconid="1001">
+        <card templatetype="login.default" name="Σύνδεση" iconid="21">
+            <field uid="10" label="Όνομα χρήστη" type="username"/>
+            <field uid="12" label="Email" type="email"/>
+            <field uid="11" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="14" label="Τηλέφωνο" type="phone"/>
+            <field uid="13" label="Url" type="url"/>
+            <field uid="15" label="Ερώτηση ασφαλείας" type="text"/>
+            <field uid="16" label="Απάντηση ασφαλείας" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="Πιστωτική κάρτα" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="Πιστωτική κάρτα" iconid="20">
+            <field uid="0" label="Κατόχος κάρτας" type="cardholder_name"/>
+            <field uid="17" label="Τύπος" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="Αριθμός" type="card_number"/>
+            <field uid="2" label="CVC" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="4" label="Ημερομηνία λήξης" type="expiry_date"/>
+            <field uid="18" label="Ισχύει από" type="date"/>
+            <field uid="10" label="Πιστωτικό όριο" type="numeric"/>
+            <field uid="11" label="Όριο αναλήψεων" type="numeric"/>
+            <field uid="12" label="Επιτόκιο" type="numeric"/>
+            <field uid="6" label="Εκδότρια τράπεζα" type="bank_name"/>
+            <field uid="14" label="Ιστοσελίδα" type="url"/>
+            <field uid="15" label="Όνομα χρήστη" type="username"/>
+            <field uid="16" label="Κωδικός σύνδεσης" type="password" sensitive="true"/>
+            <field uid="9" label="Κωδικός συναλλαγής" type="txn_password" sensitive="true"/>
+            <field uid="7" label="Εκδόθηκε στις" type="date"/>
+            <field uid="8" label="Αν χαθεί, καλέστε στο" type="phone"/>
+        </card>
+    </category>
+
+    <category name="Χρηματοοικονομικά" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="Τραπεζικός λογαριασμός" iconid="45">
+            <field uid="4" label="Επωνυμία Τράπεζας" type="bank_name"/>
+            <field uid="0" label="Κάτοχος λογαριασμού" type="cardholder_name"/>
+            <field uid="1" label="Τύπος" type="text"/>
+            <field uid="2" label="Αριθμός λογαριασμού" type="numeric"/>
+            <field uid="16" label="ID Πελάτη" type="text"/>
+            <field uid="5" label="Αριθμός δρομολόγησης" type="numeric"/>
+            <field uid="6" label="Επωνυμία υποκαταστήματος" type="text"/>
+            <field uid="7" label="Κωδικός υποκαταστήματος" type="numeric"/>
+            <field uid="8" label="SWIFT" type="text"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="Διεύθυνση υποκαταστήματος" type="text"/>
+            <field uid="25" label="Τηλέφωνο Υποκαταστήματος" type="phone"/>
+            
+            <field uid="11" label="Αριθμός Χρεωστικής Κάρτας" type="card_number"/>
+            <field uid="26" label="Τύπος" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="14" label="CVV" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="Ημερομηνία λήξης" type="expiry_date"/>
+            <field uid="27" label="Όριο αναλήψεων" type="numeric"/>
+            
+            <field uid="17" label="Ιστοσελίδα" type="url"/>
+            <field uid="18" label="Όνομα χρήστη" type="username"/>
+            <field uid="19" label="Κωδικός σύνδεσης" type="password" sensitive="true"/>
+            <field uid="20" label="Κωδικός συναλλαγής" type="txn_password" sensitive="true"/>
+            <field uid="22" label="Γραμμή βοήθειας" type="phone"/>
+            <field uid="23" label="T-PIN" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="Ασφαλιστήριο συμβόλαιο" iconid="33">
+            <field uid="1" label="Όνομα Συμβολαίου" type="text"/>
+            <field uid="0" label="Εταιρεία" type="text"/>
+            <field uid="19" label="Κάτοχος συμβολαίου" type="text"/>
+            <field uid="2" label="Αριθμός" type="numeric"/>
+            <field uid="3" label="Τύπος" type="text"/>
+            <field uid="5" label="Ασφάλιστρο" type="numeric"/>
+            <field uid="6" label="Ποσό κάλυψης" type="numeric"/>
+            <field uid="7" label="Ημερομηνία έκδοσης" type="date"/>
+            <field uid="18" label="Ημερομηνία ανανέωσης" type="date"/>
+            <field uid="8" label="Ημερομηνία λήξης" type="date"/>
+            <field uid="9" label="Περίοδος" type="numeric"/>
+            <field uid="20" label="Υποψήφιος" type="text"/>
+            <field uid="11" label="ID Πελάτη" type="numeric"/>
+            <field uid="12" label="Ιστοσελίδα" type="url"/>
+            <field uid="13" label="Όνομα χρήστη" type="username"/>
+            <field uid="14" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="16" label="Όνομα ασφαλιστή" type="text"/>
+            <field uid="17" label="Γραμμή βοήθειας" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="Επένδυση χρηματιστηρίου" iconid="34">
+            <field uid="2" label="Σύμβολο" type="text"/>
+            <field uid="0" label="Αριθμός λογαριασμού" type="numeric"/>
+            <field uid="1" label="Τύπος" type="text"/>
+            <field uid="3" label="Αγορά" type="text"/>
+            <field uid="5" label="Εκκίνηση στις" type="date"/>
+            <field uid="6" label="Αγοράστηκε στις" type="date"/>
+            <field uid="7" label="Τιμή αγοράς" type="numeric"/>
+            <field uid="8" label="Ποσότητα" type="numeric"/>
+            <field uid="9" label="Τρέχουσα τιμή" type="numeric"/>
+            <field uid="11" label="Ιστοσελίδα" type="url"/>
+            <field uid="12" label="Όνομα χρήστη" type="username"/>
+            <field uid="13" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="15" label="Χρηματιστής" type="text"/>
+            <field uid="16" label="Τηλέφωνο" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="Αμοιβαίο κεφάλαιο" iconid="43">
+            <field uid="0" label="Ονομασία κεφαλαίου" type="text"/>
+            <field uid="1" label="Είδος κεφαλαίου" type="text"/>
+            <field uid="2" label="Εκκίνηση στις" type="date"/>
+            <field uid="3" label="Αγοράστηκε στις" type="date"/>
+            <field uid="4" label="Ποσότητα" type="numeric"/>
+            <field uid="5" label="Καθαρή Τιμή κατά την Αγορά" type="numeric"/>
+            <field uid="6" label="Τρέχουσα Καθαρή Τιμή" type="numeric"/>
+            <field uid="8" label="Ιστοσελίδα" type="url"/>
+            <field uid="9" label="Όνομα χρήστη" type="username"/>
+            <field uid="10" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="12" label="Χρηματιστής" type="text"/>
+            <field uid="13" label="Τηλέφωνο" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="Δάνειο/Υποθήκη" iconid="44">
+            <field uid="2" label="Δανειστής" type="text"/>
+            <field uid="1" label="Τύπος" type="text"/>
+            <field uid="0" label="Αριθμός λογαριασμού" type="numeric"/>
+            <field uid="4" label="Αρχικό κεφάλαιο" type="numeric"/>
+            <field uid="5" label="Επιτόκιο" type="numeric"/>
+            <field uid="6" label="Ημερομηνία" type="date"/>
+            <field uid="7" label="Περίοδος" type="numeric"/>
+            <field uid="8" label="Υπόλοιπο" type="numeric"/>
+            <field uid="9" label="Οφειλόμενη πληρωμή" type="numeric"/>
+            <field uid="10" label="Περιουσιακό στοιχείο" type="text"/>
+            <field uid="12" label="Τηλέφωνο" type="phone"/>
+            <field uid="13" label="Ιστοσελίδα" type="url"/>
+            <field uid="14" label="Όνομα χρήστη" type="username"/>
+            <field uid="15" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="Άλλα χρηματοοικονομικά" iconid="122">
+            <field uid="0" label="Πεδίο 1" type="text"/>
+            <field uid="1" label="Πεδίο 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Υπολογιστής" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="Βάση δεδομένων" iconid="56">
+            <field uid="8" label="Τύπος" type="text"/>
+            <field uid="0" label="Διακομιστής" type="text"/>
+            <field uid="1" label="Πύλη" type="numeric"/>
+            <field uid="2" label="Βάση δεδομένων" type="text"/>
+            <field uid="3" label="Όνομα χρήστη" type="username"/>
+            <field uid="4" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="5" label="SID" type="text"/>
+            <field uid="6" label="Παρώνυμο" type="text"/>
+            <field uid="7" label="Επιλογές" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="Λογαριασμός Email" iconid="48">
+            <field uid="0" label="Email" type="email"/>
+            <field uid="1" label="Όνομα χρήστη" type="username"/>
+            <field uid="2" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="9" label="Τύπος" type="text"/>
+            <field uid="3" label="Διακομιστής POP3" type="text"/>
+            <field uid="4" label="Διακομιστής IMAP" type="text"/>
+            <field uid="6" label="Πύλη" type="numeric"/>
+            <field uid="10" label="Τύπος ασφαλείας" type="text"/>
+            <field uid="11" label="Μέθοδος ταυτοποίησης" type="text"/>
+            <field uid="21" label="Σύνδεσμος ιστοσελίδας" type="url"/>
+            <field uid="5" label="Διακομιστής SMTP" type="text"/>
+            <field uid="7" label="Πύλη" type="numeric"/>
+            <field uid="13" label="Όνομα χρήστη" type="username"/>
+            <field uid="14" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="15" label="Τύπος ασφαλείας" type="text"/>
+            <field uid="16" label="Μέθοδος ταυτοποίησης" type="text"/>
+            <field uid="18" label="Πάροχος" type="text"/>
+            <field uid="8" label="Ιστοσελίδα" type="url"/>
+            <field uid="19" label="Τοπικό τηλέφωνο" type="phone"/>
+            <field uid="20" label="Γραμμή βοήθειας" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="Λογαριασμός FTP" iconid="55">
+            <field uid="0" label="Διακομιστής" type="text"/>
+            <field uid="1" label="Διαδρομή" type="text"/>
+            <field uid="2" label="Όνομα χρήστη" type="username"/>
+            <field uid="3" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="4" label="Πάροχος" type="text"/>
+            <field uid="5" label="Ιστοσελίδα" type="url"/>
+            <field uid="6" label="Τηλέφωνο" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="Άμεση ανταλλαγή μηνυμάτων" iconid="49">
+            <field uid="0" label="Τύπος" type="text"/>
+            <field uid="1" label="ID" type="text"/>
+            <field uid="2" label="Διακομιστής" type="text"/>
+            <field uid="3" label="Πύλη" type="numeric"/>
+            <field uid="4" label="Παρωνύμιο" type="text"/>
+            <field uid="5" label="Όνομα χρήστη" type="username"/>
+            <field uid="6" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="Πάροχος διαδικτύου" iconid="63">
+            <field uid="0" label="Όνομα χρήστη" type="username"/>
+            <field uid="1" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="3" label="Σχηματισμός τηλεφωνικού αριθμού" type="phone"/>
+            <field uid="4" label="Σύστημα/ISP" type="text"/>
+            <field uid="5" label="Διεύθυνση IP" type="numeric"/>
+            <field uid="6" label="Μάσκα υποδικτύου" type="numeric"/>
+            <field uid="20" label="Πύλη" type="numeric"/>
+            <field uid="7" label="Πρωτεύων DNS" type="numeric"/>
+            <field uid="8" label="Δευτερεύων DNS" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Τηλεφωνικό δίκτυο" type="text"/>
+            <field uid="17" label="Γραμμή βοήθειας" type="phone"/>
+            <field uid="18" label="Ιστοσελίδα" type="url"/>
+            <field uid="19" label="Πληροφορίες τιμολόγησης" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="Διακομιστής" iconid="51">
+            <field uid="11" label="Είσοδος διαχειριστή" type="username"/>
+            <field uid="12" label="Κωδικός πρόσβασης διαχειριστή" type="password" sensitive="true"/>
+            <field uid="16" label="URL Διαχειριστή" type="url"/>
+            <field uid="0" label="Υπηρεσία" type="text"/>
+            <field uid="1" label="Εργασίες" type="text"/>
+            <field uid="2" label="OS" type="text"/>
+            <field uid="3" label="RAM" type="numeric"/>
+            <field uid="4" label="Αποθήκευση" type="numeric"/>
+            <field uid="5" label="CPU" type="numeric"/>
+            <field uid="6" label="RAID" type="text"/>
+            <field uid="7" label="Τοποθεσία" type="text"/>
+            <field uid="8" label="Διεύθυνση IP" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="Πύλη" type="numeric"/>
+            <field uid="17" label="Πάροχος φιλοξενίας" type="text"/>
+            <field uid="14" label="Ιστοσελίδα υποστήριξης" type="url"/>
+            <field uid="18" label="Γραμμή βοήθειας" type="phone"/>
+            <field uid="15" label="Πληροφορίες τιμολόγησης" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="Ασύρματος δρομολογητής" iconid="35">
+            <field uid="0" label="Όνομα σταθμού" type="text"/>
+            <field uid="9" label="Κωδικός πρόσβασης σταθμού" type="password" sensitive="true"/>
+            <field uid="2" label="Όνομα δικτύου" type="text"/>
+            <field uid="5" label="Κωδικός πρόσβασης δικτύου" type="password" sensitive="true"/>
+            <field uid="3" label="Ασφάλεια" type="text"/>
+            <field uid="1" label="MAC/Airport #" type="numeric"/>
+            <field uid="12" label="Διεύθυνση διακομιστή/IP" type="url"/>
+            <field uid="13" label="Όνομα χρήστη" type="username"/>
+            <field uid="4" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="6" label="Κωδικός αποθήκευσης" type="password" sensitive="true"/>
+            <field uid="7" label="Ιστοσελίδα υποστήριξης" type="url"/>
+            <field uid="8" label="Πληροφορίες τιμολόγησης" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="Φιλοξενία ιστοσελίδων" iconid="53">
+            <field uid="13" label="Πάροχος" type="text"/>
+            <field uid="1" label="Όνομα χρήστη" type="username"/>
+            <field uid="2" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="11" label="URL Διαχειριστή" type="url"/>
+            <field uid="0" label="OS" type="text"/>
+            <field uid="9" label="ID Πελάτη" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="Βάση δεδομένων" type="text"/>
+            <field uid="7" label="Υπηρεσίες" type="text"/>
+            <field uid="14" label="Ιστοσελίδα υποστήριξης" type="url"/>
+            <field uid="10" label="Γραμμή βοήθειας" type="phone"/>
+            <field uid="12" label="Συνδρομή" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="Άλλος υπολογιστής" iconid="123">
+            <field uid="0" label="Πεδίο 1" type="text"/>
+            <field uid="1" label="Πεδίο 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Άδεια" type="license" iconid="1005">
+        <card templatetype="license.driving" name="Άδεια οδήγησης" iconid="60">
+            <field uid="1" label="Αριθμός" type="numeric"/>
+            <field uid="0" label="Όνομα" type="text"/>
+            <field uid="8" label="Φύλο" type="text"/>
+            <field uid="9" label="Ημερομηνία γέννησης" type="date"/>
+            <field uid="10" label="Διεύθυνση" type="text"/>
+            <field uid="11" label="Ύψος" type="text"/>
+            <field uid="2" label="Κατηγορία" type="text"/>
+            <field uid="13" label="Περιορισμοί" type="text"/>
+            <field uid="3" label="Πολιτεία" type="text"/>
+            <field uid="4" label="Χώρα" type="text"/>
+            <field uid="5" label="Ημερομηνία λήξης" type="date"/>
+            <field uid="6" label="Εκδόθηκε στις" type="date"/>
+            <field uid="7" label="Αν χαθεί, καλέστε στο" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="Υπαίθρια άδεια" iconid="42">
+            <field uid="1" label="Αριθμός" type="numeric"/>
+            <field uid="0" label="Όνομα" type="text"/>
+            <field uid="2" label="Πολιτεία" type="text"/>
+            <field uid="3" label="Περιοχή" type="text"/>
+            <field uid="4" label="Χώρα" type="text"/>
+            <field uid="5" label="Ισχύει από" type="date"/>
+            <field uid="6" label="Ημερομηνία λήξης" type="date"/>
+            <field uid="7" label="Επιτρεπόμενα άγρια ζώα" type="text"/>
+            <field uid="8" label="Αναλογία" type="text"/>
+        </card>
+        <card templatetype="license.software" name="Άδεια χρήσης λογισμικού" iconid="52">
+            <field uid="0" label="Έκδοση" type="numeric"/>
+            <field uid="16" label="Όνομα προϊόντος" type="text"/>
+            <field uid="17" label="Αριθμός χρηστών" type="numeric"/>
+            <field uid="1" label="Κλειδί" type="text" sensitive="true"/>
+            <field uid="6" label="Λήψη σελίδας" type="url"/>
+            <field uid="3" label="Άδεια προς" type="text"/>
+            <field uid="18" label="Σελίδα σύνδεσης" type="url"/>
+            <field uid="19" label="Όνομα χρήστη" type="username"/>
+            <field uid="20" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="4" label="Email" type="email"/>
+            <field uid="5" label="Εταιρεία" type="text"/>
+            <field uid="13" label="Ημερομηνία αγοράς" type="date"/>
+            <field uid="14" label="Αύξων αριθμός" type="numeric"/>
+            <field uid="12" label="Λιανική τιμή" type="numeric"/>
+            <field uid="15" label="Σύνολο" type="numeric"/>
+            <field uid="8" label="Εκδότης" type="text"/>
+            <field uid="9" label="Ιστοσελίδα" type="url"/>
+            <field uid="10" label="Email υποστήριξης" type="email"/>
+            <field uid="21" label="Γραμμή βοήθειας" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="Άλλη άδεια" iconid="124">
+            <field uid="0" label="Πεδίο 1" type="text"/>
+            <field uid="1" label="Πεδίο 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Κωδικός πρόσβασης" type="password" iconid="1006">
+        <card templatetype="password.default" name="Κωδικός πρόσβασης" iconid="36">
+            <field uid="0" label="Σύνδεση" type="username"/>
+            <field uid="1" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="2" label="Πρόσβαση" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Ασφαλής Σημείωση" type="note" iconid="1007">
+        <card templatetype="note.default" name="Σημείωση" iconid="22">
+        </card>
+    </category>
+        
+    <category name="Ταξίδια" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="Διαβατήριο" iconid="37">
+            <field uid="2" label="Αριθμός" type="text"/>
+            <field uid="0" label="Ονοματεπώνυμο" type="text"/>
+            <field uid="14" label="Φύλο" type="text"/>
+            <field uid="1" label="Τύπος" type="text"/>
+            <field uid="15" label="Εθνικότητα" type="text"/>
+            <field uid="4" label="Τόπος γέννησης" type="text"/>
+            <field uid="5" label="Γενέθλια" type="date"/>
+            <field uid="6" label="Τόπος έκδοσης" type="text"/>
+            <field uid="7" label="Εκδόθηκε στις" type="date"/>
+            <field uid="8" label="Ημερομηνία λήξης" type="date"/>
+            <field uid="9" label="Χώρα έκδοσης" type="text"/>
+            <field uid="10" label="Αρχή" type="text"/>
+            <field uid="12" label="Αντικαταστάσεις" type="text"/>
+            <field uid="13" label="Αν χαθεί, καλέστε στο" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="Ταξιδιωτική βίζα" iconid="57">
+            <field uid="1" label="Τύπος" type="text"/>
+            <field uid="15" label="Χώρα" type="text"/>
+            <field uid="0" label="Ονοματεπώνυμο" type="text"/>
+            <field uid="2" label="Αριθμός" type="numeric"/>
+            <field uid="4" label="Ισχύει για" type="text"/>
+            <field uid="5" label="Ισχύει από" type="date"/>
+            <field uid="6" label="Ισχύει μέχρι" type="date"/>
+            <field uid="7" label="Διάρκεια" type="numeric"/>
+            <field uid="8" label="Αριθμός εισόδων" type="numeric"/>
+            <field uid="10" label="Εκδόθηκε από" type="text"/>
+            <field uid="11" label="Ημερομηνία έκδοσης" type="date"/>
+            <field uid="12" label="Αριθμός διαβατηρίου" type="text"/>
+            <field uid="13" label="Παρατηρήσεις" type="text"/>
+            <field uid="14" label="Αν χαθεί, καλέστε στο" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="Τακτικός αεροπορικός επιβάτης" iconid="39">
+            <field uid="1" label="Αρ. Μέλους" type="numeric"/>
+            <field uid="0" label="Όνομα" type="text"/>
+            <field uid="8" label="Αεροπορική εταιρεία" type="text"/>
+            <field uid="2" label="Ημερομηνία" type="date"/>
+            <field uid="3" label="Διανυθέντα χιλιόμετρα" type="numeric"/>
+            <field uid="5" label="Ιστοσελίδα" type="url"/>
+            <field uid="6" label="Όνομα χρήστη" type="username"/>
+            <field uid="7" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="9" label="Εξυπηρέτηση Πελατών" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="Κράτηση ξενοδοχείου" iconid="27">
+            <field uid="0" label="Όνομα ξενοδοχείου" type="text"/>
+            <field uid="4" label="Αριθμός δωματίου" type="numeric"/>
+            <field uid="1" label="Διεύθυνση" type="text"/>
+            <field uid="2" label="ID κράτησης" type="numeric"/>
+            <field uid="3" label="Ημερομηνία" type="date"/>
+            <field uid="5" label="Βράδια" type="numeric"/>
+            <field uid="15" label="Ανταμοιβή Ξενοδοχείου" type="numeric"/>
+            <field uid="7" label="Τηλέφωνο" type="phone"/>
+            <field uid="8" label="Email" type="email"/>
+            <field uid="9" label="Ιστοσελίδα" type="url"/>
+            <field uid="10" label="Όνομα χρήστη" type="username"/>
+            <field uid="11" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="13" label="Εξατομικευμένες υπηρεσίες" type="text"/>
+            <field uid="14" label="Εστιατόριο" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="Στοιχεία πτήσης" iconid="38">
+            <field uid="2" label="Αριθμός πτήσης" type="numeric"/>
+            <field uid="0" label="Αεροπορική εταιρεία" type="text"/>
+            <field uid="1" label="Ημερομηνία" type="date"/>
+            <field uid="3" label="Από" type="text"/>
+            <field uid="4" label="Προς" type="text"/>
+            <field uid="5" label="Ώρα/Πύλη" type="text"/>
+            <field uid="6" label="Αριθμός ηλεκτρονικού εισιτηρίου" type="numeric"/>
+            <field uid="7" label="# Επιβεβαίωσης" type="numeric"/>
+            <field uid="10" label="Ιστοσελίδα" type="url"/>
+            <field uid="11" label="Όνομα χρήστη" type="username"/>
+            <field uid="12" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="9" label="Τηλέφωνο" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="Άλλα ταξίδια" iconid="125">
+            <field uid="0" label="Πεδίο 1" type="text"/>
+            <field uid="1" label="Πεδίο 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Διάφορα" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="Μέγεθος ρούχων" iconid="23">
+            <field uid="9" label="Όνομα" type="text"/>
+            <field uid="0" label="Κοστούμι" type="text"/>
+            <field uid="1" label="Παπούτσια" type="text"/>
+            <field uid="2" label="Πουκάμισο" type="text"/>
+            <field uid="3" label="Παντελόνι" type="text"/>
+            <field uid="4" label="Μήκος εσωτερικής ραφής παντελονιού" type="text"/>
+            <field uid="5" label="Φούστα" type="text"/>
+            <field uid="6" label="Γάντια" type="text"/>
+            <field uid="7" label="Μέση" type="text"/>
+            <field uid="8" label="Λαιμός" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="Συνδυασμός κλειδώματος" iconid="61">
+            <field uid="0" label="Τοποθεσία" type="text"/>
+            <field uid="1" label="Κωδικός" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="Ιατρική συνταγή" iconid="40">
+            <field uid="2" label="Γιατρός" type="text"/>
+            <field uid="0" label="RX #" type="text"/>
+            <field uid="1" label="Όνομα" type="text"/>
+            <field uid="3" label="Φαρμακείο" type="text"/>
+            <field uid="4" label="Τηλέφωνο" type="phone"/>
+            <field uid="6" label="Μάρκα" type="text"/>
+            <field uid="7" label="Φάρμακο" type="text"/>
+            <field uid="8" label="Ποσότητα" type="numeric"/>
+            <field uid="9" label="Δοσολογία" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="Συνταγή φακών επαφής" iconid="26">
+            <field uid="0" label="Τύπος" type="text"/>
+            <field uid="1" label="Δεξιός(OD)" type="numeric"/>
+            <field uid="2" label="Αριστερός(OS)" type="numeric"/>
+            <field uid="3" label="Γιατρός" type="text"/>
+            <field uid="4" label="Τηλέφωνο" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="Κωδικός εγγραφής" iconid="66">
+            <field uid="2" label="Όνομα" type="text"/>
+            <field uid="0" label="Αριθμός" type="numeric" sensitive="true"/>
+            <field uid="1" label="Ημερομηνία" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="Στοιχεία οχήματος" iconid="25">
+            <field uid="3" label="Αρ. κυκλοφορίας" type="text"/>
+            <field uid="11" label="Ιδιοκτήτης" type="text"/>
+            <field uid="0" label="Μοντέλο" type="text"/>
+            <field uid="12" label="Τύπος οχήματος" type="text"/>
+            <field uid="13" label="Ημερομηνία αγοράς" type="date"/>
+            <field uid="1" label="Κατασκευή" type="text"/>
+            <field uid="2" label="Έτος" type="numeric"/>
+            <field uid="4" label="VIN" type="text"/>
+            <field uid="5" label="Τηλέφωνο υπηρεσίας" type="phone"/>
+            <field uid="14" label="Γραμμή οδικής βοήθειας" type="phone"/>
+            <field uid="16" label="Φορέας ασφάλισης" type="text"/>
+            <field uid="7" label="Ποσό ασφάλισης" type="text"/>
+            <field uid="8" label="Αριθμός συμβολαίου" type="numeric"/>
+            <field uid="10" label="Ημερομηνία λήξης" type="date"/>
+            <field uid="9" label="Τηλέφωνο ασφάλειας" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="Φωνητικό ταχυδρομείο" iconid="62">
+            <field uid="0" label="Αριθμός πρόσβασης" type="numeric"/>
+            <field uid="1" label="PIN" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="Διεύθυνση" iconid="31">
+            <field uid="0" label="Όνομα" type="text"/>
+            <field uid="1" label="Αρ. διεύθυνσης" type="text"/>
+            <field uid="2" label="Οδός" type="text"/>
+            <field uid="3" label="Τοποθεσία" type="text"/>
+            <field uid="4" label="Πόλη" type="text"/>
+            <field uid="5" label="Πολιτεία" type="text"/>
+            <field uid="6" label="Ταχυδρομικός Κώδικας" type="text"/>
+            <field uid="7" label="Χώρα" type="text"/>
+            <field uid="9" label="Τηλέφωνο" type="phone"/>
+            <field uid="10" label="Email" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="Επικοινωνία" iconid="47">
+            <field uid="0" label="Όνομα" type="text"/>
+            <field uid="1" label="Επώνυμο" type="text"/>
+            <field uid="2" label="Εταιρεία" type="text"/>
+            <field uid="3" label="Τηλέφωνο (Οικίας)" type="phone"/>
+            <field uid="4" label="Τηλέφωνο (Κινητό)" type="phone"/>
+            <field uid="5" label="Τηλέφωνο (Γραφείου)" type="phone"/>
+            <field uid="6" label="Email" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="Αριθμοί έκτακτης ανάγκης" iconid="28">
+            <field uid="0" label="Αστυνομία" type="phone"/>
+            <field uid="1" label="Πυροσβεστική" type="phone"/>
+            <field uid="2" label="Ασθενοφόρο" type="phone"/>
+            <field uid="3" label="Γιατρός" type="phone"/>
+            <field uid="4" label="Οδοντίατρος" type="phone"/>
+            <field uid="5" label="Κτηνίατρος" type="phone"/>
+            <field uid="6" label="Εταιρία Ηλεκτρικού ρεύματος" type="phone"/>
+            <field uid="7" label="Εταιρεία φυσικού αερίου" type="phone"/>
+            <field uid="8" label="Τηλεφωνική εταιρεία" type="phone"/>
+            <field uid="9" label="Ιδιοκτήτης σπιτιού" type="phone"/>
+            <field uid="10" label="Άλλο" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="Αριθμός Κοινωνικής Ασφάλισης" iconid="64">
+            <field uid="1" label="Αριθμός" type="numeric"/>
+            <field uid="0" label="Όνομα" type="text"/>
+            <field uid="2" label="Ημερομηνία" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="Πρόγραμμα ανταμοιβής" iconid="24">
+            <field uid="0" label="Εταιρεία" type="text"/>
+            <field uid="1" label="Όνομα" type="text"/>
+            <field uid="10" label="ID Μέλους" type="text"/>
+            <field uid="2" label="Αριθμός" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="5" label="Αριθμός 2" type="numeric"/>
+            <field uid="6" label="Από τις" type="date"/>
+            <field uid="7" label="Γραμμή βοήθειας" type="phone"/>
+            <field uid="8" label="Τηλέφωνο κρατήσεων" type="phone"/>
+            <field uid="9" label="Ιστοσελίδα" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="Σειριακός αριθμός" iconid="32">
+            <field uid="1" label="Σειριακός" type="text" sensitive="true"/>
+            <field uid="0" label="Μάρκα" type="text"/>
+            <field uid="2" label="Μοντέλο" type="text"/>
+            <field uid="3" label="Τιμή" type="numeric"/>
+            <field uid="4" label="Αγοράστηκε στις" type="date"/>
+            <field uid="6" label="Εγγύηση" type="date"/>
+            <field uid="5" label="Τοποθεσία" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="Στοιχεία ακινήτου" iconid="70">
+            <field uid="0" label="Ιδιοκτήτης" type="text"/>
+            <field uid="1" label="Διεύθυνση" type="text"/>
+            <field uid="2" label="Τύπος" type="text"/>
+            <field uid="3" label="Ποσό συντήρησης" type="numeric"/>
+            <field uid="5" label="ID Ακινήτου" type="text"/>
+            <field uid="6" label="Ποσό φόρου" type="numeric"/>
+            <field uid="7" label="Ημερομηνία πληρωμής φόρου" type="date"/>
+            <field uid="8" label="Ιστοσελίδα" type="url"/>
+            <field uid="9" label="Όνομα χρήστη" type="username"/>
+            <field uid="10" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="12" label="Ασφάλεια" type="text"/>
+            <field uid="13" label="Ασφάλιστρο" type="numeric"/>
+            <field uid="14" label="Αριθμός συμβολαίου" type="numeric"/>
+            <field uid="15" label="Ημερομηνία λήξης" type="date"/>
+            <field uid="16" label="Γραμμή βοηθείας ασφάλειας" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="Τηλεφωνική κάρτα" iconid="54">
+            <field uid="1" label="Αριθμός πρόσβασης" type="phone"/>
+            <field uid="0" label="Πάροχος" type="text"/>
+            <field uid="2" label="Αριθμός Κάρτας" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="Καρδιακοί παλμοί" type="numeric"/>
+            <field uid="5" label="Ημερομηνία λήξης" type="date"/>
+            <field uid="6" label="Χρήση" type="numeric"/>
+            <field uid="8" label="Ιστοσελίδα" type="url"/>
+            <field uid="9" label="Όνομα χρήστη" type="username"/>
+            <field uid="10" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="11" label="Αν χαθεί, καλέστε στο" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="Δελτίο ταυτότητας" iconid="59">
+            <field uid="2" label="Aριθμός ID" type="numeric"/>
+            <field uid="0" label="Τίτλος" type="text"/>
+            <field uid="1" label="Ονοματεπώνυμο" type="text"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="Χώρα" type="text"/>
+            <field uid="5" label="Εκδόθηκε στις" type="date"/>
+            <field uid="6" label="Ημερομηνία λήξης" type="date"/>
+            <field uid="7" label="Αν χαθεί, καλέστε στο" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="κάρτα ISIC" iconid="65">
+            <field uid="2" label="Αριθμός Κάρτας" type="numeric"/>
+            <field uid="0" label="Σπουδάζει στο" type="text"/>
+            <field uid="1" label="Ονοματεπώνυμο" type="text"/>
+            <field uid="3" label="Γεννήθηκε στις" type="date"/>
+            <field uid="4" label="Εκδόθηκε στις" type="date"/>
+            <field uid="5" label="Ημερομηνία λήξης" type="date"/>
+            <field uid="6" label="Αν χαθεί, καλέστε στο" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="κάρτα ITIC" iconid="41">
+            <field uid="2" label="Αριθμός Κάρτας" type="numeric"/>
+            <field uid="0" label="Διδάσκει στο" type="text"/>
+            <field uid="1" label="Ονοματεπώνυμο" type="text"/>
+            <field uid="3" label="Γεννήθηκε στις" type="date"/>
+            <field uid="4" label="Εκδόθηκε στις" type="date"/>
+            <field uid="5" label="Ημερομηνία λήξης" type="date"/>
+            <field uid="6" label="Αν χαθεί, καλέστε στο" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="Κάρτα βιβλιοθήκης" iconid="58">
+            <field uid="1" label="Αριθμός Κάρτας" type="numeric"/>
+            <field uid="0" label="Βιβλιοθήκη" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Ώρες" type="numeric"/>
+            <field uid="4" label="Διεύθυνση" type="text"/>
+            <field uid="5" label="Εκδόθηκε στις" type="date"/>
+            <field uid="6" label="Ημερομηνία λήξης" type="date"/>
+            <field uid="8" label="Ιστοσελίδα" type="url"/>
+            <field uid="9" label="Όνομα χρήστη" type="username"/>
+            <field uid="10" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="11" label="Αν χαθεί, καλέστε στο" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="Εκλογικό δελτίο" iconid="69">
+            <field uid="0" label="Ονοματεπώνυμο" type="text"/>
+            <field uid="1" label="ID Ψηφοφόρου" type="numeric"/>
+            <field uid="2" label="Διεύθυνση" type="text"/>
+            <field uid="3" label="Eκλογικό κέντρο" type="text"/>
+            <field uid="4" label="Τοποθεσία" type="text"/>
+            <field uid="5" label="Κονγκρέσο" type="text"/>
+            <field uid="6" label="Σύγκλητος Πολιτείας" type="text"/>
+            <field uid="7" label="Εκπρόσωπος" type="text"/>
+            <field uid="8" label="Διεύθυνση" type="text"/>
+            <field uid="9" label="Εκδόθηκε στις" type="date"/>
+            <field uid="11" label="Ιστοσελίδα" type="url"/>
+            <field uid="12" label="Όνομα χρήστη" type="username"/>
+            <field uid="13" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="14" label="Αν χαθεί, καλέστε στο" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="κάρτα ITZ" iconid="67">
+            <field uid="1" label="Αριθμός Κάρτας" type="numeric"/>
+            <field uid="0" label="Ιδιοκτήτης" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Αξία" type="numeric"/>
+            <field uid="4" label="Ημερομηνία λήξης" type="date"/>
+            <field uid="5" label="Χρήση" type="numeric"/>
+            <field uid="7" label="Ιστοσελίδα" type="url"/>
+            <field uid="8" label="Όνομα χρήστη" type="username"/>
+            <field uid="9" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="10" label="Αν χαθεί, καλέστε στο" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="Κάρτα μέλους" iconid="46">
+            <field uid="1" label="ID Μέλους" type="numeric"/>
+            <field uid="10" label="Όνομα μέλους" type="text"/>
+            <field uid="0" label="Οργάνωση" type="text"/>
+            <field uid="11" label="Ομάδα" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Τηλέφωνο" type="phone"/>
+            <field uid="12" label="Μέλος από" type="date"/>
+            <field uid="4" label="Ημερομηνία λήξης" type="date"/>
+            <field uid="6" label="Ιστοσελίδα" type="url"/>
+            <field uid="7" label="Όνομα χρήστη" type="username"/>
+            <field uid="8" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="13" label="Email" type="email"/>
+            <field uid="9" label="Αν χαθεί, καλέστε στο" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="κάρτα PAΝ" iconid="68">
+            <field uid="3" label="Αριθμός" type="numeric"/>
+            <field uid="0" label="Όνομα" type="text"/>
+            <field uid="1" label="Πατρώνυμο" type="text"/>
+            <field uid="2" label="Ημερομηνία γέννησης" type="date"/>
+            <field uid="5" label="Ιστοσελίδα" type="url"/>
+            <field uid="6" label="Όνομα χρήστη" type="username"/>
+            <field uid="7" label="Κωδικός πρόσβασης" type="password" sensitive="true"/>
+            <field uid="8" label="Αν χαθεί, καλέστε στο" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="Στοιχεία κινητού τηλεφώνου" iconid="120">
+            <field uid="0" label="Μοντέλο τηλεφωνικής συσκευής" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="Κωδικός κλειδώματος" type="numeric" sensitive="true"/>
+            <field uid="5" label="Τύπος SIM" type="text"/>
+            <field uid="6" label="Αριθμός SIM" type="numeric"/>
+            <field uid="7" label="PIN" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="Αγοράστηκε στις" type="date"/>
+            <field uid="10" label="Εγγύηση" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="Πάροχος υπηρεσίας" iconid="121">
+            <field uid="0" label="Πάροχος" type="text"/>
+            <field uid="1" label="Είδος υπηρεσίας" type="text"/>
+            <field uid="2" label="ID καταναλωτή" type="text"/>
+            <field uid="3" label="ID συνδρομής" type="numeric"/>
+            <field uid="4" label="Διεύθυνση" type="text"/>
+            <field uid="5" label="Ιστοσελίδα" type="url"/>
+            <field uid="6" label="Όνομα χρήστη" type="username"/>
+            <field uid="7" label="Κωδικός σύνδεσης" type="password" sensitive="true"/>
+            <field uid="8" label="Γραμμή βοήθειας" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="Λοιπά Διάφορα" iconid="126">
+            <field uid="0" label="Πεδίο 1" type="text"/>
+            <field uid="1" label="Πεδίο 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="Φύλο" value="male" type="sex_options"/>
+            <field uid="4" label="Ημερομηνία γέννησης" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="Εταιρεία" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="Διεύθυνση" type="address_firstline"/>
+            <field uid="10" label="Οδός" type="address_street"/>
+            <field uid="11" label="Πόλη" type="address_city"/>
+            <field uid="12" label="Πολιτεία" type="address_state"/>
+            <field uid="13" label="Ταχυδρομικός Κώδικας" type="address_zip"/>
+            <field uid="14" label="Χώρα" value="US" type="country_options"/>
+            <field uid="15" label="Τηλέφωνο" type="phone"/>
+            <field uid="16" label="Ερώτηση ασφαλείας" type="text"/>
+            <field uid="17" label="Απάντηση ασφαλείας" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

@@ -1,0 +1,17 @@
+package com.dropbox.core.v2.sharing;
+
+import com.dropbox.core.DbxApiException;
+import com.dropbox.core.LocalizedText;
+
+public class SharedLinkErrorException extends DbxApiException {
+    private static final long serialVersionUID = 0;
+    public final SharedLinkError errorValue;
+
+    public SharedLinkErrorException(String routeName, String requestId, LocalizedText userMessage, SharedLinkError errorValue) {
+        super(requestId, userMessage, DbxApiException.buildMessage(routeName, userMessage, errorValue));
+        if (errorValue == null) {
+            throw new NullPointerException("errorValue");
+        }
+        this.errorValue = errorValue;
+    }
+}

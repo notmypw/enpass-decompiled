@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="auto_lock_interval_entries">
+        <item>30 Segundos de inatividade</item>
+        <item>1 Minuto de inatividade</item>
+        <item>5 Minutos de inatividade</item>
+        <item>10 Min inatividade</item>
+        <item>30 Min inatividade</item>
+        <item>1 Hora de inatividade</item>
+        <item>5 Horas de inatividade</item>
+        <item>12 Horas de inatividade</item>
+    </array>
+    <array name="auto_lock_interval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="browser_package_names">
+        <item>com.android.chrome</item>
+        <item>com.chrome.beta</item>
+        <item>com.google.android.browser</item>
+        <item>mobi.mgeek.TunnyBrowser</item>
+        <item>com.dolphin.browser.zero</item>
+        <item>com.opera.browser</item>
+        <item>com.opera.mini.android</item>
+        <item>com.nubelacorp.javelin</item>
+        <item>com.cloudmosa.puffinFree</item>
+        <item>com.cloudmosa.puffin</item>
+        <item>com.UCMobile.intl</item>
+        <item>com.uc.browser.en</item>
+        <item>com.uc.browser.hd</item>
+        <item>org.mozilla.firefox</item>
+        <item>org.mozilla.firefox_beta</item>
+        <item>com.ksmobile.cb</item>
+        <item>com.jiubang.browser</item>
+        <item>com.mx.browser</item>
+        <item>com.chrome.dev</item>
+    </array>
+    <array name="clearclipboard_intervals">
+        <item>30 Segundos</item>
+        <item>1 Minuto</item>
+        <item>2 Minutos</item>
+        <item>5 Minutos</item>
+        <item>Nunca</item>
+    </array>
+    <array name="clearclipboard_intervals_num">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="default_search_engine_entry_list">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>Yahoo</item>
+        <item>Perguntar</item>
+        <item>Baidu</item>
+        <item>DuckDuckGo</item>
+        <item>Qwant</item>
+    </array>
+    <array name="default_search_engine_values_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="detailopenLinkInEntries">
+        <item>Navegador Enpass</item>
+        <item>Navegador Padrão</item>
+    </array>
+    <array name="dropdown">
+        <item>Todos os Itens</item>
+        <item>Favoritos</item>
+        <item>Pastas</item>
+        <item>CATEGORIAS</item>
+        <item>Inicio de Sessão</item>
+        <item>Cartões de Crédito</item>
+        <item>Finanças</item>
+        <item>Computador</item>
+        <item>Licenças</item>
+        <item>Senha</item>
+        <item>Nota Segura</item>
+        <item>Viagem</item>
+        <item>Diversos</item>
+    </array>
+    <array name="new_features_array">
+        <item>Rápido Desbloqueio com PIN</item>
+        <item>Navegador com várias abas</item>
+        <item>Gerador de Palavras Passe melhorado</item>
+        <item>Adicionado Suporte de Sincronização para Box</item>
+        <item>Mais opções de personalização</item>
+    </array>
+    <array name="openLinkInEntries">
+        <item>Perguntar</item>
+        <item>Navegador Enpass</item>
+        <item>Navegador Padrão</item>
+    </array>
+    <array name="openLinkInValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="searchInCards_entries">
+        <item>Somente Títulos</item>
+        <item>Todos os Campos</item>
+    </array>
+    <array name="searchInCards_values">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="seprator_list">
+        <item>Vírgula</item>
+        <item>Dolar</item>
+        <item>Hash</item>
+        <item>Hífen</item>
+        <item>Ponto</item>
+        <item>Espaço</item>
+        <item>Traço inferior</item>
+    </array>
+    <array name="sex">
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </array>
+    <array name="trail_version_text_array">
+        <item>Versão gratuita do Desktop para o seu PC.</item>
+        <item>Enpass em outros dispositivos móveis que você utiliza.</item>
+        <item>Sincronize dados através de vários dispositivos, usando suas próprias contas de nuvem no iCloud, Dropbox, Box, Google Drive e OneDrive.</item>
+    </array>
+</resources>

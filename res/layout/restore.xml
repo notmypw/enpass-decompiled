@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/restoreList" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/restore_divider" android:dividerHeight="1px" android:headerDividersEnabled="false" />
+</LinearLayout>

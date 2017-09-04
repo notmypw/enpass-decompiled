@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:icon="@locationawarelogger/TRACE_INT" android:title="@string/here_enable_enpass_setting" android:key="get_ready_pref_category">
+        <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/scan_finger_print" android:key="fingerprint_id" android:summary="@string/enabling_touch_id_text" android:shouldDisableView="true" />
+        <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/sync_with" android:key="google_drive" android:summary="" />
+        <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/sample_data" android:key="sample_data" android:summary="@string/delete_sample_anytime" />
+    </PreferenceCategory>
+</PreferenceScreen>

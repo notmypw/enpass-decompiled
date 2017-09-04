@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="0x102000f">
+        <clip>
+            <shape>
+                <corners android:radius="5dp" />
+                <solid android:color="@r$color/enpass_colorPrimaryDark" />
+            </shape>
+        </clip>
+        <color android:color="@r$color/enpass_colorPrimaryDark" />
+    </item>
+    <item android:id="0x102000d">
+        <clip>
+            <shape>
+                <corners android:radius="5dp" />
+                <solid android:color="@r$color/enpass_colorPrimaryDark" />
+            </shape>
+        </clip>
+        <color android:color="@r$color/enpass_colorPrimaryDark" />
+    </item>
+</layer-list>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:icon="@locationawarelogger/TRACE_INT" app:id="@+id/action_watch_field_sharing" app:title="@string/add" app:showAsAction="always" />
+</menu>

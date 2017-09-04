@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="Iniciar Sesión" type="login" iconid="1001">
+        <card templatetype="login.default" name="Iniciar Sesión" iconid="21">
+            <field uid="10" label="Nombre de usuario" type="username"/>
+            <field uid="12" label="Correo" type="email"/>
+            <field uid="11" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="14" label="Teléfono" type="phone"/>
+            <field uid="13" label="Enlace" type="url"/>
+            <field uid="15" label="Pregunta de seguridad" type="text"/>
+            <field uid="16" label="Respuesta de seguridad" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="Tarjeta de Crédito" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="Tarjeta de Crédito" iconid="20">
+            <field uid="0" label="Titular" type="cardholder_name"/>
+            <field uid="17" label="Tipo" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="Número" type="card_number"/>
+            <field uid="2" label="CVC" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="4" label="Fecha de caducidad" type="expiry_date"/>
+            <field uid="18" label="Válida desde" type="date"/>
+            <field uid="10" label="Límite de Crédito" type="numeric"/>
+            <field uid="11" label="Límite de retiro" type="numeric"/>
+            <field uid="12" label="Tasa de Interés" type="numeric"/>
+            <field uid="6" label="Banco emisor" type="bank_name"/>
+            <field uid="14" label="Página Web" type="url"/>
+            <field uid="15" label="Nombre de usuario" type="username"/>
+            <field uid="16" label="Contraseña de inicio de sesión" type="password" sensitive="true"/>
+            <field uid="9" label="Contraseña de transacción" type="txn_password" sensitive="true"/>
+            <field uid="7" label="Fechado" type="date"/>
+            <field uid="8" label="si estás perdido, llama" type="phone"/>
+        </card>
+    </category>
+
+    <category name="Finanzas" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="Cuenta Bancaria" iconid="45">
+            <field uid="4" label="Nombre del Banco" type="bank_name"/>
+            <field uid="0" label="Titular de la cuenta" type="cardholder_name"/>
+            <field uid="1" label="Tipo" type="text"/>
+            <field uid="2" label="Número de cuenta" type="numeric"/>
+            <field uid="16" label="ID de cliente" type="text"/>
+            <field uid="5" label="Número de la encaminamiento" type="numeric"/>
+            <field uid="6" label="Nombre de la marca" type="text"/>
+            <field uid="7" label="Código de sucursal" type="numeric"/>
+            <field uid="8" label="SWIFT" type="text"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="Dirección de la sucursal" type="text"/>
+            <field uid="25" label="Teléfono de la sucursal" type="phone"/>
+            
+            <field uid="11" label="Número de tarjeta de débito" type="card_number"/>
+            <field uid="26" label="Tipo" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="14" label="CVV" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="Fecha de caducidad" type="expiry_date"/>
+            <field uid="27" label="Límite de retiro" type="numeric"/>
+            
+            <field uid="17" label="Página Web" type="url"/>
+            <field uid="18" label="Nombre de usuario" type="username"/>
+            <field uid="19" label="Contraseña de inicio de sesión" type="password" sensitive="true"/>
+            <field uid="20" label="Contraseña de transacción" type="txn_password" sensitive="true"/>
+            <field uid="22" label="Línea de Ayuda" type="phone"/>
+            <field uid="23" label="T-PIN" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="Póliza de seguros" iconid="33">
+            <field uid="1" label="Nombre de la Política" type="text"/>
+            <field uid="0" label="Empresa" type="text"/>
+            <field uid="19" label="Titular de póliza" type="text"/>
+            <field uid="2" label="Número" type="numeric"/>
+            <field uid="3" label="Tipo" type="text"/>
+            <field uid="5" label="Premium" type="numeric"/>
+            <field uid="6" label="Suma asegurada" type="numeric"/>
+            <field uid="7" label="Fecha de Emisión" type="date"/>
+            <field uid="18" label="Fecha de renovación" type="date"/>
+            <field uid="8" label="Fecha de caducidad" type="date"/>
+            <field uid="9" label="Termino" type="numeric"/>
+            <field uid="20" label="Nominado" type="text"/>
+            <field uid="11" label="ID de cliente" type="numeric"/>
+            <field uid="12" label="Página Web" type="url"/>
+            <field uid="13" label="Nombre de usuario" type="username"/>
+            <field uid="14" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="16" label="Nombre del agente" type="text"/>
+            <field uid="17" label="Línea de Ayuda" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="Inversión en acciones" iconid="34">
+            <field uid="2" label="Símbolo" type="text"/>
+            <field uid="0" label="Número de cuenta" type="numeric"/>
+            <field uid="1" label="Tipo" type="text"/>
+            <field uid="3" label="Mercado" type="text"/>
+            <field uid="5" label="Lanzado El" type="date"/>
+            <field uid="6" label="Comprado el" type="date"/>
+            <field uid="7" label="Precio de Compra" type="numeric"/>
+            <field uid="8" label="Cantidad" type="numeric"/>
+            <field uid="9" label="Precio actual" type="numeric"/>
+            <field uid="11" label="Página Web" type="url"/>
+            <field uid="12" label="Nombre de usuario" type="username"/>
+            <field uid="13" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="15" label="Corredor de bolsa" type="text"/>
+            <field uid="16" label="Teléfono" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="Fondos de inversión" iconid="43">
+            <field uid="0" label="Nombre de fondo" type="text"/>
+            <field uid="1" label="Tipo de fondo" type="text"/>
+            <field uid="2" label="Lanzado El" type="date"/>
+            <field uid="3" label="Comprado el" type="date"/>
+            <field uid="4" label="Cantidad" type="numeric"/>
+            <field uid="5" label="NAV comprado" type="numeric"/>
+            <field uid="6" label="NAV actual" type="numeric"/>
+            <field uid="8" label="Página Web" type="url"/>
+            <field uid="9" label="Nombre de usuario" type="username"/>
+            <field uid="10" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="12" label="Corredor de bolsa" type="text"/>
+            <field uid="13" label="Teléfono" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="Préstamo/Hipoteca" iconid="44">
+            <field uid="2" label="Prestamista" type="text"/>
+            <field uid="1" label="Tipo" type="text"/>
+            <field uid="0" label="Número de cuenta" type="numeric"/>
+            <field uid="4" label="Principal" type="numeric"/>
+            <field uid="5" label="Interés %" type="numeric"/>
+            <field uid="6" label="Fecha" type="date"/>
+            <field uid="7" label="Termino" type="numeric"/>
+            <field uid="8" label="Balance" type="numeric"/>
+            <field uid="9" label="El pago debe realizarse" type="numeric"/>
+            <field uid="10" label="Activos" type="text"/>
+            <field uid="12" label="Teléfono" type="phone"/>
+            <field uid="13" label="Página Web" type="url"/>
+            <field uid="14" label="Nombre de usuario" type="username"/>
+            <field uid="15" label="Contraseña" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="Otras finanzas" iconid="122">
+            <field uid="0" label="Campo 1" type="text"/>
+            <field uid="1" label="Campo 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Ordenador" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="Base de Datos" iconid="56">
+            <field uid="8" label="Tipo" type="text"/>
+            <field uid="0" label="Servidor" type="text"/>
+            <field uid="1" label="Puerto" type="numeric"/>
+            <field uid="2" label="Base de Datos" type="text"/>
+            <field uid="3" label="Nombre de usuario" type="username"/>
+            <field uid="4" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="5" label="SID" type="text"/>
+            <field uid="6" label="Alias" type="text"/>
+            <field uid="7" label="Opciones" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="Cuenta de Correo" iconid="48">
+            <field uid="0" label="Correo" type="email"/>
+            <field uid="1" label="Nombre de usuario" type="username"/>
+            <field uid="2" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="9" label="Tipo" type="text"/>
+            <field uid="3" label="Servidor POP3" type="text"/>
+            <field uid="4" label="Servidor IMAP" type="text"/>
+            <field uid="6" label="Puerto" type="numeric"/>
+            <field uid="10" label="Tipo de Seguridad" type="text"/>
+            <field uid="11" label="Método de Autenticación" type="text"/>
+            <field uid="21" label="Enlace Web" type="url"/>
+            <field uid="5" label="Servidor SMTP" type="text"/>
+            <field uid="7" label="Puerto" type="numeric"/>
+            <field uid="13" label="Nombre de usuario" type="username"/>
+            <field uid="14" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="15" label="Tipo de Seguridad" type="text"/>
+            <field uid="16" label="Método de Autenticación" type="text"/>
+            <field uid="18" label="Proveedor" type="text"/>
+            <field uid="8" label="Página Web" type="url"/>
+            <field uid="19" label="Teléfono local" type="phone"/>
+            <field uid="20" label="Línea de Ayuda" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="Cuenta FTP" iconid="55">
+            <field uid="0" label="Servidor" type="text"/>
+            <field uid="1" label="Ruta" type="text"/>
+            <field uid="2" label="Nombre de usuario" type="username"/>
+            <field uid="3" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="4" label="Proveedor" type="text"/>
+            <field uid="5" label="Página Web" type="url"/>
+            <field uid="6" label="Teléfono" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="Mensajería Instantenea" iconid="49">
+            <field uid="0" label="Tipo" type="text"/>
+            <field uid="1" label="ID" type="text"/>
+            <field uid="2" label="Servidor" type="text"/>
+            <field uid="3" label="Puerto" type="numeric"/>
+            <field uid="4" label="Apodo" type="text"/>
+            <field uid="5" label="Nombre de usuario" type="username"/>
+            <field uid="6" label="Contraseña" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="Proveedor de Internet" iconid="63">
+            <field uid="0" label="Nombre de usuario" type="username"/>
+            <field uid="1" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="3" label="Marcar al teléfono" type="phone"/>
+            <field uid="4" label="Sistema/ISP" type="text"/>
+            <field uid="5" label="Dirección IP" type="numeric"/>
+            <field uid="6" label="Máscara de subred" type="numeric"/>
+            <field uid="20" label="Puerta de Entrada" type="numeric"/>
+            <field uid="7" label="DNS Primaria" type="numeric"/>
+            <field uid="8" label="DNS secundaria" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Telnet" type="text"/>
+            <field uid="17" label="Línea de Ayuda" type="phone"/>
+            <field uid="18" label="Página Web" type="url"/>
+            <field uid="19" label="Información de facturación" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="Servidor" iconid="51">
+            <field uid="11" label="Inicio de Sesión del Administrador" type="username"/>
+            <field uid="12" label="Contraseña del Administrador" type="password" sensitive="true"/>
+            <field uid="16" label="Enlace de Administración" type="url"/>
+            <field uid="0" label="Servicio" type="text"/>
+            <field uid="1" label="Tareas" type="text"/>
+            <field uid="2" label="Sistema Operativo" type="text"/>
+            <field uid="3" label="RAM" type="numeric"/>
+            <field uid="4" label="Alamcenamiento" type="numeric"/>
+            <field uid="5" label="CPU" type="numeric"/>
+            <field uid="6" label="RAID" type="text"/>
+            <field uid="7" label="Localización" type="text"/>
+            <field uid="8" label="Dirección IP" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="Puerto" type="numeric"/>
+            <field uid="17" label="Proveedor de Servidor" type="text"/>
+            <field uid="14" label="Sitio web de soporte" type="url"/>
+            <field uid="18" label="Línea de Ayuda" type="phone"/>
+            <field uid="15" label="Información de facturación" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="Enrutador inalámbrico" iconid="35">
+            <field uid="0" label="Nombre de la estación" type="text"/>
+            <field uid="9" label="Contraseña de la estación" type="password" sensitive="true"/>
+            <field uid="2" label="Nombre de la Red" type="text"/>
+            <field uid="5" label="Contraseña de la Red" type="password" sensitive="true"/>
+            <field uid="3" label="Seguridad" type="text"/>
+            <field uid="1" label="MAC/Aeropuerto #" type="numeric"/>
+            <field uid="12" label="Dirección IP del servidor" type="url"/>
+            <field uid="13" label="Nombre de usuario" type="username"/>
+            <field uid="4" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="6" label="Alamcenamiento de Contraseña" type="password" sensitive="true"/>
+            <field uid="7" label="Sitio web de soporte" type="url"/>
+            <field uid="8" label="Información de facturación" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="Alojamiento web" iconid="53">
+            <field uid="13" label="Proveedor" type="text"/>
+            <field uid="1" label="Nombre de usuario" type="username"/>
+            <field uid="2" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="11" label="Enlace de Administración" type="url"/>
+            <field uid="0" label="Sistema Operativo" type="text"/>
+            <field uid="9" label="ID de cliente" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="Base de Datos" type="text"/>
+            <field uid="7" label="Servicios" type="text"/>
+            <field uid="14" label="Sitio web de soporte" type="url"/>
+            <field uid="10" label="Línea de Ayuda" type="phone"/>
+            <field uid="12" label="Comisión" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="Otro computador" iconid="123">
+            <field uid="0" label="Campo 1" type="text"/>
+            <field uid="1" label="Campo 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Licencia" type="license" iconid="1005">
+        <card templatetype="license.driving" name="Permiso de conducir" iconid="60">
+            <field uid="1" label="Número" type="numeric"/>
+            <field uid="0" label="Nombre" type="text"/>
+            <field uid="8" label="Sexo" type="text"/>
+            <field uid="9" label="Fecha de Nacimiento" type="date"/>
+            <field uid="10" label="Dirección" type="text"/>
+            <field uid="11" label="Altura" type="text"/>
+            <field uid="2" label="Clase" type="text"/>
+            <field uid="13" label="Restricciones" type="text"/>
+            <field uid="3" label="Estado" type="text"/>
+            <field uid="4" label="País" type="text"/>
+            <field uid="5" label="Fecha de caducidad" type="date"/>
+            <field uid="6" label="Fechado" type="date"/>
+            <field uid="7" label="si estás perdido, llama" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="Licencia de Libertad" iconid="42">
+            <field uid="1" label="Número" type="numeric"/>
+            <field uid="0" label="Nombre" type="text"/>
+            <field uid="2" label="Estado" type="text"/>
+            <field uid="3" label="Región" type="text"/>
+            <field uid="4" label="País" type="text"/>
+            <field uid="5" label="Válida desde" type="date"/>
+            <field uid="6" label="Fecha de caducidad" type="date"/>
+            <field uid="7" label="Aprobado" type="text"/>
+            <field uid="8" label="Cuota" type="text"/>
+        </card>
+        <card templatetype="license.software" name="Licencia de Software" iconid="52">
+            <field uid="0" label="Versión" type="numeric"/>
+            <field uid="16" label="Nombre del Producto" type="text"/>
+            <field uid="17" label="Número de Usuarios" type="numeric"/>
+            <field uid="1" label="Clave" type="text" sensitive="true"/>
+            <field uid="6" label="Página de Descarga" type="url"/>
+            <field uid="3" label="Licencia para" type="text"/>
+            <field uid="18" label="Página de Inicio de Sesión" type="url"/>
+            <field uid="19" label="Nombre de usuario" type="username"/>
+            <field uid="20" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="4" label="Correo" type="email"/>
+            <field uid="5" label="Empresa" type="text"/>
+            <field uid="13" label="Fecha de Compra" type="date"/>
+            <field uid="14" label="Número de pedido" type="numeric"/>
+            <field uid="12" label="Precio al por menor" type="numeric"/>
+            <field uid="15" label="Total" type="numeric"/>
+            <field uid="8" label="Editorial" type="text"/>
+            <field uid="9" label="Página Web" type="url"/>
+            <field uid="10" label="Soporte por correo electrónico" type="email"/>
+            <field uid="21" label="Línea de Ayuda" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="Otra licencia" iconid="124">
+            <field uid="0" label="Campo 1" type="text"/>
+            <field uid="1" label="Campo 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Contraseña" type="password" iconid="1006">
+        <card templatetype="password.default" name="Contraseña" iconid="36">
+            <field uid="0" label="Iniciar Sesión" type="username"/>
+            <field uid="1" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="2" label="Acceso" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Nota de Seguridad" type="note" iconid="1007">
+        <card templatetype="note.default" name="Nota" iconid="22">
+        </card>
+    </category>
+        
+    <category name="Viajes" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="Pasaporte" iconid="37">
+            <field uid="2" label="Número" type="text"/>
+            <field uid="0" label="Nombre Completo" type="text"/>
+            <field uid="14" label="Sexo" type="text"/>
+            <field uid="1" label="Tipo" type="text"/>
+            <field uid="15" label="Nacionalidad" type="text"/>
+            <field uid="4" label="Lugar de nacimiento" type="text"/>
+            <field uid="5" label="Cumpleaños" type="date"/>
+            <field uid="6" label="Expedido en" type="text"/>
+            <field uid="7" label="Fechado" type="date"/>
+            <field uid="8" label="Fecha de caducidad" type="date"/>
+            <field uid="9" label="País de Emisión" type="text"/>
+            <field uid="10" label="Autoridad" type="text"/>
+            <field uid="12" label="Reemplazos" type="text"/>
+            <field uid="13" label="si estás perdido, llama" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="Visa de Viajero" iconid="57">
+            <field uid="1" label="Tipo" type="text"/>
+            <field uid="15" label="País" type="text"/>
+            <field uid="0" label="Nombre Completo" type="text"/>
+            <field uid="2" label="Número" type="numeric"/>
+            <field uid="4" label="Válida por" type="text"/>
+            <field uid="5" label="Válida desde" type="date"/>
+            <field uid="6" label="Válida hasta" type="date"/>
+            <field uid="7" label="Duración" type="numeric"/>
+            <field uid="8" label="No. de las entradas" type="numeric"/>
+            <field uid="10" label="Emitida por" type="text"/>
+            <field uid="11" label="Fecha de Emisión" type="date"/>
+            <field uid="12" label="Número de pasaporte" type="text"/>
+            <field uid="13" label="Observaciones" type="text"/>
+            <field uid="14" label="si estás perdido, llama" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="Viajero frecuente" iconid="39">
+            <field uid="1" label="Membresía número." type="numeric"/>
+            <field uid="0" label="Nombre" type="text"/>
+            <field uid="8" label="Aerolínea" type="text"/>
+            <field uid="2" label="Fecha" type="date"/>
+            <field uid="3" label="Kilometraje" type="numeric"/>
+            <field uid="5" label="Página Web" type="url"/>
+            <field uid="6" label="Nombre de usuario" type="username"/>
+            <field uid="7" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="9" label="Servicio al Cliente" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="Reserva de Hotel" iconid="27">
+            <field uid="0" label="Nombre del Hotel" type="text"/>
+            <field uid="4" label="Número de habitación" type="numeric"/>
+            <field uid="1" label="Dirección" type="text"/>
+            <field uid="2" label="ID de reserva" type="numeric"/>
+            <field uid="3" label="Fecha" type="date"/>
+            <field uid="5" label="Noches" type="numeric"/>
+            <field uid="15" label="Recompensa del Hotel" type="numeric"/>
+            <field uid="7" label="Teléfono" type="phone"/>
+            <field uid="8" label="Correo" type="email"/>
+            <field uid="9" label="Página Web" type="url"/>
+            <field uid="10" label="Nombre de usuario" type="username"/>
+            <field uid="11" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="13" label="Conserje" type="text"/>
+            <field uid="14" label="Restaurante" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="Detalles de Vuelo" iconid="38">
+            <field uid="2" label="Número de vuelo" type="numeric"/>
+            <field uid="0" label="Aerolínea" type="text"/>
+            <field uid="1" label="Fecha" type="date"/>
+            <field uid="3" label="Desde" type="text"/>
+            <field uid="4" label="Hasta" type="text"/>
+            <field uid="5" label="Hora/Puerta de embarque" type="text"/>
+            <field uid="6" label="Número de billete electrónico" type="numeric"/>
+            <field uid="7" label="Confirmación #" type="numeric"/>
+            <field uid="10" label="Página Web" type="url"/>
+            <field uid="11" label="Nombre de usuario" type="username"/>
+            <field uid="12" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="9" label="Teléfono" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="Otro viaje" iconid="125">
+            <field uid="0" label="Campo 1" type="text"/>
+            <field uid="1" label="Campo 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Miscelánea" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="Tamaño de la ropa" iconid="23">
+            <field uid="9" label="Nombre" type="text"/>
+            <field uid="0" label="Traje" type="text"/>
+            <field uid="1" label="Zapato" type="text"/>
+            <field uid="2" label="Camisa" type="text"/>
+            <field uid="3" label="Pantalones" type="text"/>
+            <field uid="4" label="Entrepierna" type="text"/>
+            <field uid="5" label="Falda" type="text"/>
+            <field uid="6" label="Guantes" type="text"/>
+            <field uid="7" label="Cintura" type="text"/>
+            <field uid="8" label="Cuello" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="Combinación" iconid="61">
+            <field uid="0" label="Localización" type="text"/>
+            <field uid="1" label="Código" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="Prescripción" iconid="40">
+            <field uid="2" label="Doctor" type="text"/>
+            <field uid="0" label="RX #" type="text"/>
+            <field uid="1" label="Nombre" type="text"/>
+            <field uid="3" label="Farmacia" type="text"/>
+            <field uid="4" label="Teléfono" type="phone"/>
+            <field uid="6" label="Marca" type="text"/>
+            <field uid="7" label="Droga" type="text"/>
+            <field uid="8" label="Cantidad" type="numeric"/>
+            <field uid="9" label="Tomar" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="Lentes recetados" iconid="26">
+            <field uid="0" label="Tipo" type="text"/>
+            <field uid="1" label="Derecho (OD)" type="numeric"/>
+            <field uid="2" label="Izquierdo (OS)" type="numeric"/>
+            <field uid="3" label="Doctor" type="text"/>
+            <field uid="4" label="Teléfono" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="Código de Registro" iconid="66">
+            <field uid="2" label="Nombre" type="text"/>
+            <field uid="0" label="Número" type="numeric" sensitive="true"/>
+            <field uid="1" label="Fecha" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="Información del Vehículo" iconid="25">
+            <field uid="3" label="No. de registro." type="text"/>
+            <field uid="11" label="Propietario" type="text"/>
+            <field uid="0" label="Modelo" type="text"/>
+            <field uid="12" label="Tipo de Vehículo" type="text"/>
+            <field uid="13" label="Fecha de Compra" type="date"/>
+            <field uid="1" label="Hecho" type="text"/>
+            <field uid="2" label="Año" type="numeric"/>
+            <field uid="4" label="VIN" type="text"/>
+            <field uid="5" label="Teléfono de Servicio" type="phone"/>
+            <field uid="14" label="Línea de ayuda en la carretera" type="phone"/>
+            <field uid="16" label="Proveedor de seguros" type="text"/>
+            <field uid="7" label="Cantidad de seguro" type="text"/>
+            <field uid="8" label="Número de póliza" type="numeric"/>
+            <field uid="10" label="Fecha de caducidad" type="date"/>
+            <field uid="9" label="Teléfono seguro" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="Correo de voz" iconid="62">
+            <field uid="0" label="Número de acceso" type="numeric"/>
+            <field uid="1" label="PIN" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="Dirección" iconid="31">
+            <field uid="0" label="Nombre" type="text"/>
+            <field uid="1" label="Puerta número" type="text"/>
+            <field uid="2" label="Calle" type="text"/>
+            <field uid="3" label="Localidad" type="text"/>
+            <field uid="4" label="Ciudad" type="text"/>
+            <field uid="5" label="Estado" type="text"/>
+            <field uid="6" label="Zip" type="text"/>
+            <field uid="7" label="País" type="text"/>
+            <field uid="9" label="Teléfono" type="phone"/>
+            <field uid="10" label="Correo" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="Contacto" iconid="47">
+            <field uid="0" label="Primer Nombre" type="text"/>
+            <field uid="1" label="Apellido" type="text"/>
+            <field uid="2" label="Empresa" type="text"/>
+            <field uid="3" label="Teléfono (H)" type="phone"/>
+            <field uid="4" label="Teléfono (M)" type="phone"/>
+            <field uid="5" label="Teléfono (O)" type="phone"/>
+            <field uid="6" label="Correo" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="Números de emergencia" iconid="28">
+            <field uid="0" label="Policía" type="phone"/>
+            <field uid="1" label="Bomberos" type="phone"/>
+            <field uid="2" label="Ambulancia" type="phone"/>
+            <field uid="3" label="Doctor" type="phone"/>
+            <field uid="4" label="Dentista" type="phone"/>
+            <field uid="5" label="Veterinario" type="phone"/>
+            <field uid="6" label="Compañía de Electronicos" type="phone"/>
+            <field uid="7" label="Compañia de Gas" type="phone"/>
+            <field uid="8" label="Compañia de Teléfono" type="phone"/>
+            <field uid="9" label="Propietario" type="phone"/>
+            <field uid="10" label="Otros" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="Número de Seguridad Social" iconid="64">
+            <field uid="1" label="Número" type="numeric"/>
+            <field uid="0" label="Nombre" type="text"/>
+            <field uid="2" label="Fecha" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="Programa de recompensas" iconid="24">
+            <field uid="0" label="Empresa" type="text"/>
+            <field uid="1" label="Nombre" type="text"/>
+            <field uid="10" label="ID de Miembro" type="text"/>
+            <field uid="2" label="Número" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="5" label="Número 2" type="numeric"/>
+            <field uid="6" label="Desde" type="date"/>
+            <field uid="7" label="Línea de Ayuda" type="phone"/>
+            <field uid="8" label="Teléfono de reservas" type="phone"/>
+            <field uid="9" label="Página Web" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="Número de Serie" iconid="32">
+            <field uid="1" label="Serial" type="text" sensitive="true"/>
+            <field uid="0" label="Marca" type="text"/>
+            <field uid="2" label="Modelo" type="text"/>
+            <field uid="3" label="Precio" type="numeric"/>
+            <field uid="4" label="Comprado el" type="date"/>
+            <field uid="6" label="Garantía" type="date"/>
+            <field uid="5" label="Localización" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="Datos del inmueble" iconid="70">
+            <field uid="0" label="Propietario" type="text"/>
+            <field uid="1" label="Dirección" type="text"/>
+            <field uid="2" label="Tipo" type="text"/>
+            <field uid="3" label="Cantidad maintaince" type="numeric"/>
+            <field uid="5" label="ID del inmueble" type="text"/>
+            <field uid="6" label="Coste de impuesto" type="numeric"/>
+            <field uid="7" label="Fecha de vencimiento de impuestos" type="date"/>
+            <field uid="8" label="Página Web" type="url"/>
+            <field uid="9" label="Nombre de usuario" type="username"/>
+            <field uid="10" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="12" label="Aseguradora" type="text"/>
+            <field uid="13" label="Prima de seguro" type="numeric"/>
+            <field uid="14" label="Número de póliza" type="numeric"/>
+            <field uid="15" label="Fecha de caducidad" type="date"/>
+            <field uid="16" label="Línea de ayuda de seguro" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="Tarjeta de llamadas" iconid="54">
+            <field uid="1" label="Número de acceso" type="phone"/>
+            <field uid="0" label="Proveedor" type="text"/>
+            <field uid="2" label="Número de Tarjeta" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="Frecuencia de uso" type="numeric"/>
+            <field uid="5" label="Fecha de caducidad" type="date"/>
+            <field uid="6" label="Uso" type="numeric"/>
+            <field uid="8" label="Página Web" type="url"/>
+            <field uid="9" label="Nombre de usuario" type="username"/>
+            <field uid="10" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="11" label="si estás perdido, llama" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="Tarjeta de Identidad" iconid="59">
+            <field uid="2" label="Número de identificación" type="numeric"/>
+            <field uid="0" label="Título" type="text"/>
+            <field uid="1" label="Nombre Completo" type="text"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="País" type="text"/>
+            <field uid="5" label="Fechado" type="date"/>
+            <field uid="6" label="Fecha de caducidad" type="date"/>
+            <field uid="7" label="si estás perdido, llama" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="Tarjeta ISIC" iconid="65">
+            <field uid="2" label="Número de Tarjeta" type="numeric"/>
+            <field uid="0" label="Estudia en" type="text"/>
+            <field uid="1" label="Nombre Completo" type="text"/>
+            <field uid="3" label="Nacimiento" type="date"/>
+            <field uid="4" label="Fechado" type="date"/>
+            <field uid="5" label="Fecha de caducidad" type="date"/>
+            <field uid="6" label="si estás perdido, llama" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="Tarjeta ITIC" iconid="41">
+            <field uid="2" label="Número de Tarjeta" type="numeric"/>
+            <field uid="0" label="Enseña en" type="text"/>
+            <field uid="1" label="Nombre Completo" type="text"/>
+            <field uid="3" label="Nacimiento" type="date"/>
+            <field uid="4" label="Fechado" type="date"/>
+            <field uid="5" label="Fecha de caducidad" type="date"/>
+            <field uid="6" label="si estás perdido, llama" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="Tarjeta de Biblioteca" iconid="58">
+            <field uid="1" label="Número de Tarjeta" type="numeric"/>
+            <field uid="0" label="Biblioteca" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Horas" type="numeric"/>
+            <field uid="4" label="Dirección" type="text"/>
+            <field uid="5" label="Fechado" type="date"/>
+            <field uid="6" label="Fecha de caducidad" type="date"/>
+            <field uid="8" label="Página Web" type="url"/>
+            <field uid="9" label="Nombre de usuario" type="username"/>
+            <field uid="10" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="11" label="si estás perdido, llama" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="Tarjeta de Voto" iconid="69">
+            <field uid="0" label="Nombre Completo" type="text"/>
+            <field uid="1" label="ID de votante" type="numeric"/>
+            <field uid="2" label="Dirección" type="text"/>
+            <field uid="3" label="Distrito Electoral" type="text"/>
+            <field uid="4" label="Localización" type="text"/>
+            <field uid="5" label="Congreso" type="text"/>
+            <field uid="6" label="Senado estatal" type="text"/>
+            <field uid="7" label="Representante" type="text"/>
+            <field uid="8" label="Dirección" type="text"/>
+            <field uid="9" label="Fechado" type="date"/>
+            <field uid="11" label="Página Web" type="url"/>
+            <field uid="12" label="Nombre de usuario" type="username"/>
+            <field uid="13" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="14" label="si estás perdido, llama" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="Tarjeta ITZ" iconid="67">
+            <field uid="1" label="Número de Tarjeta" type="numeric"/>
+            <field uid="0" label="Propietario" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Valor" type="numeric"/>
+            <field uid="4" label="Fecha de caducidad" type="date"/>
+            <field uid="5" label="Uso" type="numeric"/>
+            <field uid="7" label="Página Web" type="url"/>
+            <field uid="8" label="Nombre de usuario" type="username"/>
+            <field uid="9" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="10" label="si estás perdido, llama" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="Tarjeta de miembro" iconid="46">
+            <field uid="1" label="ID de Miembro" type="numeric"/>
+            <field uid="10" label="Nombre del Miembro" type="text"/>
+            <field uid="0" label="Organización" type="text"/>
+            <field uid="11" label="Grupo" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Teléfono" type="phone"/>
+            <field uid="12" label="Miembro desde" type="date"/>
+            <field uid="4" label="Fecha de caducidad" type="date"/>
+            <field uid="6" label="Página Web" type="url"/>
+            <field uid="7" label="Nombre de usuario" type="username"/>
+            <field uid="8" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="13" label="Correo" type="email"/>
+            <field uid="9" label="si estás perdido, llama" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="Tarjeta PAN" iconid="68">
+            <field uid="3" label="Número" type="numeric"/>
+            <field uid="0" label="Nombre" type="text"/>
+            <field uid="1" label="Nombre del Padre" type="text"/>
+            <field uid="2" label="Fecha de Nacimiento" type="date"/>
+            <field uid="5" label="Página Web" type="url"/>
+            <field uid="6" label="Nombre de usuario" type="username"/>
+            <field uid="7" label="Contraseña" type="password" sensitive="true"/>
+            <field uid="8" label="si estás perdido, llama" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="Información de Teléfono Celular" iconid="120">
+            <field uid="0" label="Modelo del Auricular" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="Código de Bloqueo" type="numeric" sensitive="true"/>
+            <field uid="5" label="Tipo de SIM" type="text"/>
+            <field uid="6" label="Número de SIM" type="numeric"/>
+            <field uid="7" label="PIN" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="Comprado el" type="date"/>
+            <field uid="10" label="Garantía" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="Proveedor de Servicios" iconid="121">
+            <field uid="0" label="Proveedor" type="text"/>
+            <field uid="1" label="Tipo de Servicio" type="text"/>
+            <field uid="2" label="Id del Cliente" type="text"/>
+            <field uid="3" label="ID de suscripción" type="numeric"/>
+            <field uid="4" label="Dirección" type="text"/>
+            <field uid="5" label="Página Web" type="url"/>
+            <field uid="6" label="Nombre de usuario" type="username"/>
+            <field uid="7" label="Contraseña de inicio de sesión" type="password" sensitive="true"/>
+            <field uid="8" label="Línea de Ayuda" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="Otros Accesorios" iconid="126">
+            <field uid="0" label="Campo 1" type="text"/>
+            <field uid="1" label="Campo 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="Sexo" value="male" type="sex_options"/>
+            <field uid="4" label="Fecha de Nacimiento" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="Empresa" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="Dirección" type="address_firstline"/>
+            <field uid="10" label="Calle" type="address_street"/>
+            <field uid="11" label="Ciudad" type="address_city"/>
+            <field uid="12" label="Estado" type="address_state"/>
+            <field uid="13" label="Zip" type="address_zip"/>
+            <field uid="14" label="País" value="US" type="country_options"/>
+            <field uid="15" label="Teléfono" type="phone"/>
+            <field uid="16" label="Pregunta de seguridad" type="text"/>
+            <field uid="17" label="Respuesta de seguridad" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="Sisäänkirjautuminen" type="login" iconid="1001">
+        <card templatetype="login.default" name="Sisäänkirjautuminen" iconid="21">
+            <field uid="10" label="Käyttäjätunnus" type="username"/>
+            <field uid="12" label="Sähköposti" type="email"/>
+            <field uid="11" label="Salasana" type="password" sensitive="true"/>
+            <field uid="14" label="Puhelin" type="phone"/>
+            <field uid="13" label="URL-osoite" type="url"/>
+            <field uid="15" label="Turvallisuuskysymys" type="text"/>
+            <field uid="16" label="Turvallisuuskysymyksen vastaus" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="Luottokortti" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="Luottokortti" iconid="20">
+            <field uid="0" label="Kortinhaltija" type="cardholder_name"/>
+            <field uid="17" label="Tyyppi" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="Numero" type="card_number"/>
+            <field uid="2" label="CVC" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="4" label="Päättymispäivä" type="expiry_date"/>
+            <field uid="18" label="Voimassa alkaen" type="date"/>
+            <field uid="10" label="Luottoraja" type="numeric"/>
+            <field uid="11" label="Nostoraja" type="numeric"/>
+            <field uid="12" label="Korko" type="numeric"/>
+            <field uid="6" label="Myöntänyt pankki" type="bank_name"/>
+            <field uid="14" label="Verkkosivu" type="url"/>
+            <field uid="15" label="Käyttäjätunnus" type="username"/>
+            <field uid="16" label="Sisäänkirjautumisen salasana" type="password" sensitive="true"/>
+            <field uid="9" label="Tapahtuma salasana" type="txn_password" sensitive="true"/>
+            <field uid="7" label="Myönnetty" type="date"/>
+            <field uid="8" label="Jos kadonnut, soita numeroon" type="phone"/>
+        </card>
+    </category>
+
+    <category name="Rahoitus" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="Pankkitili" iconid="45">
+            <field uid="4" label="Pankin nimi" type="bank_name"/>
+            <field uid="0" label="Tilinhaltija" type="cardholder_name"/>
+            <field uid="1" label="Tyyppi" type="text"/>
+            <field uid="2" label="Tilinumero" type="numeric"/>
+            <field uid="16" label="Asiakastunnus" type="text"/>
+            <field uid="5" label="Reititysnumero" type="numeric"/>
+            <field uid="6" label="Konttorin nimi" type="text"/>
+            <field uid="7" label="Konttorin koodi" type="numeric"/>
+            <field uid="8" label="SWIFT" type="text"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="Konttorin osoite" type="text"/>
+            <field uid="25" label="Konttorin puhelinnumero" type="phone"/>
+            
+            <field uid="11" label="Pankkikortin numero" type="card_number"/>
+            <field uid="26" label="Tyyppi" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="14" label="CVV" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="Päättymispäivä" type="expiry_date"/>
+            <field uid="27" label="Nostoraja" type="numeric"/>
+            
+            <field uid="17" label="Verkkosivu" type="url"/>
+            <field uid="18" label="Käyttäjätunnus" type="username"/>
+            <field uid="19" label="Sisäänkirjautumisen salasana" type="password" sensitive="true"/>
+            <field uid="20" label="Tapahtuma salasana" type="txn_password" sensitive="true"/>
+            <field uid="22" label="Asiakaspalvelunumero" type="phone"/>
+            <field uid="23" label="T-PIN" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="Vakuutus" iconid="33">
+            <field uid="1" label="Vakuutuksen nimi" type="text"/>
+            <field uid="0" label="Yritys" type="text"/>
+            <field uid="19" label="Vakuutuksenottaja" type="text"/>
+            <field uid="2" label="Numero" type="numeric"/>
+            <field uid="3" label="Tyyppi" type="text"/>
+            <field uid="5" label="Vakuutusmaksu" type="numeric"/>
+            <field uid="6" label="Vakuutettu summa" type="numeric"/>
+            <field uid="7" label="Myöntämispäivämäärä" type="date"/>
+            <field uid="18" label="Uusimispäivämäärä" type="date"/>
+            <field uid="8" label="Päättymispäivä" type="date"/>
+            <field uid="9" label="Ajanjakso" type="numeric"/>
+            <field uid="20" label="Ehdokas" type="text"/>
+            <field uid="11" label="Asiakastunnus" type="numeric"/>
+            <field uid="12" label="Verkkosivu" type="url"/>
+            <field uid="13" label="Käyttäjätunnus" type="username"/>
+            <field uid="14" label="Salasana" type="password" sensitive="true"/>
+            <field uid="16" label="Asiamiehen nimi" type="text"/>
+            <field uid="17" label="Asiakaspalvelunumero" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="Osakesijoitus" iconid="34">
+            <field uid="2" label="Symboli" type="text"/>
+            <field uid="0" label="Tilinumero" type="numeric"/>
+            <field uid="1" label="Tyyppi" type="text"/>
+            <field uid="3" label="Markkina" type="text"/>
+            <field uid="5" label="Käynnistetty" type="date"/>
+            <field uid="6" label="Ostettu" type="date"/>
+            <field uid="7" label="Ostohinta" type="numeric"/>
+            <field uid="8" label="Määrä" type="numeric"/>
+            <field uid="9" label="Nykyinen hinta" type="numeric"/>
+            <field uid="11" label="Verkkosivu" type="url"/>
+            <field uid="12" label="Käyttäjätunnus" type="username"/>
+            <field uid="13" label="Salasana" type="password" sensitive="true"/>
+            <field uid="15" label="Välittäjä" type="text"/>
+            <field uid="16" label="Puhelin" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="Sijoitusrahasto" iconid="43">
+            <field uid="0" label="Rahaston nimi" type="text"/>
+            <field uid="1" label="Rahastotyyppi" type="text"/>
+            <field uid="2" label="Käynnistetty" type="date"/>
+            <field uid="3" label="Ostettu" type="date"/>
+            <field uid="4" label="Määrä" type="numeric"/>
+            <field uid="5" label="Ostettu NAV" type="numeric"/>
+            <field uid="6" label="Nykyinen NAV" type="numeric"/>
+            <field uid="8" label="Verkkosivu" type="url"/>
+            <field uid="9" label="Käyttäjätunnus" type="username"/>
+            <field uid="10" label="Salasana" type="password" sensitive="true"/>
+            <field uid="12" label="Välittäjä" type="text"/>
+            <field uid="13" label="Puhelin" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="Laina/Asuntolaina" iconid="44">
+            <field uid="2" label="Lainanantaja" type="text"/>
+            <field uid="1" label="Tyyppi" type="text"/>
+            <field uid="0" label="Tilinumero" type="numeric"/>
+            <field uid="4" label="Pääoma" type="numeric"/>
+            <field uid="5" label="Korko %" type="numeric"/>
+            <field uid="6" label="Päivämäärä" type="date"/>
+            <field uid="7" label="Ajanjakso" type="numeric"/>
+            <field uid="8" label="Saldo" type="numeric"/>
+            <field uid="9" label="Maksun eräpäivä" type="numeric"/>
+            <field uid="10" label="Omaisuus" type="text"/>
+            <field uid="12" label="Puhelin" type="phone"/>
+            <field uid="13" label="Verkkosivu" type="url"/>
+            <field uid="14" label="Käyttäjätunnus" type="username"/>
+            <field uid="15" label="Salasana" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="Muu rahoitus" iconid="122">
+            <field uid="0" label="Kenttä 1" type="text"/>
+            <field uid="1" label="Kenttä 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Tietokone" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="Tietokanta" iconid="56">
+            <field uid="8" label="Tyyppi" type="text"/>
+            <field uid="0" label="Palvelin" type="text"/>
+            <field uid="1" label="Portti" type="numeric"/>
+            <field uid="2" label="Tietokanta" type="text"/>
+            <field uid="3" label="Käyttäjätunnus" type="username"/>
+            <field uid="4" label="Salasana" type="password" sensitive="true"/>
+            <field uid="5" label="SID" type="text"/>
+            <field uid="6" label="Alias" type="text"/>
+            <field uid="7" label="Asetukset" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="Sähköpostitili" iconid="48">
+            <field uid="0" label="Sähköposti" type="email"/>
+            <field uid="1" label="Käyttäjätunnus" type="username"/>
+            <field uid="2" label="Salasana" type="password" sensitive="true"/>
+            <field uid="9" label="Tyyppi" type="text"/>
+            <field uid="3" label="POP3-palvelin" type="text"/>
+            <field uid="4" label="IMAP-palvelin" type="text"/>
+            <field uid="6" label="Portti" type="numeric"/>
+            <field uid="10" label="Suojaustyyppi" type="text"/>
+            <field uid="11" label="Todennustapa" type="text"/>
+            <field uid="21" label="Web-linkki" type="url"/>
+            <field uid="5" label="SMTP-palvelin" type="text"/>
+            <field uid="7" label="Portti" type="numeric"/>
+            <field uid="13" label="Käyttäjätunnus" type="username"/>
+            <field uid="14" label="Salasana" type="password" sensitive="true"/>
+            <field uid="15" label="Suojaustyyppi" type="text"/>
+            <field uid="16" label="Todennustapa" type="text"/>
+            <field uid="18" label="Tarjoaja" type="text"/>
+            <field uid="8" label="Verkkosivu" type="url"/>
+            <field uid="19" label="Paikallinen puhelin" type="phone"/>
+            <field uid="20" label="Asiakaspalvelunumero" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="FTP-tili" iconid="55">
+            <field uid="0" label="Palvelin" type="text"/>
+            <field uid="1" label="Polku" type="text"/>
+            <field uid="2" label="Käyttäjätunnus" type="username"/>
+            <field uid="3" label="Salasana" type="password" sensitive="true"/>
+            <field uid="4" label="Tarjoaja" type="text"/>
+            <field uid="5" label="Verkkosivu" type="url"/>
+            <field uid="6" label="Puhelin" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="Pikaviestintä" iconid="49">
+            <field uid="0" label="Tyyppi" type="text"/>
+            <field uid="1" label="Tunnus" type="text"/>
+            <field uid="2" label="Palvelin" type="text"/>
+            <field uid="3" label="Portti" type="numeric"/>
+            <field uid="4" label="Käyttäjänimi" type="text"/>
+            <field uid="5" label="Käyttäjätunnus" type="username"/>
+            <field uid="6" label="Salasana" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="Internet-palveluntarjoaja" iconid="63">
+            <field uid="0" label="Käyttäjätunnus" type="username"/>
+            <field uid="1" label="Salasana" type="password" sensitive="true"/>
+            <field uid="3" label="Dialup-puhelin" type="phone"/>
+            <field uid="4" label="ISP/Järjestelmä" type="text"/>
+            <field uid="5" label="IP-osoite" type="numeric"/>
+            <field uid="6" label="Aliverkonpeite" type="numeric"/>
+            <field uid="20" label="Yhdyskäytävä" type="numeric"/>
+            <field uid="7" label="Ensisijainen DNS" type="numeric"/>
+            <field uid="8" label="Toissijainen DNS" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Telnet" type="text"/>
+            <field uid="17" label="Asiakaspalvelunumero" type="phone"/>
+            <field uid="18" label="Verkkosivu" type="url"/>
+            <field uid="19" label="Laskutustiedot" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="Palvelin" iconid="51">
+            <field uid="11" label="Admin-tunnus" type="username"/>
+            <field uid="12" label="Admin-salasana" type="password" sensitive="true"/>
+            <field uid="16" label="Admin URL" type="url"/>
+            <field uid="0" label="Palvelu" type="text"/>
+            <field uid="1" label="Tehtävät" type="text"/>
+            <field uid="2" label="OS" type="text"/>
+            <field uid="3" label="RAM" type="numeric"/>
+            <field uid="4" label="Tallennustila" type="numeric"/>
+            <field uid="5" label="CPU" type="numeric"/>
+            <field uid="6" label="RAID" type="text"/>
+            <field uid="7" label="Sijainti" type="text"/>
+            <field uid="8" label="IP-osoite" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="Portti" type="numeric"/>
+            <field uid="17" label="Hosting-palvelujen tarjoaja" type="text"/>
+            <field uid="14" label="Tukiverkkosivusto" type="url"/>
+            <field uid="18" label="Asiakaspalvelunumero" type="phone"/>
+            <field uid="15" label="Laskutustiedot" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="Langaton reititin" iconid="35">
+            <field uid="0" label="Aseman nimi" type="text"/>
+            <field uid="9" label="Aseman salasana" type="password" sensitive="true"/>
+            <field uid="2" label="Verkon nimi" type="text"/>
+            <field uid="5" label="Verkon salasana" type="password" sensitive="true"/>
+            <field uid="3" label="Suojaus" type="text"/>
+            <field uid="1" label="MAC/Airport #" type="numeric"/>
+            <field uid="12" label="Palvelin/IP-osoite" type="url"/>
+            <field uid="13" label="Käyttäjätunnus" type="username"/>
+            <field uid="4" label="Salasana" type="password" sensitive="true"/>
+            <field uid="6" label="Tallennustilan salasana" type="password" sensitive="true"/>
+            <field uid="7" label="Tukiverkkosivusto" type="url"/>
+            <field uid="8" label="Laskutustiedot" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="Verkkoisännöinti" iconid="53">
+            <field uid="13" label="Tarjoaja" type="text"/>
+            <field uid="1" label="Käyttäjätunnus" type="username"/>
+            <field uid="2" label="Salasana" type="password" sensitive="true"/>
+            <field uid="11" label="Admin URL" type="url"/>
+            <field uid="0" label="OS" type="text"/>
+            <field uid="9" label="Asiakastunnus" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="Tietokanta" type="text"/>
+            <field uid="7" label="Palvelut" type="text"/>
+            <field uid="14" label="Tukiverkkosivusto" type="url"/>
+            <field uid="10" label="Asiakaspalvelunumero" type="phone"/>
+            <field uid="12" label="Maksu" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="Muu tietokone" iconid="123">
+            <field uid="0" label="Kenttä 1" type="text"/>
+            <field uid="1" label="Kenttä 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Lisenssi" type="license" iconid="1005">
+        <card templatetype="license.driving" name="Ajokortti" iconid="60">
+            <field uid="1" label="Numero" type="numeric"/>
+            <field uid="0" label="Nimi" type="text"/>
+            <field uid="8" label="Sukupuoli" type="text"/>
+            <field uid="9" label="Syntymäaika" type="date"/>
+            <field uid="10" label="Osoite" type="text"/>
+            <field uid="11" label="Pituus" type="text"/>
+            <field uid="2" label="Luokka" type="text"/>
+            <field uid="13" label="Rajoitukset" type="text"/>
+            <field uid="3" label="Osavaltio" type="text"/>
+            <field uid="4" label="Maa" type="text"/>
+            <field uid="5" label="Päättymispäivä" type="date"/>
+            <field uid="6" label="Myönnetty" type="date"/>
+            <field uid="7" label="Jos kadonnut, soita numeroon" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="Metsästyskortti" iconid="42">
+            <field uid="1" label="Numero" type="numeric"/>
+            <field uid="0" label="Nimi" type="text"/>
+            <field uid="2" label="Osavaltio" type="text"/>
+            <field uid="3" label="Alue" type="text"/>
+            <field uid="4" label="Maa" type="text"/>
+            <field uid="5" label="Voimassa alkaen" type="date"/>
+            <field uid="6" label="Päättymispäivä" type="date"/>
+            <field uid="7" label="Sallittu riista" type="text"/>
+            <field uid="8" label="Kiintiö" type="text"/>
+        </card>
+        <card templatetype="license.software" name="Ohjelmistolisenssi" iconid="52">
+            <field uid="0" label="Versio" type="numeric"/>
+            <field uid="16" label="Tuotteen nimi" type="text"/>
+            <field uid="17" label="Käyttäjien määrä" type="numeric"/>
+            <field uid="1" label="Avain" type="text" sensitive="true"/>
+            <field uid="6" label="Lataussivusto" type="url"/>
+            <field uid="3" label="Lisensoitu henkilölle" type="text"/>
+            <field uid="18" label="Kirjautumissivu" type="url"/>
+            <field uid="19" label="Käyttäjätunnus" type="username"/>
+            <field uid="20" label="Salasana" type="password" sensitive="true"/>
+            <field uid="4" label="Sähköposti" type="email"/>
+            <field uid="5" label="Yritys" type="text"/>
+            <field uid="13" label="Ostopäivämäärä" type="date"/>
+            <field uid="14" label="Tilausnumero" type="numeric"/>
+            <field uid="12" label="Myyntihinta" type="numeric"/>
+            <field uid="15" label="Yhteensä" type="numeric"/>
+            <field uid="8" label="Julkaisija" type="text"/>
+            <field uid="9" label="Verkkosivu" type="url"/>
+            <field uid="10" label="Tuki sähköpostitse" type="email"/>
+            <field uid="21" label="Asiakaspalvelunumero" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="Muu lisenssi" iconid="124">
+            <field uid="0" label="Kenttä 1" type="text"/>
+            <field uid="1" label="Kenttä 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Salasana" type="password" iconid="1006">
+        <card templatetype="password.default" name="Salasana" iconid="36">
+            <field uid="0" label="Sisäänkirjautuminen" type="username"/>
+            <field uid="1" label="Salasana" type="password" sensitive="true"/>
+            <field uid="2" label="Pääsy" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Suojattu muistiinpano" type="note" iconid="1007">
+        <card templatetype="note.default" name="Muistiinpano" iconid="22">
+        </card>
+    </category>
+        
+    <category name="Matkailu" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="Passi" iconid="37">
+            <field uid="2" label="Numero" type="text"/>
+            <field uid="0" label="Koko nimi" type="text"/>
+            <field uid="14" label="Sukupuoli" type="text"/>
+            <field uid="1" label="Tyyppi" type="text"/>
+            <field uid="15" label="Kansalaisuus" type="text"/>
+            <field uid="4" label="Syntymäpaikka" type="text"/>
+            <field uid="5" label="Syntymäpäivä" type="date"/>
+            <field uid="6" label="Myönnetty paikassa" type="text"/>
+            <field uid="7" label="Myönnetty" type="date"/>
+            <field uid="8" label="Päättymispäivä" type="date"/>
+            <field uid="9" label="Myöntämismaa" type="text"/>
+            <field uid="10" label="Viranomainen" type="text"/>
+            <field uid="12" label="Korvaavat" type="text"/>
+            <field uid="13" label="Jos kadonnut, soita numeroon" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="Matkustusviisumi" iconid="57">
+            <field uid="1" label="Tyyppi" type="text"/>
+            <field uid="15" label="Maa" type="text"/>
+            <field uid="0" label="Koko nimi" type="text"/>
+            <field uid="2" label="Numero" type="numeric"/>
+            <field uid="4" label="Voimassa" type="text"/>
+            <field uid="5" label="Voimassa alkaen" type="date"/>
+            <field uid="6" label="Voimassa asti" type="date"/>
+            <field uid="7" label="Kesto" type="numeric"/>
+            <field uid="8" label="Maahan tuloja" type="numeric"/>
+            <field uid="10" label="Myöntäjä" type="text"/>
+            <field uid="11" label="Myöntämispäivämäärä" type="date"/>
+            <field uid="12" label="Passin numero" type="text"/>
+            <field uid="13" label="Huomautukset" type="text"/>
+            <field uid="14" label="Jos kadonnut, soita numeroon" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="Säännöllinen lentomatkustaja" iconid="39">
+            <field uid="1" label="Jäsenyys Nro." type="numeric"/>
+            <field uid="0" label="Nimi" type="text"/>
+            <field uid="8" label="Lentoyhtiö" type="text"/>
+            <field uid="2" label="Päivämäärä" type="date"/>
+            <field uid="3" label="Mittarilukema" type="numeric"/>
+            <field uid="5" label="Verkkosivu" type="url"/>
+            <field uid="6" label="Käyttäjätunnus" type="username"/>
+            <field uid="7" label="Salasana" type="password" sensitive="true"/>
+            <field uid="9" label="Asiakaspalvelu" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="Hotellivaraus" iconid="27">
+            <field uid="0" label="Hotellin nimi" type="text"/>
+            <field uid="4" label="Huoneen numero" type="numeric"/>
+            <field uid="1" label="Osoite" type="text"/>
+            <field uid="2" label="Varauksen tunnus" type="numeric"/>
+            <field uid="3" label="Päivämäärä" type="date"/>
+            <field uid="5" label="Yötä" type="numeric"/>
+            <field uid="15" label="Hotellipalkkio" type="numeric"/>
+            <field uid="7" label="Puhelin" type="phone"/>
+            <field uid="8" label="Sähköposti" type="email"/>
+            <field uid="9" label="Verkkosivu" type="url"/>
+            <field uid="10" label="Käyttäjätunnus" type="username"/>
+            <field uid="11" label="Salasana" type="password" sensitive="true"/>
+            <field uid="13" label="Vastaanottovirkailija" type="text"/>
+            <field uid="14" label="Ravintola" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="Lennon tiedot" iconid="38">
+            <field uid="2" label="Lennon numero" type="numeric"/>
+            <field uid="0" label="Lentoyhtiö" type="text"/>
+            <field uid="1" label="Päivämäärä" type="date"/>
+            <field uid="3" label="Mistä" type="text"/>
+            <field uid="4" label="Mihin" type="text"/>
+            <field uid="5" label="Aika/Portti" type="text"/>
+            <field uid="6" label="E-lipun numero" type="numeric"/>
+            <field uid="7" label="Vahvistus #" type="numeric"/>
+            <field uid="10" label="Verkkosivu" type="url"/>
+            <field uid="11" label="Käyttäjätunnus" type="username"/>
+            <field uid="12" label="Salasana" type="password" sensitive="true"/>
+            <field uid="9" label="Puhelin" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="Muu matkustus" iconid="125">
+            <field uid="0" label="Kenttä 1" type="text"/>
+            <field uid="1" label="Kenttä 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Sekalaiset" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="Vaatekoko" iconid="23">
+            <field uid="9" label="Nimi" type="text"/>
+            <field uid="0" label="Puku" type="text"/>
+            <field uid="1" label="Kenkä" type="text"/>
+            <field uid="2" label="Paita" type="text"/>
+            <field uid="3" label="Housut" type="text"/>
+            <field uid="4" label="Sisäsauma" type="text"/>
+            <field uid="5" label="Hame" type="text"/>
+            <field uid="6" label="Käsineet" type="text"/>
+            <field uid="7" label="Vyötärö" type="text"/>
+            <field uid="8" label="Kaula" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="Yhdistelmälukko" iconid="61">
+            <field uid="0" label="Sijainti" type="text"/>
+            <field uid="1" label="Koodi" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="Resepti" iconid="40">
+            <field uid="2" label="Lääkäri" type="text"/>
+            <field uid="0" label="RX #" type="text"/>
+            <field uid="1" label="Nimi" type="text"/>
+            <field uid="3" label="Apteekki" type="text"/>
+            <field uid="4" label="Puhelin" type="phone"/>
+            <field uid="6" label="Tuotemerkki" type="text"/>
+            <field uid="7" label="Lääke" type="text"/>
+            <field uid="8" label="Määrä" type="numeric"/>
+            <field uid="9" label="Ota" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="Linssien resepti" iconid="26">
+            <field uid="0" label="Tyyppi" type="text"/>
+            <field uid="1" label="Oikea(OD)" type="numeric"/>
+            <field uid="2" label="Vasen(OS)" type="numeric"/>
+            <field uid="3" label="Lääkäri" type="text"/>
+            <field uid="4" label="Puhelin" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="Rekisteritunnus" iconid="66">
+            <field uid="2" label="Nimi" type="text"/>
+            <field uid="0" label="Numero" type="numeric" sensitive="true"/>
+            <field uid="1" label="Päivämäärä" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="Ajoneuvon tiedot" iconid="25">
+            <field uid="3" label="Rekisterinumero" type="text"/>
+            <field uid="11" label="Omistaja" type="text"/>
+            <field uid="0" label="Malli" type="text"/>
+            <field uid="12" label="Ajoneuvotyyppi" type="text"/>
+            <field uid="13" label="Ostopäivämäärä" type="date"/>
+            <field uid="1" label="Valmistettu" type="text"/>
+            <field uid="2" label="Vuosi" type="numeric"/>
+            <field uid="4" label="Valmistenumero" type="text"/>
+            <field uid="5" label="Palvelupuhelinnumero" type="phone"/>
+            <field uid="14" label="Tiepalvelunumero" type="phone"/>
+            <field uid="16" label="Vakuutusyhtiö" type="text"/>
+            <field uid="7" label="Vakuutusarvo" type="text"/>
+            <field uid="8" label="Vakuutusnumero" type="numeric"/>
+            <field uid="10" label="Päättymispäivä" type="date"/>
+            <field uid="9" label="Vakuutus puhelimen" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="Vastaaja" iconid="62">
+            <field uid="0" label="Tunnus" type="numeric"/>
+            <field uid="1" label="PIN" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="Osoite" iconid="31">
+            <field uid="0" label="Nimi" type="text"/>
+            <field uid="1" label="Ovinumero" type="text"/>
+            <field uid="2" label="Katu" type="text"/>
+            <field uid="3" label="Sijainti" type="text"/>
+            <field uid="4" label="Kaupunki" type="text"/>
+            <field uid="5" label="Osavaltio" type="text"/>
+            <field uid="6" label="Postinumero" type="text"/>
+            <field uid="7" label="Maa" type="text"/>
+            <field uid="9" label="Puhelin" type="phone"/>
+            <field uid="10" label="Sähköposti" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="Yhteystieto" iconid="47">
+            <field uid="0" label="Etunimi" type="text"/>
+            <field uid="1" label="Sukunimi" type="text"/>
+            <field uid="2" label="Yritys" type="text"/>
+            <field uid="3" label="Puhelin (Koti)" type="phone"/>
+            <field uid="4" label="Puhelin (Mobiili)" type="phone"/>
+            <field uid="5" label="Puhelin (Työ)" type="phone"/>
+            <field uid="6" label="Sähköposti" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="Hätänumerot" iconid="28">
+            <field uid="0" label="Poliisi" type="phone"/>
+            <field uid="1" label="Palolaitos" type="phone"/>
+            <field uid="2" label="Ambulanssi" type="phone"/>
+            <field uid="3" label="Lääkäri" type="phone"/>
+            <field uid="4" label="Hammaslääkäri" type="phone"/>
+            <field uid="5" label="Eläinlääkäri" type="phone"/>
+            <field uid="6" label="Sähköyhtiö" type="phone"/>
+            <field uid="7" label="Kaasuyhtiö" type="phone"/>
+            <field uid="8" label="Puhelinyhtiö" type="phone"/>
+            <field uid="9" label="Vuokranantaja" type="phone"/>
+            <field uid="10" label="Muu" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="Sosiaaliturvatunnus" iconid="64">
+            <field uid="1" label="Numero" type="numeric"/>
+            <field uid="0" label="Nimi" type="text"/>
+            <field uid="2" label="Päivämäärä" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="Palkinto-ohjelma" iconid="24">
+            <field uid="0" label="Yritys" type="text"/>
+            <field uid="1" label="Nimi" type="text"/>
+            <field uid="10" label="Jäsentunnus" type="text"/>
+            <field uid="2" label="Numero" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="5" label="Numero 2" type="numeric"/>
+            <field uid="6" label="Alkaen" type="date"/>
+            <field uid="7" label="Asiakaspalvelunumero" type="phone"/>
+            <field uid="8" label="Varaus puhelinnumero" type="phone"/>
+            <field uid="9" label="Verkkosivu" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="Sarjanumero" iconid="32">
+            <field uid="1" label="Sarjanumero" type="text" sensitive="true"/>
+            <field uid="0" label="Tuotemerkki" type="text"/>
+            <field uid="2" label="Malli" type="text"/>
+            <field uid="3" label="Hinta" type="numeric"/>
+            <field uid="4" label="Ostettu" type="date"/>
+            <field uid="6" label="Takuu" type="date"/>
+            <field uid="5" label="Sijainti" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="Kiinteistötiedot" iconid="70">
+            <field uid="0" label="Omistaja" type="text"/>
+            <field uid="1" label="Osoite" type="text"/>
+            <field uid="2" label="Tyyppi" type="text"/>
+            <field uid="3" label="Huollon määrä" type="numeric"/>
+            <field uid="5" label="Kiinteistötunnus" type="text"/>
+            <field uid="6" label="Vero summa" type="numeric"/>
+            <field uid="7" label="Veron eräpäivä" type="date"/>
+            <field uid="8" label="Verkkosivu" type="url"/>
+            <field uid="9" label="Käyttäjätunnus" type="username"/>
+            <field uid="10" label="Salasana" type="password" sensitive="true"/>
+            <field uid="12" label="Vakuutus" type="text"/>
+            <field uid="13" label="Vakuutusmaksu" type="numeric"/>
+            <field uid="14" label="Vakuutusnumero" type="numeric"/>
+            <field uid="15" label="Päättymispäivä" type="date"/>
+            <field uid="16" label="Vakuutuksen puhelinpalvelu" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="Puhelukortti" iconid="54">
+            <field uid="1" label="Tunnus" type="phone"/>
+            <field uid="0" label="Tarjoaja" type="text"/>
+            <field uid="2" label="Kortin numero" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="Taksa" type="numeric"/>
+            <field uid="5" label="Päättymispäivä" type="date"/>
+            <field uid="6" label="Käyttö" type="numeric"/>
+            <field uid="8" label="Verkkosivu" type="url"/>
+            <field uid="9" label="Käyttäjätunnus" type="username"/>
+            <field uid="10" label="Salasana" type="password" sensitive="true"/>
+            <field uid="11" label="Jos kadonnut, soita numeroon" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="Henkilökortti" iconid="59">
+            <field uid="2" label="Tunnus" type="numeric"/>
+            <field uid="0" label="Otsikko" type="text"/>
+            <field uid="1" label="Koko nimi" type="text"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="Maa" type="text"/>
+            <field uid="5" label="Myönnetty" type="date"/>
+            <field uid="6" label="Päättymispäivä" type="date"/>
+            <field uid="7" label="Jos kadonnut, soita numeroon" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="ISIC-kortti" iconid="65">
+            <field uid="2" label="Kortin numero" type="numeric"/>
+            <field uid="0" label="Opiskelee kohteessa" type="text"/>
+            <field uid="1" label="Koko nimi" type="text"/>
+            <field uid="3" label="Syntynyt" type="date"/>
+            <field uid="4" label="Myönnetty" type="date"/>
+            <field uid="5" label="Päättymispäivä" type="date"/>
+            <field uid="6" label="Jos kadonnut, soita numeroon" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="ITIC-kortti" iconid="41">
+            <field uid="2" label="Kortin numero" type="numeric"/>
+            <field uid="0" label="Opettaa kohteessa" type="text"/>
+            <field uid="1" label="Koko nimi" type="text"/>
+            <field uid="3" label="Syntynyt" type="date"/>
+            <field uid="4" label="Myönnetty" type="date"/>
+            <field uid="5" label="Päättymispäivä" type="date"/>
+            <field uid="6" label="Jos kadonnut, soita numeroon" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="Kirjastokortti" iconid="58">
+            <field uid="1" label="Kortin numero" type="numeric"/>
+            <field uid="0" label="Kirjasto" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Tunnit" type="numeric"/>
+            <field uid="4" label="Osoite" type="text"/>
+            <field uid="5" label="Myönnetty" type="date"/>
+            <field uid="6" label="Päättymispäivä" type="date"/>
+            <field uid="8" label="Verkkosivu" type="url"/>
+            <field uid="9" label="Käyttäjätunnus" type="username"/>
+            <field uid="10" label="Salasana" type="password" sensitive="true"/>
+            <field uid="11" label="Jos kadonnut, soita numeroon" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="Äänestäjäkortti" iconid="69">
+            <field uid="0" label="Koko nimi" type="text"/>
+            <field uid="1" label="Äänestäjätunnus" type="numeric"/>
+            <field uid="2" label="Osoite" type="text"/>
+            <field uid="3" label="Piiri" type="text"/>
+            <field uid="4" label="Sijainti" type="text"/>
+            <field uid="5" label="Kongressi" type="text"/>
+            <field uid="6" label="Valtion senaatti" type="text"/>
+            <field uid="7" label="Edustaja" type="text"/>
+            <field uid="8" label="Osoite" type="text"/>
+            <field uid="9" label="Myönnetty" type="date"/>
+            <field uid="11" label="Verkkosivu" type="url"/>
+            <field uid="12" label="Käyttäjätunnus" type="username"/>
+            <field uid="13" label="Salasana" type="password" sensitive="true"/>
+            <field uid="14" label="Jos kadonnut, soita numeroon" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="ITZ-kortti" iconid="67">
+            <field uid="1" label="Kortin numero" type="numeric"/>
+            <field uid="0" label="Omistaja" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Arvo" type="numeric"/>
+            <field uid="4" label="Päättymispäivä" type="date"/>
+            <field uid="5" label="Käyttö" type="numeric"/>
+            <field uid="7" label="Verkkosivu" type="url"/>
+            <field uid="8" label="Käyttäjätunnus" type="username"/>
+            <field uid="9" label="Salasana" type="password" sensitive="true"/>
+            <field uid="10" label="Jos kadonnut, soita numeroon" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="Jäsenkortti" iconid="46">
+            <field uid="1" label="Jäsentunnus" type="numeric"/>
+            <field uid="10" label="Jäsennimi" type="text"/>
+            <field uid="0" label="Organisaatio" type="text"/>
+            <field uid="11" label="Ryhmä" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Puhelin" type="phone"/>
+            <field uid="12" label="Jäsen vuodesta" type="date"/>
+            <field uid="4" label="Päättymispäivä" type="date"/>
+            <field uid="6" label="Verkkosivu" type="url"/>
+            <field uid="7" label="Käyttäjätunnus" type="username"/>
+            <field uid="8" label="Salasana" type="password" sensitive="true"/>
+            <field uid="13" label="Sähköposti" type="email"/>
+            <field uid="9" label="Jos kadonnut, soita numeroon" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="PAN-kortti" iconid="68">
+            <field uid="3" label="Numero" type="numeric"/>
+            <field uid="0" label="Nimi" type="text"/>
+            <field uid="1" label="Isän nimi" type="text"/>
+            <field uid="2" label="Syntymäaika" type="date"/>
+            <field uid="5" label="Verkkosivu" type="url"/>
+            <field uid="6" label="Käyttäjätunnus" type="username"/>
+            <field uid="7" label="Salasana" type="password" sensitive="true"/>
+            <field uid="8" label="Jos kadonnut, soita numeroon" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="Matkapuhelintiedot" iconid="120">
+            <field uid="0" label="Puhelimen malli" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="Suojakoodi" type="numeric" sensitive="true"/>
+            <field uid="5" label="SIM tyyppi" type="text"/>
+            <field uid="6" label="SIM-numero" type="numeric"/>
+            <field uid="7" label="PIN" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="Ostettu" type="date"/>
+            <field uid="10" label="Takuu" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="Palveluntarjoaja" iconid="121">
+            <field uid="0" label="Tarjoaja" type="text"/>
+            <field uid="1" label="Palvelutyyppi" type="text"/>
+            <field uid="2" label="Kuluttajatunnus" type="text"/>
+            <field uid="3" label="Tilauksen tunnus" type="numeric"/>
+            <field uid="4" label="Osoite" type="text"/>
+            <field uid="5" label="Verkkosivu" type="url"/>
+            <field uid="6" label="Käyttäjätunnus" type="username"/>
+            <field uid="7" label="Sisäänkirjautumisen salasana" type="password" sensitive="true"/>
+            <field uid="8" label="Asiakaspalvelunumero" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="Muu Sekalainen" iconid="126">
+            <field uid="0" label="Kenttä 1" type="text"/>
+            <field uid="1" label="Kenttä 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="Sukupuoli" value="male" type="sex_options"/>
+            <field uid="4" label="Syntymäaika" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="Yritys" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="Osoite" type="address_firstline"/>
+            <field uid="10" label="Katu" type="address_street"/>
+            <field uid="11" label="Kaupunki" type="address_city"/>
+            <field uid="12" label="Osavaltio" type="address_state"/>
+            <field uid="13" label="Postinumero" type="address_zip"/>
+            <field uid="14" label="Maa" value="US" type="country_options"/>
+            <field uid="15" label="Puhelin" type="phone"/>
+            <field uid="16" label="Turvallisuuskysymys" type="text"/>
+            <field uid="17" label="Turvallisuuskysymyksen vastaus" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

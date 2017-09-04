@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="advance_settings">
+    <Preference android:title="@string/partner_sign_in" android:key="sign_as_team" android:summary="@string/partner_signin_msg" />
+    <ListPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/language_title" android:key="language" android:summary="@string/language_summ" />
+    <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/erase_data_title" android:key="erase_data" android:summary="@string/erase_data_summ" />
+    <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/enable_screenshot" android:key="enable_screenshot" android:summary="@string/enable_screenshot_summary" />
+    <PreferenceCategory android:icon="@locationawarelogger/TRACE_INT" android:title="@string/update_and_analytics" android:key="update_and_analytics">
+        <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/notify_me_for_updates" android:key="check_updates" android:summary="@string/notify_me_for_updates_summary" />
+        <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/crash_report" android:key="crash_report" android:summary="@string/crash_report_summary" />
+        <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/send_analytics" android:key="send_analytics" android:summary="@string/send_analytics_summary" />
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/learn_more" android:key="learn_more" />
+    </PreferenceCategory>
+</PreferenceScreen>

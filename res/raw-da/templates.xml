@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="Log-in" type="login" iconid="1001">
+        <card templatetype="login.default" name="Log-in" iconid="21">
+            <field uid="10" label="Brugernavn" type="username"/>
+            <field uid="12" label="E-mail" type="email"/>
+            <field uid="11" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="14" label="Telefon" type="phone"/>
+            <field uid="13" label="URL" type="url"/>
+            <field uid="15" label="Sikkerhedsspørgsmål" type="text"/>
+            <field uid="16" label="Svar til sikkerhedsspørgsmål" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="Kreditkort" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="Kreditkort" iconid="20">
+            <field uid="0" label="Kortholder" type="cardholder_name"/>
+            <field uid="17" label="Type" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="Kortnummer" type="card_number"/>
+            <field uid="2" label="CVC" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="4" label="Udløbsdato" type="expiry_date"/>
+            <field uid="18" label="Gyldig fra" type="date"/>
+            <field uid="10" label="Kreditgrænse" type="numeric"/>
+            <field uid="11" label="Hævegrænse" type="numeric"/>
+            <field uid="12" label="Rentesats" type="numeric"/>
+            <field uid="6" label="Udstedende bank" type="bank_name"/>
+            <field uid="14" label="Hjemmeside" type="url"/>
+            <field uid="15" label="Brugernavn" type="username"/>
+            <field uid="16" label="Log-in adgangskode" type="password" sensitive="true"/>
+            <field uid="9" label="Overførselsadgangskode" type="txn_password" sensitive="true"/>
+            <field uid="7" label="Udstedt den" type="date"/>
+            <field uid="8" label="Hvis mistet, ring" type="phone"/>
+        </card>
+    </category>
+
+    <category name="Finans" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="Bankkonto" iconid="45">
+            <field uid="4" label="Bank" type="bank_name"/>
+            <field uid="0" label="Kontohaver" type="cardholder_name"/>
+            <field uid="1" label="Type" type="text"/>
+            <field uid="2" label="Kontonummer" type="numeric"/>
+            <field uid="16" label="Kunde ID" type="text"/>
+            <field uid="5" label="Routing nummer" type="numeric"/>
+            <field uid="6" label="Afdelingsnavn" type="text"/>
+            <field uid="7" label="Afdelingskode" type="numeric"/>
+            <field uid="8" label="SWIFT" type="text"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="Adresse" type="text"/>
+            <field uid="25" label="Telefon" type="phone"/>
+            
+            <field uid="11" label="Debitkortnummer" type="card_number"/>
+            <field uid="26" label="Type" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="14" label="CVC" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="Udløbsdato" type="expiry_date"/>
+            <field uid="27" label="Hævegrænse" type="numeric"/>
+            
+            <field uid="17" label="Hjemmeside" type="url"/>
+            <field uid="18" label="Brugernavn" type="username"/>
+            <field uid="19" label="Log-in adgangskode" type="password" sensitive="true"/>
+            <field uid="20" label="Overførselsadgangskode" type="txn_password" sensitive="true"/>
+            <field uid="22" label="Telefonrådgivning" type="phone"/>
+            <field uid="23" label="T-PIN" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="Forsikringspolice" iconid="33">
+            <field uid="1" label="Policenavn" type="text"/>
+            <field uid="0" label="Firma" type="text"/>
+            <field uid="19" label="Forsikringstager" type="text"/>
+            <field uid="2" label="Nummer" type="numeric"/>
+            <field uid="3" label="Type" type="text"/>
+            <field uid="5" label="Forsikringspræmie" type="numeric"/>
+            <field uid="6" label="Forsikringsbeløb" type="numeric"/>
+            <field uid="7" label="Udstedelsesdato" type="date"/>
+            <field uid="18" label="Fornyelsesdato" type="date"/>
+            <field uid="8" label="Udløbsdato" type="date"/>
+            <field uid="9" label="Betingelser" type="numeric"/>
+            <field uid="20" label="Begunstigede person" type="text"/>
+            <field uid="11" label="Kunde ID" type="numeric"/>
+            <field uid="12" label="Hjemmeside" type="url"/>
+            <field uid="13" label="Brugernavn" type="username"/>
+            <field uid="14" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="16" label="Forsikringsagent" type="text"/>
+            <field uid="17" label="Telefonrådgivning" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="Aktie investering" iconid="34">
+            <field uid="2" label="Symbol" type="text"/>
+            <field uid="0" label="Kontonummer" type="numeric"/>
+            <field uid="1" label="Type" type="text"/>
+            <field uid="3" label="Marked" type="text"/>
+            <field uid="5" label="Introduceret den" type="date"/>
+            <field uid="6" label="Købt den" type="date"/>
+            <field uid="7" label="Købspris" type="numeric"/>
+            <field uid="8" label="Kvantitet" type="numeric"/>
+            <field uid="9" label="Nuværende pris" type="numeric"/>
+            <field uid="11" label="Hjemmeside" type="url"/>
+            <field uid="12" label="Brugernavn" type="username"/>
+            <field uid="13" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="15" label="Børsmægler" type="text"/>
+            <field uid="16" label="Telefon" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="Gensidig fond" iconid="43">
+            <field uid="0" label="Fondnavn" type="text"/>
+            <field uid="1" label="Fondtype" type="text"/>
+            <field uid="2" label="Introduceret den" type="date"/>
+            <field uid="3" label="Købt den" type="date"/>
+            <field uid="4" label="Kvantitet" type="numeric"/>
+            <field uid="5" label="Købt NAV" type="numeric"/>
+            <field uid="6" label="Nuværende NAV" type="numeric"/>
+            <field uid="8" label="Hjemmeside" type="url"/>
+            <field uid="9" label="Brugernavn" type="username"/>
+            <field uid="10" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="12" label="Børsmægler" type="text"/>
+            <field uid="13" label="Telefon" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="Lån/prioritetslån" iconid="44">
+            <field uid="2" label="Långiver" type="text"/>
+            <field uid="1" label="Type" type="text"/>
+            <field uid="0" label="Kontonummer" type="numeric"/>
+            <field uid="4" label="Hovedstol" type="numeric"/>
+            <field uid="5" label="Rente %" type="numeric"/>
+            <field uid="6" label="Dato" type="date"/>
+            <field uid="7" label="Betingelser" type="numeric"/>
+            <field uid="8" label="Balance" type="numeric"/>
+            <field uid="9" label="Forfaldende betaling" type="numeric"/>
+            <field uid="10" label="Aktiver" type="text"/>
+            <field uid="12" label="Telefon" type="phone"/>
+            <field uid="13" label="Hjemmeside" type="url"/>
+            <field uid="14" label="Brugernavn" type="username"/>
+            <field uid="15" label="Adgangskode" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="Anden finans" iconid="122">
+            <field uid="0" label="Felt 1" type="text"/>
+            <field uid="1" label="Felt 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Computer" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="Database" iconid="56">
+            <field uid="8" label="Type" type="text"/>
+            <field uid="0" label="Server" type="text"/>
+            <field uid="1" label="Port" type="numeric"/>
+            <field uid="2" label="Database" type="text"/>
+            <field uid="3" label="Brugernavn" type="username"/>
+            <field uid="4" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="5" label="SID" type="text"/>
+            <field uid="6" label="Alias" type="text"/>
+            <field uid="7" label="Indstillinger" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="E-mail konto" iconid="48">
+            <field uid="0" label="E-mail" type="email"/>
+            <field uid="1" label="Brugernavn" type="username"/>
+            <field uid="2" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="9" label="Type" type="text"/>
+            <field uid="3" label="POP3 server" type="text"/>
+            <field uid="4" label="IMAP server" type="text"/>
+            <field uid="6" label="Port" type="numeric"/>
+            <field uid="10" label="Sikkerhedstype" type="text"/>
+            <field uid="11" label="Autoriseringsmetode" type="text"/>
+            <field uid="21" label="Weblink" type="url"/>
+            <field uid="5" label="SMTP server" type="text"/>
+            <field uid="7" label="Port" type="numeric"/>
+            <field uid="13" label="Brugernavn" type="username"/>
+            <field uid="14" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="15" label="Sikkerhedstype" type="text"/>
+            <field uid="16" label="Autoriseringsmetode" type="text"/>
+            <field uid="18" label="Udbyder" type="text"/>
+            <field uid="8" label="Hjemmeside" type="url"/>
+            <field uid="19" label="Lokal telefon" type="phone"/>
+            <field uid="20" label="Telefonrådgivning" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="FTP konto" iconid="55">
+            <field uid="0" label="Server" type="text"/>
+            <field uid="1" label="Sti" type="text"/>
+            <field uid="2" label="Brugernavn" type="username"/>
+            <field uid="3" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="4" label="Udbyder" type="text"/>
+            <field uid="5" label="Hjemmeside" type="url"/>
+            <field uid="6" label="Telefon" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="Instant messaging" iconid="49">
+            <field uid="0" label="Type" type="text"/>
+            <field uid="1" label="ID" type="text"/>
+            <field uid="2" label="Server" type="text"/>
+            <field uid="3" label="Port" type="numeric"/>
+            <field uid="4" label="Kaldenavn" type="text"/>
+            <field uid="5" label="Brugernavn" type="username"/>
+            <field uid="6" label="Adgangskode" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="Internetudbyder" iconid="63">
+            <field uid="0" label="Brugernavn" type="username"/>
+            <field uid="1" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="3" label="Opkaldstelefon" type="phone"/>
+            <field uid="4" label="ISP/System" type="text"/>
+            <field uid="5" label="IP adresse" type="numeric"/>
+            <field uid="6" label="Subnet maske" type="numeric"/>
+            <field uid="20" label="Gateway" type="numeric"/>
+            <field uid="7" label="Primær DNS" type="numeric"/>
+            <field uid="8" label="Sekundær DNS" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Telnet" type="text"/>
+            <field uid="17" label="Telefonrådgivning" type="phone"/>
+            <field uid="18" label="Hjemmeside" type="url"/>
+            <field uid="19" label="Faktureringsinformation" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="Server" iconid="51">
+            <field uid="11" label="Administration log-in" type="username"/>
+            <field uid="12" label="Administrationsadgangskode" type="password" sensitive="true"/>
+            <field uid="16" label="Administrations URL" type="url"/>
+            <field uid="0" label="Service" type="text"/>
+            <field uid="1" label="Opgaver" type="text"/>
+            <field uid="2" label="OS" type="text"/>
+            <field uid="3" label="RAM" type="numeric"/>
+            <field uid="4" label="Lager" type="numeric"/>
+            <field uid="5" label="CPU" type="numeric"/>
+            <field uid="6" label="RAID" type="text"/>
+            <field uid="7" label="Placering" type="text"/>
+            <field uid="8" label="IP adresse" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="Port" type="numeric"/>
+            <field uid="17" label="Hostingudbyder" type="text"/>
+            <field uid="14" label="Supporthjemmeside" type="url"/>
+            <field uid="18" label="Telefonrådgivning" type="phone"/>
+            <field uid="15" label="Faktureringsinformation" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="Trådløs router" iconid="35">
+            <field uid="0" label="Router navn" type="text"/>
+            <field uid="9" label="Router adgangskode" type="password" sensitive="true"/>
+            <field uid="2" label="Netværksnavn" type="text"/>
+            <field uid="5" label="Netværksadgangskode" type="password" sensitive="true"/>
+            <field uid="3" label="Sikkerhed" type="text"/>
+            <field uid="1" label="MAC/Airport #" type="numeric"/>
+            <field uid="12" label="Server/IP adresse" type="url"/>
+            <field uid="13" label="Brugernavn" type="username"/>
+            <field uid="4" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="6" label="Lagringsadgangskode" type="password" sensitive="true"/>
+            <field uid="7" label="Supporthjemmeside" type="url"/>
+            <field uid="8" label="Faktureringsinformation" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="Webhosting" iconid="53">
+            <field uid="13" label="Udbyder" type="text"/>
+            <field uid="1" label="Brugernavn" type="username"/>
+            <field uid="2" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="11" label="Administrations URL" type="url"/>
+            <field uid="0" label="OS" type="text"/>
+            <field uid="9" label="Kunde ID" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="Database" type="text"/>
+            <field uid="7" label="Tjenester" type="text"/>
+            <field uid="14" label="Supporthjemmeside" type="url"/>
+            <field uid="10" label="Telefonrådgivning" type="phone"/>
+            <field uid="12" label="Gebyr" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="Anden computer" iconid="123">
+            <field uid="0" label="Felt 1" type="text"/>
+            <field uid="1" label="Felt 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Licens" type="license" iconid="1005">
+        <card templatetype="license.driving" name="Kørekort" iconid="60">
+            <field uid="1" label="Kortnummer" type="numeric"/>
+            <field uid="0" label="Navn" type="text"/>
+            <field uid="8" label="Køn" type="text"/>
+            <field uid="9" label="Fødselsdato" type="date"/>
+            <field uid="10" label="Adresse" type="text"/>
+            <field uid="11" label="Højde" type="text"/>
+            <field uid="2" label="Klasse" type="text"/>
+            <field uid="13" label="Restriktioner" type="text"/>
+            <field uid="3" label="Kommune" type="text"/>
+            <field uid="4" label="Land" type="text"/>
+            <field uid="5" label="Udløbsdato" type="date"/>
+            <field uid="6" label="Udstedt den" type="date"/>
+            <field uid="7" label="Hvis mistet, ring" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="Jagttegn" iconid="42">
+            <field uid="1" label="Kortnummer" type="numeric"/>
+            <field uid="0" label="Navn" type="text"/>
+            <field uid="2" label="Kommune" type="text"/>
+            <field uid="3" label="Region" type="text"/>
+            <field uid="4" label="Land" type="text"/>
+            <field uid="5" label="Gyldig fra" type="date"/>
+            <field uid="6" label="Udløbsdato" type="date"/>
+            <field uid="7" label="Godkendt vildt" type="text"/>
+            <field uid="8" label="Kvote" type="text"/>
+        </card>
+        <card templatetype="license.software" name="Software licens" iconid="52">
+            <field uid="0" label="Version" type="numeric"/>
+            <field uid="16" label="Produktnavn" type="text"/>
+            <field uid="17" label="Antal brugere" type="numeric"/>
+            <field uid="1" label="Nøgle" type="text" sensitive="true"/>
+            <field uid="6" label="Downloadside" type="url"/>
+            <field uid="3" label="Licenseret til" type="text"/>
+            <field uid="18" label="Log-in side" type="url"/>
+            <field uid="19" label="Brugernavn" type="username"/>
+            <field uid="20" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="4" label="E-mail" type="email"/>
+            <field uid="5" label="Firma" type="text"/>
+            <field uid="13" label="Indkøbsdato" type="date"/>
+            <field uid="14" label="Ordrenummer" type="numeric"/>
+            <field uid="12" label="Salgspris" type="numeric"/>
+            <field uid="15" label="I alt" type="numeric"/>
+            <field uid="8" label="Udgiver" type="text"/>
+            <field uid="9" label="Hjemmeside" type="url"/>
+            <field uid="10" label="Support e-mail" type="email"/>
+            <field uid="21" label="Telefonrådgivning" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="Andre licenser" iconid="124">
+            <field uid="0" label="Felt 1" type="text"/>
+            <field uid="1" label="Felt 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Adgangskode" type="password" iconid="1006">
+        <card templatetype="password.default" name="Adgangskode" iconid="36">
+            <field uid="0" label="Log-in" type="username"/>
+            <field uid="1" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="2" label="Adgang" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Sikker besked" type="note" iconid="1007">
+        <card templatetype="note.default" name="Besked" iconid="22">
+        </card>
+    </category>
+        
+    <category name="Rejse" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="Pas" iconid="37">
+            <field uid="2" label="Pasnummer" type="text"/>
+            <field uid="0" label="Fulde navn" type="text"/>
+            <field uid="14" label="Køn" type="text"/>
+            <field uid="1" label="Type" type="text"/>
+            <field uid="15" label="Nationalitet" type="text"/>
+            <field uid="4" label="Fødested" type="text"/>
+            <field uid="5" label="Fødselsdag" type="date"/>
+            <field uid="6" label="Udstedt af" type="text"/>
+            <field uid="7" label="Udstedt den" type="date"/>
+            <field uid="8" label="Udløbsdato" type="date"/>
+            <field uid="9" label="Udstedende land" type="text"/>
+            <field uid="10" label="Myndighed" type="text"/>
+            <field uid="12" label="Erstatninger" type="text"/>
+            <field uid="13" label="Hvis mistet, ring" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="Rejse visum" iconid="57">
+            <field uid="1" label="Type" type="text"/>
+            <field uid="15" label="Land" type="text"/>
+            <field uid="0" label="Fulde navn" type="text"/>
+            <field uid="2" label="Nummer" type="numeric"/>
+            <field uid="4" label="Gyldig for" type="text"/>
+            <field uid="5" label="Gyldig fra" type="date"/>
+            <field uid="6" label="Gyldig indtil" type="date"/>
+            <field uid="7" label="Varighed" type="numeric"/>
+            <field uid="8" label="Antal indrejser" type="numeric"/>
+            <field uid="10" label="Udstedt af" type="text"/>
+            <field uid="11" label="Udstedelsesdato" type="date"/>
+            <field uid="12" label="Pasnummer" type="text"/>
+            <field uid="13" label="Bemærkninger" type="text"/>
+            <field uid="14" label="Hvis mistet, ring" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="Hyppigt rejsende" iconid="39">
+            <field uid="1" label="Medlemsnummer" type="numeric"/>
+            <field uid="0" label="Navn" type="text"/>
+            <field uid="8" label="Flyselskab" type="text"/>
+            <field uid="2" label="Dato" type="date"/>
+            <field uid="3" label="Kilometere" type="numeric"/>
+            <field uid="5" label="Hjemmeside" type="url"/>
+            <field uid="6" label="Brugernavn" type="username"/>
+            <field uid="7" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="9" label="Kundeservice" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="Hotel reservation" iconid="27">
+            <field uid="0" label="Hotelnavn" type="text"/>
+            <field uid="4" label="Rumnummer" type="numeric"/>
+            <field uid="1" label="Adresse" type="text"/>
+            <field uid="2" label="Reservations ID" type="numeric"/>
+            <field uid="3" label="Dato" type="date"/>
+            <field uid="5" label="Nætter" type="numeric"/>
+            <field uid="15" label="Hotelbelønning" type="numeric"/>
+            <field uid="7" label="Telefon" type="phone"/>
+            <field uid="8" label="E-mail" type="email"/>
+            <field uid="9" label="Hjemmeside" type="url"/>
+            <field uid="10" label="Brugernavn" type="username"/>
+            <field uid="11" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="13" label="Portner" type="text"/>
+            <field uid="14" label="Restaurant" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="Oplysninger om flyrejse" iconid="38">
+            <field uid="2" label="Flynummer" type="numeric"/>
+            <field uid="0" label="Flyselskab" type="text"/>
+            <field uid="1" label="Dato" type="date"/>
+            <field uid="3" label="Fra" type="text"/>
+            <field uid="4" label="Til" type="text"/>
+            <field uid="5" label="Tid/Gate" type="text"/>
+            <field uid="6" label="E-Ticket nummer" type="numeric"/>
+            <field uid="7" label="Bekræft #" type="numeric"/>
+            <field uid="10" label="Hjemmeside" type="url"/>
+            <field uid="11" label="Brugernavn" type="username"/>
+            <field uid="12" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="9" label="Telefon" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="Andre rejser" iconid="125">
+            <field uid="0" label="Felt 1" type="text"/>
+            <field uid="1" label="Felt 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Diverse" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="Tøjstørrelse" iconid="23">
+            <field uid="9" label="Navn" type="text"/>
+            <field uid="0" label="Jakkesæt" type="text"/>
+            <field uid="1" label="Sko" type="text"/>
+            <field uid="2" label="Skjorte" type="text"/>
+            <field uid="3" label="Bukser" type="text"/>
+            <field uid="4" label="Indvendig søm" type="text"/>
+            <field uid="5" label="Skørt" type="text"/>
+            <field uid="6" label="Handsker" type="text"/>
+            <field uid="7" label="Taljemål" type="text"/>
+            <field uid="8" label="Halsmål" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="Kombinationslås" iconid="61">
+            <field uid="0" label="Placering" type="text"/>
+            <field uid="1" label="Kode" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="Recept" iconid="40">
+            <field uid="2" label="Doktor" type="text"/>
+            <field uid="0" label="RX #" type="text"/>
+            <field uid="1" label="Navn" type="text"/>
+            <field uid="3" label="Apotek" type="text"/>
+            <field uid="4" label="Telefon" type="phone"/>
+            <field uid="6" label="Mærke" type="text"/>
+            <field uid="7" label="Medicin" type="text"/>
+            <field uid="8" label="Antal" type="numeric"/>
+            <field uid="9" label="Tag" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="Kontaktlinser" iconid="26">
+            <field uid="0" label="Type" type="text"/>
+            <field uid="1" label="Højre(OD)" type="numeric"/>
+            <field uid="2" label="Venstre(OS)" type="numeric"/>
+            <field uid="3" label="Doktor" type="text"/>
+            <field uid="4" label="Telefon" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="Registreringskode" iconid="66">
+            <field uid="2" label="Navn" type="text"/>
+            <field uid="0" label="Nummer" type="numeric" sensitive="true"/>
+            <field uid="1" label="Dato" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="Oplysninger om køretøj" iconid="25">
+            <field uid="3" label="Registreringsnummer" type="text"/>
+            <field uid="11" label="Ejer" type="text"/>
+            <field uid="0" label="Model" type="text"/>
+            <field uid="12" label="Køretøjstype" type="text"/>
+            <field uid="13" label="Købsdato" type="date"/>
+            <field uid="1" label="Fabrikeret" type="text"/>
+            <field uid="2" label="År" type="numeric"/>
+            <field uid="4" label="VIN" type="text"/>
+            <field uid="5" label="Servicetelefon" type="phone"/>
+            <field uid="14" label="Vejhjælp" type="phone"/>
+            <field uid="16" label="Forskiringsselskab" type="text"/>
+            <field uid="7" label="Policebeløb" type="text"/>
+            <field uid="8" label="Policenummer" type="numeric"/>
+            <field uid="10" label="Udløbsdato" type="date"/>
+            <field uid="9" label="Forsikringstelefon" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="Telefonbesked" iconid="62">
+            <field uid="0" label="Adgangsnummer" type="numeric"/>
+            <field uid="1" label="PIN" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="Adresse" iconid="31">
+            <field uid="0" label="Navn" type="text"/>
+            <field uid="1" label="Nummer" type="text"/>
+            <field uid="2" label="Gade" type="text"/>
+            <field uid="3" label="Sted" type="text"/>
+            <field uid="4" label="By" type="text"/>
+            <field uid="5" label="Kommune" type="text"/>
+            <field uid="6" label="Postnummer" type="text"/>
+            <field uid="7" label="Land" type="text"/>
+            <field uid="9" label="Telefon" type="phone"/>
+            <field uid="10" label="E-mail" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="Kontakt" iconid="47">
+            <field uid="0" label="Fornavn" type="text"/>
+            <field uid="1" label="Efternavn" type="text"/>
+            <field uid="2" label="Firma" type="text"/>
+            <field uid="3" label="Telefon (H)" type="phone"/>
+            <field uid="4" label="Telefon (M)" type="phone"/>
+            <field uid="5" label="Telefon (A)" type="phone"/>
+            <field uid="6" label="E-mail" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="Nødsituationsnumre" iconid="28">
+            <field uid="0" label="Politi" type="phone"/>
+            <field uid="1" label="Brand" type="phone"/>
+            <field uid="2" label="Ambulance" type="phone"/>
+            <field uid="3" label="Doktor" type="phone"/>
+            <field uid="4" label="Tandlæge" type="phone"/>
+            <field uid="5" label="Dyrlæge" type="phone"/>
+            <field uid="6" label="Elektricitet" type="phone"/>
+            <field uid="7" label="Gas" type="phone"/>
+            <field uid="8" label="Telefonfirma" type="phone"/>
+            <field uid="9" label="Ejer" type="phone"/>
+            <field uid="10" label="Andre" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="Personnummer" iconid="64">
+            <field uid="1" label="Nummer" type="numeric"/>
+            <field uid="0" label="Navn" type="text"/>
+            <field uid="2" label="Dato" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="Bonusprogram" iconid="24">
+            <field uid="0" label="Firma" type="text"/>
+            <field uid="1" label="Navn" type="text"/>
+            <field uid="10" label="Medlems ID" type="text"/>
+            <field uid="2" label="Nummer" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="5" label="Nummer 2" type="numeric"/>
+            <field uid="6" label="Siden" type="date"/>
+            <field uid="7" label="Telefonrådgivning" type="phone"/>
+            <field uid="8" label="Reservations telefon" type="phone"/>
+            <field uid="9" label="Hjemmeside" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="Serienummer" iconid="32">
+            <field uid="1" label="Serie" type="text" sensitive="true"/>
+            <field uid="0" label="Mærke" type="text"/>
+            <field uid="2" label="Model" type="text"/>
+            <field uid="3" label="Pris" type="numeric"/>
+            <field uid="4" label="Købt den" type="date"/>
+            <field uid="6" label="Garanti" type="date"/>
+            <field uid="5" label="Sted" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="Ejendomsinformation" iconid="70">
+            <field uid="0" label="Ejer" type="text"/>
+            <field uid="1" label="Adresse" type="text"/>
+            <field uid="2" label="Type" type="text"/>
+            <field uid="3" label="Vedligeholdelsesbeløb" type="numeric"/>
+            <field uid="5" label="Ejendoms ID" type="text"/>
+            <field uid="6" label="Skattebeløb" type="numeric"/>
+            <field uid="7" label="Forfaldsdato for skat" type="date"/>
+            <field uid="8" label="Hjemmeside" type="url"/>
+            <field uid="9" label="Brugernavn" type="username"/>
+            <field uid="10" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="12" label="Forsikring" type="text"/>
+            <field uid="13" label="Forsikringspræmie" type="numeric"/>
+            <field uid="14" label="Policenummer" type="numeric"/>
+            <field uid="15" label="Udløbsdato" type="date"/>
+            <field uid="16" label="Forsikringskontakt" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="Telefonkort" iconid="54">
+            <field uid="1" label="Adgangsnummer" type="phone"/>
+            <field uid="0" label="Udbyder" type="text"/>
+            <field uid="2" label="Kortnummer" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="Puls" type="numeric"/>
+            <field uid="5" label="Udløbsdato" type="date"/>
+            <field uid="6" label="Brug" type="numeric"/>
+            <field uid="8" label="Hjemmeside" type="url"/>
+            <field uid="9" label="Brugernavn" type="username"/>
+            <field uid="10" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="11" label="Hvis mistet, ring" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="Identitetskort" iconid="59">
+            <field uid="2" label="ID nummer" type="numeric"/>
+            <field uid="0" label="Titel" type="text"/>
+            <field uid="1" label="Fulde navn" type="text"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="Land" type="text"/>
+            <field uid="5" label="Udstedt den" type="date"/>
+            <field uid="6" label="Udløbsdato" type="date"/>
+            <field uid="7" label="Hvis mistet, ring" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="ISIC kort" iconid="65">
+            <field uid="2" label="Kortnummer" type="numeric"/>
+            <field uid="0" label="Studerer ved" type="text"/>
+            <field uid="1" label="Fulde navn" type="text"/>
+            <field uid="3" label="Født" type="date"/>
+            <field uid="4" label="Udstedt den" type="date"/>
+            <field uid="5" label="Udløbsdato" type="date"/>
+            <field uid="6" label="Hvis mistet, ring" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="ITIC kort" iconid="41">
+            <field uid="2" label="Kortnummer" type="numeric"/>
+            <field uid="0" label="Underviser ved" type="text"/>
+            <field uid="1" label="Fulde navn" type="text"/>
+            <field uid="3" label="Født" type="date"/>
+            <field uid="4" label="Udstedt den" type="date"/>
+            <field uid="5" label="Udløbsdato" type="date"/>
+            <field uid="6" label="Hvis mistet, ring" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="Bibliotekskort" iconid="58">
+            <field uid="1" label="Kortnummer" type="numeric"/>
+            <field uid="0" label="Bibliotek" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Timer" type="numeric"/>
+            <field uid="4" label="Adresse" type="text"/>
+            <field uid="5" label="Udstedt den" type="date"/>
+            <field uid="6" label="Udløbsdato" type="date"/>
+            <field uid="8" label="Hjemmeside" type="url"/>
+            <field uid="9" label="Brugernavn" type="username"/>
+            <field uid="10" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="11" label="Hvis mistet, ring" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="Valgkort" iconid="69">
+            <field uid="0" label="Fulde navn" type="text"/>
+            <field uid="1" label="Valgnummer" type="numeric"/>
+            <field uid="2" label="Adresse" type="text"/>
+            <field uid="3" label="Valgkreds" type="text"/>
+            <field uid="4" label="Sted" type="text"/>
+            <field uid="5" label="Kongres" type="text"/>
+            <field uid="6" label="Senat" type="text"/>
+            <field uid="7" label="Repræsentant" type="text"/>
+            <field uid="8" label="Adresse" type="text"/>
+            <field uid="9" label="Udstedt den" type="date"/>
+            <field uid="11" label="Hjemmeside" type="url"/>
+            <field uid="12" label="Brugernavn" type="username"/>
+            <field uid="13" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="14" label="Hvis mistet, ring" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="ITZ kort" iconid="67">
+            <field uid="1" label="Kortnummer" type="numeric"/>
+            <field uid="0" label="Ejer" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Beløb" type="numeric"/>
+            <field uid="4" label="Udløbsdato" type="date"/>
+            <field uid="5" label="Brug" type="numeric"/>
+            <field uid="7" label="Hjemmeside" type="url"/>
+            <field uid="8" label="Brugernavn" type="username"/>
+            <field uid="9" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="10" label="Hvis mistet, ring" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="Medlemskort" iconid="46">
+            <field uid="1" label="Medlems ID" type="numeric"/>
+            <field uid="10" label="Medlemsnavn" type="text"/>
+            <field uid="0" label="Organisation" type="text"/>
+            <field uid="11" label="Gruppe" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Telefon" type="phone"/>
+            <field uid="12" label="Medlemssiden" type="date"/>
+            <field uid="4" label="Udløbsdato" type="date"/>
+            <field uid="6" label="Hjemmeside" type="url"/>
+            <field uid="7" label="Brugernavn" type="username"/>
+            <field uid="8" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="13" label="E-mail" type="email"/>
+            <field uid="9" label="Hvis mistet, ring" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="PAN kort" iconid="68">
+            <field uid="3" label="Kortnummer" type="numeric"/>
+            <field uid="0" label="Navn" type="text"/>
+            <field uid="1" label="Faders navn" type="text"/>
+            <field uid="2" label="Fødselsdag" type="date"/>
+            <field uid="5" label="Hjemmeside" type="url"/>
+            <field uid="6" label="Brugernavn" type="username"/>
+            <field uid="7" label="Adgangskode" type="password" sensitive="true"/>
+            <field uid="8" label="Hvis mistet, ring" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="Mobiltelefon" iconid="120">
+            <field uid="0" label="Model" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="Låsekode" type="numeric" sensitive="true"/>
+            <field uid="5" label="SIM type" type="text"/>
+            <field uid="6" label="SIM nummer" type="numeric"/>
+            <field uid="7" label="PIN" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="Købt den" type="date"/>
+            <field uid="10" label="Garanti" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="Tjenesteudbyder" iconid="121">
+            <field uid="0" label="Udbyder" type="text"/>
+            <field uid="1" label="Service type" type="text"/>
+            <field uid="2" label="Bruger ID" type="text"/>
+            <field uid="3" label="Abonnements ID" type="numeric"/>
+            <field uid="4" label="Adresse" type="text"/>
+            <field uid="5" label="Hjemmeside" type="url"/>
+            <field uid="6" label="Brugernavn" type="username"/>
+            <field uid="7" label="Log-in adgangskode" type="password" sensitive="true"/>
+            <field uid="8" label="Telefonrådgivning" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="Andre diverse" iconid="126">
+            <field uid="0" label="Felt 1" type="text"/>
+            <field uid="1" label="Felt 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="Køn" value="male" type="sex_options"/>
+            <field uid="4" label="Fødselsdato" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="Firma" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="Adresse" type="address_firstline"/>
+            <field uid="10" label="Gade" type="address_street"/>
+            <field uid="11" label="By" type="address_city"/>
+            <field uid="12" label="Kommune" type="address_state"/>
+            <field uid="13" label="Postnummer" type="address_zip"/>
+            <field uid="14" label="Land" value="US" type="country_options"/>
+            <field uid="15" label="Telefon" type="phone"/>
+            <field uid="16" label="Sikkerhedsspørgsmål" type="text"/>
+            <field uid="17" label="Svar til sikkerhedsspørgsmål" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+    <TextView android:textAppearance="@r$style/TextAppearance_AppCompat_Medium" android:textColor="@r$color/editcell_textfont" android:id="@+id/detail_attachment_tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/detail_attachment_linearLayout" android:layout_width="match_parent" android:layout_height="wrap_content" /> />

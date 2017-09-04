@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="auto_lock_interval_entries">
+        <item>30 초 동안 비활성</item>
+        <item>1 분 동안 비활성</item>
+        <item>5 분 동안 비활성</item>
+        <item>10 분 동안 비활성</item>
+        <item>30 분 동안 비활성</item>
+        <item>1 시간 동안 비활성</item>
+        <item>5 시간 동안 비활성</item>
+        <item>12 시간 동안 비활성</item>
+    </array>
+    <array name="auto_lock_interval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="browser_package_names">
+        <item>com.android.chrome</item>
+        <item>com.chrome.beta</item>
+        <item>com.google.android.browser</item>
+        <item>mobi.mgeek.TunnyBrowser</item>
+        <item>com.dolphin.browser.zero</item>
+        <item>com.opera.browser</item>
+        <item>com.opera.mini.android</item>
+        <item>com.nubelacorp.javelin</item>
+        <item>com.cloudmosa.puffinFree</item>
+        <item>com.cloudmosa.puffin</item>
+        <item>com.UCMobile.intl</item>
+        <item>com.uc.browser.en</item>
+        <item>com.uc.browser.hd</item>
+        <item>org.mozilla.firefox</item>
+        <item>org.mozilla.firefox_beta</item>
+        <item>com.ksmobile.cb</item>
+        <item>com.jiubang.browser</item>
+        <item>com.mx.browser</item>
+        <item>com.chrome.dev</item>
+    </array>
+    <array name="clearclipboard_intervals">
+        <item>30 초</item>
+        <item>1 분</item>
+        <item>2 분</item>
+        <item>5 분</item>
+        <item>절대</item>
+    </array>
+    <array name="clearclipboard_intervals_num">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="default_search_engine_entry_list">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>Yahoo</item>
+        <item>Ask</item>
+        <item>Baidu</item>
+        <item>DuckDuckGo</item>
+        <item>Qwant</item>
+    </array>
+    <array name="default_search_engine_values_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="detailopenLinkInEntries">
+        <item>Enpass 브라우저</item>
+        <item>기본 브라우저</item>
+    </array>
+    <array name="dropdown">
+        <item>모든 아이템</item>
+        <item>즐겨찾기</item>
+        <item>폴더</item>
+        <item>CATEGORIES</item>
+        <item>로그인</item>
+        <item>신용 카드</item>
+        <item>금융</item>
+        <item>컴퓨터</item>
+        <item>라이센스</item>
+        <item>비밀번호</item>
+        <item>보안 노트</item>
+        <item>여행</item>
+        <item>기타</item>
+    </array>
+    <array name="new_features_array">
+        <item>빠른 PIN 잠금 해제</item>
+        <item>멀티 탭 브라우저</item>
+        <item>향상된 비밀번호 생성기</item>
+        <item>Box에 대한 동기화 지원 추가</item>
+        <item>더 많은 사용자 정의 옵션</item>
+    </array>
+    <array name="openLinkInEntries">
+        <item>항상 묻기</item>
+        <item>Enpass 브라우저</item>
+        <item>기본 브라우저</item>
+    </array>
+    <array name="openLinkInValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="searchInCards_entries">
+        <item>제목만</item>
+        <item>모든 필드</item>
+    </array>
+    <array name="searchInCards_values">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="seprator_list">
+        <item>쉼표</item>
+        <item>달러</item>
+        <item>해시</item>
+        <item>하이픈</item>
+        <item>마침표</item>
+        <item>스페이스</item>
+        <item>밑줄</item>
+    </array>
+    <array name="sex">
+        <item>남성</item>
+        <item>여성</item>
+    </array>
+    <array name="trail_version_text_array">
+        <item>PC 용 무료 데스크탑 버전.</item>
+        <item>사용 중인 다른 모바일 장치의 Enpass.</item>
+        <item>iCloud, Dropbox, Box, Google Drive 및 OneDrive의 클라우드 계정을 사용하여 여러 가지 장치로 데이터를 동기화 할 수 있습니다.</item>
+    </array>
+</resources>

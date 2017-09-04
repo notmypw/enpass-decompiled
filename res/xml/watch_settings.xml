@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/enable_android_watch" android:key="enable_watch" android:summary="@string/enable_watch_description" />
+    <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/enable_pin" android:key="enable_watch_pin" android:summary="@string/watch_enable_pin_text" android:dependency="enable_watch" />
+    <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/change_pin_title" android:key="change_pin" android:dependency="enable_watch_pin" />
+    <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/show_totp" android:key="show_totp" android:summary="@string/show_totp_description" android:dependency="enable_watch" />
+    <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/learn_more" android:key="learn_more" />
+</PreferenceScreen>

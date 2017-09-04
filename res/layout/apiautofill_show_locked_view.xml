@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="0x106000c" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/text1" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autofill_sign_in_prompt" />

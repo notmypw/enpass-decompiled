@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/filling_setting_toolbar" app:background="@r$color/enpass_colorPrimary" app:layout_width="match_parent" app:layout_height="wrap_content" app:minHeight="?attr/actionBarSize" app:popupTheme="@r$style/EnpassToolbarThemePopup" app:theme="@r$style/EnpassToolbarTheme">
+            <RelativeLayout app:layout_width="match_parent" app:layout_height="wrap_content" app:minHeight="?attr/actionBarSize">
+                <TextView app:textAppearance="@*app:style/TextAppearance.Medium" app:id="@+id/text_autofill" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/autofilling_status" app:layout_toLeftOf="@+id/text_set_status" app:layout_alignParentLeft="true" app:layout_centerVertical="true" />
+                <TextView app:textAppearance="@*app:style/TextAppearance.Medium" app:id="@+id/text_set_status" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="10dp" app:text="ON" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+        <TextView app:id="@+id/what_is_filling" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="20dp" app:layout_marginTop="20dp" app:layout_marginRight="20dp" app:text="@string/filling_description" />
+        <RelativeLayout app:id="@+id/layout_autofilling" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="20dp" app:layout_marginTop="30dp" app:layout_marginRight="20dp">
+            <TextView app:textAppearance="@*app:style/TextAppearance.Medium" app:id="@+id/automatic_filling" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/enpass_autofilling" app:layout_toLeftOf="@+id/checkbox_enable_autofilling" app:layout_alignParentLeft="true" app:layout_centerVertical="true" />
+            <CheckBox app:id="@+id/checkbox_enable_autofilling" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView app:id="@+id/description_autofilling" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="20dp" app:layout_marginTop="10dp" app:layout_marginRight="20dp" app:text="@string/enabling_automatic_filling" />
+        <TextView app:textStyle="bold" app:textColor="?attr/colorAccent" app:id="@+id/heading_autofilling" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="20dp" app:layout_marginTop="30dp" app:layout_marginRight="20dp" app:text="@string/fill_using" />
+        <RelativeLayout app:id="@+id/layout_autofilling_notification" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="20dp" app:layout_marginTop="10dp" app:layout_marginRight="20dp">
+            <TextView app:textAppearance="@*app:style/TextAppearance.Medium" app:id="@+id/notification_automatic_filling" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/android_notification" app:layout_alignParentLeft="true" app:layout_centerVertical="true" />
+            <CheckBox app:id="@+id/notification_checkbox_enable_autofilling" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView app:id="@+id/description_android_notification" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="20dp" app:layout_marginTop="10dp" app:layout_marginRight="20dp" app:text="@string/description_android_notification" />
+        <RelativeLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="20dp" app:layout_marginTop="10dp" app:layout_marginRight="20dp">
+            <TextView app:textAppearance="@*app:style/TextAppearance.Medium" app:id="@+id/keyboard_enable_disable" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/enpass_keyboard_in_autofill" app:layout_alignParentLeft="true" app:layout_centerVertical="true" />
+            <CheckBox app:id="@+id/checkbox_enable_keyboard" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView app:id="@+id/description_enpass_keyboard" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="20dp" app:layout_marginTop="10dp" app:layout_marginRight="20dp" app:text="@string/description_enpass_keyboard" />
+        <TextView app:id="@+id/automatic_filling_nobrowser" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="10dp" app:text="@string/accessibility_no_browser_support" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@drawable/pin_header_bg_color" android:layout_width="UNKNOWN_DATA_0x3201" android:layout_height="match_parent">
+        <include layout="@layout/pinned_header_listview_side_header" />
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/common_header_list_item_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp"
+        <RelativeLayout android:id="@+id/new_item_layout" android:background="?unknown_attr_ref: 10102fd" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x4801">
+            <LinearLayout android:orientation="vertical" android:id="@+id/new_common_header_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_toLeftOf="@+id/new_common_header_popup_menu" android:layout_toRightOf="@+id/new_common_header_icon" android:layout_centerVertical="true">
+                <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="@r$color/black" android:ellipsize="end" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/new_common_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="text" android:scrollHorizontally="true" android:singleLine="true" />
+                <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textColor="@r$color/black" android:ellipsize="end" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/new_common_header_subText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="subtext" android:lines="1" android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+            <ImageView android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/new_common_header_icon" android:layout_width="UNKNOWN_DATA_0x2801" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:src="@drawable/ic_launcher" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/new_common_header_popup_menu" android:paddingLeft="20dp" android:paddingTop="30dp" android:paddingRight="4dp" android:paddingBottom="30dp" android:layout_width="UNKNOWN_DATA_0x3c01" android:layout_height="match_parent" android:layout_marginRight="8dp" android:src="@drawable/more_vertical" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@+id/new_common_header_divider" android:background="@r$color/card_list_divider" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x40000031" android:layout_below="@+id/new_item_layout" />
+    </RelativeLayout>
+</LinearLayout>

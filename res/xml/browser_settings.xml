@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@r$array/openLinkInEntries" android:title="@string/open_links_in_title" android:key="open_links_in" android:defaultValue="0" android:entryValues="@r$array/openLinkInValues" />
+    <PreferenceCategory android:icon="@locationawarelogger/TRACE_INT" android:title="@string/enpass_browser" android:key="enpass_browser">
+        <ListPreference android:icon="@locationawarelogger/TRACE_INT" android:entries="@r$array/default_search_engine_entry_list" android:title="@string/default_search_engine_title" android:key="default_search_engine" android:defaultValue="0" android:entryValues="@r$array/default_search_engine_values_list" />
+        <ListPreference android:icon="@locationawarelogger/TRACE_INT" android:entries="@r$array/default_browser_agent_entry_list" android:title="@string/default_browser_agent_title" android:key="user_agent" android:defaultValue="0" android:entryValues="@r$array/default_browser_agent_values_list" />
+        <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/auto_submit_title" android:key="auto_submit" android:summary="@string/auto_submit_summary" />
+        <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/match_url_hostname" android:key="match_url_hostname" android:summary="@string/match_url_hostname_summary" android:defaultValue="true" />
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/clear_web_data_title" android:key="clear_web_data" android:summary="@string/clear_web_data_summ" />
+    </PreferenceCategory>
+</PreferenceScreen>

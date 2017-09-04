@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="security_settings">
+    <Preference android:selectable="false" android:key="rooted_device_warning" />
+    <PreferenceCategory android:icon="@locationawarelogger/TRACE_INT" android:title="@string/master_password_label" android:key="master_password">
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/change_pass_title" android:key="change_password" />
+    </PreferenceCategory>
+    <PreferenceCategory android:icon="@locationawarelogger/TRACE_INT" android:title="@string/locking_priorities_title" android:key="locking_priorities">
+        <ListPreference android:icon="@locationawarelogger/TRACE_INT" android:entries="@r$array/auto_lock_interval_entries" android:title="@string/auto_lock_interval_title" android:key="auto_lock_interval" android:summary="@string/autolock_intervals_summary" android:defaultValue="1" android:entryValues="@r$array/auto_lock_interval_values" />
+        <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/lock_on_leavint_title" android:key="lock_on_leaving" android:defaultValue="true" />
+        <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/unlock_pin" android:key="quick_unlock_pin" android:defaultValue="false" android:summaryOff="@string/quick_unlock_summary" />
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/change_pin_title" android:key="change_pin" android:dependency="quick_unlock_pin" />
+        <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/scan_finger_print" android:key="fingerprint_scanner" />
+        <Preference android:selectable="false" android:key="lock_on_leaving_strings" />
+    </PreferenceCategory>
+    <PreferenceCategory android:icon="@locationawarelogger/TRACE_INT" android:title="@string/display">
+        <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/hideSensitive_title" android:key="hideSensitive" android:summary="@string/hideSensitive_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:icon="@locationawarelogger/TRACE_INT" android:title="@string/clipboard">
+        <ListPreference android:icon="@locationawarelogger/TRACE_INT" android:entries="@r$array/clearclipboard_intervals" android:title="@string/clearclipboard" android:key="clearclipboardInterval" android:summary="@string/clear_clipboard_intervals_summary" android:defaultValue="0" android:dialogTitle="@string/clearclipboard" android:entryValues="@r$array/clearclipboard_intervals_num" />
+    </PreferenceCategory>
+</PreferenceScreen>

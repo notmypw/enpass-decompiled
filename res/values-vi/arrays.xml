@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="auto_lock_interval_entries">
+        <item>30 giây không hoạt động</item>
+        <item>1 phút không hoạt động</item>
+        <item>5 phút không hoạt động</item>
+        <item>10 phút không hoạt động</item>
+        <item>30 phút không hoạt động</item>
+        <item>1 giờ không hoạt động</item>
+        <item>5 giờ không hoạt động</item>
+        <item>12 giờ không hoạt động</item>
+    </array>
+    <array name="auto_lock_interval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="browser_package_names">
+        <item>com.Android.Chrome</item>
+        <item>com.chrome.beta</item>
+        <item>com.google.android.browser</item>
+        <item>mobi.mgeek.TunnyBrowser</item>
+        <item>com.dolphin.browser.zero</item>
+        <item>com.opera.browser</item>
+        <item>com.opera.mini.android</item>
+        <item>com.nubelacorp.javelin</item>
+        <item>com.cloudmosa.puffinFree</item>
+        <item>com.cloudmosa.puffin</item>
+        <item>com.UCMobile.intl</item>
+        <item>com.uc.browser.en</item>
+        <item>com.uc.browser.hd</item>
+        <item>org.mozilla.firefox</item>
+        <item>org.mozilla.firefox_beta</item>
+        <item>com.ksmobile.cb</item>
+        <item>com.jiubang.browser</item>
+        <item>com.mx.browser</item>
+        <item>com.chrome.dev</item>
+    </array>
+    <array name="clearclipboard_intervals">
+        <item>30 giây</item>
+        <item>1 Phút</item>
+        <item>2 Phút</item>
+        <item>5 Phút</item>
+        <item>Không bao giờ</item>
+    </array>
+    <array name="clearclipboard_intervals_num">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="default_search_engine_entry_list">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>Yahoo</item>
+        <item>Ask</item>
+        <item>Baidu</item>
+        <item>DuckDuckGo</item>
+        <item>Qwant</item>
+    </array>
+    <array name="default_search_engine_values_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="detailopenLinkInEntries">
+        <item>Trình duyệt Enpass</item>
+        <item>Trình duyệt mặc định</item>
+    </array>
+    <array name="dropdown">
+        <item>Tất cả các mục</item>
+        <item>Mục ưa thích</item>
+        <item>Thư mục</item>
+        <item>DANH MỤC</item>
+        <item>Đăng nhập</item>
+        <item>Thẻ Tín Dụng</item>
+        <item>Tài chính</item>
+        <item>Máy tính</item>
+        <item>Giấy phép</item>
+        <item>Mật khẩu</item>
+        <item>Ghi chú Bảo mật</item>
+        <item>Du lịch</item>
+        <item>Linh tinh</item>
+    </array>
+    <array name="new_features_array">
+        <item>Mở khóa PIN nhanh</item>
+        <item>Trình duyệt đa tab</item>
+        <item>Trình tạo Mật khẩu cải tiến</item>
+        <item>Đã thêm hỗ trợ Đồng bộ cho Box</item>
+        <item>Thêm tùy chọn tùy chỉnh</item>
+    </array>
+    <array name="openLinkInEntries">
+        <item>Luôn luôn hỏi</item>
+        <item>Trình duyệt Enpass</item>
+        <item>Trình duyệt mặc định</item>
+    </array>
+    <array name="openLinkInValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="searchInCards_entries">
+        <item>Chỉ tiêu đề</item>
+        <item>Tất cả các trường</item>
+    </array>
+    <array name="searchInCards_values">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="seprator_list">
+        <item>Dấu phẩy</item>
+        <item>Đô-la</item>
+        <item>Dấu thăng</item>
+        <item>Gạch nối</item>
+        <item>Dấu chấm</item>
+        <item>Dấu cách</item>
+        <item>Dấu gạch chân</item>
+    </array>
+    <array name="sex">
+        <item>Nam</item>
+        <item>Nữ</item>
+    </array>
+    <array name="trail_version_text_array">
+        <item>Phiên bản máy tính để bàn miễn phí cho máy tính của bạn.</item>
+        <item>Enpass trên các thiết bị di động khác bạn đang sử dụng.</item>
+        <item>Đồng bộ dữ liệu trên nhiều thiết bị bằng các tài khoản đám mây của riêng bạn trên iCloud, Dropbox, Box, Google Drive và OneDrive.</item>
+    </array>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.sinew.widget.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x4001">
+    <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/drag_handle" android:paddingLeft="5dp" android:layout_width="UNKNOWN_DATA_0x2001" android:layout_height="UNKNOWN_DATA_0x2001" android:layout_margin="10dp" android:src="@drawable/dummy_drag" android:scaleType="fitCenter" />
+    <CheckedTextView android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="@r$color/black" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/reorder_text" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:checkMark="?unknown_attr_ref: 101021a" />
+</in.sinew.widget.CheckableLinearLayout>

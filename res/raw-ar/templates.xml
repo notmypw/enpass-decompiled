@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="تسجيل الدخول" type="login" iconid="1001">
+        <card templatetype="login.default" name="تسجيل الدخول" iconid="21">
+            <field uid="10" label="إسم المستخدم" type="username"/>
+            <field uid="12" label="البريد الإلكترونى" type="email"/>
+            <field uid="11" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="14" label="الهاتف" type="phone"/>
+            <field uid="13" label="عنوان الموقع" type="url"/>
+            <field uid="15" label="سؤال الأمان" type="text"/>
+            <field uid="16" label="إجابة سؤال الأمان" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="بطاقة الإئتمان" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="بطاقة الإئتمان" iconid="20">
+            <field uid="0" label="صاحب البطاقة" type="cardholder_name"/>
+            <field uid="17" label="النوع" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="الرقم" type="card_number"/>
+            <field uid="2" label="كود التحقق من البطاقة (CVC)" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="رمز PIN" type="card_pin" sensitive="true"/>
+            <field uid="4" label="تاريخ الإنتهاء" type="expiry_date"/>
+            <field uid="18" label="صالحة إبتداءًا من" type="date"/>
+            <field uid="10" label="الحد الإئتمانى" type="numeric"/>
+            <field uid="11" label="حد السحب" type="numeric"/>
+            <field uid="12" label="معدل الفائدة" type="numeric"/>
+            <field uid="6" label="البنك المصدر للبطاقة" type="bank_name"/>
+            <field uid="14" label="الموقع الإلكتروني" type="url"/>
+            <field uid="15" label="إسم المستخدم" type="username"/>
+            <field uid="16" label="كلمة السر للدخول" type="password" sensitive="true"/>
+            <field uid="9" label="كلمة السر للمعاملة" type="txn_password" sensitive="true"/>
+            <field uid="7" label="الصادر في" type="date"/>
+            <field uid="8" label="في حالة الفقدان، الرجاء الإتصال بالرقم" type="phone"/>
+        </card>
+    </category>
+
+    <category name="ماليات" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="حساب بنكى" iconid="45">
+            <field uid="4" label="إسم البنك" type="bank_name"/>
+            <field uid="0" label="صاحب الحساب" type="cardholder_name"/>
+            <field uid="1" label="النوع" type="text"/>
+            <field uid="2" label="رقم الحساب" type="numeric"/>
+            <field uid="16" label="رقم العميل" type="text"/>
+            <field uid="5" label="رقم التوجيه" type="numeric"/>
+            <field uid="6" label="إسم الفرع" type="text"/>
+            <field uid="7" label="كود الفرع" type="numeric"/>
+            <field uid="8" label="رقم SWIFT" type="text"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="عنوان الفرع" type="text"/>
+            <field uid="25" label="رقم الهاتف للفرع" type="phone"/>
+            
+            <field uid="11" label="رقم بطاقة الخصم المباشر" type="card_number"/>
+            <field uid="26" label="النوع" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="رمز PIN" type="card_pin" sensitive="true"/>
+            <field uid="14" label="كود التحقق من البطاقة (CVC)" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="تاريخ الإنتهاء" type="expiry_date"/>
+            <field uid="27" label="حد السحب" type="numeric"/>
+            
+            <field uid="17" label="الموقع الإلكتروني" type="url"/>
+            <field uid="18" label="إسم المستخدم" type="username"/>
+            <field uid="19" label="كلمة السر للدخول" type="password" sensitive="true"/>
+            <field uid="20" label="كلمة السر للمعاملة" type="txn_password" sensitive="true"/>
+            <field uid="22" label="خط المساعدة" type="phone"/>
+            <field uid="23" label="الرقم التعريفى للشريك التجارى (T-PIN)" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="بوليصة التأمين" iconid="33">
+            <field uid="1" label="إسم البوليصة" type="text"/>
+            <field uid="0" label="الشركة" type="text"/>
+            <field uid="19" label="صاحب البوليصة" type="text"/>
+            <field uid="2" label="الرقم" type="numeric"/>
+            <field uid="3" label="النوع" type="text"/>
+            <field uid="5" label="القسط" type="numeric"/>
+            <field uid="6" label="مبلغ التأمين" type="numeric"/>
+            <field uid="7" label="تاريخ الإصدار" type="date"/>
+            <field uid="18" label="تاريخ التجديد" type="date"/>
+            <field uid="8" label="تاريخ الإنتهاء" type="date"/>
+            <field uid="9" label="المدة" type="numeric"/>
+            <field uid="20" label="الشخص المعني" type="text"/>
+            <field uid="11" label="رقم العميل" type="numeric"/>
+            <field uid="12" label="الموقع الإلكتروني" type="url"/>
+            <field uid="13" label="إسم المستخدم" type="username"/>
+            <field uid="14" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="16" label="اسم الوكالة" type="text"/>
+            <field uid="17" label="خط المساعدة" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="الإستثمارات في الأوراق المالية" iconid="34">
+            <field uid="2" label="الرمز" type="text"/>
+            <field uid="0" label="رقم الحساب" type="numeric"/>
+            <field uid="1" label="النوع" type="text"/>
+            <field uid="3" label="السوق" type="text"/>
+            <field uid="5" label="تاريخ الطرح" type="date"/>
+            <field uid="6" label="تاريخ الشراء" type="date"/>
+            <field uid="7" label="سعر الشراء" type="numeric"/>
+            <field uid="8" label="الكمية" type="numeric"/>
+            <field uid="9" label="السعر الحالى" type="numeric"/>
+            <field uid="11" label="الموقع الإلكتروني" type="url"/>
+            <field uid="12" label="إسم المستخدم" type="username"/>
+            <field uid="13" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="15" label="السمسار" type="text"/>
+            <field uid="16" label="الهاتف" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="صندوق إستثمار مشترك" iconid="43">
+            <field uid="0" label="إسم صندوق الإستثمار" type="text"/>
+            <field uid="1" label="نوع الدعم" type="text"/>
+            <field uid="2" label="تاريخ الطرح" type="date"/>
+            <field uid="3" label="تاريخ الشراء" type="date"/>
+            <field uid="4" label="الكمية" type="numeric"/>
+            <field uid="5" label="قيمة الأصول المشتراة" type="numeric"/>
+            <field uid="6" label="قيمة الأصول الحالية" type="numeric"/>
+            <field uid="8" label="الموقع الإلكتروني" type="url"/>
+            <field uid="9" label="إسم المستخدم" type="username"/>
+            <field uid="10" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="12" label="السمسار" type="text"/>
+            <field uid="13" label="الهاتف" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="قرض/تمويل عقارى" iconid="44">
+            <field uid="2" label="المقرض" type="text"/>
+            <field uid="1" label="النوع" type="text"/>
+            <field uid="0" label="رقم الحساب" type="numeric"/>
+            <field uid="4" label="أصل القرض" type="numeric"/>
+            <field uid="5" label="سعر الفائدة %" type="numeric"/>
+            <field uid="6" label="التاريخ" type="date"/>
+            <field uid="7" label="المدة" type="numeric"/>
+            <field uid="8" label="الرصيد" type="numeric"/>
+            <field uid="9" label="تاريخ الإستحقاق" type="numeric"/>
+            <field uid="10" label="الأصل" type="text"/>
+            <field uid="12" label="الهاتف" type="phone"/>
+            <field uid="13" label="الموقع الإلكتروني" type="url"/>
+            <field uid="14" label="إسم المستخدم" type="username"/>
+            <field uid="15" label="كلمة المرور" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="الجوانب المالية الأخرى" iconid="122">
+            <field uid="0" label="الحقل الأول" type="text"/>
+            <field uid="1" label="الحقل الثاني" type="text"/>
+        </card>
+    </category>
+
+    <category name="كمبيوتر" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="قاعدة بيانات" iconid="56">
+            <field uid="8" label="النوع" type="text"/>
+            <field uid="0" label="الخادم" type="text"/>
+            <field uid="1" label="المنفذ" type="numeric"/>
+            <field uid="2" label="قاعدة بيانات" type="text"/>
+            <field uid="3" label="إسم المستخدم" type="username"/>
+            <field uid="4" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="5" label="معرف النظام" type="text"/>
+            <field uid="6" label="معرف إضافى" type="text"/>
+            <field uid="7" label="خيارات" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="حساب بريد إلكترونى" iconid="48">
+            <field uid="0" label="البريد الإلكترونى" type="email"/>
+            <field uid="1" label="إسم المستخدم" type="username"/>
+            <field uid="2" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="9" label="النوع" type="text"/>
+            <field uid="3" label="خادم POP3" type="text"/>
+            <field uid="4" label="خادم IMAP" type="text"/>
+            <field uid="6" label="المنفذ" type="numeric"/>
+            <field uid="10" label="نوع التأمين" type="text"/>
+            <field uid="11" label="طريقة التصديق" type="text"/>
+            <field uid="21" label="الموقع الإلكتروني" type="url"/>
+            <field uid="5" label="خادم SMTP" type="text"/>
+            <field uid="7" label="المنفذ" type="numeric"/>
+            <field uid="13" label="إسم المستخدم" type="username"/>
+            <field uid="14" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="15" label="نوع التأمين" type="text"/>
+            <field uid="16" label="طريقة التصديق" type="text"/>
+            <field uid="18" label="المزود" type="text"/>
+            <field uid="8" label="الموقع الإلكتروني" type="url"/>
+            <field uid="19" label="رقم الهاتف المحلي" type="phone"/>
+            <field uid="20" label="خط المساعدة" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="حساب نقل ملفات (FTP)" iconid="55">
+            <field uid="0" label="الخادم" type="text"/>
+            <field uid="1" label="المنفذ" type="text"/>
+            <field uid="2" label="إسم المستخدم" type="username"/>
+            <field uid="3" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="4" label="المزود" type="text"/>
+            <field uid="5" label="الموقع الإلكتروني" type="url"/>
+            <field uid="6" label="الهاتف" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="مراسلة فورية" iconid="49">
+            <field uid="0" label="النوع" type="text"/>
+            <field uid="1" label="المعرف" type="text"/>
+            <field uid="2" label="الخادم" type="text"/>
+            <field uid="3" label="المنفذ" type="numeric"/>
+            <field uid="4" label="اللقب" type="text"/>
+            <field uid="5" label="إسم المستخدم" type="username"/>
+            <field uid="6" label="كلمة المرور" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="مزود خدمة الإنترنت" iconid="63">
+            <field uid="0" label="إسم المستخدم" type="username"/>
+            <field uid="1" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="3" label="رفم الإتصال الهاتفي" type="phone"/>
+            <field uid="4" label="مزود خدمة الإنترنت/نظام" type="text"/>
+            <field uid="5" label="عنوان IP" type="numeric"/>
+            <field uid="6" label="قناع الشبكة الفرعية" type="numeric"/>
+            <field uid="20" label="المعبر" type="numeric"/>
+            <field uid="7" label="خادم إسم النطاق الرئيسى" type="numeric"/>
+            <field uid="8" label="خادم إسم النطاق الثانوي" type="numeric"/>
+            <field uid="9" label="خدمة تسمية إنترنت النوافذ (WINS)" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Telnet" type="text"/>
+            <field uid="17" label="خط المساعدة" type="phone"/>
+            <field uid="18" label="الموقع الإلكتروني" type="url"/>
+            <field uid="19" label="معلومات الفواتير" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="الخادم" iconid="51">
+            <field uid="11" label="تسجيل دخول المشرف" type="username"/>
+            <field uid="12" label="كلمة مرور المشرف" type="password" sensitive="true"/>
+            <field uid="16" label="رابط URL المشرف" type="url"/>
+            <field uid="0" label="الخدمة" type="text"/>
+            <field uid="1" label="المهام" type="text"/>
+            <field uid="2" label="نظام التشغيل" type="text"/>
+            <field uid="3" label="الذاكرة العشوائية" type="numeric"/>
+            <field uid="4" label="التخزين" type="numeric"/>
+            <field uid="5" label="وحدة المعالجة المركزية" type="numeric"/>
+            <field uid="6" label="RAID" type="text"/>
+            <field uid="7" label="الموقع" type="text"/>
+            <field uid="8" label="عنوان IP" type="numeric"/>
+            <field uid="9" label="خادم إسم النطاق" type="numeric"/>
+            <field uid="19" label="المنفذ" type="numeric"/>
+            <field uid="17" label="مزود خدمات الإستضافة" type="text"/>
+            <field uid="14" label="مساعدة موقع الويب" type="url"/>
+            <field uid="18" label="خط المساعدة" type="phone"/>
+            <field uid="15" label="معلومات الفواتير" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="راوتر لاسلكي" iconid="35">
+            <field uid="0" label="إسم المحطة" type="text"/>
+            <field uid="9" label="كلمة المرور الخاصة بالمحطة" type="password" sensitive="true"/>
+            <field uid="2" label="إسم الشبكة" type="text"/>
+            <field uid="5" label="كلمة المرور الخاصة بالشبكة" type="password" sensitive="true"/>
+            <field uid="3" label="الحماية" type="text"/>
+            <field uid="1" label="MAC/Airport #" type="numeric"/>
+            <field uid="12" label="عنوان الخادم/IP" type="url"/>
+            <field uid="13" label="إسم المستخدم" type="username"/>
+            <field uid="4" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="6" label="كلمة السر لوحدة التخزين" type="password" sensitive="true"/>
+            <field uid="7" label="مساعدة موقع الويب" type="url"/>
+            <field uid="8" label="معلومات الفواتير" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="خدمات إستضافة المواقع الإلكترونية" iconid="53">
+            <field uid="13" label="المزود" type="text"/>
+            <field uid="1" label="إسم المستخدم" type="username"/>
+            <field uid="2" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="11" label="رابط URL المشرف" type="url"/>
+            <field uid="0" label="نظام التشغيل" type="text"/>
+            <field uid="9" label="رقم العميل" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="قاعدة بيانات" type="text"/>
+            <field uid="7" label="الخدمات" type="text"/>
+            <field uid="14" label="مساعدة موقع الويب" type="url"/>
+            <field uid="10" label="خط المساعدة" type="phone"/>
+            <field uid="12" label="الرسوم" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="جهاز كمبيوتر آخر" iconid="123">
+            <field uid="0" label="الحقل الأول" type="text"/>
+            <field uid="1" label="الحقل الثاني" type="text"/>
+        </card>
+    </category>
+
+    <category name="الرخصة" type="license" iconid="1005">
+        <card templatetype="license.driving" name="رخصة قيادة" iconid="60">
+            <field uid="1" label="الرقم" type="numeric"/>
+            <field uid="0" label="الإسم" type="text"/>
+            <field uid="8" label="الجنس" type="text"/>
+            <field uid="9" label="تاريخ الميلاد" type="date"/>
+            <field uid="10" label="العنوان" type="text"/>
+            <field uid="11" label="الإرتفاع" type="text"/>
+            <field uid="2" label="الدرجة" type="text"/>
+            <field uid="13" label="القيود" type="text"/>
+            <field uid="3" label="الولاية" type="text"/>
+            <field uid="4" label="الدولة" type="text"/>
+            <field uid="5" label="تاريخ الإنتهاء" type="date"/>
+            <field uid="6" label="الصادر في" type="date"/>
+            <field uid="7" label="في حالة الفقدان، الرجاء الإتصال بالرقم" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="رخصة قيادة خارج حدود الدولة" iconid="42">
+            <field uid="1" label="الرقم" type="numeric"/>
+            <field uid="0" label="الإسم" type="text"/>
+            <field uid="2" label="الولاية" type="text"/>
+            <field uid="3" label="المنطقة" type="text"/>
+            <field uid="4" label="الدولة" type="text"/>
+            <field uid="5" label="صالحة إبتداءًا من" type="date"/>
+            <field uid="6" label="تاريخ الإنتهاء" type="date"/>
+            <field uid="7" label="الحياة البرية المعتمدة" type="text"/>
+            <field uid="8" label="الحصة" type="text"/>
+        </card>
+        <card templatetype="license.software" name="رخصة البرنامج" iconid="52">
+            <field uid="0" label="الإصدار" type="numeric"/>
+            <field uid="16" label="إسم المنتج" type="text"/>
+            <field uid="17" label="عدد المستخدمين" type="numeric"/>
+            <field uid="1" label="المفتاح" type="text" sensitive="true"/>
+            <field uid="6" label="صفحة التحميل" type="url"/>
+            <field uid="3" label="مرخصة بإسم" type="text"/>
+            <field uid="18" label="صفحة تسجيل الدخول" type="url"/>
+            <field uid="19" label="إسم المستخدم" type="username"/>
+            <field uid="20" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="4" label="البريد الإلكترونى" type="email"/>
+            <field uid="5" label="الشركة" type="text"/>
+            <field uid="13" label="تاريخ الشراء" type="date"/>
+            <field uid="14" label="رقم الطلب" type="numeric"/>
+            <field uid="12" label="سعر التجزئة" type="numeric"/>
+            <field uid="15" label="المجموع" type="numeric"/>
+            <field uid="8" label="الناشر" type="text"/>
+            <field uid="9" label="الموقع الإلكتروني" type="url"/>
+            <field uid="10" label="البريد الإلكتروني  للدعم" type="email"/>
+            <field uid="21" label="خط المساعدة" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="رخصة أخرى" iconid="124">
+            <field uid="0" label="الحقل الأول" type="text"/>
+            <field uid="1" label="الحقل الثاني" type="text"/>
+        </card>
+    </category>
+
+    <category name="كلمة المرور" type="password" iconid="1006">
+        <card templatetype="password.default" name="كلمة المرور" iconid="36">
+            <field uid="0" label="تسجيل الدخول" type="username"/>
+            <field uid="1" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="2" label="الوصول" type="text"/>
+        </card>
+    </category>
+    
+    <category name="ملحوظة مؤمّنة" type="note" iconid="1007">
+        <card templatetype="note.default" name="ملاحظة" iconid="22">
+        </card>
+    </category>
+        
+    <category name="سفر" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="جواز سفر" iconid="37">
+            <field uid="2" label="الرقم" type="text"/>
+            <field uid="0" label="الإسم بالكامل" type="text"/>
+            <field uid="14" label="الجنس" type="text"/>
+            <field uid="1" label="النوع" type="text"/>
+            <field uid="15" label="الجنسية" type="text"/>
+            <field uid="4" label="محل الميلاد" type="text"/>
+            <field uid="5" label="تاريخ الميلاد" type="date"/>
+            <field uid="6" label="مكان الإصدار" type="text"/>
+            <field uid="7" label="الصادر في" type="date"/>
+            <field uid="8" label="تاريخ الإنتهاء" type="date"/>
+            <field uid="9" label="الدولة المصدرة" type="text"/>
+            <field uid="10" label="السلطة المصدرة" type="text"/>
+            <field uid="12" label="إستبدالات" type="text"/>
+            <field uid="13" label="في حالة الفقدان، الرجاء الإتصال بالرقم" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="تأشيرة السفر" iconid="57">
+            <field uid="1" label="النوع" type="text"/>
+            <field uid="15" label="الدولة" type="text"/>
+            <field uid="0" label="الإسم بالكامل" type="text"/>
+            <field uid="2" label="الرقم" type="numeric"/>
+            <field uid="4" label="صالحة لمدة" type="text"/>
+            <field uid="5" label="صالحة إبتداءًا من" type="date"/>
+            <field uid="6" label="صالحة حتى" type="date"/>
+            <field uid="7" label="المدة" type="numeric"/>
+            <field uid="8" label="رقم الإدخالات" type="numeric"/>
+            <field uid="10" label="تم الإصدار بواسطة" type="text"/>
+            <field uid="11" label="تاريخ الإصدار" type="date"/>
+            <field uid="12" label="رقم جواز السفر" type="text"/>
+            <field uid="13" label="ملاحظات" type="text"/>
+            <field uid="14" label="في حالة الفقدان، الرجاء الإتصال بالرقم" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="مسافر دائم" iconid="39">
+            <field uid="1" label="رقم العضوية" type="numeric"/>
+            <field uid="0" label="الإسم" type="text"/>
+            <field uid="8" label="شركة الطيران" type="text"/>
+            <field uid="2" label="التاريخ" type="date"/>
+            <field uid="3" label="المسافة بالميل" type="numeric"/>
+            <field uid="5" label="الموقع الإلكتروني" type="url"/>
+            <field uid="6" label="إسم المستخدم" type="username"/>
+            <field uid="7" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="9" label="خدمة العملاء" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="حجز الفندق" iconid="27">
+            <field uid="0" label="إسم الفندق" type="text"/>
+            <field uid="4" label="رقم الغرفة" type="numeric"/>
+            <field uid="1" label="العنوان" type="text"/>
+            <field uid="2" label="معرف/رقم الحجز" type="numeric"/>
+            <field uid="3" label="التاريخ" type="date"/>
+            <field uid="5" label="عدد الليالى" type="numeric"/>
+            <field uid="15" label="مكافأة الفندق" type="numeric"/>
+            <field uid="7" label="الهاتف" type="phone"/>
+            <field uid="8" label="البريد الإلكترونى" type="email"/>
+            <field uid="9" label="الموقع الإلكتروني" type="url"/>
+            <field uid="10" label="إسم المستخدم" type="username"/>
+            <field uid="11" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="13" label="خدمات الإستقبال والإرشاد" type="text"/>
+            <field uid="14" label="المطعم" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="بيانات رحلة الطيران" iconid="38">
+            <field uid="2" label="رقم رحلة الطيران" type="numeric"/>
+            <field uid="0" label="شركة الطيران" type="text"/>
+            <field uid="1" label="التاريخ" type="date"/>
+            <field uid="3" label="من" type="text"/>
+            <field uid="4" label="إلى" type="text"/>
+            <field uid="5" label="الوقت/البوابة" type="text"/>
+            <field uid="6" label="رقم التذكرة الإلكترونية" type="numeric"/>
+            <field uid="7" label="رقم التأكيد#" type="numeric"/>
+            <field uid="10" label="الموقع الإلكتروني" type="url"/>
+            <field uid="11" label="إسم المستخدم" type="username"/>
+            <field uid="12" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="9" label="الهاتف" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="رحلة أخرى" iconid="125">
+            <field uid="0" label="الحقل الأول" type="text"/>
+            <field uid="1" label="الحقل الثاني" type="text"/>
+        </card>
+    </category>
+    
+    <category name="متنوعات" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="قياسات الملابس" iconid="23">
+            <field uid="9" label="الإسم" type="text"/>
+            <field uid="0" label="بدلة" type="text"/>
+            <field uid="1" label="حذاء" type="text"/>
+            <field uid="2" label="قميص" type="text"/>
+            <field uid="3" label="بنطال" type="text"/>
+            <field uid="4" label="طول كسر داخلى" type="text"/>
+            <field uid="5" label="تنورة" type="text"/>
+            <field uid="6" label="قفازات" type="text"/>
+            <field uid="7" label="وسط" type="text"/>
+            <field uid="8" label="الرقبة" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="قفل الجمع" iconid="61">
+            <field uid="0" label="الموقع" type="text"/>
+            <field uid="1" label="الشفرة" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="روشيتة طبية" iconid="40">
+            <field uid="2" label="الطبيب" type="text"/>
+            <field uid="0" label="رقم الروشيتة" type="text"/>
+            <field uid="1" label="الإسم" type="text"/>
+            <field uid="3" label="الصيدلية" type="text"/>
+            <field uid="4" label="الهاتف" type="phone"/>
+            <field uid="6" label="العلامة التجارية" type="text"/>
+            <field uid="7" label="الدواء" type="text"/>
+            <field uid="8" label="الكمية" type="numeric"/>
+            <field uid="9" label="الجرعة" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="وصفة طبية لعدسات العين" iconid="26">
+            <field uid="0" label="النوع" type="text"/>
+            <field uid="1" label="العين اليمنى" type="numeric"/>
+            <field uid="2" label="العين اليسرى" type="numeric"/>
+            <field uid="3" label="الطبيب" type="text"/>
+            <field uid="4" label="الهاتف" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="رقم التسجيل" iconid="66">
+            <field uid="2" label="الإسم" type="text"/>
+            <field uid="0" label="الرقم" type="numeric" sensitive="true"/>
+            <field uid="1" label="التاريخ" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="بيانات المركبة" iconid="25">
+            <field uid="3" label="رقم التسجيل" type="text"/>
+            <field uid="11" label="المالك" type="text"/>
+            <field uid="0" label="الموديل" type="text"/>
+            <field uid="12" label="نوع المركبة" type="text"/>
+            <field uid="13" label="تاريخ الشراء" type="date"/>
+            <field uid="1" label="تاريخ الصنع" type="text"/>
+            <field uid="2" label="العام" type="numeric"/>
+            <field uid="4" label="رقم تعريف المركبة" type="text"/>
+            <field uid="5" label="هاتف الخدمة" type="phone"/>
+            <field uid="14" label="رقم مساعدات وطوارئ الطريق" type="phone"/>
+            <field uid="16" label="شركة التأمين" type="text"/>
+            <field uid="7" label="مبلغ التأمين" type="text"/>
+            <field uid="8" label="رقم البوليصة" type="numeric"/>
+            <field uid="10" label="تاريخ الإنتهاء" type="date"/>
+            <field uid="9" label="رقم هاتف شركة التأمين" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="البريد الصوتى" iconid="62">
+            <field uid="0" label="رقم تمكين الدخول" type="numeric"/>
+            <field uid="1" label="رمز PIN" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="العنوان" iconid="31">
+            <field uid="0" label="الإسم" type="text"/>
+            <field uid="1" label="رقم الباب" type="text"/>
+            <field uid="2" label="الشارع" type="text"/>
+            <field uid="3" label="المنطقة" type="text"/>
+            <field uid="4" label="المدينة" type="text"/>
+            <field uid="5" label="الولاية" type="text"/>
+            <field uid="6" label="الرقم البريدى" type="text"/>
+            <field uid="7" label="الدولة" type="text"/>
+            <field uid="9" label="الهاتف" type="phone"/>
+            <field uid="10" label="البريد الإلكترونى" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="بيانات الإتصال" iconid="47">
+            <field uid="0" label="الإسم الأول" type="text"/>
+            <field uid="1" label="إسم العائلة" type="text"/>
+            <field uid="2" label="الشركة" type="text"/>
+            <field uid="3" label="رقم هاتف المنزل" type="phone"/>
+            <field uid="4" label="رقم الهاتف المحمول" type="phone"/>
+            <field uid="5" label="رقم هاتف المكتب" type="phone"/>
+            <field uid="6" label="البريد الإلكترونى" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="أرقام الطوارئ" iconid="28">
+            <field uid="0" label="الشرطة" type="phone"/>
+            <field uid="1" label="المطافى" type="phone"/>
+            <field uid="2" label="الإسعاف" type="phone"/>
+            <field uid="3" label="الطبيب" type="phone"/>
+            <field uid="4" label="طبيب الأسنان" type="phone"/>
+            <field uid="5" label="الطبيب البيطرى" type="phone"/>
+            <field uid="6" label="شركة الكهرباء" type="phone"/>
+            <field uid="7" label="شركة الغاز" type="phone"/>
+            <field uid="8" label="شركة الهاتف" type="phone"/>
+            <field uid="9" label="مالك الأرض" type="phone"/>
+            <field uid="10" label="أخرى" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="رقم التأمين الإجتماعى" iconid="64">
+            <field uid="1" label="الرقم" type="numeric"/>
+            <field uid="0" label="الإسم" type="text"/>
+            <field uid="2" label="التاريخ" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="برنامج المكافآت" iconid="24">
+            <field uid="0" label="الشركة" type="text"/>
+            <field uid="1" label="الإسم" type="text"/>
+            <field uid="10" label="رقم العضوية" type="text"/>
+            <field uid="2" label="الرقم" type="numeric"/>
+            <field uid="3" label="رمز PIN" type="pin" sensitive="true"/>
+            <field uid="5" label="رقم 2" type="numeric"/>
+            <field uid="6" label="منذ" type="date"/>
+            <field uid="7" label="خط المساعدة" type="phone"/>
+            <field uid="8" label="رقم هاتف الحجوزات" type="phone"/>
+            <field uid="9" label="الموقع الإلكتروني" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="الرقم المتسلسل" iconid="32">
+            <field uid="1" label="المتسلسل" type="text" sensitive="true"/>
+            <field uid="0" label="العلامة التجارية" type="text"/>
+            <field uid="2" label="الطراز" type="text"/>
+            <field uid="3" label="السعر" type="numeric"/>
+            <field uid="4" label="تاريخ الشراء" type="date"/>
+            <field uid="6" label="الضمان" type="date"/>
+            <field uid="5" label="الموقع" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="بيانات الملكية" iconid="70">
+            <field uid="0" label="المالك" type="text"/>
+            <field uid="1" label="العنوان" type="text"/>
+            <field uid="2" label="النوع" type="text"/>
+            <field uid="3" label="قيمة تكلفة الصيانة" type="numeric"/>
+            <field uid="5" label="رقم تعريف الملكية" type="text"/>
+            <field uid="6" label="قيمة الضرائب" type="numeric"/>
+            <field uid="7" label="تاريخ إستحقاق الضرائب" type="date"/>
+            <field uid="8" label="موقع الويب" type="url"/>
+            <field uid="9" label="إسم المستخدم" type="username"/>
+            <field uid="10" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="12" label="التأمين" type="text"/>
+            <field uid="13" label="قسط التأمين" type="numeric"/>
+            <field uid="14" label="رقم البوليصة" type="numeric"/>
+            <field uid="15" label="تاريخ الإنتهاء" type="date"/>
+            <field uid="16" label="رقم الخدمة لشركة التأمين" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="بطاقة إتصال" iconid="54">
+            <field uid="1" label="رقم تمكين الدخول" type="phone"/>
+            <field uid="0" label="المزود" type="text"/>
+            <field uid="2" label="رقم البطاقة" type="numeric"/>
+            <field uid="3" label="رمز PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="التعريفة" type="numeric"/>
+            <field uid="5" label="تاريخ الإنتهاء" type="date"/>
+            <field uid="6" label="الإستخدام" type="numeric"/>
+            <field uid="8" label="الموقع الإلكتروني" type="url"/>
+            <field uid="9" label="إسم المستخدم" type="username"/>
+            <field uid="10" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="11" label="في حالة الفقدان، الرجاء الإتصال بالرقم" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="بطاقة تعريف شخصية" iconid="59">
+            <field uid="2" label="رقم المعرف الشخصي" type="numeric"/>
+            <field uid="0" label="العنوان" type="text"/>
+            <field uid="1" label="الإسم بالكامل" type="text"/>
+            <field uid="3" label="رمز PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="الدولة" type="text"/>
+            <field uid="5" label="الصادر في" type="date"/>
+            <field uid="6" label="تاريخ الإنتهاء" type="date"/>
+            <field uid="7" label="في حالة الفقدان، الرجاء الإتصال بالرقم" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="بطاقة هوية الطالب الدولية" iconid="65">
+            <field uid="2" label="رقم البطاقة" type="numeric"/>
+            <field uid="0" label="يدرس فى" type="text"/>
+            <field uid="1" label="الإسم بالكامل" type="text"/>
+            <field uid="3" label="تاريخ الميلاد" type="date"/>
+            <field uid="4" label="الصادر في" type="date"/>
+            <field uid="5" label="تاريخ الإنتهاء" type="date"/>
+            <field uid="6" label="في حالة الفقدان، الرجاء الإتصال بالرقم" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="بطاقة هوية المعلم الدولية" iconid="41">
+            <field uid="2" label="رقم البطاقة" type="numeric"/>
+            <field uid="0" label="يقوم بالتدريس فى" type="text"/>
+            <field uid="1" label="الإسم بالكامل" type="text"/>
+            <field uid="3" label="تاريخ الميلاد" type="date"/>
+            <field uid="4" label="الصادر في" type="date"/>
+            <field uid="5" label="تاريخ الإنتهاء" type="date"/>
+            <field uid="6" label="في حالة الفقدان، الرجاء الإتصال بالرقم" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="بطاقة المكتبة" iconid="58">
+            <field uid="1" label="رقم البطاقة" type="numeric"/>
+            <field uid="0" label="المكتبة" type="text"/>
+            <field uid="2" label="رمز PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="الساعات" type="numeric"/>
+            <field uid="4" label="العنوان" type="text"/>
+            <field uid="5" label="الصادر في" type="date"/>
+            <field uid="6" label="تاريخ الإنتهاء" type="date"/>
+            <field uid="8" label="الموقع الإلكتروني" type="url"/>
+            <field uid="9" label="إسم المستخدم" type="username"/>
+            <field uid="10" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="11" label="في حالة الفقدان، الرجاء الإتصال بالرقم" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="بطاقة الناخب" iconid="69">
+            <field uid="0" label="الإسم بالكامل" type="text"/>
+            <field uid="1" label="رقم الناخب" type="numeric"/>
+            <field uid="2" label="العنوان" type="text"/>
+            <field uid="3" label="الدائرة الإنتخابية" type="text"/>
+            <field uid="4" label="الموقع" type="text"/>
+            <field uid="5" label="مجلس النواب" type="text"/>
+            <field uid="6" label="شيخ الولاية" type="text"/>
+            <field uid="7" label="الممثل" type="text"/>
+            <field uid="8" label="العنوان" type="text"/>
+            <field uid="9" label="الصادر في" type="date"/>
+            <field uid="11" label="الموقع الإلكتروني" type="url"/>
+            <field uid="12" label="إسم المستخدم" type="username"/>
+            <field uid="13" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="14" label="في حالة الفقدان، الرجاء الإتصال بالرقم" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="بطاقة ITZ" iconid="67">
+            <field uid="1" label="رقم البطاقة" type="numeric"/>
+            <field uid="0" label="المالك" type="text"/>
+            <field uid="2" label="رمز PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="القيمة" type="numeric"/>
+            <field uid="4" label="تاريخ الإنتهاء" type="date"/>
+            <field uid="5" label="الإستخدام" type="numeric"/>
+            <field uid="7" label="الموقع الإلكتروني" type="url"/>
+            <field uid="8" label="إسم المستخدم" type="username"/>
+            <field uid="9" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="10" label="في حالة الفقدان، الرجاء الإتصال بالرقم" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="بطاقة العضوية" iconid="46">
+            <field uid="1" label="رقم العضوية" type="numeric"/>
+            <field uid="10" label="إسم العضو" type="text"/>
+            <field uid="0" label="المؤسسة" type="text"/>
+            <field uid="11" label="المجموعة" type="text"/>
+            <field uid="2" label="رمز PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="الهاتف" type="phone"/>
+            <field uid="12" label="عضو منذ" type="date"/>
+            <field uid="4" label="تاريخ الإنتهاء" type="date"/>
+            <field uid="6" label="الموقع الإلكتروني" type="url"/>
+            <field uid="7" label="إسم المستخدم" type="username"/>
+            <field uid="8" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="13" label="البريد الإلكترونى" type="email"/>
+            <field uid="9" label="في حالة الفقدان، الرجاء الإتصال بالرقم" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="بطاقة الحساب الدائم" iconid="68">
+            <field uid="3" label="الرقم" type="numeric"/>
+            <field uid="0" label="الإسم" type="text"/>
+            <field uid="1" label="إسم الأب" type="text"/>
+            <field uid="2" label="تاريخ الميلاد" type="date"/>
+            <field uid="5" label="الموقع الإلكتروني" type="url"/>
+            <field uid="6" label="إسم المستخدم" type="username"/>
+            <field uid="7" label="كلمة المرور" type="password" sensitive="true"/>
+            <field uid="8" label="في حالة الفقدان، الرجاء الإتصال بالرقم" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="بيانات الهاتف المحمول" iconid="120">
+            <field uid="0" label="طراز سماعة الهاتف" type="text"/>
+            <field uid="2" label="رقم IMEI" type="numeric"/>
+            <field uid="3" label="رمز القفل" type="numeric" sensitive="true"/>
+            <field uid="5" label="نوع الشريحة SIM" type="text"/>
+            <field uid="6" label="رقم الشريحة SIM" type="numeric"/>
+            <field uid="7" label="رمز PIN" type="numeric" sensitive="true"/>
+            <field uid="8" label="رقم PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="رقم IMSI" type="numeric"/>
+            <field uid="1" label="تاريخ الشراء" type="date"/>
+            <field uid="10" label="الضمان" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="مزود الخدمة" iconid="121">
+            <field uid="0" label="المزود" type="text"/>
+            <field uid="1" label="نوع الخدمة" type="text"/>
+            <field uid="2" label="معرف المستهلك" type="text"/>
+            <field uid="3" label="معرف الإشتراك" type="numeric"/>
+            <field uid="4" label="العنوان" type="text"/>
+            <field uid="5" label="الموقع الإلكتروني" type="url"/>
+            <field uid="6" label="إسم المستخدم" type="username"/>
+            <field uid="7" label="كلمة السر للدخول" type="password" sensitive="true"/>
+            <field uid="8" label="خط المساعدة" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="الأمور الأخرى" iconid="126">
+            <field uid="0" label="الحقل الأول" type="text"/>
+            <field uid="1" label="الحقل الثاني" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="الجنس" value="male" type="sex_options"/>
+            <field uid="4" label="تاريخ الميلاد" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="الشركة" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="العنوان" type="address_firstline"/>
+            <field uid="10" label="الشارع" type="address_street"/>
+            <field uid="11" label="المدينة" type="address_city"/>
+            <field uid="12" label="الولاية" type="address_state"/>
+            <field uid="13" label="الرقم البريدى" type="address_zip"/>
+            <field uid="14" label="الدولة" value="US" type="country_options"/>
+            <field uid="15" label="الهاتف" type="phone"/>
+            <field uid="16" label="سؤال الأمان" type="text"/>
+            <field uid="17" label="إجابة سؤال الأمان" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

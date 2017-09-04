@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:id="@+id/notification_fill_title_layout" app:background="@r$color/op_blue" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <android.support.v7.widget.CardView app:id="@+id/notification_fill_filling_search_bar" app:background="0x106000b" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginTop="10dp" app:layout_marginRight="10dp" app:layout_marginBottom="15dp">
+            <LinearLayout app:orientation="horizontal" app:id="@+id/notification_fill_search_bar_layout" app:background="0x106000b" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3001">
+                <ImageButton app:id="@+id/notification_fill_search_button" app:background="0x106000d" app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_marginLeft="7dp" app:layout_marginRight="5dp" app:src="@drawable/ic_search_black_24dp" />
+                <LinearLayout app:focusable="true" app:focusableInTouchMode="true" app:layout_width="UNKNOWN_DATA_0x0" app:layout_height="UNKNOWN_DATA_0x0" />
+                <EditText app:textSize="20sp" app:textColor="@r$color/search_text_black" app:textColorHint="@r$color/search_hint_grey" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/notification_fill_search_field" app:background="0x106000b" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_marginLeft="8dp" app:layout_marginRight="10dp" app:hint="@string/filling_search_prompt" app:singleLine="true" app:layout_weight="1.0" app:textIsSelectable="false" />
+                <ImageButton app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/notification_fill_clear_button" app:background="0x106000d" app:paddingLeft="15dp" app:paddingRight="15dp" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="match_parent" app:src="@drawable/ic_close_black_18dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <TextView app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/notification_fill_empty_view" app:visibility="visible" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="10dp" app:text="@string/no_card" app:layout_centerInParent="true" />
+    <ListView app:id="@+id/notification_fill_list_view" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent" app:divider="@locationawarelogger/TRACE_INT" app:dividerHeight="0px" app:layout_below="@+id/notification_fill_title_layout" />
+</RelativeLayout>

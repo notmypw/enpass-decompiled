@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp">
+        <TextView android:textStyle="bold" android:textColor="@r$color/enpass_colorPrimary" android:id="@+id/sync_syncWith" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Spinner android:id="@+id/sync_choosecloud" android:background="@drawable/gradient_spinner" android:layout_width="UNKNOWN_DATA_0x11801" android:layout_height="wrap_content" android:layout_marginTop="10dp" />
+        <TextView android:textStyle="bold" android:textColor="@r$color/enpass_colorPrimary" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/sync_headerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" />
+        <RelativeLayout android:id="@+id/layout_cloudInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+            <ImageView android:id="@+id/image_synccloud" android:layout_width="UNKNOWN_DATA_0x5001" android:layout_height="UNKNOWN_DATA_0x5001" android:src="@drawable/ic_launcher" />
+            <TextView android:textAppearance="@*android:style/TextAppearance.Small" android:ellipsize="start" android:id="@+id/text_signinId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:singleLine="true" android:layout_toRightOf="@+id/image_synccloud" />
+            <Button android:id="@+id/btn_signout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/disconnect" android:layout_toRightOf="@+id/image_synccloud" android:layout_alignBottom="@+id/image_synccloud" />
+        </RelativeLayout>
+        <View android:id="@+id/view_divider" android:background="@r$color/list_divider" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+        <RelativeLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/layout_sync_timeInfo" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <TextView android:textColor="@r$color/sync_lastSyncTime" android:id="@+id/text_lastSyncTime" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@r$color/sync_lastSyncTime" android:id="@+id/text_lastSyncAttemptTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/text_lastSyncTime" />
+            <ProgressBar android:id="@+id/bar_syncProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+            <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/text_syncStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@+id/sync_alert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/alert" android:layout_below="@+id/text_syncStatus" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

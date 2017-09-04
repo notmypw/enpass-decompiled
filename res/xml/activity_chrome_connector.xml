@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/auto_fill_chromebook" android:selectable="true" android:key="chromebook_autofill" android:defaultValue="false" />
+    <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/match_url_hostname" android:key="match_url_hostname" android:summary="@string/match_url_hostname_summary" android:defaultValue="true" />
+</PreferenceScreen>

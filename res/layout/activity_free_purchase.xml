@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:id="@+id/progress_free_purchase_restore" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_centerInParent="true" style="?unknown_attr_ref: 101007a" />
+    <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/txtVw_free_purchase_validating" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/validating_details" android:layout_below="@+id/progress_free_purchase_restore" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/free_purchase_registration_form" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="20dp">
+        <TextView android:textAppearance="@*android:style/TextAppearance.Medium" android:id="@+id/free_purchase_promtion_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/promotion_text" />
+        <TextView android:textAppearance="@*android:style/TextAppearance.Large" android:textColor="@r$color/editcell_textfont" android:id="@+id/free_purchase_account_ids_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/choose_account" />
+        <TextView android:textAppearance="@*android:style/TextAppearance.Medium" android:id="@+id/free_purchase_account_ids_summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/select_free_restore_account" />
+        <Spinner android:id="@+id/free_purchase_account_ids" android:background="@drawable/gradient_spinner" android:layout_width="UNKNOWN_DATA_0x12c01" android:layout_height="wrap_content" android:layout_marginTop="10dp" />
+        <TextView android:id="@+id/free_purchase_error_msg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" />
+        <Button android:enabled="false" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/free_purchase_register_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/free_purchase_restore" />
+    </LinearLayout>
+</RelativeLayout>

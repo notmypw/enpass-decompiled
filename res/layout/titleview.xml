@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="0x106000d" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="@*android:style/TextAppearance.Small" android:textColor="#ffffff" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxLines="1" android:layout_centerVertical="true" />
+</RelativeLayout>

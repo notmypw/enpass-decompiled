@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <menu name="add_field_option_menu">res/menu/add_field_option_menu.xml</menu>
+    <menu name="allcards_fragmnet">res/menu/allcards_fragmnet.xml</menu>
+    <menu name="allcards_option_menu">res/menu/allcards_option_menu.xml</menu>
+    <menu name="alreadypurchase_option_menu">res/menu/alreadypurchase_option_menu.xml</menu>
+    <menu name="browser_main_menu">res/menu/browser_main_menu.xml</menu>
+    <menu name="browser_menus">res/menu/browser_menus.xml</menu>
+    <menu name="cards_overflow_popup_menu">res/menu/cards_overflow_popup_menu.xml</menu>
+    <menu name="categorycards_fragment">res/menu/categorycards_fragment.xml</menu>
+    <menu name="cell_context_menu">res/menu/cell_context_menu.xml</menu>
+    <menu name="change_password">res/menu/change_password.xml</menu>
+    <menu name="copy_popup_menu">res/menu/copy_popup_menu.xml</menu>
+    <menu name="crop_image_menu">res/menu/crop_image_menu.xml</menu>
+    <menu name="detail">res/menu/detail.xml</menu>
+    <menu name="edit_folder">res/menu/edit_folder.xml</menu>
+    <menu name="edit_list_option_menu">res/menu/edit_list_option_menu.xml</menu>
+    <menu name="favorite_fragment">res/menu/favorite_fragment.xml</menu>
+    <menu name="file_chooser_menu">res/menu/file_chooser_menu.xml</menu>
+    <menu name="first_password">res/menu/first_password.xml</menu>
+    <menu name="folder_contextmenu">res/menu/folder_contextmenu.xml</menu>
+    <menu name="folder_fragment">res/menu/folder_fragment.xml</menu>
+    <menu name="main">res/menu/main.xml</menu>
+    <menu name="main_activity_contextmenu">res/menu/main_activity_contextmenu.xml</menu>
+    <menu name="main_activity_menu">res/menu/main_activity_menu.xml</menu>
+    <menu name="menu_attachment_share">res/menu/menu_attachment_share.xml</menu>
+    <menu name="menu_image_attach">res/menu/menu_image_attach.xml</menu>
+    <menu name="notificationfill_activity_option_menu">res/menu/notificationfill_activity_option_menu.xml</menu>
+    <menu name="optionmenu_selective_field_sharing">res/menu/optionmenu_selective_field_sharing.xml</menu>
+    <menu name="optionmenu_watach_selective_field_sharing">res/menu/optionmenu_watach_selective_field_sharing.xml</menu>
+    <menu name="refresh_generatepassword">res/menu/refresh_generatepassword.xml</menu>
+    <menu name="refresh_generatepin">res/menu/refresh_generatepin.xml</menu>
+    <menu name="set_pin">res/menu/set_pin.xml</menu>
+    <menu name="sync">res/menu/sync.xml</menu>
+    <menu name="team_sign_in_menu">res/menu/team_sign_in_menu.xml</menu>
+</resources>

@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="เข้าสู่ระบบ" type="login" iconid="1001">
+        <card templatetype="login.default" name="เข้าสู่ระบบ" iconid="21">
+            <field uid="10" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="12" label="อีเมล" type="email"/>
+            <field uid="11" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="14" label="โทรศัพท์" type="phone"/>
+            <field uid="13" label="Url" type="url"/>
+            <field uid="15" label="คำถามเพื่อความปลอดภัย" type="text"/>
+            <field uid="16" label="คำตอบเพื่อความปลอดภัย" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="บัตรเครดิต" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="บัตรเครดิต" iconid="20">
+            <field uid="0" label="ผู้ถือบัตร" type="cardholder_name"/>
+            <field uid="17" label="ชนิด" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="หมายเลข" type="card_number"/>
+            <field uid="2" label="CVC" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="เลขรหัสลับส่วนตัว" type="card_pin" sensitive="true"/>
+            <field uid="4" label="วันหมดอายุ" type="expiry_date"/>
+            <field uid="18" label="ใช้ได้ตั้งแต่" type="date"/>
+            <field uid="10" label="วงเงินสินเชื่อ" type="numeric"/>
+            <field uid="11" label="จำกัดการถอน" type="numeric"/>
+            <field uid="12" label="อัตราดอกเบี้ย" type="numeric"/>
+            <field uid="6" label="ธนาคารที่ออกเอกสาร" type="bank_name"/>
+            <field uid="14" label="เว็บไซต์" type="url"/>
+            <field uid="15" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="16" label="รหัสผ่านเข้าสู่ระบบ" type="password" sensitive="true"/>
+            <field uid="9" label="รหัสผ่านธุรกรรม" type="txn_password" sensitive="true"/>
+            <field uid="7" label="ออกให้วันที่" type="date"/>
+            <field uid="8" label="หากสูญหาย โทร" type="phone"/>
+        </card>
+    </category>
+
+    <category name="ทางการเงิน" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="บัญชีธนาคาร" iconid="45">
+            <field uid="4" label="ชื่อธนาคาร" type="bank_name"/>
+            <field uid="0" label="เจ้าของบัญชี" type="cardholder_name"/>
+            <field uid="1" label="ชนิด" type="text"/>
+            <field uid="2" label="หมายเลขบัญชี" type="numeric"/>
+            <field uid="16" label="ID ของลูกค้า" type="text"/>
+            <field uid="5" label="หมายเลขเส้นทาง" type="numeric"/>
+            <field uid="6" label="ชื่อสาขา" type="text"/>
+            <field uid="7" label="รหัสสาขา" type="numeric"/>
+            <field uid="8" label="SWIFT" type="text"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="ที่อยู่สาขา" type="text"/>
+            <field uid="25" label="โทรศัพท์สาขา" type="phone"/>
+            
+            <field uid="11" label="หมายเลขบัตรเดบิต" type="card_number"/>
+            <field uid="26" label="ชนิด" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="เลขรหัสลับส่วนตัว" type="card_pin" sensitive="true"/>
+            <field uid="14" label="CVV" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="วันหมดอายุ" type="expiry_date"/>
+            <field uid="27" label="จำกัดการถอน" type="numeric"/>
+            
+            <field uid="17" label="เว็บไซต์" type="url"/>
+            <field uid="18" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="19" label="รหัสผ่านเข้าสู่ระบบ" type="password" sensitive="true"/>
+            <field uid="20" label="รหัสผ่านธุรกรรม" type="txn_password" sensitive="true"/>
+            <field uid="22" label="สายด่วน" type="phone"/>
+            <field uid="23" label="T-PIN" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="กรมธรรม์ประกันภัย" iconid="33">
+            <field uid="1" label="ชื่อกรมธรรม์" type="text"/>
+            <field uid="0" label="บริษัท" type="text"/>
+            <field uid="19" label="ผู้ถือกรมธรรม์" type="text"/>
+            <field uid="2" label="หมายเลข" type="numeric"/>
+            <field uid="3" label="ชนิด" type="text"/>
+            <field uid="5" label="เบี้ยประกัน" type="numeric"/>
+            <field uid="6" label="ผู้เอาประกันภัยทั้งหมด" type="numeric"/>
+            <field uid="7" label="วันที่ออก" type="date"/>
+            <field uid="18" label="วันต่ออายุ" type="date"/>
+            <field uid="8" label="วันหมดอายุ" type="date"/>
+            <field uid="9" label="เงื่อนไข" type="numeric"/>
+            <field uid="20" label="ตัวแทน" type="text"/>
+            <field uid="11" label="ID ของลูกค้า" type="numeric"/>
+            <field uid="12" label="เว็บไซต์" type="url"/>
+            <field uid="13" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="14" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="16" label="ชื่อตัวแทน" type="text"/>
+            <field uid="17" label="สายด่วน" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="ลงทุนหุ้น" iconid="34">
+            <field uid="2" label="สัญลักษณ์" type="text"/>
+            <field uid="0" label="หมายเลขบัญชี" type="numeric"/>
+            <field uid="1" label="ชนิด" type="text"/>
+            <field uid="3" label="ตลาด" type="text"/>
+            <field uid="5" label="เปิดตัวใน" type="date"/>
+            <field uid="6" label="ซื้อได้ที่" type="date"/>
+            <field uid="7" label="ราคาซื้อ" type="numeric"/>
+            <field uid="8" label="จำนวน" type="numeric"/>
+            <field uid="9" label="ราคาปัจจุบัน" type="numeric"/>
+            <field uid="11" label="เว็บไซต์" type="url"/>
+            <field uid="12" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="13" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="15" label="นายหน้าซื้อขาย" type="text"/>
+            <field uid="16" label="โทรศัพท์" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="กองทุนรวม" iconid="43">
+            <field uid="0" label="ชื่อกองทุน" type="text"/>
+            <field uid="1" label="ประเภทกองทุน" type="text"/>
+            <field uid="2" label="เปิดตัวใน" type="date"/>
+            <field uid="3" label="ซื้อได้ที่" type="date"/>
+            <field uid="4" label="จำนวน" type="numeric"/>
+            <field uid="5" label="ซื้อ NAV" type="numeric"/>
+            <field uid="6" label="NAV ปัจจุบัน" type="numeric"/>
+            <field uid="8" label="เว็บไซต์" type="url"/>
+            <field uid="9" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="10" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="12" label="นายหน้าซื้อขาย" type="text"/>
+            <field uid="13" label="โทรศัพท์" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="สินเชื่อ/สินเชื่อบ้าน" iconid="44">
+            <field uid="2" label="ผู้ให้กู้" type="text"/>
+            <field uid="1" label="ชนิด" type="text"/>
+            <field uid="0" label="หมายเลขบัญชี" type="numeric"/>
+            <field uid="4" label="หลักการ" type="numeric"/>
+            <field uid="5" label="ดอกเบี้ย%" type="numeric"/>
+            <field uid="6" label="วันที่" type="date"/>
+            <field uid="7" label="เงื่อนไข" type="numeric"/>
+            <field uid="8" label="ยอดดุล" type="numeric"/>
+            <field uid="9" label="ครบกำหนดชำระเงิน" type="numeric"/>
+            <field uid="10" label="สินทรัพย์" type="text"/>
+            <field uid="12" label="โทรศัพท์" type="phone"/>
+            <field uid="13" label="เว็บไซต์" type="url"/>
+            <field uid="14" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="15" label="รหัสผ่าน" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="ทางการเงินอื่น ๆ" iconid="122">
+            <field uid="0" label="ฟิลด์ 1" type="text"/>
+            <field uid="1" label="ฟิลด์ 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="คอมพิวเตอร์" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="ฐานข้อมูล" iconid="56">
+            <field uid="8" label="ชนิด" type="text"/>
+            <field uid="0" label="เซิร์ฟเวอร์" type="text"/>
+            <field uid="1" label="พอร์ต" type="numeric"/>
+            <field uid="2" label="ฐานข้อมูล" type="text"/>
+            <field uid="3" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="4" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="5" label="SID" type="text"/>
+            <field uid="6" label="นามแฝง" type="text"/>
+            <field uid="7" label="ตัวเลือก" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="บัญชีอีเมล" iconid="48">
+            <field uid="0" label="อีเมล" type="email"/>
+            <field uid="1" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="2" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="9" label="ชนิด" type="text"/>
+            <field uid="3" label="เซิร์ฟเวอร์ POP3" type="text"/>
+            <field uid="4" label="เซิร์ฟเวอร์ IMAP" type="text"/>
+            <field uid="6" label="พอร์ต" type="numeric"/>
+            <field uid="10" label="ชนิดความปลอดภัย" type="text"/>
+            <field uid="11" label="วิธีการความถูกต้อง" type="text"/>
+            <field uid="21" label="เว็บลิงค์" type="url"/>
+            <field uid="5" label="เซิร์ฟเวอร์ SMTP" type="text"/>
+            <field uid="7" label="พอร์ต" type="numeric"/>
+            <field uid="13" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="14" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="15" label="ชนิดความปลอดภัย" type="text"/>
+            <field uid="16" label="วิธีการความถูกต้อง" type="text"/>
+            <field uid="18" label="ผู้ให้บริการ" type="text"/>
+            <field uid="8" label="เว็บไซต์" type="url"/>
+            <field uid="19" label="โทรศัพท์ภายใน" type="phone"/>
+            <field uid="20" label="สายด่วน" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="บัญชี FTP" iconid="55">
+            <field uid="0" label="เซิร์ฟเวอร์" type="text"/>
+            <field uid="1" label="เส้นทาง" type="text"/>
+            <field uid="2" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="3" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="4" label="ผู้ให้บริการ" type="text"/>
+            <field uid="5" label="เว็บไซต์" type="url"/>
+            <field uid="6" label="โทรศัพท์" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="ส่งข้อความโต้ตอบแบบทันที" iconid="49">
+            <field uid="0" label="ชนิด" type="text"/>
+            <field uid="1" label="รหัส" type="text"/>
+            <field uid="2" label="เซิร์ฟเวอร์" type="text"/>
+            <field uid="3" label="พอร์ต" type="numeric"/>
+            <field uid="4" label="ชื่อเล่น" type="text"/>
+            <field uid="5" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="6" label="รหัสผ่าน" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="ผู้ให้บริการอินเทอร์เน็ต" iconid="63">
+            <field uid="0" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="1" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="3" label="เรียกเลขหมายโทรศัพท์" type="phone"/>
+            <field uid="4" label="ISP/ระบบ" type="text"/>
+            <field uid="5" label="IP address" type="numeric"/>
+            <field uid="6" label="ซับเน็ตมาสก์" type="numeric"/>
+            <field uid="20" label="เกตเวย์" type="numeric"/>
+            <field uid="7" label="DNS หลัก" type="numeric"/>
+            <field uid="8" label="DNS รอง" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Telnet" type="text"/>
+            <field uid="17" label="สายด่วน" type="phone"/>
+            <field uid="18" label="เว็บไซต์" type="url"/>
+            <field uid="19" label="ข้อมูลการเรียกเก็บเงิน" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="เซิร์ฟเวอร์" iconid="51">
+            <field uid="11" label="ผู้ดูแลระบบเข้าสู่ระบบ" type="username"/>
+            <field uid="12" label="รหัสผ่านของผู้ดูแลระบบ" type="password" sensitive="true"/>
+            <field uid="16" label="URL ผู้ดูแลระบบ" type="url"/>
+            <field uid="0" label="บริการ" type="text"/>
+            <field uid="1" label="งาน" type="text"/>
+            <field uid="2" label="ระบบปฏิบัติการ" type="text"/>
+            <field uid="3" label="หน่วยความจำ" type="numeric"/>
+            <field uid="4" label="จัดเก็บข้อมูล" type="numeric"/>
+            <field uid="5" label="CPU" type="numeric"/>
+            <field uid="6" label="RAID" type="text"/>
+            <field uid="7" label="สถานที่ตั้ง" type="text"/>
+            <field uid="8" label="IP address" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="พอร์ต" type="numeric"/>
+            <field uid="17" label="ผู้ให้บริการโฮสติ้ง" type="text"/>
+            <field uid="14" label="เว็บไซต์สนับสนุน" type="url"/>
+            <field uid="18" label="สายด่วน" type="phone"/>
+            <field uid="15" label="ข้อมูลการเรียกเก็บเงิน" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="เราเตอร์ไร้สาย" iconid="35">
+            <field uid="0" label="ชื่อสถานี" type="text"/>
+            <field uid="9" label="รหัสสถานี" type="password" sensitive="true"/>
+            <field uid="2" label="ชื่อเครือข่าย" type="text"/>
+            <field uid="5" label="รหัสผ่านเครือข่าย" type="password" sensitive="true"/>
+            <field uid="3" label="รักษาความปลอดภัย" type="text"/>
+            <field uid="1" label="MAC/Airport #" type="numeric"/>
+            <field uid="12" label="เซิร์ฟเวอร์/IP address" type="url"/>
+            <field uid="13" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="4" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="6" label="รหัสผ่านการจัดเก็บ" type="password" sensitive="true"/>
+            <field uid="7" label="เว็บไซต์สนับสนุน" type="url"/>
+            <field uid="8" label="ข้อมูลการเรียกเก็บเงิน" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="เว็บโฮสติ้ง" iconid="53">
+            <field uid="13" label="ผู้ให้บริการ" type="text"/>
+            <field uid="1" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="2" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="11" label="URL ผู้ดูแลระบบ" type="url"/>
+            <field uid="0" label="ระบบปฏิบัติการ" type="text"/>
+            <field uid="9" label="ID ของลูกค้า" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="ฐานข้อมูล" type="text"/>
+            <field uid="7" label="บริการ" type="text"/>
+            <field uid="14" label="เว็บไซต์สนับสนุน" type="url"/>
+            <field uid="10" label="สายด่วน" type="phone"/>
+            <field uid="12" label="ค่าธรรมเนียม" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="คอมพิวเตอร์เครื่องอื่น" iconid="123">
+            <field uid="0" label="ฟิลด์ 1" type="text"/>
+            <field uid="1" label="ฟิลด์ 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="ใบอนุญาต" type="license" iconid="1005">
+        <card templatetype="license.driving" name="ใบอนุญาตขับขี่" iconid="60">
+            <field uid="1" label="หมายเลข" type="numeric"/>
+            <field uid="0" label="ชื่อ" type="text"/>
+            <field uid="8" label="เพศ" type="text"/>
+            <field uid="9" label="วันเกิด" type="date"/>
+            <field uid="10" label="ที่อยู่" type="text"/>
+            <field uid="11" label="ความสูง" type="text"/>
+            <field uid="2" label="ระดับชั้น" type="text"/>
+            <field uid="13" label="ข้อจำกัด" type="text"/>
+            <field uid="3" label="จังหวัด" type="text"/>
+            <field uid="4" label="ประเทศ" type="text"/>
+            <field uid="5" label="วันหมดอายุ" type="date"/>
+            <field uid="6" label="ออกให้วันที่" type="date"/>
+            <field uid="7" label="หากสูญหาย โทร" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="สิทธิ์การใช้งานภายนอก" iconid="42">
+            <field uid="1" label="หมายเลข" type="numeric"/>
+            <field uid="0" label="ชื่อ" type="text"/>
+            <field uid="2" label="จังหวัด" type="text"/>
+            <field uid="3" label="ภูมิภาค" type="text"/>
+            <field uid="4" label="ประเทศ" type="text"/>
+            <field uid="5" label="ใช้ได้ตั้งแต่" type="date"/>
+            <field uid="6" label="วันหมดอายุ" type="date"/>
+            <field uid="7" label="สัตว์ป่าที่ได้รับอนุมัติ" type="text"/>
+            <field uid="8" label="โควต้า" type="text"/>
+        </card>
+        <card templatetype="license.software" name="ใบอนุญาตซอฟต์แวร์" iconid="52">
+            <field uid="0" label="เวอร์ชัน" type="numeric"/>
+            <field uid="16" label="ชื่อสินค้า" type="text"/>
+            <field uid="17" label="จำนวนของผู้ใช้" type="numeric"/>
+            <field uid="1" label="คีย์" type="text" sensitive="true"/>
+            <field uid="6" label="ดาวน์โหลดหน้า" type="url"/>
+            <field uid="3" label="ได้รับอนุญาต" type="text"/>
+            <field uid="18" label="หน้าล็อกอิน" type="url"/>
+            <field uid="19" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="20" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="4" label="อีเมล" type="email"/>
+            <field uid="5" label="บริษัท" type="text"/>
+            <field uid="13" label="วันซื้อ" type="date"/>
+            <field uid="14" label="หมายเลขใบสั่งซื้อ" type="numeric"/>
+            <field uid="12" label="ราคาขายปลีก" type="numeric"/>
+            <field uid="15" label="ผลรวม" type="numeric"/>
+            <field uid="8" label="ผู้เผยแพร่" type="text"/>
+            <field uid="9" label="เว็บไซต์" type="url"/>
+            <field uid="10" label="อีเมลสนับสนุน" type="email"/>
+            <field uid="21" label="สายด่วน" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="ใบอนุญาตอื่น ๆ" iconid="124">
+            <field uid="0" label="ฟิลด์ 1" type="text"/>
+            <field uid="1" label="ฟิลด์ 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="รหัสผ่าน" type="password" iconid="1006">
+        <card templatetype="password.default" name="รหัสผ่าน" iconid="36">
+            <field uid="0" label="เข้าสู่ระบบ" type="username"/>
+            <field uid="1" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="2" label="การเข้าถึง" type="text"/>
+        </card>
+    </category>
+    
+    <category name="หมายเหตุเพื่อความปลอดภัย" type="note" iconid="1007">
+        <card templatetype="note.default" name="หมายเหตุ" iconid="22">
+        </card>
+    </category>
+        
+    <category name="เดินทาง" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="หนังสือเดินทาง" iconid="37">
+            <field uid="2" label="หมายเลข" type="text"/>
+            <field uid="0" label="ชื่อ นามสกุล" type="text"/>
+            <field uid="14" label="เพศ" type="text"/>
+            <field uid="1" label="ชนิด" type="text"/>
+            <field uid="15" label="สัญชาติ" type="text"/>
+            <field uid="4" label="สถานที่เกิด" type="text"/>
+            <field uid="5" label="วันเกิด" type="date"/>
+            <field uid="6" label="ออกที่" type="text"/>
+            <field uid="7" label="ออกให้วันที่" type="date"/>
+            <field uid="8" label="วันหมดอายุ" type="date"/>
+            <field uid="9" label="ประเทศที่ออกเอกสาร" type="text"/>
+            <field uid="10" label="ผู้มีอำนาจ" type="text"/>
+            <field uid="12" label="การทดแทน" type="text"/>
+            <field uid="13" label="หากสูญหาย โทร" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="วีซ่าเดินทาง" iconid="57">
+            <field uid="1" label="ชนิด" type="text"/>
+            <field uid="15" label="ประเทศ" type="text"/>
+            <field uid="0" label="ชื่อ นามสกุล" type="text"/>
+            <field uid="2" label="หมายเลข" type="numeric"/>
+            <field uid="4" label="ใช้ได้สำหรับ" type="text"/>
+            <field uid="5" label="ใช้ได้ตั้งแต่" type="date"/>
+            <field uid="6" label="ใช้ได้จนถึง" type="date"/>
+            <field uid="7" label="ระยะเวลา" type="numeric"/>
+            <field uid="8" label="จำนวนครั้งที่เข้าประเทศ" type="numeric"/>
+            <field uid="10" label="ออกโดย" type="text"/>
+            <field uid="11" label="วันที่ออก" type="date"/>
+            <field uid="12" label="หมายเลขหนังสือเดินทาง" type="text"/>
+            <field uid="13" label="หมายเหตุ" type="text"/>
+            <field uid="14" label="หากสูญหาย โทร" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="ผู้เดินทางโดยเครื่องบินบ่อย" iconid="39">
+            <field uid="1" label="หมายเลขสมาชิก" type="numeric"/>
+            <field uid="0" label="ชื่อ" type="text"/>
+            <field uid="8" label="สายการบิน" type="text"/>
+            <field uid="2" label="วันที่" type="date"/>
+            <field uid="3" label="ระยะไมล์" type="numeric"/>
+            <field uid="5" label="เว็บไซต์" type="url"/>
+            <field uid="6" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="7" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="9" label="บริการลูกค้า" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="จองโรงแรม" iconid="27">
+            <field uid="0" label="ชื่อโรงแรม" type="text"/>
+            <field uid="4" label="หมายเลขห้อง" type="numeric"/>
+            <field uid="1" label="ที่อยู่" type="text"/>
+            <field uid="2" label="รหัสการจอง" type="numeric"/>
+            <field uid="3" label="วันที่" type="date"/>
+            <field uid="5" label="คืน" type="numeric"/>
+            <field uid="15" label="รางวัลโรงแรม" type="numeric"/>
+            <field uid="7" label="โทรศัพท์" type="phone"/>
+            <field uid="8" label="อีเมล" type="email"/>
+            <field uid="9" label="เว็บไซต์" type="url"/>
+            <field uid="10" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="11" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="13" label="พนักงานต้อนรับ" type="text"/>
+            <field uid="14" label="ร้านอาหาร" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="รายละเอียดเที่ยวบิน" iconid="38">
+            <field uid="2" label="หมายเลขเที่ยวบิน" type="numeric"/>
+            <field uid="0" label="สายการบิน" type="text"/>
+            <field uid="1" label="วันที่" type="date"/>
+            <field uid="3" label="จาก" type="text"/>
+            <field uid="4" label="ถึง" type="text"/>
+            <field uid="5" label="เวลา/ประตู" type="text"/>
+            <field uid="6" label="หมายเลขตั๋วอิเล็กทรอนิกส์" type="numeric"/>
+            <field uid="7" label="ยืนยัน#" type="numeric"/>
+            <field uid="10" label="เว็บไซต์" type="url"/>
+            <field uid="11" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="12" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="9" label="โทรศัพท์" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="ท่องเที่ยวอื่น ๆ" iconid="125">
+            <field uid="0" label="ฟิลด์ 1" type="text"/>
+            <field uid="1" label="ฟิลด์ 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="เบ็ดเตล็ด" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="ขนาดของเสื้อผ้า" iconid="23">
+            <field uid="9" label="ชื่อ" type="text"/>
+            <field uid="0" label="ชุดสูท" type="text"/>
+            <field uid="1" label="รองเท้า" type="text"/>
+            <field uid="2" label="เสื้อ" type="text"/>
+            <field uid="3" label="กางเกงขายาว" type="text"/>
+            <field uid="4" label="ความยาวของกางเกง" type="text"/>
+            <field uid="5" label="กระโปรง" type="text"/>
+            <field uid="6" label="ถุงมือ" type="text"/>
+            <field uid="7" label="เอว" type="text"/>
+            <field uid="8" label="คอ" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="กุญแจ" iconid="61">
+            <field uid="0" label="สถานที่ตั้ง" type="text"/>
+            <field uid="1" label="รหัส" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="ใบสั่งยา" iconid="40">
+            <field uid="2" label="แพทย์" type="text"/>
+            <field uid="0" label="RX #" type="text"/>
+            <field uid="1" label="ชื่อ" type="text"/>
+            <field uid="3" label="ร้านขายยา" type="text"/>
+            <field uid="4" label="โทรศัพท์" type="phone"/>
+            <field uid="6" label="แบรนด์" type="text"/>
+            <field uid="7" label="ยา" type="text"/>
+            <field uid="8" label="ยอดเงิน" type="numeric"/>
+            <field uid="9" label="ใช้" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="ใบสั่งตัดเลนส์สายตา" iconid="26">
+            <field uid="0" label="ชนิด" type="text"/>
+            <field uid="1" label="ด้านขวา(OD)" type="numeric"/>
+            <field uid="2" label="ด้านซ้าย(OS)" type="numeric"/>
+            <field uid="3" label="แพทย์" type="text"/>
+            <field uid="4" label="โทรศัพท์" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="รหัสลงทะเบียน" iconid="66">
+            <field uid="2" label="ชื่อ" type="text"/>
+            <field uid="0" label="หมายเลข" type="numeric" sensitive="true"/>
+            <field uid="1" label="วันที่" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="ข้อมูลยานพาหนะ" iconid="25">
+            <field uid="3" label="หมายเลขทะเบียน" type="text"/>
+            <field uid="11" label="เจ้าของ" type="text"/>
+            <field uid="0" label="รุ่น" type="text"/>
+            <field uid="12" label="ชนิดของยานพาหนะ" type="text"/>
+            <field uid="13" label="วันซื้อ" type="date"/>
+            <field uid="1" label="ผลิต" type="text"/>
+            <field uid="2" label="ปี" type="numeric"/>
+            <field uid="4" label="VIN" type="text"/>
+            <field uid="5" label="บริการโทรศัพท์" type="phone"/>
+            <field uid="14" label="สายด่วนบนท้องถนน" type="phone"/>
+            <field uid="16" label="ผู้ให้บริการประกันภัย" type="text"/>
+            <field uid="7" label="ค่าประกันภัย" type="text"/>
+            <field uid="8" label="หมายเลขกรมธรรม์" type="numeric"/>
+            <field uid="10" label="วันหมดอายุ" type="date"/>
+            <field uid="9" label="โทรศัพท์ประกัน" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="ฝากข้อความ" iconid="62">
+            <field uid="0" label="หมายเลขที่ใช้" type="numeric"/>
+            <field uid="1" label="เลขรหัสลับส่วนตัว" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="ที่อยู่" iconid="31">
+            <field uid="0" label="ชื่อ" type="text"/>
+            <field uid="1" label="หมายเลขประตู" type="text"/>
+            <field uid="2" label="ถนน" type="text"/>
+            <field uid="3" label="ท้องถิ่น" type="text"/>
+            <field uid="4" label="เมือง" type="text"/>
+            <field uid="5" label="จังหวัด" type="text"/>
+            <field uid="6" label="รหัสไปรษณีย์" type="text"/>
+            <field uid="7" label="ประเทศ" type="text"/>
+            <field uid="9" label="โทรศัพท์" type="phone"/>
+            <field uid="10" label="อีเมล" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="ติดต่อ" iconid="47">
+            <field uid="0" label="ชื่อแรก" type="text"/>
+            <field uid="1" label="นามสกุล" type="text"/>
+            <field uid="2" label="บริษัท" type="text"/>
+            <field uid="3" label="โทรศัพท์ (บ้าน)" type="phone"/>
+            <field uid="4" label="โทรศัพท์ (มือถือ)" type="phone"/>
+            <field uid="5" label="โทรศัพท์ (ที่ทำงาน)" type="phone"/>
+            <field uid="6" label="อีเมล" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="หมายเลขฉุกเฉิน" iconid="28">
+            <field uid="0" label="ตำรวจ" type="phone"/>
+            <field uid="1" label="แผนกดับเพลิง" type="phone"/>
+            <field uid="2" label="รถพยาบาล" type="phone"/>
+            <field uid="3" label="แพทย์" type="phone"/>
+            <field uid="4" label="ทัณตแพทย์" type="phone"/>
+            <field uid="5" label="สัตวแพทย์" type="phone"/>
+            <field uid="6" label="บริษัทอิเล็กทรอนิกส์" type="phone"/>
+            <field uid="7" label="บริษัทแก๊ส" type="phone"/>
+            <field uid="8" label="บริษัทโทรศัพท์" type="phone"/>
+            <field uid="9" label="เจ้าของบ้านเช่า" type="phone"/>
+            <field uid="10" label="อื่น ๆ" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="หมายเลขประกันสังคม" iconid="64">
+            <field uid="1" label="หมายเลข" type="numeric"/>
+            <field uid="0" label="ชื่อ" type="text"/>
+            <field uid="2" label="วันที่" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="การสะสมคะแนน" iconid="24">
+            <field uid="0" label="บริษัท" type="text"/>
+            <field uid="1" label="ชื่อ" type="text"/>
+            <field uid="10" label="รหัสสมาชิก" type="text"/>
+            <field uid="2" label="หมายเลข" type="numeric"/>
+            <field uid="3" label="เลขรหัสลับส่วนตัว" type="pin" sensitive="true"/>
+            <field uid="5" label="หมายเลข 2" type="numeric"/>
+            <field uid="6" label="ตั้งแต่" type="date"/>
+            <field uid="7" label="สายด่วน" type="phone"/>
+            <field uid="8" label="จองโทรศัพท์" type="phone"/>
+            <field uid="9" label="เว็บไซต์" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="หมายเลขประจำสินค้า" iconid="32">
+            <field uid="1" label="พอร์ตอนุกรม" type="text" sensitive="true"/>
+            <field uid="0" label="แบรนด์" type="text"/>
+            <field uid="2" label="รุ่น" type="text"/>
+            <field uid="3" label="ราคา" type="numeric"/>
+            <field uid="4" label="ซื้อได้ที่" type="date"/>
+            <field uid="6" label="รับประกัน" type="date"/>
+            <field uid="5" label="สถานที่ตั้ง" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="ข้อมูลคุณสมบัติ" iconid="70">
+            <field uid="0" label="เจ้าของ" type="text"/>
+            <field uid="1" label="ที่อยู่" type="text"/>
+            <field uid="2" label="ชนิด" type="text"/>
+            <field uid="3" label="จำนวนเงินค่าซ่อมบำรุง" type="numeric"/>
+            <field uid="5" label="รหัสคุณสมบัติ" type="text"/>
+            <field uid="6" label="ยอดเงินภาษี" type="numeric"/>
+            <field uid="7" label="วันกำหนดจ่ายภาษี" type="date"/>
+            <field uid="8" label="เว็บเพจ" type="url"/>
+            <field uid="9" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="10" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="12" label="การประกันภัย" type="text"/>
+            <field uid="13" label="เบี้ยประกันภัย" type="numeric"/>
+            <field uid="14" label="หมายเลขกรมธรรม์" type="numeric"/>
+            <field uid="15" label="วันหมดอายุ" type="date"/>
+            <field uid="16" label="สายด่วนประกันภัย" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="บัตรโทรศัพท์" iconid="54">
+            <field uid="1" label="หมายเลขที่ใช้" type="phone"/>
+            <field uid="0" label="ผู้ให้บริการ" type="text"/>
+            <field uid="2" label="หมายเลขบัตร" type="numeric"/>
+            <field uid="3" label="เลขรหัสลับส่วนตัว" type="pin" sensitive="true"/>
+            <field uid="4" label="อัตราชีพจร" type="numeric"/>
+            <field uid="5" label="วันหมดอายุ" type="date"/>
+            <field uid="6" label="ปริมาณการใช้" type="numeric"/>
+            <field uid="8" label="เว็บไซต์" type="url"/>
+            <field uid="9" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="10" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="11" label="หากสูญหาย โทร" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="บัตรประจำตัวประชาชน" iconid="59">
+            <field uid="2" label="หมายเลขบัตรประชาชน" type="numeric"/>
+            <field uid="0" label="ชื่อเรื่อง" type="text"/>
+            <field uid="1" label="ชื่อ นามสกุล" type="text"/>
+            <field uid="3" label="เลขรหัสลับส่วนตัว" type="pin" sensitive="true"/>
+            <field uid="4" label="ประเทศ" type="text"/>
+            <field uid="5" label="ออกให้วันที่" type="date"/>
+            <field uid="6" label="วันหมดอายุ" type="date"/>
+            <field uid="7" label="หากสูญหาย โทร" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="บัตร ISIC" iconid="65">
+            <field uid="2" label="หมายเลขบัตร" type="numeric"/>
+            <field uid="0" label="ศึกษาที่" type="text"/>
+            <field uid="1" label="ชื่อ นามสกุล" type="text"/>
+            <field uid="3" label="เกิด" type="date"/>
+            <field uid="4" label="ออกให้วันที่" type="date"/>
+            <field uid="5" label="วันหมดอายุ" type="date"/>
+            <field uid="6" label="หากสูญหาย โทร" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="บัตร ITIC" iconid="41">
+            <field uid="2" label="หมายเลขบัตร" type="numeric"/>
+            <field uid="0" label="สอนที่" type="text"/>
+            <field uid="1" label="ชื่อ นามสกุล" type="text"/>
+            <field uid="3" label="เกิด" type="date"/>
+            <field uid="4" label="ออกให้วันที่" type="date"/>
+            <field uid="5" label="วันหมดอายุ" type="date"/>
+            <field uid="6" label="หากสูญหาย โทร" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="บัตรห้องสมุด" iconid="58">
+            <field uid="1" label="หมายเลขบัตร" type="numeric"/>
+            <field uid="0" label="ห้องสมุด" type="text"/>
+            <field uid="2" label="เลขรหัสลับส่วนตัว" type="pin" sensitive="true"/>
+            <field uid="3" label="ชั่วโมง" type="numeric"/>
+            <field uid="4" label="ที่อยู่" type="text"/>
+            <field uid="5" label="ออกให้วันที่" type="date"/>
+            <field uid="6" label="วันหมดอายุ" type="date"/>
+            <field uid="8" label="เว็บไซต์" type="url"/>
+            <field uid="9" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="10" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="11" label="หากสูญหาย โทร" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="บัตรผู้ลงคะแนนเสียง" iconid="69">
+            <field uid="0" label="ชื่อ นามสกุล" type="text"/>
+            <field uid="1" label="บัตรประจำตัวผู้ลงคะแนนเสียง" type="numeric"/>
+            <field uid="2" label="ที่อยู่" type="text"/>
+            <field uid="3" label="เขตเลือกตั้ง" type="text"/>
+            <field uid="4" label="สถานที่ตั้ง" type="text"/>
+            <field uid="5" label="รัฐสภา" type="text"/>
+            <field uid="6" label="วุฒิสภารัฐ" type="text"/>
+            <field uid="7" label="ตัวแทน" type="text"/>
+            <field uid="8" label="ที่อยู่" type="text"/>
+            <field uid="9" label="ออกให้วันที่" type="date"/>
+            <field uid="11" label="เว็บไซต์" type="url"/>
+            <field uid="12" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="13" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="14" label="หากสูญหาย โทร" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="บัตร ITZ" iconid="67">
+            <field uid="1" label="หมายเลขบัตร" type="numeric"/>
+            <field uid="0" label="เจ้าของ" type="text"/>
+            <field uid="2" label="เลขรหัสลับส่วนตัว" type="pin" sensitive="true"/>
+            <field uid="3" label="ค่า" type="numeric"/>
+            <field uid="4" label="วันหมดอายุ" type="date"/>
+            <field uid="5" label="ปริมาณการใช้" type="numeric"/>
+            <field uid="7" label="เว็บไซต์" type="url"/>
+            <field uid="8" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="9" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="10" label="หากสูญหาย โทร" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="บัตรสมาชิก" iconid="46">
+            <field uid="1" label="รหัสสมาชิก" type="numeric"/>
+            <field uid="10" label="ชื่อสมาชิก" type="text"/>
+            <field uid="0" label="องค์กร" type="text"/>
+            <field uid="11" label="กลุ่ม" type="text"/>
+            <field uid="2" label="เลขรหัสลับส่วนตัว" type="pin" sensitive="true"/>
+            <field uid="3" label="โทรศัพท์" type="phone"/>
+            <field uid="12" label="สมาชิกตั้งแต่" type="date"/>
+            <field uid="4" label="วันหมดอายุ" type="date"/>
+            <field uid="6" label="เว็บไซต์" type="url"/>
+            <field uid="7" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="8" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="13" label="อีเมล" type="email"/>
+            <field uid="9" label="หากสูญหาย โทร" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="บัตร PAN" iconid="68">
+            <field uid="3" label="หมายเลข" type="numeric"/>
+            <field uid="0" label="ชื่อ" type="text"/>
+            <field uid="1" label="ชื่อของบิดา" type="text"/>
+            <field uid="2" label="วันเกิด" type="date"/>
+            <field uid="5" label="เว็บไซต์" type="url"/>
+            <field uid="6" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="7" label="รหัสผ่าน" type="password" sensitive="true"/>
+            <field uid="8" label="หากสูญหาย โทร" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="ข้อมูลโทรศัพท์มือถือ" iconid="120">
+            <field uid="0" label="รุ่นโทรศัพท์มือถือ" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="รหัสล็อก" type="numeric" sensitive="true"/>
+            <field uid="5" label="ชนิดของซิมการ์ด" type="text"/>
+            <field uid="6" label="หมายเลขซิมการ์ด" type="numeric"/>
+            <field uid="7" label="เลขรหัสลับส่วนตัว" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="ซื้อได้ที่" type="date"/>
+            <field uid="10" label="รับประกัน" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="ผู้ให้บริการ" iconid="121">
+            <field uid="0" label="ผู้ให้บริการ" type="text"/>
+            <field uid="1" label="ชนิดการบริการ" type="text"/>
+            <field uid="2" label="รหัสของผู้บริโภค" type="text"/>
+            <field uid="3" label="สมัคร ID" type="numeric"/>
+            <field uid="4" label="ที่อยู่" type="text"/>
+            <field uid="5" label="เว็บไซต์" type="url"/>
+            <field uid="6" label="ชื่อผู้ใช้งาน" type="username"/>
+            <field uid="7" label="รหัสผ่านเข้าสู่ระบบ" type="password" sensitive="true"/>
+            <field uid="8" label="สายด่วน" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="อื่น ๆ เบ็ดเตล็ด" iconid="126">
+            <field uid="0" label="ฟิลด์ 1" type="text"/>
+            <field uid="1" label="ฟิลด์ 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="เพศ" value="male" type="sex_options"/>
+            <field uid="4" label="วันเกิด" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="บริษัท" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="ที่อยู่" type="address_firstline"/>
+            <field uid="10" label="ถนน" type="address_street"/>
+            <field uid="11" label="เมือง" type="address_city"/>
+            <field uid="12" label="จังหวัด" type="address_state"/>
+            <field uid="13" label="รหัสไปรษณีย์" type="address_zip"/>
+            <field uid="14" label="ประเทศ" value="US" type="country_options"/>
+            <field uid="15" label="โทรศัพท์" type="phone"/>
+            <field uid="16" label="คำถามเพื่อความปลอดภัย" type="text"/>
+            <field uid="17" label="คำตอบเพื่อความปลอดภัย" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

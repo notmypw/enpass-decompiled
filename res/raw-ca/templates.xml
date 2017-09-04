@@ -1,0 +1,711 @@
+<walletx>
+
+    <category name="Inici de Sessió" type="login" iconid="1001">
+        <card templatetype="login.default" name="Inici de Sessió" iconid="21">
+            <field uid="10" label="Nom d'Usuari" type="username"/>
+            <field uid="12" label="Email" type="email"/>
+            <field uid="11" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="14" label="Telèfon" type="phone"/>
+            <field uid="13" label="Pàgina Web" type="url"/>
+            <field uid="15" label="Pregunta de seguretat" type="text"/>
+            <field uid="16" label="Resposta de seguretat" type="text" sensitive="true"/>
+        </card>
+    </category>
+
+    <category name="Tarjeta de Crèdit" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="Tarjeta de Crèdit" iconid="20">
+            <field uid="0" label="Titular" type="cardholder_name"/>
+            <field uid="17" label="Tipus" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="Número" type="card_number"/>
+            <field uid="2" label="CVC" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="4" label="Data Caducitat" type="expiry_date"/>
+            <field uid="18" label="Vàlid des de" type="date"/>
+            <field uid="10" label="Límit de Crèdit" type="numeric"/>
+            <field uid="11" label="Límit retirada efectiu" type="numeric"/>
+            <field uid="12" label="Tipus d'interès" type="numeric"/>
+            <field uid="6" label="Banc emissor" type="bank_name"/>
+            <field uid="14" label="Pàgina Web" type="url"/>
+            <field uid="15" label="Nom d'Usuari" type="username"/>
+            <field uid="16" label="Contrasenya d'inici de sessió" type="password" sensitive="true"/>
+            <field uid="9" label="Contrasenya operativa" type="txn_password" sensitive="true"/>
+            <field uid="7" label="Data Emissió" type="date"/>
+            <field uid="8" label="En cas de pèrdua, trucar a" type="phone"/>
+        </card>
+    </category>
+
+    <category name="Finances" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="Compte corrent" iconid="45">
+            <field uid="4" label="Nom del Banc" type="bank_name"/>
+            <field uid="0" label="Titular" type="cardholder_name"/>
+            <field uid="1" label="Tipus" type="text"/>
+            <field uid="2" label="Número compte corrent" type="numeric"/>
+            <field uid="16" label="ID de Client" type="text"/>
+            <field uid="5" label="Número d'enrutament" type="numeric"/>
+            <field uid="6" label="Nom de la Sucursal" type="text"/>
+            <field uid="7" label="Número de Sucursal" type="numeric"/>
+            <field uid="8" label="SWIFT" type="text"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="Adreça de la Sucursal" type="text"/>
+            <field uid="25" label="Telèfon de la Sucursal" type="phone"/>
+
+            <field uid="11" label="Número de la tarjeta de dèbit" type="card_number"/>
+            <field uid="26" label="Tipus" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="14" label="CVV" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="Data Caducitat" type="expiry_date"/>
+            <field uid="27" label="Límit retirada efectiu" type="numeric"/>
+
+            <field uid="17" label="Pàgina Web" type="url"/>
+            <field uid="18" label="Nom d'Usuari" type="username"/>
+            <field uid="19" label="Contrasenya d'inici de sessió" type="password" sensitive="true"/>
+            <field uid="20" label="Contrasenya operativa" type="txn_password" sensitive="true"/>
+            <field uid="22" label="Telèfon de Suport" type="phone"/>
+            <field uid="23" label="T-PIN" type="pin" sensitive="true"/>
+        </card>
+
+        <card templatetype="finance.insurance" name="Assegurança" iconid="33">
+            <field uid="1" label="Nom de l'Assegurança" type="text"/>
+            <field uid="0" label="Companyia" type="text"/>
+            <field uid="19" label="Titular" type="text"/>
+            <field uid="2" label="Número" type="numeric"/>
+            <field uid="3" label="Tipus" type="text"/>
+            <field uid="5" label="Premium" type="numeric"/>
+            <field uid="6" label="Suma assegurada" type="numeric"/>
+            <field uid="7" label="Data d'Emissió" type="date"/>
+            <field uid="18" label="Data de Renovació" type="date"/>
+            <field uid="8" label="Data Caducitat" type="date"/>
+            <field uid="9" label="Terme" type="numeric"/>
+            <field uid="20" label="Nominat" type="text"/>
+            <field uid="11" label="ID de Client" type="numeric"/>
+            <field uid="12" label="Pàgina Web" type="url"/>
+            <field uid="13" label="Nom d'Usuari" type="username"/>
+            <field uid="14" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="16" label="Agent" type="text"/>
+            <field uid="17" label="Telèfon de Suport" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="Accions" iconid="34">
+            <field uid="2" label="Símbol" type="text"/>
+            <field uid="0" label="Número compte corrent" type="numeric"/>
+            <field uid="1" label="Tipus" type="text"/>
+            <field uid="3" label="Mercat" type="text"/>
+            <field uid="5" label="Data llançament" type="date"/>
+            <field uid="6" label="Data de Compra" type="date"/>
+            <field uid="7" label="Preu de Compra" type="numeric"/>
+            <field uid="8" label="Quantitat" type="numeric"/>
+            <field uid="9" label="Preu Actual" type="numeric"/>
+            <field uid="11" label="Pàgina Web" type="url"/>
+            <field uid="12" label="Nom d'Usuari" type="username"/>
+            <field uid="13" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="15" label="Gestora" type="text"/>
+            <field uid="16" label="Telèfon" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="Fons d'Inversió" iconid="43">
+            <field uid="0" label="Nom del Fons" type="text"/>
+            <field uid="1" label="Tipus de Fons" type="text"/>
+            <field uid="2" label="Data llançament" type="date"/>
+            <field uid="3" label="Data de Compra" type="date"/>
+            <field uid="4" label="Quantitat" type="numeric"/>
+            <field uid="5" label="NAV Comprats" type="numeric"/>
+            <field uid="6" label="NAV Actuals" type="numeric"/>
+            <field uid="8" label="Pàgina Web" type="url"/>
+            <field uid="9" label="Nom d'Usuari" type="username"/>
+            <field uid="10" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="12" label="Gestora" type="text"/>
+            <field uid="13" label="Telèfon" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="Préstec/Hipoteca" iconid="44">
+            <field uid="2" label="Prestamista" type="text"/>
+            <field uid="1" label="Tipus" type="text"/>
+            <field uid="0" label="Número compte corrent" type="numeric"/>
+            <field uid="4" label="Capital" type="numeric"/>
+            <field uid="5" label="Interès %" type="numeric"/>
+            <field uid="6" label="Data" type="date"/>
+            <field uid="7" label="Terme" type="numeric"/>
+            <field uid="8" label="Balanç" type="numeric"/>
+            <field uid="9" label="Venciment" type="numeric"/>
+            <field uid="10" label="Actiu" type="text"/>
+            <field uid="12" label="Telèfon" type="phone"/>
+            <field uid="13" label="Pàgina Web" type="url"/>
+            <field uid="14" label="Nom d'Usuari" type="username"/>
+            <field uid="15" label="Contrasenya" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="Altres finances" iconid="122">
+            <field uid="0" label="Camp 1" type="text"/>
+            <field uid="1" label="Camp 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Ordinador" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="Base de Dades" iconid="56">
+            <field uid="8" label="Tipus" type="text"/>
+            <field uid="0" label="Servidor" type="text"/>
+            <field uid="1" label="Port" type="numeric"/>
+            <field uid="2" label="Base de Dades" type="text"/>
+            <field uid="3" label="Nom d'Usuari" type="username"/>
+            <field uid="4" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="5" label="SID" type="text"/>
+            <field uid="6" label="Àlies" type="text"/>
+            <field uid="7" label="Opcions" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="Correu Electrònic" iconid="48">
+            <field uid="0" label="Email" type="email"/>
+            <field uid="1" label="Nom d'Usuari" type="username"/>
+            <field uid="2" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="9" label="Tipus" type="text"/>
+            <field uid="3" label="Servidor POP3" type="text"/>
+            <field uid="4" label="Servidor IMAP" type="text"/>
+            <field uid="6" label="Port" type="numeric"/>
+            <field uid="10" label="Tipus Seguretat" type="text"/>
+            <field uid="11" label="Mètode Autentificació" type="text"/>
+            <field uid="21" label="Enllaç Web" type="url"/>
+            <field uid="5" label="Servidor SMTP" type="text"/>
+            <field uid="7" label="Port" type="numeric"/>
+            <field uid="13" label="Nom d'Usuari" type="username"/>
+            <field uid="14" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="15" label="Tipus Seguretat" type="text"/>
+            <field uid="16" label="Mètode Autentificació" type="text"/>
+            <field uid="18" label="Proveidor" type="text"/>
+            <field uid="8" label="Pàgina Web" type="url"/>
+            <field uid="19" label="Telèfon local" type="phone"/>
+            <field uid="20" label="Telèfon de Suport" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="Compte FTP" iconid="55">
+            <field uid="0" label="Servidor" type="text"/>
+            <field uid="1" label="Ruta" type="text"/>
+            <field uid="2" label="Nom d'Usuari" type="username"/>
+            <field uid="3" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="4" label="Proveidor" type="text"/>
+            <field uid="5" label="Pàgina Web" type="url"/>
+            <field uid="6" label="Telèfon" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="Missatgeria" iconid="49">
+            <field uid="0" label="Tipus" type="text"/>
+            <field uid="1" label="ID" type="text"/>
+            <field uid="2" label="Servidor" type="text"/>
+            <field uid="3" label="Port" type="numeric"/>
+            <field uid="4" label="Sobrenom" type="text"/>
+            <field uid="5" label="Nom d'Usuari" type="username"/>
+            <field uid="6" label="Contrasenya" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="Proveidor Internet" iconid="63">
+            <field uid="0" label="Nom d'Usuari" type="username"/>
+            <field uid="1" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="3" label="Telèfon de Connexió" type="phone"/>
+            <field uid="4" label="ISP/Sistema" type="text"/>
+            <field uid="5" label="Adreça IP" type="numeric"/>
+            <field uid="6" label="Màscara de subxarxa" type="numeric"/>
+            <field uid="20" label="Pasarela" type="numeric"/>
+            <field uid="7" label="DNS Primari" type="numeric"/>
+            <field uid="8" label="DNS Secundari" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Telnet" type="text"/>
+            <field uid="17" label="Telèfon de Suport" type="phone"/>
+            <field uid="18" label="Pàgina Web" type="url"/>
+            <field uid="19" label="Info de Facturació" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="Servidor" iconid="51">
+            <field uid="11" label="Inici de Sessió d'Administrador" type="username"/>
+            <field uid="12" label="Contrasenya d'Administrador" type="password" sensitive="true"/>
+            <field uid="16" label="URL d'Administració" type="url"/>
+            <field uid="0" label="Servei" type="text"/>
+            <field uid="1" label="Tasques" type="text"/>
+            <field uid="2" label="Sistema Operatiu" type="text"/>
+            <field uid="3" label="Memòria RAM" type="numeric"/>
+            <field uid="4" label="Enmagatzament" type="numeric"/>
+            <field uid="5" label="CPU" type="numeric"/>
+            <field uid="6" label="RAID" type="text"/>
+            <field uid="7" label="Ubicació" type="text"/>
+            <field uid="8" label="Adreça IP" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="Port" type="numeric"/>
+            <field uid="17" label="Proveidor de Hosting" type="text"/>
+            <field uid="14" label="Web de Support" type="url"/>
+            <field uid="18" label="Telèfon de Suport" type="phone"/>
+            <field uid="15" label="Info de Facturació" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="Router inalàmbric" iconid="35">
+            <field uid="0" label="Nom de l'estació" type="text"/>
+            <field uid="9" label="Contrasenya de l'estació" type="password" sensitive="true"/>
+            <field uid="2" label="Nom de la Xarxa" type="text"/>
+            <field uid="5" label="Contrasenya de la xarxa" type="password" sensitive="true"/>
+            <field uid="3" label="Seguretat" type="text"/>
+            <field uid="1" label="MAC/Airport #" type="numeric"/>
+            <field uid="12" label="Servidor/Adreça IP" type="url"/>
+            <field uid="13" label="Nom d'Usuari" type="username"/>
+            <field uid="4" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="6" label="Contrasenya del Enmagatzament" type="password" sensitive="true"/>
+            <field uid="7" label="Web de Support" type="url"/>
+            <field uid="8" label="Info de Facturació" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="Hosting Web" iconid="53">
+            <field uid="13" label="Proveidor" type="text"/>
+            <field uid="1" label="Nom d'Usuari" type="username"/>
+            <field uid="2" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="11" label="URL d'Administració" type="url"/>
+            <field uid="0" label="Sistema Operatiu" type="text"/>
+            <field uid="9" label="ID de Client" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="Base de Dades" type="text"/>
+            <field uid="7" label="Serveis" type="text"/>
+            <field uid="14" label="Web de Support" type="url"/>
+            <field uid="10" label="Telèfon de Suport" type="phone"/>
+            <field uid="12" label="Quota" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="Altres ordinadors" iconid="123">
+            <field uid="0" label="Camp 1" type="text"/>
+            <field uid="1" label="Camp 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Llicència" type="license" iconid="1005">
+        <card templatetype="license.driving" name="Permís de Conduir" iconid="60">
+            <field uid="1" label="Número" type="numeric"/>
+            <field uid="0" label="Nom" type="text"/>
+            <field uid="8" label="Sexe" type="text"/>
+            <field uid="9" label="Data Naixament" type="date"/>
+            <field uid="10" label="Adreça" type="text"/>
+            <field uid="11" label="Alçada" type="text"/>
+            <field uid="2" label="Classe" type="text"/>
+            <field uid="13" label="Restriccions" type="text"/>
+            <field uid="3" label="Estat" type="text"/>
+            <field uid="4" label="País" type="text"/>
+            <field uid="5" label="Data Caducitat" type="date"/>
+            <field uid="6" label="Data Emissió" type="date"/>
+            <field uid="7" label="En cas de pèrdua, trucar a" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="Permís de Caça" iconid="42">
+            <field uid="1" label="Número" type="numeric"/>
+            <field uid="0" label="Nom" type="text"/>
+            <field uid="2" label="Estat" type="text"/>
+            <field uid="3" label="Regió" type="text"/>
+            <field uid="4" label="País" type="text"/>
+            <field uid="5" label="Vàlid des de" type="date"/>
+            <field uid="6" label="Data Caducitat" type="date"/>
+            <field uid="7" label="Fauna acceptada" type="text"/>
+            <field uid="8" label="Quota" type="text"/>
+        </card>
+        <card templatetype="license.software" name="Llicència de Software" iconid="52">
+            <field uid="0" label="Versió" type="numeric"/>
+            <field uid="16" label="Nom del Programa" type="text"/>
+            <field uid="17" label="Nº de Usuaris" type="numeric"/>
+            <field uid="1" label="Clau Instal·lació" type="text" sensitive="true"/>
+            <field uid="6" label="Pàgina de descàrrega" type="url"/>
+            <field uid="3" label="Llicenciat a" type="text"/>
+            <field uid="18" label="Pàgina d'Inici de Sessió" type="url"/>
+            <field uid="19" label="Nom d'Usuari" type="username"/>
+            <field uid="20" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="4" label="Email" type="email"/>
+            <field uid="5" label="Companyia" type="text"/>
+            <field uid="13" label="Data de Compra" type="date"/>
+            <field uid="14" label="Número Comanda" type="numeric"/>
+            <field uid="12" label="Preu Tarifa" type="numeric"/>
+            <field uid="15" label="Total" type="numeric"/>
+            <field uid="8" label="Editorial" type="text"/>
+            <field uid="9" label="Pàgina Web" type="url"/>
+            <field uid="10" label="Email de Support" type="email"/>
+            <field uid="21" label="Telèfon de Suport" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="Altres Llicències" iconid="124">
+            <field uid="0" label="Camp 1" type="text"/>
+            <field uid="1" label="Camp 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Contrasenya" type="password" iconid="1006">
+        <card templatetype="password.default" name="Contrasenya" iconid="36">
+            <field uid="0" label="Inici de Sessió" type="username"/>
+            <field uid="1" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="2" label="Accés" type="text"/>
+        </card>
+    </category>
+
+    <category name="Nota segura" type="note" iconid="1007">
+        <card templatetype="note.default" name="Nota" iconid="22">
+        </card>
+    </category>
+
+    <category name="Viatge" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="Passaport" iconid="37">
+            <field uid="2" label="Número" type="text"/>
+            <field uid="0" label="Nom complert" type="text"/>
+            <field uid="14" label="Sexe" type="text"/>
+            <field uid="1" label="Tipus" type="text"/>
+            <field uid="15" label="Nacionalitat" type="text"/>
+            <field uid="4" label="Lloc de Naixament" type="text"/>
+            <field uid="5" label="Data de naixament" type="date"/>
+            <field uid="6" label="Data expedició" type="text"/>
+            <field uid="7" label="Data Emissió" type="date"/>
+            <field uid="8" label="Data Caducitat" type="date"/>
+            <field uid="9" label="País d'expedició" type="text"/>
+            <field uid="10" label="Autoritat" type="text"/>
+            <field uid="12" label="Substitucions" type="text"/>
+            <field uid="13" label="En cas de pèrdua, trucar a" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="Visat de viatge" iconid="57">
+            <field uid="1" label="Tipus" type="text"/>
+            <field uid="15" label="País" type="text"/>
+            <field uid="0" label="Nom complert" type="text"/>
+            <field uid="2" label="Número" type="numeric"/>
+            <field uid="4" label="Vàlid per" type="text"/>
+            <field uid="5" label="Vàlid des de" type="date"/>
+            <field uid="6" label="Vàlid fins al" type="date"/>
+            <field uid="7" label="Durada" type="numeric"/>
+            <field uid="8" label="Núm. d'entrades" type="numeric"/>
+            <field uid="10" label="Emès per" type="text"/>
+            <field uid="11" label="Data d'Emissió" type="date"/>
+            <field uid="12" label="Número de passaport" type="text"/>
+            <field uid="13" label="Observacions" type="text"/>
+            <field uid="14" label="En cas de pèrdua, trucar a" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="Viatger freqüent" iconid="39">
+            <field uid="1" label="Soci núm." type="numeric"/>
+            <field uid="0" label="Nom" type="text"/>
+            <field uid="8" label="Aerolínia" type="text"/>
+            <field uid="2" label="Data" type="date"/>
+            <field uid="3" label="Quilometratge" type="numeric"/>
+            <field uid="5" label="Pàgina Web" type="url"/>
+            <field uid="6" label="Nom d'Usuari" type="username"/>
+            <field uid="7" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="9" label="Servei al client" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="Reserva d'Hotel" iconid="27">
+            <field uid="0" label="Nom Hotel" type="text"/>
+            <field uid="4" label="Número d'habitació" type="numeric"/>
+            <field uid="1" label="Adreça" type="text"/>
+            <field uid="2" label="ID de reserva" type="numeric"/>
+            <field uid="3" label="Data" type="date"/>
+            <field uid="5" label="Nits" type="numeric"/>
+            <field uid="15" label="Recompensa Hotel" type="numeric"/>
+            <field uid="7" label="Telèfon" type="phone"/>
+            <field uid="8" label="Email" type="email"/>
+            <field uid="9" label="Pàgina Web" type="url"/>
+            <field uid="10" label="Nom d'Usuari" type="username"/>
+            <field uid="11" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="13" label="Consergeria" type="text"/>
+            <field uid="14" label="Restaurant" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="Vol" iconid="38">
+            <field uid="2" label="Número de vol" type="numeric"/>
+            <field uid="0" label="Aerolínia" type="text"/>
+            <field uid="1" label="Data" type="date"/>
+            <field uid="3" label="Des de" type="text"/>
+            <field uid="4" label="Fins a" type="text"/>
+            <field uid="5" label="Hora/Porta" type="text"/>
+            <field uid="6" label="Número Bitllet Electrònic" type="numeric"/>
+            <field uid="7" label="Confirmar #" type="numeric"/>
+            <field uid="10" label="Pàgina Web" type="url"/>
+            <field uid="11" label="Nom d'Usuari" type="username"/>
+            <field uid="12" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="9" label="Telèfon" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="Altres viatges" iconid="125">
+            <field uid="0" label="Camp 1" type="text"/>
+            <field uid="1" label="Camp 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Miscel·lània" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="Talla" iconid="23">
+            <field uid="9" label="Nom" type="text"/>
+            <field uid="0" label="Vestit" type="text"/>
+            <field uid="1" label="Calçat" type="text"/>
+            <field uid="2" label="Camisa" type="text"/>
+            <field uid="3" label="Pantalons" type="text"/>
+            <field uid="4" label="Entrecuix" type="text"/>
+            <field uid="5" label="Faldilla" type="text"/>
+            <field uid="6" label="Guants" type="text"/>
+            <field uid="7" label="Cintura" type="text"/>
+            <field uid="8" label="Coll" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="Candau" iconid="61">
+            <field uid="0" label="Ubicació" type="text"/>
+            <field uid="1" label="Codi" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="Prescripció" iconid="40">
+            <field uid="2" label="Metge" type="text"/>
+            <field uid="0" label="RX #" type="text"/>
+            <field uid="1" label="Nom" type="text"/>
+            <field uid="3" label="Farmàcia" type="text"/>
+            <field uid="4" label="Telèfon" type="phone"/>
+            <field uid="6" label="Marca" type="text"/>
+            <field uid="7" label="Medicament" type="text"/>
+            <field uid="8" label="Dosis" type="numeric"/>
+            <field uid="9" label="Prendre" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="Òptica" iconid="26">
+            <field uid="0" label="Tipus" type="text"/>
+            <field uid="1" label="Dret (OD)" type="numeric"/>
+            <field uid="2" label="Esquerra (OS)" type="numeric"/>
+            <field uid="3" label="Metge" type="text"/>
+            <field uid="4" label="Telèfon" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="Codi Registre" iconid="66">
+            <field uid="2" label="Nom" type="text"/>
+            <field uid="0" label="Número" type="numeric" sensitive="true"/>
+            <field uid="1" label="Data" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="Informació Vehicle" iconid="25">
+            <field uid="3" label="Registre núm." type="text"/>
+            <field uid="11" label="Propietari" type="text"/>
+            <field uid="0" label="Model" type="text"/>
+            <field uid="12" label="Tipus vehicle" type="text"/>
+            <field uid="13" label="Data de Compra" type="date"/>
+            <field uid="1" label="Fabricat" type="text"/>
+            <field uid="2" label="Any" type="numeric"/>
+            <field uid="4" label="VIN" type="text"/>
+            <field uid="5" label="Telèfon servei" type="phone"/>
+            <field uid="14" label="Telèfon suport en carretera" type="phone"/>
+            <field uid="16" label="Asseguradora" type="text"/>
+            <field uid="7" label="Cost Assegurança" type="text"/>
+            <field uid="8" label="Número de Pòlissa" type="numeric"/>
+            <field uid="10" label="Data Caducitat" type="date"/>
+            <field uid="9" label="Telèfon Assegurança" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="Bústia de Veu" iconid="62">
+            <field uid="0" label="Número d'Accés" type="numeric"/>
+            <field uid="1" label="PIN" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="Adreça" iconid="31">
+            <field uid="0" label="Nom" type="text"/>
+            <field uid="1" label="Portal" type="text"/>
+            <field uid="2" label="Carrer" type="text"/>
+            <field uid="3" label="Població" type="text"/>
+            <field uid="4" label="Ciutat" type="text"/>
+            <field uid="5" label="Estat" type="text"/>
+            <field uid="6" label="Codi Postal" type="text"/>
+            <field uid="7" label="País" type="text"/>
+            <field uid="9" label="Telèfon" type="phone"/>
+            <field uid="10" label="Email" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="Contacte" iconid="47">
+            <field uid="0" label="Nom" type="text"/>
+            <field uid="1" label="Cognoms" type="text"/>
+            <field uid="2" label="Companyia" type="text"/>
+            <field uid="3" label="Telèfon (Casa)" type="phone"/>
+            <field uid="4" label="Telèfon (Mòbil)" type="phone"/>
+            <field uid="5" label="Telèfon (Feina)" type="phone"/>
+            <field uid="6" label="Email" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="Números Emergència" iconid="28">
+            <field uid="0" label="Policia" type="phone"/>
+            <field uid="1" label="Bombers" type="phone"/>
+            <field uid="2" label="Ambulància" type="phone"/>
+            <field uid="3" label="Metge" type="phone"/>
+            <field uid="4" label="Dentista" type="phone"/>
+            <field uid="5" label="Veterinari" type="phone"/>
+            <field uid="6" label="Subministradora Electricitat" type="phone"/>
+            <field uid="7" label="Subministradora Gas" type="phone"/>
+            <field uid="8" label="Subministradora Telèfon" type="phone"/>
+            <field uid="9" label="Propietari" type="phone"/>
+            <field uid="10" label="Altres" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="Seguretat Social" iconid="64">
+            <field uid="1" label="Número" type="numeric"/>
+            <field uid="0" label="Nom" type="text"/>
+            <field uid="2" label="Data" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="Programa Fidelització" iconid="24">
+            <field uid="0" label="Companyia" type="text"/>
+            <field uid="1" label="Nom" type="text"/>
+            <field uid="10" label="ID Membre" type="text"/>
+            <field uid="2" label="Número" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="5" label="Número 2" type="numeric"/>
+            <field uid="6" label="Des de" type="date"/>
+            <field uid="7" label="Telèfon de Suport" type="phone"/>
+            <field uid="8" label="Telèfon de Reserves" type="phone"/>
+            <field uid="9" label="Pàgina Web" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="Número de Sèrie" iconid="32">
+            <field uid="1" label="Número de Sèrie" type="text" sensitive="true"/>
+            <field uid="0" label="Marca" type="text"/>
+            <field uid="2" label="Model" type="text"/>
+            <field uid="3" label="Preu" type="numeric"/>
+            <field uid="4" label="Data de Compra" type="date"/>
+            <field uid="6" label="Garantia" type="date"/>
+            <field uid="5" label="Ubicació" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="Informació de propietat" iconid="70">
+            <field uid="0" label="Propietari" type="text"/>
+            <field uid="1" label="Adreça" type="text"/>
+            <field uid="2" label="Tipus" type="text"/>
+            <field uid="3" label="Cost Manteniment" type="numeric"/>
+            <field uid="5" label="ID Propietat" type="text"/>
+            <field uid="6" label="Cost Taxes" type="numeric"/>
+            <field uid="7" label="Venciment Taxes" type="date"/>
+            <field uid="8" label="Pàgina Web" type="url"/>
+            <field uid="9" label="Nom d'Usuari" type="username"/>
+            <field uid="10" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="12" label="Assegurança" type="text"/>
+            <field uid="13" label="Assegurança Premium" type="numeric"/>
+            <field uid="14" label="Número de Pòlissa" type="numeric"/>
+            <field uid="15" label="Data Caducitat" type="date"/>
+            <field uid="16" label="Telèfon de contacte Assegurança" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="Tarjeta Telefònica" iconid="54">
+            <field uid="1" label="Número d'Accés" type="phone"/>
+            <field uid="0" label="Proveidor" type="text"/>
+            <field uid="2" label="Número de Tarjeta" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="Cost per tram" type="numeric"/>
+            <field uid="5" label="Data Caducitat" type="date"/>
+            <field uid="6" label="Utilització" type="numeric"/>
+            <field uid="8" label="Pàgina Web" type="url"/>
+            <field uid="9" label="Nom d'Usuari" type="username"/>
+            <field uid="10" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="11" label="En cas de pèrdua, trucar a" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="Carnet d'Identitat" iconid="59">
+            <field uid="2" label="Número ID" type="numeric"/>
+            <field uid="0" label="Títol" type="text"/>
+            <field uid="1" label="Nom complert" type="text"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="País" type="text"/>
+            <field uid="5" label="Data Emissió" type="date"/>
+            <field uid="6" label="Data Caducitat" type="date"/>
+            <field uid="7" label="En cas de pèrdua, trucar a" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="Carnet Estudiant" iconid="65">
+            <field uid="2" label="Número de Tarjeta" type="numeric"/>
+            <field uid="0" label="Estudiant a" type="text"/>
+            <field uid="1" label="Nom complert" type="text"/>
+            <field uid="3" label="Data Naixament" type="date"/>
+            <field uid="4" label="Data Emissió" type="date"/>
+            <field uid="5" label="Data Caducitat" type="date"/>
+            <field uid="6" label="En cas de pèrdua, trucar a" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="Carnet de Mestre" iconid="41">
+            <field uid="2" label="Número de Tarjeta" type="numeric"/>
+            <field uid="0" label="Dóna classes a" type="text"/>
+            <field uid="1" label="Nom complert" type="text"/>
+            <field uid="3" label="Data Naixament" type="date"/>
+            <field uid="4" label="Data Emissió" type="date"/>
+            <field uid="5" label="Data Caducitat" type="date"/>
+            <field uid="6" label="En cas de pèrdua, trucar a" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="Carnet de Biblioteca" iconid="58">
+            <field uid="1" label="Número de Tarjeta" type="numeric"/>
+            <field uid="0" label="Biblioteca" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Horaris" type="numeric"/>
+            <field uid="4" label="Adreça" type="text"/>
+            <field uid="5" label="Data Emissió" type="date"/>
+            <field uid="6" label="Data Caducitat" type="date"/>
+            <field uid="8" label="Pàgina Web" type="url"/>
+            <field uid="9" label="Nom d'Usuari" type="username"/>
+            <field uid="10" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="11" label="En cas de pèrdua, trucar a" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="Carnet Votant" iconid="69">
+            <field uid="0" label="Nom complert" type="text"/>
+            <field uid="1" label="ID de Votant" type="numeric"/>
+            <field uid="2" label="Adreça" type="text"/>
+            <field uid="3" label="Districte" type="text"/>
+            <field uid="4" label="Ubicació" type="text"/>
+            <field uid="5" label="Congrés" type="text"/>
+            <field uid="6" label="Senat" type="text"/>
+            <field uid="7" label="Representant" type="text"/>
+            <field uid="8" label="Adreça" type="text"/>
+            <field uid="9" label="Data Emissió" type="date"/>
+            <field uid="11" label="Pàgina Web" type="url"/>
+            <field uid="12" label="Nom d'Usuari" type="username"/>
+            <field uid="13" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="14" label="En cas de pèrdua, trucar a" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="Carnet ITZ" iconid="67">
+            <field uid="1" label="Número de Tarjeta" type="numeric"/>
+            <field uid="0" label="Propietari" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Valor" type="numeric"/>
+            <field uid="4" label="Data Caducitat" type="date"/>
+            <field uid="5" label="Utilització" type="numeric"/>
+            <field uid="7" label="Pàgina Web" type="url"/>
+            <field uid="8" label="Nom d'Usuari" type="username"/>
+            <field uid="9" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="10" label="En cas de pèrdua, trucar a" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="Carnet de Soci" iconid="46">
+            <field uid="1" label="ID Membre" type="numeric"/>
+            <field uid="10" label="Nom del soci" type="text"/>
+            <field uid="0" label="Organització" type="text"/>
+            <field uid="11" label="Grup" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Telèfon" type="phone"/>
+            <field uid="12" label="Membre des de" type="date"/>
+            <field uid="4" label="Data Caducitat" type="date"/>
+            <field uid="6" label="Pàgina Web" type="url"/>
+            <field uid="7" label="Nom d'Usuari" type="username"/>
+            <field uid="8" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="13" label="Email" type="email"/>
+            <field uid="9" label="En cas de pèrdua, trucar a" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="Tarjeta PAN" iconid="68">
+            <field uid="3" label="Número" type="numeric"/>
+            <field uid="0" label="Nom" type="text"/>
+            <field uid="1" label="Nom del pare" type="text"/>
+            <field uid="2" label="Data Naixament" type="date"/>
+            <field uid="5" label="Pàgina Web" type="url"/>
+            <field uid="6" label="Nom d'Usuari" type="username"/>
+            <field uid="7" label="Contrasenya" type="password" sensitive="true"/>
+            <field uid="8" label="En cas de pèrdua, trucar a" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="Telèfon Mòbil" iconid="120">
+            <field uid="0" label="Model" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="Codi de desbloqueix" type="numeric" sensitive="true"/>
+            <field uid="5" label="Tipus SIM" type="text"/>
+            <field uid="6" label="Número de SIM" type="numeric"/>
+            <field uid="7" label="PIN" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="Data de Compra" type="date"/>
+            <field uid="10" label="Garantia" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="Proveidor Serveis" iconid="121">
+            <field uid="0" label="Proveidor" type="text"/>
+            <field uid="1" label="Tipus de Servei" type="text"/>
+            <field uid="2" label="Id de client" type="text"/>
+            <field uid="3" label="ID de subscripció" type="numeric"/>
+            <field uid="4" label="Adreça" type="text"/>
+            <field uid="5" label="Pàgina Web" type="url"/>
+            <field uid="6" label="Nom d'Usuari" type="username"/>
+            <field uid="7" label="Contrasenya d'inici de sessió" type="password" sensitive="true"/>
+            <field uid="8" label="Telèfon de Suport" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="Altres" iconid="126">
+            <field uid="0" label="Camp 1" type="text"/>
+            <field uid="1" label="Camp 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Identitat" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identitat" iconid="127">
+            <field uid="0" label="Nom" type="first_name"/>
+            <field uid="1" label="Inicials" type="name_initial"/>
+            <field uid="2" label="Cognom" type="last_name"/>
+            <field uid="3" label="Sexe" value="male-Male" type="sex_options"/>
+            <field uid="4" label="Data Naixament" type="birth_date"/>
+            <field uid="5" label="Ocupació" type="occupation"/>
+            <field uid="6" label="Companyia" type="company"/>
+            <field uid="7" label="Departament" type="department"/>
+            <field uid="8" label="Càrrec" type="job_title"/>
+            <field uid="9" label="Adreça línia 1" type="address_firstline"/>
+            <field uid="10" label="Adreça línia 1" type="address_secondline"/>
+            <field uid="11" label="Ciutat" type="address_city"/>
+            <field uid="12" label="Estat" type="address_state"/>
+            <field uid="13" label="Codi Postal" type="address_zip"/>
+            <field uid="14" label="País" value="US-United States" type="country_options"/>
+            <field uid="15" label="Telèfon" type="phone"/>
+            <field uid="16" label="Pregunta de seguretat" type="text"/>
+            <field uid="17" label="Resposta de seguretat" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

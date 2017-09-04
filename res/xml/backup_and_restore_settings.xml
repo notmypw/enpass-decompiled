@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="pref_screen">
+    <PreferenceCategory android:title="@string/wireless_network" android:key="category_wifi">
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/wifi_title" android:key="wifi" android:summary="@string/wifi_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/external_storage">
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/export_title" android:key="backup" />
+        <Preference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/import_title" android:key="restore" />
+    </PreferenceCategory>
+</PreferenceScreen>

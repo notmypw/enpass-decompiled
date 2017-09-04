@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <RelativeLayout android:id="@+id/custom_item_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="@r$color/black" android:ellipsize="end" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/custom_item_text" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x3601" android:layout_marginLeft="5dp" android:singleLine="true" android:layout_toRightOf="@+id/custom_item_icon" android:fontFamily="sans-serif-light" />
+        <ImageView android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/custom_item_icon" android:layout_width="UNKNOWN_DATA_0x2801" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/custom_item_forward" android:layout_width="UNKNOWN_DATA_0x2001" android:layout_height="UNKNOWN_DATA_0x2001" android:src="@drawable/forward" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:id="@+id/custom_item_view" android:background="@r$color/bg_category_saprator" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1e01" android:text="@string/custom_item_additem" android:layout_below="@+id/custom_item_layout" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/sound_feedback" android:key="enableAudio" android:summary="@string/sound_feedback_summary" android:defaultValue="true" />
+    <Preference android:title="@string/sidebar" android:key="hideCategoryPref" android:summary="@string/sidebar_summary" />
+    <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/drawer_category_selected" android:key="lastSelectedCategory" android:summary="@string/drawer_category_selected_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/new_show_subtitle" android:key="showSubtitle" android:summary="" android:defaultValue="true" />
+    <ListPreference android:icon="@locationawarelogger/TRACE_INT" android:entries="@r$array/searchInCards_entries" android:title="@string/searchInCards_title" android:key="searchInCards" android:defaultValue="0" android:entryValues="@r$array/searchInCards_values" />
+</PreferenceScreen>

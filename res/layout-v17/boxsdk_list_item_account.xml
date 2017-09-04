@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f070060">
+    <TextView android:textAppearance="@r$style/Theme_BoxSdk_Title" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/box_account_initials" android:layout_width="UNKNOWN_DATA_0x7f070061" android:layout_height="UNKNOWN_DATA_0x7f070061" android:layout_marginLeft="@dimen/keyline_margin" android:layout_marginRight="@dimen/keyline_margin" android:textAllCaps="true" android:textAlignment="center" />
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textAppearance="@r$style/Theme_BoxSdk_Subhead" android:textColor="@r$color/box_primary_text" android:id="@+id/box_account_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textAppearance="@r$style/Theme_BoxSdk_Body" android:textColor="@r$color/box_hint_foreground" android:id="@+id/box_account_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:autoText="false" />
+    </LinearLayout>
+</LinearLayout>

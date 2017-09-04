@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="התחבר" type="login" iconid="1001">
+        <card templatetype="login.default" name="התחבר" iconid="21">
+            <field uid="10" label="שם משתמש" type="username"/>
+            <field uid="12" label="אימייל" type="email"/>
+            <field uid="11" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="14" label="טלפון" type="phone"/>
+            <field uid="13" label="כתובת אינטרנט" type="url"/>
+            <field uid="15" label="שאלת אבטחה" type="text"/>
+            <field uid="16" label="תשובת אבטחה" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="כרטיס אשראי" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="כרטיס אשראי" iconid="20">
+            <field uid="0" label="בעל הכרטיס" type="cardholder_name"/>
+            <field uid="17" label="סוג" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="מספר" type="card_number"/>
+            <field uid="2" label="CVC" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="קוד כרטיס" type="card_pin" sensitive="true"/>
+            <field uid="4" label="תוקף" type="expiry_date"/>
+            <field uid="18" label="בתוקף מ" type="date"/>
+            <field uid="10" label="מגבלת אשראי" type="numeric"/>
+            <field uid="11" label="מגבלת משיכה" type="numeric"/>
+            <field uid="12" label="שיעור הריבית" type="numeric"/>
+            <field uid="6" label="הונפק בבנק" type="bank_name"/>
+            <field uid="14" label="אתר אינטרנט" type="url"/>
+            <field uid="15" label="שם משתמש" type="username"/>
+            <field uid="16" label="סיסמת כניסה" type="password" sensitive="true"/>
+            <field uid="9" label="סיסמת עסקה" type="txn_password" sensitive="true"/>
+            <field uid="7" label="תאריך הנפקה" type="date"/>
+            <field uid="8" label="אם נאבד, התקשר ל" type="phone"/>
+        </card>
+    </category>
+
+    <category name="כספים" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="חשבון בנק" iconid="45">
+            <field uid="4" label="שם הבנק" type="bank_name"/>
+            <field uid="0" label="בעל החשבון" type="cardholder_name"/>
+            <field uid="1" label="סוג" type="text"/>
+            <field uid="2" label="מספר חשבון" type="numeric"/>
+            <field uid="16" label="מס' זהות לקוח" type="text"/>
+            <field uid="5" label="מס' ניתוב" type="numeric"/>
+            <field uid="6" label="שם הסניף" type="text"/>
+            <field uid="7" label="קוד הסניף" type="numeric"/>
+            <field uid="8" label="SWIFT" type="text"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="כתובת סניף" type="text"/>
+            <field uid="25" label="טלפון הסניף" type="phone"/>
+            
+            <field uid="11" label="מספר כרטיס אשראי" type="card_number"/>
+            <field uid="26" label="סוג" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="קוד כרטיס" type="card_pin" sensitive="true"/>
+            <field uid="14" label="CVV" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="תוקף" type="expiry_date"/>
+            <field uid="27" label="מגבלת משיכה" type="numeric"/>
+            
+            <field uid="17" label="אתר אינטרנט" type="url"/>
+            <field uid="18" label="שם משתמש" type="username"/>
+            <field uid="19" label="סיסמת כניסה" type="password" sensitive="true"/>
+            <field uid="20" label="סיסמת עסקה" type="txn_password" sensitive="true"/>
+            <field uid="22" label="קו תמיכה" type="phone"/>
+            <field uid="23" label="T-PIN" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="פוליסת ביטוח" iconid="33">
+            <field uid="1" label="שם הפוליסה" type="text"/>
+            <field uid="0" label="חברה" type="text"/>
+            <field uid="19" label="בעל הפוליסה" type="text"/>
+            <field uid="2" label="מספר" type="numeric"/>
+            <field uid="3" label="סוג" type="text"/>
+            <field uid="5" label="פרמיה" type="numeric"/>
+            <field uid="6" label="סכום מבוטח" type="numeric"/>
+            <field uid="7" label="תאריך הנפקה" type="date"/>
+            <field uid="18" label="תאריך חידוש" type="date"/>
+            <field uid="8" label="תוקף" type="date"/>
+            <field uid="9" label="תקופה" type="numeric"/>
+            <field uid="20" label="מועמד" type="text"/>
+            <field uid="11" label="מס' זהות לקוח" type="numeric"/>
+            <field uid="12" label="אתר אינטרנט" type="url"/>
+            <field uid="13" label="שם משתמש" type="username"/>
+            <field uid="14" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="16" label="שם הסוכן" type="text"/>
+            <field uid="17" label="קו תמיכה" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="השקעה במניות" iconid="34">
+            <field uid="2" label="סמל" type="text"/>
+            <field uid="0" label="מספר חשבון" type="numeric"/>
+            <field uid="1" label="סוג" type="text"/>
+            <field uid="3" label="שוק" type="text"/>
+            <field uid="5" label="תאריך הנפקה" type="date"/>
+            <field uid="6" label="תאריך רכישה" type="date"/>
+            <field uid="7" label="מחיר רכישה" type="numeric"/>
+            <field uid="8" label="כמות" type="numeric"/>
+            <field uid="9" label="מחיר נוכחי" type="numeric"/>
+            <field uid="11" label="אתר אינטרנט" type="url"/>
+            <field uid="12" label="שם משתמש" type="username"/>
+            <field uid="13" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="15" label="סוכן" type="text"/>
+            <field uid="16" label="טלפון" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="קרנות נאמנות" iconid="43">
+            <field uid="0" label="שם הקרן" type="text"/>
+            <field uid="1" label="סוג הקרן" type="text"/>
+            <field uid="2" label="תאריך הנפקה" type="date"/>
+            <field uid="3" label="תאריך רכישה" type="date"/>
+            <field uid="4" label="כמות" type="numeric"/>
+            <field uid="5" label="NAV שנרכשו" type="numeric"/>
+            <field uid="6" label="NAV נוכחי" type="numeric"/>
+            <field uid="8" label="אתר אינטרנט" type="url"/>
+            <field uid="9" label="שם משתמש" type="username"/>
+            <field uid="10" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="12" label="סוכן" type="text"/>
+            <field uid="13" label="טלפון" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="הלוואה/משכנתא" iconid="44">
+            <field uid="2" label="מלווה" type="text"/>
+            <field uid="1" label="סוג" type="text"/>
+            <field uid="0" label="מספר חשבון" type="numeric"/>
+            <field uid="4" label="קרן הלוואה" type="numeric"/>
+            <field uid="5" label="אחוז ריבית" type="numeric"/>
+            <field uid="6" label="תאריך" type="date"/>
+            <field uid="7" label="תקופה" type="numeric"/>
+            <field uid="8" label="חוב" type="numeric"/>
+            <field uid="9" label="תאריך לתשלום" type="numeric"/>
+            <field uid="10" label="נכס" type="text"/>
+            <field uid="12" label="טלפון" type="phone"/>
+            <field uid="13" label="אתר אינטרנט" type="url"/>
+            <field uid="14" label="שם משתמש" type="username"/>
+            <field uid="15" label="סיסמא" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="כספים אחרים" iconid="122">
+            <field uid="0" label="שדה 1" type="text"/>
+            <field uid="1" label="שדה 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="מחשב" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="מסד נתונים" iconid="56">
+            <field uid="8" label="סוג" type="text"/>
+            <field uid="0" label="שרת" type="text"/>
+            <field uid="1" label="Port" type="numeric"/>
+            <field uid="2" label="מסד נתונים" type="text"/>
+            <field uid="3" label="שם משתמש" type="username"/>
+            <field uid="4" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="5" label="SID" type="text"/>
+            <field uid="6" label="כינוי" type="text"/>
+            <field uid="7" label="אפשרויות" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="חשבון אימייל" iconid="48">
+            <field uid="0" label="אימייל" type="email"/>
+            <field uid="1" label="שם משתמש" type="username"/>
+            <field uid="2" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="9" label="סוג" type="text"/>
+            <field uid="3" label="שרת POP3" type="text"/>
+            <field uid="4" label="שרת IMAP" type="text"/>
+            <field uid="6" label="Port" type="numeric"/>
+            <field uid="10" label="סוג אבטחה" type="text"/>
+            <field uid="11" label="שיטת אימות" type="text"/>
+            <field uid="21" label="Weblink" type="url"/>
+            <field uid="5" label="שרת SMTP" type="text"/>
+            <field uid="7" label="Port" type="numeric"/>
+            <field uid="13" label="שם משתמש" type="username"/>
+            <field uid="14" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="15" label="סוג אבטחה" type="text"/>
+            <field uid="16" label="שיטת אימות" type="text"/>
+            <field uid="18" label="ספק" type="text"/>
+            <field uid="8" label="אתר אינטרנט" type="url"/>
+            <field uid="19" label="טלפון" type="phone"/>
+            <field uid="20" label="קו תמיכה" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="חשבון FTP" iconid="55">
+            <field uid="0" label="שרת" type="text"/>
+            <field uid="1" label="נתיב" type="text"/>
+            <field uid="2" label="שם משתמש" type="username"/>
+            <field uid="3" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="4" label="ספק" type="text"/>
+            <field uid="5" label="אתר אינטרנט" type="url"/>
+            <field uid="6" label="טלפון" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="הודעות מיידיות" iconid="49">
+            <field uid="0" label="סוג" type="text"/>
+            <field uid="1" label="מזהה" type="text"/>
+            <field uid="2" label="שרת" type="text"/>
+            <field uid="3" label="Port" type="numeric"/>
+            <field uid="4" label="כינוי" type="text"/>
+            <field uid="5" label="שם משתמש" type="username"/>
+            <field uid="6" label="סיסמא" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="ספק אינטרנט" iconid="63">
+            <field uid="0" label="שם משתמש" type="username"/>
+            <field uid="1" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="3" label="קו נייח" type="phone"/>
+            <field uid="4" label="ספקית" type="text"/>
+            <field uid="5" label="כתובת IP" type="numeric"/>
+            <field uid="6" label="Subnet mask" type="numeric"/>
+            <field uid="20" label="Gateway" type="numeric"/>
+            <field uid="7" label="DNS ראשי" type="numeric"/>
+            <field uid="8" label="DNS משני" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Telnet" type="text"/>
+            <field uid="17" label="קו תמיכה" type="phone"/>
+            <field uid="18" label="אתר אינטרנט" type="url"/>
+            <field uid="19" label="פרטי חיוב" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="שרת" iconid="51">
+            <field uid="11" label="שם משתמש Admin" type="username"/>
+            <field uid="12" label="סיסמת Admin" type="password" sensitive="true"/>
+            <field uid="16" label="כתובת Admin" type="url"/>
+            <field uid="0" label="שירות" type="text"/>
+            <field uid="1" label="משימות" type="text"/>
+            <field uid="2" label="מערכת הפעלה" type="text"/>
+            <field uid="3" label="RAM" type="numeric"/>
+            <field uid="4" label="אחסון" type="numeric"/>
+            <field uid="5" label="CPU" type="numeric"/>
+            <field uid="6" label="RAID" type="text"/>
+            <field uid="7" label="מיקום" type="text"/>
+            <field uid="8" label="כתובת IP" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="Port" type="numeric"/>
+            <field uid="17" label="ספק אחסון" type="text"/>
+            <field uid="14" label="אתר התמיכה" type="url"/>
+            <field uid="18" label="קו תמיכה" type="phone"/>
+            <field uid="15" label="פרטי חיוב" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="נתב אלחוטי" iconid="35">
+            <field uid="0" label="שם התחנה" type="text"/>
+            <field uid="9" label="סיסמת התחנה" type="password" sensitive="true"/>
+            <field uid="2" label="שם הרשת" type="text"/>
+            <field uid="5" label="סיסמת רשת" type="password" sensitive="true"/>
+            <field uid="3" label="אבטחה" type="text"/>
+            <field uid="1" label="מספר נמל תעופה" type="numeric"/>
+            <field uid="12" label="כתובת שרת / IP" type="url"/>
+            <field uid="13" label="שם משתמש" type="username"/>
+            <field uid="4" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="6" label="סיסמת אחסון" type="password" sensitive="true"/>
+            <field uid="7" label="אתר התמיכה" type="url"/>
+            <field uid="8" label="פרטי חיוב" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="אחסון אתרים" iconid="53">
+            <field uid="13" label="ספק" type="text"/>
+            <field uid="1" label="שם משתמש" type="username"/>
+            <field uid="2" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="11" label="כתובת Admin" type="url"/>
+            <field uid="0" label="מערכת הפעלה" type="text"/>
+            <field uid="9" label="מס' זהות לקוח" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="מסד נתונים" type="text"/>
+            <field uid="7" label="שירותים" type="text"/>
+            <field uid="14" label="אתר התמיכה" type="url"/>
+            <field uid="10" label="קו תמיכה" type="phone"/>
+            <field uid="12" label="עמלה" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="מחשבים - אחר" iconid="123">
+            <field uid="0" label="שדה 1" type="text"/>
+            <field uid="1" label="שדה 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="רישיון" type="license" iconid="1005">
+        <card templatetype="license.driving" name="רישיון נהיגה" iconid="60">
+            <field uid="1" label="מספר" type="numeric"/>
+            <field uid="0" label="שם" type="text"/>
+            <field uid="8" label="מין" type="text"/>
+            <field uid="9" label="תאריך לידה" type="date"/>
+            <field uid="10" label="כתובת" type="text"/>
+            <field uid="11" label="גובה" type="text"/>
+            <field uid="2" label="כיתה" type="text"/>
+            <field uid="13" label="הגבלות" type="text"/>
+            <field uid="3" label="מדינה" type="text"/>
+            <field uid="4" label="ארץ" type="text"/>
+            <field uid="5" label="תוקף" type="date"/>
+            <field uid="6" label="תאריך הנפקה" type="date"/>
+            <field uid="7" label="אם נאבד, התקשר ל" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="רישיון טבע" iconid="42">
+            <field uid="1" label="מספר" type="numeric"/>
+            <field uid="0" label="שם" type="text"/>
+            <field uid="2" label="מדינה" type="text"/>
+            <field uid="3" label="אזור" type="text"/>
+            <field uid="4" label="ארץ" type="text"/>
+            <field uid="5" label="בתוקף מ" type="date"/>
+            <field uid="6" label="תוקף" type="date"/>
+            <field uid="7" label="אישור פעילות בטבע" type="text"/>
+            <field uid="8" label="מכסה" type="text"/>
+        </card>
+        <card templatetype="license.software" name="רשיון תוכנה" iconid="52">
+            <field uid="0" label="גירסה" type="numeric"/>
+            <field uid="16" label="שם המוצר" type="text"/>
+            <field uid="17" label="מספר משתמשים" type="numeric"/>
+            <field uid="1" label="מפתח" type="text" sensitive="true"/>
+            <field uid="6" label="דף הורדה" type="url"/>
+            <field uid="3" label="בעל הרישיון" type="text"/>
+            <field uid="18" label="עמוד כניסה" type="url"/>
+            <field uid="19" label="שם משתמש" type="username"/>
+            <field uid="20" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="4" label="אימייל" type="email"/>
+            <field uid="5" label="חברה" type="text"/>
+            <field uid="13" label="תאריך רכישה" type="date"/>
+            <field uid="14" label="מספר הזמנה" type="numeric"/>
+            <field uid="12" label="מחיר" type="numeric"/>
+            <field uid="15" label="סך הכל" type="numeric"/>
+            <field uid="8" label="יצרן" type="text"/>
+            <field uid="9" label="אתר אינטרנט" type="url"/>
+            <field uid="10" label="כתובת לתמיכה" type="email"/>
+            <field uid="21" label="קו תמיכה" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="רישיון - אחר" iconid="124">
+            <field uid="0" label="שדה 1" type="text"/>
+            <field uid="1" label="שדה 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="סיסמא" type="password" iconid="1006">
+        <card templatetype="password.default" name="סיסמא" iconid="36">
+            <field uid="0" label="התחבר" type="username"/>
+            <field uid="1" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="2" label="גישה" type="text"/>
+        </card>
+    </category>
+    
+    <category name="הערה מאובטחת" type="note" iconid="1007">
+        <card templatetype="note.default" name="הערה" iconid="22">
+        </card>
+    </category>
+        
+    <category name="נסיעות" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="דרכון" iconid="37">
+            <field uid="2" label="מספר" type="text"/>
+            <field uid="0" label="שם מלא" type="text"/>
+            <field uid="14" label="מין" type="text"/>
+            <field uid="1" label="סוג" type="text"/>
+            <field uid="15" label="אזרחות" type="text"/>
+            <field uid="4" label="מקום לידה" type="text"/>
+            <field uid="5" label="תאריך לידה" type="date"/>
+            <field uid="6" label="הונפק ב" type="text"/>
+            <field uid="7" label="תאריך הנפקה" type="date"/>
+            <field uid="8" label="תוקף" type="date"/>
+            <field uid="9" label="מדינה מנפיקה" type="text"/>
+            <field uid="10" label="רשות" type="text"/>
+            <field uid="12" label="תחליפים" type="text"/>
+            <field uid="13" label="אם נאבד, התקשר ל" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="אשרת תיירים" iconid="57">
+            <field uid="1" label="סוג" type="text"/>
+            <field uid="15" label="ארץ" type="text"/>
+            <field uid="0" label="שם מלא" type="text"/>
+            <field uid="2" label="מספר" type="numeric"/>
+            <field uid="4" label="תוקף" type="text"/>
+            <field uid="5" label="בתוקף מ" type="date"/>
+            <field uid="6" label="בתוקף עד" type="date"/>
+            <field uid="7" label="משך" type="numeric"/>
+            <field uid="8" label="מספר הערכים" type="numeric"/>
+            <field uid="10" label="הונפק על ידי" type="text"/>
+            <field uid="11" label="תאריך הנפקה" type="date"/>
+            <field uid="12" label="מספר דרכון" type="text"/>
+            <field uid="13" label="הערות" type="text"/>
+            <field uid="14" label="אם נאבד, התקשר ל" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="נוסע מתמיד" iconid="39">
+            <field uid="1" label="מספר חבר" type="numeric"/>
+            <field uid="0" label="שם" type="text"/>
+            <field uid="8" label="חברת תעופה" type="text"/>
+            <field uid="2" label="תאריך" type="date"/>
+            <field uid="3" label="קילומטרים" type="numeric"/>
+            <field uid="5" label="אתר אינטרנט" type="url"/>
+            <field uid="6" label="שם משתמש" type="username"/>
+            <field uid="7" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="9" label="שירות לקוחות" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="הזמנות מלונות" iconid="27">
+            <field uid="0" label="שם המלון" type="text"/>
+            <field uid="4" label="מספר חדר" type="numeric"/>
+            <field uid="1" label="כתובת" type="text"/>
+            <field uid="2" label="מספר הזמנה" type="numeric"/>
+            <field uid="3" label="תאריך" type="date"/>
+            <field uid="5" label="לילות" type="numeric"/>
+            <field uid="15" label="הטבות המלון" type="numeric"/>
+            <field uid="7" label="טלפון" type="phone"/>
+            <field uid="8" label="אימייל" type="email"/>
+            <field uid="9" label="אתר אינטרנט" type="url"/>
+            <field uid="10" label="שם משתמש" type="username"/>
+            <field uid="11" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="13" label="דייל" type="text"/>
+            <field uid="14" label="מסעדה" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="פרטי טיסה" iconid="38">
+            <field uid="2" label="מספר טיסה" type="numeric"/>
+            <field uid="0" label="חברת תעופה" type="text"/>
+            <field uid="1" label="תאריך" type="date"/>
+            <field uid="3" label="יציאה מ" type="text"/>
+            <field uid="4" label="יעד" type="text"/>
+            <field uid="5" label="זמן/שער" type="text"/>
+            <field uid="6" label="מספר כרטיס אלקטרוני" type="numeric"/>
+            <field uid="7" label="מספר אישור" type="numeric"/>
+            <field uid="10" label="אתר אינטרנט" type="url"/>
+            <field uid="11" label="שם משתמש" type="username"/>
+            <field uid="12" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="9" label="טלפון" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="נסיעות אחרות" iconid="125">
+            <field uid="0" label="שדה 1" type="text"/>
+            <field uid="1" label="שדה 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="שונות" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="גודל בד" iconid="23">
+            <field uid="9" label="שם" type="text"/>
+            <field uid="0" label="חליפה" type="text"/>
+            <field uid="1" label="נעל" type="text"/>
+            <field uid="2" label="חולצה" type="text"/>
+            <field uid="3" label="מכנסיים" type="text"/>
+            <field uid="4" label="תפר פנימי" type="text"/>
+            <field uid="5" label="חצאית" type="text"/>
+            <field uid="6" label="כפפות" type="text"/>
+            <field uid="7" label="מותניים" type="text"/>
+            <field uid="8" label="צוואר" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="קוד מנעול" iconid="61">
+            <field uid="0" label="מיקום" type="text"/>
+            <field uid="1" label="קוד" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="מרשם" iconid="40">
+            <field uid="2" label="רופא" type="text"/>
+            <field uid="0" label="מספר מרשם" type="text"/>
+            <field uid="1" label="שם" type="text"/>
+            <field uid="3" label="בית מרקחת" type="text"/>
+            <field uid="4" label="טלפון" type="phone"/>
+            <field uid="6" label="שם החברה" type="text"/>
+            <field uid="7" label="שם התרופה" type="text"/>
+            <field uid="8" label="כמות" type="numeric"/>
+            <field uid="9" label="מינון" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="מרשם עדשות" iconid="26">
+            <field uid="0" label="סוג" type="text"/>
+            <field uid="1" label="ימין (OD)" type="numeric"/>
+            <field uid="2" label="שמאל (OS)" type="numeric"/>
+            <field uid="3" label="רופא" type="text"/>
+            <field uid="4" label="טלפון" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="קוד רישום" iconid="66">
+            <field uid="2" label="שם" type="text"/>
+            <field uid="0" label="מספר" type="numeric" sensitive="true"/>
+            <field uid="1" label="תאריך" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="פרטי רכב" iconid="25">
+            <field uid="3" label="מספר רישום" type="text"/>
+            <field uid="11" label="בעל הרכב" type="text"/>
+            <field uid="0" label="דגם" type="text"/>
+            <field uid="12" label="סוג רכב" type="text"/>
+            <field uid="13" label="תאריך רכישה" type="date"/>
+            <field uid="1" label="תאריך ייצור" type="text"/>
+            <field uid="2" label="שנה" type="numeric"/>
+            <field uid="4" label="VIN" type="text"/>
+            <field uid="5" label="טלפון שירות" type="phone"/>
+            <field uid="14" label="טלפון חירום" type="phone"/>
+            <field uid="16" label="ספק ביטוח" type="text"/>
+            <field uid="7" label="סכום ביטוח" type="text"/>
+            <field uid="8" label="מספר פוליסה" type="numeric"/>
+            <field uid="10" label="תוקף" type="date"/>
+            <field uid="9" label="טלפון ביטוח" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="תא קולי" iconid="62">
+            <field uid="0" label="מספר גישה" type="numeric"/>
+            <field uid="1" label="קוד כרטיס" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="כתובת" iconid="31">
+            <field uid="0" label="שם" type="text"/>
+            <field uid="1" label="מספר דלת" type="text"/>
+            <field uid="2" label="רחוב" type="text"/>
+            <field uid="3" label="מיקום" type="text"/>
+            <field uid="4" label="עיר" type="text"/>
+            <field uid="5" label="מדינה" type="text"/>
+            <field uid="6" label="מיקוד" type="text"/>
+            <field uid="7" label="ארץ" type="text"/>
+            <field uid="9" label="טלפון" type="phone"/>
+            <field uid="10" label="אימייל" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="יצירת קשר" iconid="47">
+            <field uid="0" label="שם פרטי" type="text"/>
+            <field uid="1" label="שם משפחה" type="text"/>
+            <field uid="2" label="חברה" type="text"/>
+            <field uid="3" label="טלפון (בית)" type="phone"/>
+            <field uid="4" label="טלפון (נייד)" type="phone"/>
+            <field uid="5" label="טלפון (משרד)" type="phone"/>
+            <field uid="6" label="אימייל" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="מספרי חירום" iconid="28">
+            <field uid="0" label="משטרה" type="phone"/>
+            <field uid="1" label="מכבי אש" type="phone"/>
+            <field uid="2" label="מגן דוד אדום" type="phone"/>
+            <field uid="3" label="רופא" type="phone"/>
+            <field uid="4" label="רופא שיניים" type="phone"/>
+            <field uid="5" label="וטרינר" type="phone"/>
+            <field uid="6" label="חברת החשמל" type="phone"/>
+            <field uid="7" label="חברת הגז" type="phone"/>
+            <field uid="8" label="חברת הטלפון" type="phone"/>
+            <field uid="9" label="בעל בית" type="phone"/>
+            <field uid="10" label="אחר" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="מספר זהות" iconid="64">
+            <field uid="1" label="מספר" type="numeric"/>
+            <field uid="0" label="שם" type="text"/>
+            <field uid="2" label="תאריך" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="תכנית הטבות" iconid="24">
+            <field uid="0" label="חברה" type="text"/>
+            <field uid="1" label="שם" type="text"/>
+            <field uid="10" label="מספר חבר" type="text"/>
+            <field uid="2" label="מספר" type="numeric"/>
+            <field uid="3" label="קוד כרטיס" type="pin" sensitive="true"/>
+            <field uid="5" label="מספר 2" type="numeric"/>
+            <field uid="6" label="מתאריך" type="date"/>
+            <field uid="7" label="קו תמיכה" type="phone"/>
+            <field uid="8" label="הזמנות בטלפון" type="phone"/>
+            <field uid="9" label="אתר אינטרנט" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="מספר סידורי" iconid="32">
+            <field uid="1" label="מס' סיריאלי" type="text" sensitive="true"/>
+            <field uid="0" label="שם החברה" type="text"/>
+            <field uid="2" label="דגם" type="text"/>
+            <field uid="3" label="מחיר" type="numeric"/>
+            <field uid="4" label="תאריך רכישה" type="date"/>
+            <field uid="6" label="אחריות" type="date"/>
+            <field uid="5" label="מיקום" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="פרטי רכוש" iconid="70">
+            <field uid="0" label="בעל הרכב" type="text"/>
+            <field uid="1" label="כתובת" type="text"/>
+            <field uid="2" label="סוג" type="text"/>
+            <field uid="3" label="סכום אחזקה" type="numeric"/>
+            <field uid="5" label="מזהה רכוש" type="text"/>
+            <field uid="6" label="סכום מס" type="numeric"/>
+            <field uid="7" label="תאריך מס" type="date"/>
+            <field uid="8" label="אתר אינטרנט" type="url"/>
+            <field uid="9" label="שם משתמש" type="username"/>
+            <field uid="10" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="12" label="ביטוח" type="text"/>
+            <field uid="13" label="פרמיית ביטוח" type="numeric"/>
+            <field uid="14" label="מספר פוליסה" type="numeric"/>
+            <field uid="15" label="תוקף" type="date"/>
+            <field uid="16" label="קו תמיכה - ביטוח" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="כרטיס חיוג" iconid="54">
+            <field uid="1" label="מספר גישה" type="phone"/>
+            <field uid="0" label="ספק" type="text"/>
+            <field uid="2" label="מספר כרטיס" type="numeric"/>
+            <field uid="3" label="קוד כרטיס" type="pin" sensitive="true"/>
+            <field uid="4" label="דופק" type="numeric"/>
+            <field uid="5" label="תוקף" type="date"/>
+            <field uid="6" label="שימוש" type="numeric"/>
+            <field uid="8" label="אתר אינטרנט" type="url"/>
+            <field uid="9" label="שם משתמש" type="username"/>
+            <field uid="10" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="11" label="אם נאבד, התקשר ל" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="תעודת זהות" iconid="59">
+            <field uid="2" label="מספר תעודת זהות" type="numeric"/>
+            <field uid="0" label="כותרת" type="text"/>
+            <field uid="1" label="שם מלא" type="text"/>
+            <field uid="3" label="קוד כרטיס" type="pin" sensitive="true"/>
+            <field uid="4" label="ארץ" type="text"/>
+            <field uid="5" label="תאריך הנפקה" type="date"/>
+            <field uid="6" label="תוקף" type="date"/>
+            <field uid="7" label="אם נאבד, התקשר ל" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="כרטיס ISIC" iconid="65">
+            <field uid="2" label="מספר כרטיס" type="numeric"/>
+            <field uid="0" label="לומד ב" type="text"/>
+            <field uid="1" label="שם מלא" type="text"/>
+            <field uid="3" label="תאריך לידה" type="date"/>
+            <field uid="4" label="תאריך הנפקה" type="date"/>
+            <field uid="5" label="תוקף" type="date"/>
+            <field uid="6" label="אם נאבד, התקשר ל" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="כרטיס ITIC" iconid="41">
+            <field uid="2" label="מספר כרטיס" type="numeric"/>
+            <field uid="0" label="מלמד ב" type="text"/>
+            <field uid="1" label="שם מלא" type="text"/>
+            <field uid="3" label="תאריך לידה" type="date"/>
+            <field uid="4" label="תאריך הנפקה" type="date"/>
+            <field uid="5" label="תוקף" type="date"/>
+            <field uid="6" label="אם נאבד, התקשר ל" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="כרטיס ספרייה" iconid="58">
+            <field uid="1" label="מספר כרטיס" type="numeric"/>
+            <field uid="0" label="ספרייה" type="text"/>
+            <field uid="2" label="קוד כרטיס" type="pin" sensitive="true"/>
+            <field uid="3" label="שעות" type="numeric"/>
+            <field uid="4" label="כתובת" type="text"/>
+            <field uid="5" label="תאריך הנפקה" type="date"/>
+            <field uid="6" label="תוקף" type="date"/>
+            <field uid="8" label="אתר אינטרנט" type="url"/>
+            <field uid="9" label="שם משתמש" type="username"/>
+            <field uid="10" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="11" label="אם נאבד, התקשר ל" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="כרטיס בוחר" iconid="69">
+            <field uid="0" label="שם מלא" type="text"/>
+            <field uid="1" label="מס' זהות בוחר" type="numeric"/>
+            <field uid="2" label="כתובת" type="text"/>
+            <field uid="3" label="מחלקה" type="text"/>
+            <field uid="4" label="מיקום" type="text"/>
+            <field uid="5" label="קונגרס" type="text"/>
+            <field uid="6" label="סנאט המדינה" type="text"/>
+            <field uid="7" label="נציג" type="text"/>
+            <field uid="8" label="כתובת" type="text"/>
+            <field uid="9" label="תאריך הנפקה" type="date"/>
+            <field uid="11" label="אתר אינטרנט" type="url"/>
+            <field uid="12" label="שם משתמש" type="username"/>
+            <field uid="13" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="14" label="אם נאבד, התקשר ל" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="כרטיס ITZ" iconid="67">
+            <field uid="1" label="מספר כרטיס" type="numeric"/>
+            <field uid="0" label="בעל הרכב" type="text"/>
+            <field uid="2" label="קוד כרטיס" type="pin" sensitive="true"/>
+            <field uid="3" label="ערך" type="numeric"/>
+            <field uid="4" label="תוקף" type="date"/>
+            <field uid="5" label="שימוש" type="numeric"/>
+            <field uid="7" label="אתר אינטרנט" type="url"/>
+            <field uid="8" label="שם משתמש" type="username"/>
+            <field uid="9" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="10" label="אם נאבד, התקשר ל" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="כרטיס חבר" iconid="46">
+            <field uid="1" label="מספר חבר" type="numeric"/>
+            <field uid="10" label="שם חבר" type="text"/>
+            <field uid="0" label="ארגון" type="text"/>
+            <field uid="11" label="קבוצה" type="text"/>
+            <field uid="2" label="קוד כרטיס" type="pin" sensitive="true"/>
+            <field uid="3" label="טלפון" type="phone"/>
+            <field uid="12" label="חבר מתאריך" type="date"/>
+            <field uid="4" label="תוקף" type="date"/>
+            <field uid="6" label="אתר אינטרנט" type="url"/>
+            <field uid="7" label="שם משתמש" type="username"/>
+            <field uid="8" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="13" label="אימייל" type="email"/>
+            <field uid="9" label="אם נאבד, התקשר ל" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="כרטיס PAN" iconid="68">
+            <field uid="3" label="מספר" type="numeric"/>
+            <field uid="0" label="שם" type="text"/>
+            <field uid="1" label="שם האב" type="text"/>
+            <field uid="2" label="תאריך לידה" type="date"/>
+            <field uid="5" label="אתר אינטרנט" type="url"/>
+            <field uid="6" label="שם משתמש" type="username"/>
+            <field uid="7" label="סיסמא" type="password" sensitive="true"/>
+            <field uid="8" label="אם נאבד, התקשר ל" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="פרטי מכשיר סלולרי" iconid="120">
+            <field uid="0" label="דגם" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="קוד נעילה" type="numeric" sensitive="true"/>
+            <field uid="5" label="סוג SIM" type="text"/>
+            <field uid="6" label="מספר ה-SIM" type="numeric"/>
+            <field uid="7" label="קוד כרטיס" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="תאריך רכישה" type="date"/>
+            <field uid="10" label="אחריות" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="ספק השירות" iconid="121">
+            <field uid="0" label="ספק" type="text"/>
+            <field uid="1" label="סוג שירות" type="text"/>
+            <field uid="2" label="מזהה צרכן" type="text"/>
+            <field uid="3" label="מספר מנוי" type="numeric"/>
+            <field uid="4" label="כתובת" type="text"/>
+            <field uid="5" label="אתר אינטרנט" type="url"/>
+            <field uid="6" label="שם משתמש" type="username"/>
+            <field uid="7" label="סיסמת כניסה" type="password" sensitive="true"/>
+            <field uid="8" label="קו תמיכה" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="שונות - אחר" iconid="126">
+            <field uid="0" label="שדה 1" type="text"/>
+            <field uid="1" label="שדה 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="מין" value="male" type="sex_options"/>
+            <field uid="4" label="תאריך לידה" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="חברה" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="כתובת" type="address_firstline"/>
+            <field uid="10" label="רחוב" type="address_street"/>
+            <field uid="11" label="עיר" type="address_city"/>
+            <field uid="12" label="מדינה" type="address_state"/>
+            <field uid="13" label="מיקוד" type="address_zip"/>
+            <field uid="14" label="ארץ" value="US" type="country_options"/>
+            <field uid="15" label="טלפון" type="phone"/>
+            <field uid="16" label="שאלת אבטחה" type="text"/>
+            <field uid="17" label="תשובת אבטחה" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

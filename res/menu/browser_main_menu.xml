@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:icon="@drawable/tabs" app:id="@+id/show_tabs" app:title="@string/show_tabs_title" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:icon="@drawable/key" app:id="@+id/auto_fill" app:title="@string/auto_fill_title" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:icon="@locationawarelogger/TRACE_INT" app:id="@+id/browser_generate_password_menu" app:title="@string/generate_password_title" app:showAsAction="UNKNOWN_DATA_0x0" />
+</menu>

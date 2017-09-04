@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cs1018" android:layout_centerVertical="true" />
+    <CheckedTextView android:textAppearance="@*android:style/TextAppearance.Medium" android:id="@+id/category_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:checked="true" android:checkMark="?unknown_attr_ref: 1010219" android:text="Login" android:layout_toRightOf="@+id/icon" android:layout_centerVertical="true" />
+</RelativeLayout>

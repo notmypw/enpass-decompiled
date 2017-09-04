@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="@dimen/normal_15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="@r$style/TextAppearance_AppCompat_Small" android:id="@+id/header_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/here_enable_enpass_setting" />
+</LinearLayout>

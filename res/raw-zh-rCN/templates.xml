@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="登录" type="login" iconid="1001">
+        <card templatetype="login.default" name="登录" iconid="21">
+            <field uid="10" label="用户名称" type="username"/>
+            <field uid="12" label="电子邮件" type="email"/>
+            <field uid="11" label="密码" type="password" sensitive="true"/>
+            <field uid="14" label="电话" type="phone"/>
+            <field uid="13" label="网址" type="url"/>
+            <field uid="15" label="密码保护的提问" type="text"/>
+            <field uid="16" label="密码保护的答案" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="信用卡" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="信用卡" iconid="20">
+            <field uid="0" label="持卡人" type="cardholder_name"/>
+            <field uid="17" label="类型" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="号码" type="card_number"/>
+            <field uid="2" label="验证码" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="个人识别号码" type="card_pin" sensitive="true"/>
+            <field uid="4" label="截止日期" type="expiry_date"/>
+            <field uid="18" label="有效自" type="date"/>
+            <field uid="10" label="信用额度" type="numeric"/>
+            <field uid="11" label="提款上限" type="numeric"/>
+            <field uid="12" label="利率" type="numeric"/>
+            <field uid="6" label="发卡银行" type="bank_name"/>
+            <field uid="14" label="网站" type="url"/>
+            <field uid="15" label="用户名称" type="username"/>
+            <field uid="16" label="登录密码" type="password" sensitive="true"/>
+            <field uid="9" label="交易密码" type="txn_password" sensitive="true"/>
+            <field uid="7" label="签发于" type="date"/>
+            <field uid="8" label="若遗失，请拨" type="phone"/>
+        </card>
+    </category>
+
+    <category name="财务" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="银行账户" iconid="45">
+            <field uid="4" label="银行名称" type="bank_name"/>
+            <field uid="0" label="帐户持有人" type="cardholder_name"/>
+            <field uid="1" label="类型" type="text"/>
+            <field uid="2" label="账户号码" type="numeric"/>
+            <field uid="16" label="客户 ID" type="text"/>
+            <field uid="5" label="汇款路径号码" type="numeric"/>
+            <field uid="6" label="分行名称" type="text"/>
+            <field uid="7" label="分行代码" type="numeric"/>
+            <field uid="8" label="银行国际代码" type="text"/>
+            <field uid="9" label="国际银行账号" type="text"/>
+            <field uid="24" label="分行地址" type="text"/>
+            <field uid="25" label="分行电话" type="phone"/>
+            
+            <field uid="11" label="借记卡卡号" type="card_number"/>
+            <field uid="26" label="类型" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="个人识别号码" type="card_pin" sensitive="true"/>
+            <field uid="14" label="卡验证值" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="截止日期" type="expiry_date"/>
+            <field uid="27" label="提款上限" type="numeric"/>
+            
+            <field uid="17" label="网站" type="url"/>
+            <field uid="18" label="用户名称" type="username"/>
+            <field uid="19" label="登录密码" type="password" sensitive="true"/>
+            <field uid="20" label="交易密码" type="txn_password" sensitive="true"/>
+            <field uid="22" label="热线服务电话" type="phone"/>
+            <field uid="23" label="T-个人识别号码" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="保险单" iconid="33">
+            <field uid="1" label="保险单名称" type="text"/>
+            <field uid="0" label="公司" type="text"/>
+            <field uid="19" label="保单持有人" type="text"/>
+            <field uid="2" label="号码" type="numeric"/>
+            <field uid="3" label="类型" type="text"/>
+            <field uid="5" label="保险费" type="numeric"/>
+            <field uid="6" label="保险金额" type="numeric"/>
+            <field uid="7" label="签发日期" type="date"/>
+            <field uid="18" label="更新日期" type="date"/>
+            <field uid="8" label="截止日期" type="date"/>
+            <field uid="9" label="期限" type="numeric"/>
+            <field uid="20" label="被提名者" type="text"/>
+            <field uid="11" label="客户 ID" type="numeric"/>
+            <field uid="12" label="网站" type="url"/>
+            <field uid="13" label="用户名称" type="username"/>
+            <field uid="14" label="密码" type="password" sensitive="true"/>
+            <field uid="16" label="代理名称" type="text"/>
+            <field uid="17" label="热线服务电话" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="股票投资" iconid="34">
+            <field uid="2" label="符号" type="text"/>
+            <field uid="0" label="账户号码" type="numeric"/>
+            <field uid="1" label="类型" type="text"/>
+            <field uid="3" label="市场" type="text"/>
+            <field uid="5" label="推出于" type="date"/>
+            <field uid="6" label="购买于" type="date"/>
+            <field uid="7" label="购买价格" type="numeric"/>
+            <field uid="8" label="数量" type="numeric"/>
+            <field uid="9" label="现行价格" type="numeric"/>
+            <field uid="11" label="网站" type="url"/>
+            <field uid="12" label="用户名称" type="username"/>
+            <field uid="13" label="密码" type="password" sensitive="true"/>
+            <field uid="15" label="经纪人" type="text"/>
+            <field uid="16" label="电话" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="共同基金" iconid="43">
+            <field uid="0" label="基金名称" type="text"/>
+            <field uid="1" label="基金类型" type="text"/>
+            <field uid="2" label="推出于" type="date"/>
+            <field uid="3" label="购买于" type="date"/>
+            <field uid="4" label="数量" type="numeric"/>
+            <field uid="5" label="购买时净资产价值" type="numeric"/>
+            <field uid="6" label="流动净资产价值" type="numeric"/>
+            <field uid="8" label="网站" type="url"/>
+            <field uid="9" label="用户名称" type="username"/>
+            <field uid="10" label="密码" type="password" sensitive="true"/>
+            <field uid="12" label="经纪人" type="text"/>
+            <field uid="13" label="电话" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="贷款/抵押" iconid="44">
+            <field uid="2" label="贷款人" type="text"/>
+            <field uid="1" label="类型" type="text"/>
+            <field uid="0" label="账户号码" type="numeric"/>
+            <field uid="4" label="贷款本金" type="numeric"/>
+            <field uid="5" label="利息 %" type="numeric"/>
+            <field uid="6" label="日期" type="date"/>
+            <field uid="7" label="期限" type="numeric"/>
+            <field uid="8" label="余额" type="numeric"/>
+            <field uid="9" label="到期付款" type="numeric"/>
+            <field uid="10" label="资产" type="text"/>
+            <field uid="12" label="电话" type="phone"/>
+            <field uid="13" label="网站" type="url"/>
+            <field uid="14" label="用户名称" type="username"/>
+            <field uid="15" label="密码" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="其他财务" iconid="122">
+            <field uid="0" label="字段 1" type="text"/>
+            <field uid="1" label="字段 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="电脑" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="数据库" iconid="56">
+            <field uid="8" label="类型" type="text"/>
+            <field uid="0" label="服务器" type="text"/>
+            <field uid="1" label="端口" type="numeric"/>
+            <field uid="2" label="数据库" type="text"/>
+            <field uid="3" label="用户名称" type="username"/>
+            <field uid="4" label="密码" type="password" sensitive="true"/>
+            <field uid="5" label="安全识别符" type="text"/>
+            <field uid="6" label="别名" type="text"/>
+            <field uid="7" label="选项" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="电子邮箱账户" iconid="48">
+            <field uid="0" label="电子邮件" type="email"/>
+            <field uid="1" label="用户名称" type="username"/>
+            <field uid="2" label="密码" type="password" sensitive="true"/>
+            <field uid="9" label="类型" type="text"/>
+            <field uid="3" label="POP3服务器" type="text"/>
+            <field uid="4" label="IMAP服务器" type="text"/>
+            <field uid="6" label="端口" type="numeric"/>
+            <field uid="10" label="安全类型" type="text"/>
+            <field uid="11" label="验证方法" type="text"/>
+            <field uid="21" label="网页链接" type="url"/>
+            <field uid="5" label="SMTP服务器" type="text"/>
+            <field uid="7" label="端口" type="numeric"/>
+            <field uid="13" label="用户名称" type="username"/>
+            <field uid="14" label="密码" type="password" sensitive="true"/>
+            <field uid="15" label="安全类型" type="text"/>
+            <field uid="16" label="验证方法" type="text"/>
+            <field uid="18" label="供应商" type="text"/>
+            <field uid="8" label="网站" type="url"/>
+            <field uid="19" label="本地电话" type="phone"/>
+            <field uid="20" label="热线服务电话" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="FTP账户" iconid="55">
+            <field uid="0" label="服务器" type="text"/>
+            <field uid="1" label="路径" type="text"/>
+            <field uid="2" label="用户名称" type="username"/>
+            <field uid="3" label="密码" type="password" sensitive="true"/>
+            <field uid="4" label="供应商" type="text"/>
+            <field uid="5" label="网站" type="url"/>
+            <field uid="6" label="电话" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="即时信息" iconid="49">
+            <field uid="0" label="类型" type="text"/>
+            <field uid="1" label="ID" type="text"/>
+            <field uid="2" label="服务器" type="text"/>
+            <field uid="3" label="端口" type="numeric"/>
+            <field uid="4" label="昵称" type="text"/>
+            <field uid="5" label="用户名称" type="username"/>
+            <field uid="6" label="密码" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="互联网供应商" iconid="63">
+            <field uid="0" label="用户名称" type="username"/>
+            <field uid="1" label="密码" type="password" sensitive="true"/>
+            <field uid="3" label="拨号电话" type="phone"/>
+            <field uid="4" label="ISP/系统" type="text"/>
+            <field uid="5" label="IP地址" type="numeric"/>
+            <field uid="6" label="子网掩码" type="numeric"/>
+            <field uid="20" label="网关" type="numeric"/>
+            <field uid="7" label="首要DNS" type="numeric"/>
+            <field uid="8" label="次要DNS" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Telnet" type="text"/>
+            <field uid="17" label="热线服务电话" type="phone"/>
+            <field uid="18" label="网站" type="url"/>
+            <field uid="19" label="账单资料" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="服务器" iconid="51">
+            <field uid="11" label="管理员登录" type="username"/>
+            <field uid="12" label="管理员密码" type="password" sensitive="true"/>
+            <field uid="16" label="管理员网址" type="url"/>
+            <field uid="0" label="服务" type="text"/>
+            <field uid="1" label="任务" type="text"/>
+            <field uid="2" label="操作系统" type="text"/>
+            <field uid="3" label="记忆体" type="numeric"/>
+            <field uid="4" label="存储器" type="numeric"/>
+            <field uid="5" label="中央处理器" type="numeric"/>
+            <field uid="6" label="RAID" type="text"/>
+            <field uid="7" label="位置" type="text"/>
+            <field uid="8" label="IP地址" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="端口" type="numeric"/>
+            <field uid="17" label="托管服务供应商" type="text"/>
+            <field uid="14" label="支援网站" type="url"/>
+            <field uid="18" label="热线服务电话" type="phone"/>
+            <field uid="15" label="账单资料" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="无线路由器" iconid="35">
+            <field uid="0" label="站点名称" type="text"/>
+            <field uid="9" label="站点密码" type="password" sensitive="true"/>
+            <field uid="2" label="网络名称" type="text"/>
+            <field uid="5" label="网络密码" type="password" sensitive="true"/>
+            <field uid="3" label="安全" type="text"/>
+            <field uid="1" label="MAC/机场号码" type="numeric"/>
+            <field uid="12" label="服务器/ IP 地址" type="url"/>
+            <field uid="13" label="用户名称" type="username"/>
+            <field uid="4" label="密码" type="password" sensitive="true"/>
+            <field uid="6" label="存储器密码" type="password" sensitive="true"/>
+            <field uid="7" label="支援网站" type="url"/>
+            <field uid="8" label="账单资料" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="网站托管" iconid="53">
+            <field uid="13" label="供应商" type="text"/>
+            <field uid="1" label="用户名称" type="username"/>
+            <field uid="2" label="密码" type="password" sensitive="true"/>
+            <field uid="11" label="管理员网址" type="url"/>
+            <field uid="0" label="操作系统" type="text"/>
+            <field uid="9" label="客户 ID" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="数据库" type="text"/>
+            <field uid="7" label="服务" type="text"/>
+            <field uid="14" label="支援网站" type="url"/>
+            <field uid="10" label="热线服务电话" type="phone"/>
+            <field uid="12" label="费用" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="其他电脑" iconid="123">
+            <field uid="0" label="字段 1" type="text"/>
+            <field uid="1" label="字段 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="许可证" type="license" iconid="1005">
+        <card templatetype="license.driving" name="驾驶执照" iconid="60">
+            <field uid="1" label="号码" type="numeric"/>
+            <field uid="0" label="姓名" type="text"/>
+            <field uid="8" label="性别" type="text"/>
+            <field uid="9" label="出生日期" type="date"/>
+            <field uid="10" label="地址" type="text"/>
+            <field uid="11" label="身高" type="text"/>
+            <field uid="2" label="级别" type="text"/>
+            <field uid="13" label="限制" type="text"/>
+            <field uid="3" label="州" type="text"/>
+            <field uid="4" label="国家" type="text"/>
+            <field uid="5" label="截止日期" type="date"/>
+            <field uid="6" label="签发于" type="date"/>
+            <field uid="7" label="若遗失，请拨" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="室外许可证" iconid="42">
+            <field uid="1" label="号码" type="numeric"/>
+            <field uid="0" label="姓名" type="text"/>
+            <field uid="2" label="州" type="text"/>
+            <field uid="3" label="地区" type="text"/>
+            <field uid="4" label="国家" type="text"/>
+            <field uid="5" label="有效自" type="date"/>
+            <field uid="6" label="截止日期" type="date"/>
+            <field uid="7" label="核准的野生动物" type="text"/>
+            <field uid="8" label="限额" type="text"/>
+        </card>
+        <card templatetype="license.software" name="软件许可证" iconid="52">
+            <field uid="0" label="版本" type="numeric"/>
+            <field uid="16" label="产品名称" type="text"/>
+            <field uid="17" label="用户数量" type="numeric"/>
+            <field uid="1" label="键码" type="text" sensitive="true"/>
+            <field uid="6" label="下载页面" type="url"/>
+            <field uid="3" label="授权于" type="text"/>
+            <field uid="18" label="登录页面" type="url"/>
+            <field uid="19" label="用户名称" type="username"/>
+            <field uid="20" label="密码" type="password" sensitive="true"/>
+            <field uid="4" label="电子邮件" type="email"/>
+            <field uid="5" label="公司" type="text"/>
+            <field uid="13" label="购买日期" type="date"/>
+            <field uid="14" label="订单编号" type="numeric"/>
+            <field uid="12" label="零售价格" type="numeric"/>
+            <field uid="15" label="总额" type="numeric"/>
+            <field uid="8" label="出版社" type="text"/>
+            <field uid="9" label="网站" type="url"/>
+            <field uid="10" label="支持电子邮件" type="email"/>
+            <field uid="21" label="热线服务电话" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="其他许可证" iconid="124">
+            <field uid="0" label="字段 1" type="text"/>
+            <field uid="1" label="字段 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="密码" type="password" iconid="1006">
+        <card templatetype="password.default" name="密码" iconid="36">
+            <field uid="0" label="登录" type="username"/>
+            <field uid="1" label="密码" type="password" sensitive="true"/>
+            <field uid="2" label="访问" type="text"/>
+        </card>
+    </category>
+    
+    <category name="安全注释" type="note" iconid="1007">
+        <card templatetype="note.default" name="注释" iconid="22">
+        </card>
+    </category>
+        
+    <category name="旅游" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="护照" iconid="37">
+            <field uid="2" label="号码" type="text"/>
+            <field uid="0" label="全名" type="text"/>
+            <field uid="14" label="性别" type="text"/>
+            <field uid="1" label="类型" type="text"/>
+            <field uid="15" label="国籍" type="text"/>
+            <field uid="4" label="出生地" type="text"/>
+            <field uid="5" label="出生日" type="date"/>
+            <field uid="6" label="签发地点" type="text"/>
+            <field uid="7" label="签发于" type="date"/>
+            <field uid="8" label="截止日期" type="date"/>
+            <field uid="9" label="签发国" type="text"/>
+            <field uid="10" label="当局" type="text"/>
+            <field uid="12" label="替换" type="text"/>
+            <field uid="13" label="若遗失，请拨" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="旅游签证" iconid="57">
+            <field uid="1" label="类型" type="text"/>
+            <field uid="15" label="国家" type="text"/>
+            <field uid="0" label="全名" type="text"/>
+            <field uid="2" label="号码" type="numeric"/>
+            <field uid="4" label="有效" type="text"/>
+            <field uid="5" label="有效自" type="date"/>
+            <field uid="6" label="有效至" type="date"/>
+            <field uid="7" label="停留天数" type="numeric"/>
+            <field uid="8" label="入境次数" type="numeric"/>
+            <field uid="10" label="签发人" type="text"/>
+            <field uid="11" label="签发日期" type="date"/>
+            <field uid="12" label="护照号码" type="text"/>
+            <field uid="13" label="备注" type="text"/>
+            <field uid="14" label="若遗失，请拨" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="常客" iconid="39">
+            <field uid="1" label="会员编号" type="numeric"/>
+            <field uid="0" label="姓名" type="text"/>
+            <field uid="8" label="航空公司" type="text"/>
+            <field uid="2" label="日期" type="date"/>
+            <field uid="3" label="里程" type="numeric"/>
+            <field uid="5" label="网站" type="url"/>
+            <field uid="6" label="用户名称" type="username"/>
+            <field uid="7" label="密码" type="password" sensitive="true"/>
+            <field uid="9" label="客户服务" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="旅馆预订" iconid="27">
+            <field uid="0" label="旅馆名称" type="text"/>
+            <field uid="4" label="房间号码" type="numeric"/>
+            <field uid="1" label="地址" type="text"/>
+            <field uid="2" label="预订 ID" type="numeric"/>
+            <field uid="3" label="日期" type="date"/>
+            <field uid="5" label="夜数" type="numeric"/>
+            <field uid="15" label="旅馆奖励" type="numeric"/>
+            <field uid="7" label="电话" type="phone"/>
+            <field uid="8" label="电子邮件" type="email"/>
+            <field uid="9" label="网站" type="url"/>
+            <field uid="10" label="用户名称" type="username"/>
+            <field uid="11" label="密码" type="password" sensitive="true"/>
+            <field uid="13" label="礼宾" type="text"/>
+            <field uid="14" label="餐馆" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="航班资料" iconid="38">
+            <field uid="2" label="航班号码" type="numeric"/>
+            <field uid="0" label="航空公司" type="text"/>
+            <field uid="1" label="日期" type="date"/>
+            <field uid="3" label="由" type="text"/>
+            <field uid="4" label="往" type="text"/>
+            <field uid="5" label="时间/登机口" type="text"/>
+            <field uid="6" label="电子机票号码" type="numeric"/>
+            <field uid="7" label="确认号码" type="numeric"/>
+            <field uid="10" label="网站" type="url"/>
+            <field uid="11" label="用户名称" type="username"/>
+            <field uid="12" label="密码" type="password" sensitive="true"/>
+            <field uid="9" label="电话" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="其他旅游" iconid="125">
+            <field uid="0" label="字段 1" type="text"/>
+            <field uid="1" label="字段 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="杂项" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="服装尺码" iconid="23">
+            <field uid="9" label="姓名" type="text"/>
+            <field uid="0" label="套装" type="text"/>
+            <field uid="1" label="鞋" type="text"/>
+            <field uid="2" label="衬衫" type="text"/>
+            <field uid="3" label="裤子" type="text"/>
+            <field uid="4" label="内接缝" type="text"/>
+            <field uid="5" label="裙子" type="text"/>
+            <field uid="6" label="手套" type="text"/>
+            <field uid="7" label="腰" type="text"/>
+            <field uid="8" label="颈" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="密码锁" iconid="61">
+            <field uid="0" label="位置" type="text"/>
+            <field uid="1" label="密码" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="药方" iconid="40">
+            <field uid="2" label="医生" type="text"/>
+            <field uid="0" label="处方号码" type="text"/>
+            <field uid="1" label="姓名" type="text"/>
+            <field uid="3" label="药房" type="text"/>
+            <field uid="4" label="电话" type="phone"/>
+            <field uid="6" label="品牌" type="text"/>
+            <field uid="7" label="药" type="text"/>
+            <field uid="8" label="金额" type="numeric"/>
+            <field uid="9" label="服用" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="验光处方" iconid="26">
+            <field uid="0" label="类型" type="text"/>
+            <field uid="1" label="右眼度数" type="numeric"/>
+            <field uid="2" label="左眼度数" type="numeric"/>
+            <field uid="3" label="医生" type="text"/>
+            <field uid="4" label="电话" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="注册码" iconid="66">
+            <field uid="2" label="姓名" type="text"/>
+            <field uid="0" label="号码" type="numeric" sensitive="true"/>
+            <field uid="1" label="日期" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="车辆资料" iconid="25">
+            <field uid="3" label="注册号码" type="text"/>
+            <field uid="11" label="持有人" type="text"/>
+            <field uid="0" label="型号" type="text"/>
+            <field uid="12" label="车辆类型" type="text"/>
+            <field uid="13" label="购买日期" type="date"/>
+            <field uid="1" label="制造" type="text"/>
+            <field uid="2" label="年份" type="numeric"/>
+            <field uid="4" label="车辆识别号码" type="text"/>
+            <field uid="5" label="服务电话" type="phone"/>
+            <field uid="14" label="路上求助热线" type="phone"/>
+            <field uid="16" label="保险提供商" type="text"/>
+            <field uid="7" label="保险金额" type="text"/>
+            <field uid="8" label="保单号码" type="numeric"/>
+            <field uid="10" label="截止日期" type="date"/>
+            <field uid="9" label="保险电话" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="语音信箱" iconid="62">
+            <field uid="0" label="通路号码" type="numeric"/>
+            <field uid="1" label="个人识别号码" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="地址" iconid="31">
+            <field uid="0" label="姓名" type="text"/>
+            <field uid="1" label="门号" type="text"/>
+            <field uid="2" label="街" type="text"/>
+            <field uid="3" label="地区" type="text"/>
+            <field uid="4" label="城市" type="text"/>
+            <field uid="5" label="州" type="text"/>
+            <field uid="6" label="邮编" type="text"/>
+            <field uid="7" label="国家" type="text"/>
+            <field uid="9" label="电话" type="phone"/>
+            <field uid="10" label="电子邮件" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="联系" iconid="47">
+            <field uid="0" label="名" type="text"/>
+            <field uid="1" label="姓" type="text"/>
+            <field uid="2" label="公司" type="text"/>
+            <field uid="3" label="电话 (住家)" type="phone"/>
+            <field uid="4" label="电话 (手机)" type="phone"/>
+            <field uid="5" label="电话 (办公室)" type="phone"/>
+            <field uid="6" label="电子邮件" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="紧急电话号码" iconid="28">
+            <field uid="0" label="警察" type="phone"/>
+            <field uid="1" label="消防局" type="phone"/>
+            <field uid="2" label="救护车" type="phone"/>
+            <field uid="3" label="医生" type="phone"/>
+            <field uid="4" label="牙医" type="phone"/>
+            <field uid="5" label="兽医" type="phone"/>
+            <field uid="6" label="电力公司" type="phone"/>
+            <field uid="7" label="煤气公司" type="phone"/>
+            <field uid="8" label="电讯公司" type="phone"/>
+            <field uid="9" label="房东" type="phone"/>
+            <field uid="10" label="其他" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="社会保险号码" iconid="64">
+            <field uid="1" label="号码" type="numeric"/>
+            <field uid="0" label="姓名" type="text"/>
+            <field uid="2" label="日期" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="奖励计划" iconid="24">
+            <field uid="0" label="公司" type="text"/>
+            <field uid="1" label="姓名" type="text"/>
+            <field uid="10" label="会员ID" type="text"/>
+            <field uid="2" label="号码" type="numeric"/>
+            <field uid="3" label="个人识别号码" type="pin" sensitive="true"/>
+            <field uid="5" label="2号" type="numeric"/>
+            <field uid="6" label="自" type="date"/>
+            <field uid="7" label="热线服务电话" type="phone"/>
+            <field uid="8" label="预订电话" type="phone"/>
+            <field uid="9" label="网站" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="序号" iconid="32">
+            <field uid="1" label="串列" type="text" sensitive="true"/>
+            <field uid="0" label="品牌" type="text"/>
+            <field uid="2" label="型号" type="text"/>
+            <field uid="3" label="价格" type="numeric"/>
+            <field uid="4" label="购买于" type="date"/>
+            <field uid="6" label="保修" type="date"/>
+            <field uid="5" label="位置" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="资产资料" iconid="70">
+            <field uid="0" label="持有人" type="text"/>
+            <field uid="1" label="地址" type="text"/>
+            <field uid="2" label="类型" type="text"/>
+            <field uid="3" label="维护量" type="numeric"/>
+            <field uid="5" label="资产ID" type="text"/>
+            <field uid="6" label="税额" type="numeric"/>
+            <field uid="7" label="缴税日" type="date"/>
+            <field uid="8" label="网页" type="url"/>
+            <field uid="9" label="用户名称" type="username"/>
+            <field uid="10" label="密码" type="password" sensitive="true"/>
+            <field uid="12" label="保险" type="text"/>
+            <field uid="13" label="保险费" type="numeric"/>
+            <field uid="14" label="保单号码" type="numeric"/>
+            <field uid="15" label="截止日期" type="date"/>
+            <field uid="16" label="保险服务热线" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="电话卡" iconid="54">
+            <field uid="1" label="通路号码" type="phone"/>
+            <field uid="0" label="供应商" type="text"/>
+            <field uid="2" label="卡号" type="numeric"/>
+            <field uid="3" label="个人识别号码" type="pin" sensitive="true"/>
+            <field uid="4" label="脉率" type="numeric"/>
+            <field uid="5" label="截止日期" type="date"/>
+            <field uid="6" label="使用率" type="numeric"/>
+            <field uid="8" label="网站" type="url"/>
+            <field uid="9" label="用户名称" type="username"/>
+            <field uid="10" label="密码" type="password" sensitive="true"/>
+            <field uid="11" label="若遗失，请拨" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="身份证" iconid="59">
+            <field uid="2" label="识别号码" type="numeric"/>
+            <field uid="0" label="标题" type="text"/>
+            <field uid="1" label="全名" type="text"/>
+            <field uid="3" label="个人识别号码" type="pin" sensitive="true"/>
+            <field uid="4" label="国家" type="text"/>
+            <field uid="5" label="签发于" type="date"/>
+            <field uid="6" label="截止日期" type="date"/>
+            <field uid="7" label="若遗失，请拨" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="国际学生证" iconid="65">
+            <field uid="2" label="卡号" type="numeric"/>
+            <field uid="0" label="就读于" type="text"/>
+            <field uid="1" label="全名" type="text"/>
+            <field uid="3" label="出生" type="date"/>
+            <field uid="4" label="签发于" type="date"/>
+            <field uid="5" label="截止日期" type="date"/>
+            <field uid="6" label="若遗失，请拨" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="国际教师证" iconid="41">
+            <field uid="2" label="卡号" type="numeric"/>
+            <field uid="0" label="任教于" type="text"/>
+            <field uid="1" label="全名" type="text"/>
+            <field uid="3" label="出生" type="date"/>
+            <field uid="4" label="签发于" type="date"/>
+            <field uid="5" label="截止日期" type="date"/>
+            <field uid="6" label="若遗失，请拨" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="图书馆卡" iconid="58">
+            <field uid="1" label="卡号" type="numeric"/>
+            <field uid="0" label="图书馆" type="text"/>
+            <field uid="2" label="个人识别号码" type="pin" sensitive="true"/>
+            <field uid="3" label="小时" type="numeric"/>
+            <field uid="4" label="地址" type="text"/>
+            <field uid="5" label="签发于" type="date"/>
+            <field uid="6" label="截止日期" type="date"/>
+            <field uid="8" label="网站" type="url"/>
+            <field uid="9" label="用户名称" type="username"/>
+            <field uid="10" label="密码" type="password" sensitive="true"/>
+            <field uid="11" label="若遗失，请拨" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="选民卡" iconid="69">
+            <field uid="0" label="全名" type="text"/>
+            <field uid="1" label="选民ID" type="numeric"/>
+            <field uid="2" label="地址" type="text"/>
+            <field uid="3" label="病房" type="text"/>
+            <field uid="4" label="位置" type="text"/>
+            <field uid="5" label="国会" type="text"/>
+            <field uid="6" label="州参议员" type="text"/>
+            <field uid="7" label="代表" type="text"/>
+            <field uid="8" label="地址" type="text"/>
+            <field uid="9" label="签发于" type="date"/>
+            <field uid="11" label="网站" type="url"/>
+            <field uid="12" label="用户名称" type="username"/>
+            <field uid="13" label="密码" type="password" sensitive="true"/>
+            <field uid="14" label="若遗失，请拨" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="ITZ卡" iconid="67">
+            <field uid="1" label="卡号" type="numeric"/>
+            <field uid="0" label="持有人" type="text"/>
+            <field uid="2" label="个人识别号码" type="pin" sensitive="true"/>
+            <field uid="3" label="值" type="numeric"/>
+            <field uid="4" label="截止日期" type="date"/>
+            <field uid="5" label="使用率" type="numeric"/>
+            <field uid="7" label="网站" type="url"/>
+            <field uid="8" label="用户名称" type="username"/>
+            <field uid="9" label="密码" type="password" sensitive="true"/>
+            <field uid="10" label="若遗失，请拨" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="会员卡" iconid="46">
+            <field uid="1" label="会员ID" type="numeric"/>
+            <field uid="10" label="会员姓名" type="text"/>
+            <field uid="0" label="组织" type="text"/>
+            <field uid="11" label="集团" type="text"/>
+            <field uid="2" label="个人识别号码" type="pin" sensitive="true"/>
+            <field uid="3" label="电话" type="phone"/>
+            <field uid="12" label="会员始于" type="date"/>
+            <field uid="4" label="截止日期" type="date"/>
+            <field uid="6" label="网站" type="url"/>
+            <field uid="7" label="用户名称" type="username"/>
+            <field uid="8" label="密码" type="password" sensitive="true"/>
+            <field uid="13" label="电子邮件" type="email"/>
+            <field uid="9" label="若遗失，请拨" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="永久性户口卡" iconid="68">
+            <field uid="3" label="号码" type="numeric"/>
+            <field uid="0" label="姓名" type="text"/>
+            <field uid="1" label="父亲姓名" type="text"/>
+            <field uid="2" label="出生日期" type="date"/>
+            <field uid="5" label="网站" type="url"/>
+            <field uid="6" label="用户名称" type="username"/>
+            <field uid="7" label="密码" type="password" sensitive="true"/>
+            <field uid="8" label="若遗失，请拨" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="手机资料" iconid="120">
+            <field uid="0" label="手机型号" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="上锁代码" type="numeric" sensitive="true"/>
+            <field uid="5" label="SIM类型" type="text"/>
+            <field uid="6" label="Sim 卡号码" type="numeric"/>
+            <field uid="7" label="个人识别号码" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="购买于" type="date"/>
+            <field uid="10" label="保修" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="服务供应商" iconid="121">
+            <field uid="0" label="供应商" type="text"/>
+            <field uid="1" label="服务种类" type="text"/>
+            <field uid="2" label="消费者ID" type="text"/>
+            <field uid="3" label="订阅 ID" type="numeric"/>
+            <field uid="4" label="地址" type="text"/>
+            <field uid="5" label="网站" type="url"/>
+            <field uid="6" label="用户名称" type="username"/>
+            <field uid="7" label="登录密码" type="password" sensitive="true"/>
+            <field uid="8" label="热线服务电话" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="其他杂项" iconid="126">
+            <field uid="0" label="字段 1" type="text"/>
+            <field uid="1" label="字段 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="性别" value="male" type="sex_options"/>
+            <field uid="4" label="出生日期" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="公司" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="地址" type="address_firstline"/>
+            <field uid="10" label="街" type="address_street"/>
+            <field uid="11" label="城市" type="address_city"/>
+            <field uid="12" label="州" type="address_state"/>
+            <field uid="13" label="邮编" type="address_zip"/>
+            <field uid="14" label="国家" value="US" type="country_options"/>
+            <field uid="15" label="电话" type="phone"/>
+            <field uid="16" label="密码保护的提问" type="text"/>
+            <field uid="17" label="密码保护的答案" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

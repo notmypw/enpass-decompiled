@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="Oturum aç" type="login" iconid="1001">
+        <card templatetype="login.default" name="Oturum aç" iconid="21">
+            <field uid="10" label="Kullanıcı adı" type="username"/>
+            <field uid="12" label="Eposta" type="email"/>
+            <field uid="11" label="Şifre" type="password" sensitive="true"/>
+            <field uid="14" label="Telefon" type="phone"/>
+            <field uid="13" label="Url" type="url"/>
+            <field uid="15" label="Güvenlik sorusu" type="text"/>
+            <field uid="16" label="Güvenlik cevabı" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="Kredi Kartı" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="Kredi Kartı" iconid="20">
+            <field uid="0" label="Kart sahibi" type="cardholder_name"/>
+            <field uid="17" label="Tipi" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="Numarası" type="card_number"/>
+            <field uid="2" label="CVC" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="4" label="Son kullanma tarihi" type="expiry_date"/>
+            <field uid="18" label="Geçerlilik başlangıcı" type="date"/>
+            <field uid="10" label="Kredi limiti" type="numeric"/>
+            <field uid="11" label="Para çekme limiti" type="numeric"/>
+            <field uid="12" label="Faiz oranı" type="numeric"/>
+            <field uid="6" label="Veren banka" type="bank_name"/>
+            <field uid="14" label="Web sitesi" type="url"/>
+            <field uid="15" label="Kullanıcı adı" type="username"/>
+            <field uid="16" label="Oturum açma şifresi" type="password" sensitive="true"/>
+            <field uid="9" label="İşlem şifresi" type="txn_password" sensitive="true"/>
+            <field uid="7" label="Verilme tarihi" type="date"/>
+            <field uid="8" label="Kaybolduysa ara" type="phone"/>
+        </card>
+    </category>
+
+    <category name="Finans" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="Banka hesabı" iconid="45">
+            <field uid="4" label="Banka adı" type="bank_name"/>
+            <field uid="0" label="Hesap sahibi" type="cardholder_name"/>
+            <field uid="1" label="Tipi" type="text"/>
+            <field uid="2" label="Hesap numarası" type="numeric"/>
+            <field uid="16" label="Müşteri No" type="text"/>
+            <field uid="5" label="Routing numarası" type="numeric"/>
+            <field uid="6" label="Şube adı" type="text"/>
+            <field uid="7" label="Şube kodu" type="numeric"/>
+            <field uid="8" label="SWIFT" type="text"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="Şube adresi" type="text"/>
+            <field uid="25" label="Şube telefonu" type="phone"/>
+            
+            <field uid="11" label="Bankamatik kartı numarası" type="card_number"/>
+            <field uid="26" label="Tipi" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="PIN" type="card_pin" sensitive="true"/>
+            <field uid="14" label="CVV" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="Son kullanma tarihi" type="expiry_date"/>
+            <field uid="27" label="Para çekme limiti" type="numeric"/>
+            
+            <field uid="17" label="Web sitesi" type="url"/>
+            <field uid="18" label="Kullanıcı adı" type="username"/>
+            <field uid="19" label="Oturum açma şifresi" type="password" sensitive="true"/>
+            <field uid="20" label="İşlem şifresi" type="txn_password" sensitive="true"/>
+            <field uid="22" label="Yardım hattı" type="phone"/>
+            <field uid="23" label="T-PIN" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="Sigorta poliçesi" iconid="33">
+            <field uid="1" label="Poliçe Adı" type="text"/>
+            <field uid="0" label="Şirket" type="text"/>
+            <field uid="19" label="Poliçe sahibi" type="text"/>
+            <field uid="2" label="Numarası" type="numeric"/>
+            <field uid="3" label="Tipi" type="text"/>
+            <field uid="5" label="Prim" type="numeric"/>
+            <field uid="6" label="Toplam teminat" type="numeric"/>
+            <field uid="7" label="Düzenleme tarihi" type="date"/>
+            <field uid="18" label="Yenileme tarihi" type="date"/>
+            <field uid="8" label="Son kullanma tarihi" type="date"/>
+            <field uid="9" label="Dönem" type="numeric"/>
+            <field uid="20" label="Temsilci" type="text"/>
+            <field uid="11" label="Müşteri No" type="numeric"/>
+            <field uid="12" label="Web sitesi" type="url"/>
+            <field uid="13" label="Kullanıcı adı" type="username"/>
+            <field uid="14" label="Şifre" type="password" sensitive="true"/>
+            <field uid="16" label="Acente Adı" type="text"/>
+            <field uid="17" label="Yardım hattı" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="Hisse senedi yatırımı" iconid="34">
+            <field uid="2" label="Sembol" type="text"/>
+            <field uid="0" label="Hesap numarası" type="numeric"/>
+            <field uid="1" label="Tipi" type="text"/>
+            <field uid="3" label="Pazar" type="text"/>
+            <field uid="5" label="Başlama tarihi" type="date"/>
+            <field uid="6" label="Satın alma tarihi" type="date"/>
+            <field uid="7" label="Satın alma fiyatı" type="numeric"/>
+            <field uid="8" label="Miktar" type="numeric"/>
+            <field uid="9" label="Şu anki fiyatı" type="numeric"/>
+            <field uid="11" label="Web sitesi" type="url"/>
+            <field uid="12" label="Kullanıcı adı" type="username"/>
+            <field uid="13" label="Şifre" type="password" sensitive="true"/>
+            <field uid="15" label="Broker" type="text"/>
+            <field uid="16" label="Telefon" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="Yatırım Fonu" iconid="43">
+            <field uid="0" label="Fon adı" type="text"/>
+            <field uid="1" label="Fon tipi" type="text"/>
+            <field uid="2" label="Başlama tarihi" type="date"/>
+            <field uid="3" label="Satın alma tarihi" type="date"/>
+            <field uid="4" label="Miktar" type="numeric"/>
+            <field uid="5" label="Satın alınan Net Aktif Değer" type="numeric"/>
+            <field uid="6" label="Mevcut Net Aktif Değer" type="numeric"/>
+            <field uid="8" label="Web sitesi" type="url"/>
+            <field uid="9" label="Kullanıcı adı" type="username"/>
+            <field uid="10" label="Şifre" type="password" sensitive="true"/>
+            <field uid="12" label="Broker" type="text"/>
+            <field uid="13" label="Telefon" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="Kredi/Mortgage" iconid="44">
+            <field uid="2" label="Borç veren" type="text"/>
+            <field uid="1" label="Tipi" type="text"/>
+            <field uid="0" label="Hesap numarası" type="numeric"/>
+            <field uid="4" label="Ana para" type="numeric"/>
+            <field uid="5" label="Faiz %" type="numeric"/>
+            <field uid="6" label="Tarih" type="date"/>
+            <field uid="7" label="Dönem" type="numeric"/>
+            <field uid="8" label="Bakiye" type="numeric"/>
+            <field uid="9" label="Ödeme tarihi" type="numeric"/>
+            <field uid="10" label="Varlık" type="text"/>
+            <field uid="12" label="Telefon" type="phone"/>
+            <field uid="13" label="Web sitesi" type="url"/>
+            <field uid="14" label="Kullanıcı adı" type="username"/>
+            <field uid="15" label="Şifre" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="Diğer finans" iconid="122">
+            <field uid="0" label="Alan 1" type="text"/>
+            <field uid="1" label="Alan 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Bilgisayar" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="Veritabanı" iconid="56">
+            <field uid="8" label="Tipi" type="text"/>
+            <field uid="0" label="Sunucu" type="text"/>
+            <field uid="1" label="Bağlantı noktası" type="numeric"/>
+            <field uid="2" label="Veritabanı" type="text"/>
+            <field uid="3" label="Kullanıcı adı" type="username"/>
+            <field uid="4" label="Şifre" type="password" sensitive="true"/>
+            <field uid="5" label="SID" type="text"/>
+            <field uid="6" label="Takma ad" type="text"/>
+            <field uid="7" label="Seçenekler" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="Eposta hesabı" iconid="48">
+            <field uid="0" label="Eposta" type="email"/>
+            <field uid="1" label="Kullanıcı adı" type="username"/>
+            <field uid="2" label="Şifre" type="password" sensitive="true"/>
+            <field uid="9" label="Tipi" type="text"/>
+            <field uid="3" label="POP3 sunucusu" type="text"/>
+            <field uid="4" label="IMAP sunucusu" type="text"/>
+            <field uid="6" label="Bağlantı noktası" type="numeric"/>
+            <field uid="10" label="Güvenlik türü" type="text"/>
+            <field uid="11" label="Doğrulama yöntemi" type="text"/>
+            <field uid="21" label="Web Bağlantısı" type="url"/>
+            <field uid="5" label="SMTP sunucusu" type="text"/>
+            <field uid="7" label="Bağlantı noktası" type="numeric"/>
+            <field uid="13" label="Kullanıcı adı" type="username"/>
+            <field uid="14" label="Şifre" type="password" sensitive="true"/>
+            <field uid="15" label="Güvenlik türü" type="text"/>
+            <field uid="16" label="Doğrulama yöntemi" type="text"/>
+            <field uid="18" label="Sağlayıcı" type="text"/>
+            <field uid="8" label="Web sitesi" type="url"/>
+            <field uid="19" label="Dahili telefon" type="phone"/>
+            <field uid="20" label="Yardım hattı" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="FTP hesabı" iconid="55">
+            <field uid="0" label="Sunucu" type="text"/>
+            <field uid="1" label="Yol" type="text"/>
+            <field uid="2" label="Kullanıcı adı" type="username"/>
+            <field uid="3" label="Şifre" type="password" sensitive="true"/>
+            <field uid="4" label="Sağlayıcı" type="text"/>
+            <field uid="5" label="Web sitesi" type="url"/>
+            <field uid="6" label="Telefon" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="Anlık mesajlaşma" iconid="49">
+            <field uid="0" label="Tipi" type="text"/>
+            <field uid="1" label="ID" type="text"/>
+            <field uid="2" label="Sunucu" type="text"/>
+            <field uid="3" label="Bağlantı noktası" type="numeric"/>
+            <field uid="4" label="Takma isim" type="text"/>
+            <field uid="5" label="Kullanıcı adı" type="username"/>
+            <field uid="6" label="Şifre" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="Internet sağlayıcı" iconid="63">
+            <field uid="0" label="Kullanıcı adı" type="username"/>
+            <field uid="1" label="Şifre" type="password" sensitive="true"/>
+            <field uid="3" label="Çevirmeli ağ telefonu" type="phone"/>
+            <field uid="4" label="ISS/Sistem" type="text"/>
+            <field uid="5" label="IP adresi" type="numeric"/>
+            <field uid="6" label="Alt ağ maskesi" type="numeric"/>
+            <field uid="20" label="Ağ Geçidi" type="numeric"/>
+            <field uid="7" label="Birincil DNS" type="numeric"/>
+            <field uid="8" label="İkincil DNS" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Telnet" type="text"/>
+            <field uid="17" label="Yardım hattı" type="phone"/>
+            <field uid="18" label="Web sitesi" type="url"/>
+            <field uid="19" label="Fatura bilgileri" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="Sunucu" iconid="51">
+            <field uid="11" label="Yönetici girişi" type="username"/>
+            <field uid="12" label="Yönetici şifresi" type="password" sensitive="true"/>
+            <field uid="16" label="Yönetici URL" type="url"/>
+            <field uid="0" label="Servis" type="text"/>
+            <field uid="1" label="Görevler" type="text"/>
+            <field uid="2" label="İŞLETİM SİSTEMİ" type="text"/>
+            <field uid="3" label="RAM" type="numeric"/>
+            <field uid="4" label="Depolama" type="numeric"/>
+            <field uid="5" label="CPU" type="numeric"/>
+            <field uid="6" label="RAID" type="text"/>
+            <field uid="7" label="Yeri" type="text"/>
+            <field uid="8" label="IP adresi" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="Bağlantı noktası" type="numeric"/>
+            <field uid="17" label="Hosting sağlayıcı" type="text"/>
+            <field uid="14" label="Destek Web sitesi" type="url"/>
+            <field uid="18" label="Yardım hattı" type="phone"/>
+            <field uid="15" label="Fatura bilgileri" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="Kablosuz yönlendirici" iconid="35">
+            <field uid="0" label="İstasyon adı" type="text"/>
+            <field uid="9" label="İstasyon şifresi" type="password" sensitive="true"/>
+            <field uid="2" label="Ağ adı" type="text"/>
+            <field uid="5" label="Ağ şifresi" type="password" sensitive="true"/>
+            <field uid="3" label="Güvenlik" type="text"/>
+            <field uid="1" label="MAC/Airport #" type="numeric"/>
+            <field uid="12" label="Sunucu/IP adresi" type="url"/>
+            <field uid="13" label="Kullanıcı adı" type="username"/>
+            <field uid="4" label="Şifre" type="password" sensitive="true"/>
+            <field uid="6" label="Depolama şifresi" type="password" sensitive="true"/>
+            <field uid="7" label="Destek Web sitesi" type="url"/>
+            <field uid="8" label="Fatura bilgileri" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="Web hosting" iconid="53">
+            <field uid="13" label="Sağlayıcı" type="text"/>
+            <field uid="1" label="Kullanıcı adı" type="username"/>
+            <field uid="2" label="Şifre" type="password" sensitive="true"/>
+            <field uid="11" label="Yönetici URL" type="url"/>
+            <field uid="0" label="İŞLETİM SİSTEMİ" type="text"/>
+            <field uid="9" label="Müşteri No" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="Veritabanı" type="text"/>
+            <field uid="7" label="Servisler" type="text"/>
+            <field uid="14" label="Destek Web sitesi" type="url"/>
+            <field uid="10" label="Yardım hattı" type="phone"/>
+            <field uid="12" label="Ücret" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="Diğer bilgisayar" iconid="123">
+            <field uid="0" label="Alan 1" type="text"/>
+            <field uid="1" label="Alan 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Belge" type="license" iconid="1005">
+        <card templatetype="license.driving" name="Sürücü belgesi" iconid="60">
+            <field uid="1" label="Numarası" type="numeric"/>
+            <field uid="0" label="Adı" type="text"/>
+            <field uid="8" label="Cinsiyet" type="text"/>
+            <field uid="9" label="Doğum tarihi" type="date"/>
+            <field uid="10" label="Adres" type="text"/>
+            <field uid="11" label="Boy" type="text"/>
+            <field uid="2" label="Sınıf" type="text"/>
+            <field uid="13" label="Kısıtlamalar" type="text"/>
+            <field uid="3" label="Eyalet" type="text"/>
+            <field uid="4" label="Ülke" type="text"/>
+            <field uid="5" label="Son kullanma tarihi" type="date"/>
+            <field uid="6" label="Verilme tarihi" type="date"/>
+            <field uid="7" label="Kaybolduysa ara" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="Av lisansı" iconid="42">
+            <field uid="1" label="Numarası" type="numeric"/>
+            <field uid="0" label="Adı" type="text"/>
+            <field uid="2" label="Eyalet" type="text"/>
+            <field uid="3" label="Bölge" type="text"/>
+            <field uid="4" label="Ülke" type="text"/>
+            <field uid="5" label="Geçerlilik başlangıcı" type="date"/>
+            <field uid="6" label="Son kullanma tarihi" type="date"/>
+            <field uid="7" label="Onaylanan yaban hayatı" type="text"/>
+            <field uid="8" label="Kota" type="text"/>
+        </card>
+        <card templatetype="license.software" name="Yazılım lisansı" iconid="52">
+            <field uid="0" label="Sürüm" type="numeric"/>
+            <field uid="16" label="Ürün adı" type="text"/>
+            <field uid="17" label="Kullanıcı sayısı" type="numeric"/>
+            <field uid="1" label="Anahtar" type="text" sensitive="true"/>
+            <field uid="6" label="İndirme sayfası" type="url"/>
+            <field uid="3" label="Lisans sahibi" type="text"/>
+            <field uid="18" label="Giriş sayfası" type="url"/>
+            <field uid="19" label="Kullanıcı adı" type="username"/>
+            <field uid="20" label="Şifre" type="password" sensitive="true"/>
+            <field uid="4" label="Eposta" type="email"/>
+            <field uid="5" label="Şirket" type="text"/>
+            <field uid="13" label="Satın alma tarihi" type="date"/>
+            <field uid="14" label="Sipariş numarası" type="numeric"/>
+            <field uid="12" label="Perakende satış fiyatı" type="numeric"/>
+            <field uid="15" label="Toplam" type="numeric"/>
+            <field uid="8" label="Yayımcı" type="text"/>
+            <field uid="9" label="Web sitesi" type="url"/>
+            <field uid="10" label="Destek epostası" type="email"/>
+            <field uid="21" label="Yardım hattı" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="Diğer lisans" iconid="124">
+            <field uid="0" label="Alan 1" type="text"/>
+            <field uid="1" label="Alan 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Şifre" type="password" iconid="1006">
+        <card templatetype="password.default" name="Şifre" iconid="36">
+            <field uid="0" label="Oturum aç" type="username"/>
+            <field uid="1" label="Şifre" type="password" sensitive="true"/>
+            <field uid="2" label="Erişim" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Güvenli Not" type="note" iconid="1007">
+        <card templatetype="note.default" name="Not" iconid="22">
+        </card>
+    </category>
+        
+    <category name="Seyahat" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="Pasaport" iconid="37">
+            <field uid="2" label="Numarası" type="text"/>
+            <field uid="0" label="Tam adı" type="text"/>
+            <field uid="14" label="Cinsiyet" type="text"/>
+            <field uid="1" label="Tipi" type="text"/>
+            <field uid="15" label="Milliyet" type="text"/>
+            <field uid="4" label="Doğum yeri" type="text"/>
+            <field uid="5" label="Doğum günü" type="date"/>
+            <field uid="6" label="Verildiği yer" type="text"/>
+            <field uid="7" label="Verilme tarihi" type="date"/>
+            <field uid="8" label="Son kullanma tarihi" type="date"/>
+            <field uid="9" label="Veren ülke" type="text"/>
+            <field uid="10" label="Makam" type="text"/>
+            <field uid="12" label="Yedek" type="text"/>
+            <field uid="13" label="Kaybolduysa ara" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="Seyahat vizesi" iconid="57">
+            <field uid="1" label="Tipi" type="text"/>
+            <field uid="15" label="Ülke" type="text"/>
+            <field uid="0" label="Tam adı" type="text"/>
+            <field uid="2" label="Numarası" type="numeric"/>
+            <field uid="4" label="Geçerli olduğu yer" type="text"/>
+            <field uid="5" label="Geçerlilik başlangıcı" type="date"/>
+            <field uid="6" label="Geçerlilik sonu" type="date"/>
+            <field uid="7" label="Süresi" type="numeric"/>
+            <field uid="8" label="Giriş sayısı" type="numeric"/>
+            <field uid="10" label="Düzenleyen makam" type="text"/>
+            <field uid="11" label="Düzenleme tarihi" type="date"/>
+            <field uid="12" label="Pasaport numarası" type="text"/>
+            <field uid="13" label="Açıklamalar" type="text"/>
+            <field uid="14" label="Kaybolduysa ara" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="Özel yolcu programı" iconid="39">
+            <field uid="1" label="Üyelik No." type="numeric"/>
+            <field uid="0" label="Adı" type="text"/>
+            <field uid="8" label="Havayolu" type="text"/>
+            <field uid="2" label="Tarih" type="date"/>
+            <field uid="3" label="Mil" type="numeric"/>
+            <field uid="5" label="Web sitesi" type="url"/>
+            <field uid="6" label="Kullanıcı adı" type="username"/>
+            <field uid="7" label="Şifre" type="password" sensitive="true"/>
+            <field uid="9" label="Müşteri hizmetleri" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="Otel rezervasyonu" iconid="27">
+            <field uid="0" label="Otel adı" type="text"/>
+            <field uid="4" label="Oda numarası" type="numeric"/>
+            <field uid="1" label="Adres" type="text"/>
+            <field uid="2" label="Rezervasyon numarası" type="numeric"/>
+            <field uid="3" label="Tarih" type="date"/>
+            <field uid="5" label="Gece sayısı" type="numeric"/>
+            <field uid="15" label="Otel Ödülü" type="numeric"/>
+            <field uid="7" label="Telefon" type="phone"/>
+            <field uid="8" label="Eposta" type="email"/>
+            <field uid="9" label="Web sitesi" type="url"/>
+            <field uid="10" label="Kullanıcı adı" type="username"/>
+            <field uid="11" label="Şifre" type="password" sensitive="true"/>
+            <field uid="13" label="Kapıcı" type="text"/>
+            <field uid="14" label="Restoran" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="Uçuş detayı" iconid="38">
+            <field uid="2" label="Uçuş numarası" type="numeric"/>
+            <field uid="0" label="Havayolu" type="text"/>
+            <field uid="1" label="Tarih" type="date"/>
+            <field uid="3" label="Nerden" type="text"/>
+            <field uid="4" label="Nereye" type="text"/>
+            <field uid="5" label="Saat/Kapı" type="text"/>
+            <field uid="6" label="Elektronik bilet numarası" type="numeric"/>
+            <field uid="7" label="Onay #" type="numeric"/>
+            <field uid="10" label="Web sitesi" type="url"/>
+            <field uid="11" label="Kullanıcı adı" type="username"/>
+            <field uid="12" label="Şifre" type="password" sensitive="true"/>
+            <field uid="9" label="Telefon" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="Diğer seyahat" iconid="125">
+            <field uid="0" label="Alan 1" type="text"/>
+            <field uid="1" label="Alan 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Çeşitli" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="Giysi bedeni" iconid="23">
+            <field uid="9" label="Adı" type="text"/>
+            <field uid="0" label="Takım elbise" type="text"/>
+            <field uid="1" label="Ayakkabı" type="text"/>
+            <field uid="2" label="Gömlek" type="text"/>
+            <field uid="3" label="Pantolon" type="text"/>
+            <field uid="4" label="İç dikiş" type="text"/>
+            <field uid="5" label="Etek" type="text"/>
+            <field uid="6" label="Eldiven" type="text"/>
+            <field uid="7" label="Bel" type="text"/>
+            <field uid="8" label="Boyun" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="Şifreli kilit" iconid="61">
+            <field uid="0" label="Yeri" type="text"/>
+            <field uid="1" label="Kodu" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="Reçete" iconid="40">
+            <field uid="2" label="Doktor" type="text"/>
+            <field uid="0" label="RX #" type="text"/>
+            <field uid="1" label="Adı" type="text"/>
+            <field uid="3" label="Eczane" type="text"/>
+            <field uid="4" label="Telefon" type="phone"/>
+            <field uid="6" label="Marka" type="text"/>
+            <field uid="7" label="İlaç" type="text"/>
+            <field uid="8" label="Miktar" type="numeric"/>
+            <field uid="9" label="Al" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="Gözlük reçetesi" iconid="26">
+            <field uid="0" label="Tipi" type="text"/>
+            <field uid="1" label="Sağ(OD)" type="numeric"/>
+            <field uid="2" label="Sol(OS)" type="numeric"/>
+            <field uid="3" label="Doktor" type="text"/>
+            <field uid="4" label="Telefon" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="Tescil kodu" iconid="66">
+            <field uid="2" label="Adı" type="text"/>
+            <field uid="0" label="Numarası" type="numeric" sensitive="true"/>
+            <field uid="1" label="Tarih" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="Araç bilgisi" iconid="25">
+            <field uid="3" label="Kayıt No" type="text"/>
+            <field uid="11" label="Sahibi" type="text"/>
+            <field uid="0" label="Modeli" type="text"/>
+            <field uid="12" label="Araç tipi" type="text"/>
+            <field uid="13" label="Satın alma tarihi" type="date"/>
+            <field uid="1" label="Üretim yeri" type="text"/>
+            <field uid="2" label="Yıl" type="numeric"/>
+            <field uid="4" label="VIN" type="text"/>
+            <field uid="5" label="Servis telefonu" type="phone"/>
+            <field uid="14" label="Yol yardım hattı" type="phone"/>
+            <field uid="16" label="Sigorta kuruluşu" type="text"/>
+            <field uid="7" label="Sigorta tutarı" type="text"/>
+            <field uid="8" label="Poliçe numarası" type="numeric"/>
+            <field uid="10" label="Bitiş tarihi" type="date"/>
+            <field uid="9" label="Sigorta telefonu" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="Sesli posta" iconid="62">
+            <field uid="0" label="Erişim numarası" type="numeric"/>
+            <field uid="1" label="PIN" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="Adres" iconid="31">
+            <field uid="0" label="Adı" type="text"/>
+            <field uid="1" label="Kapı No" type="text"/>
+            <field uid="2" label="Sokak" type="text"/>
+            <field uid="3" label="Semt" type="text"/>
+            <field uid="4" label="Şehir" type="text"/>
+            <field uid="5" label="Eyalet" type="text"/>
+            <field uid="6" label="Posta Kodu" type="text"/>
+            <field uid="7" label="Ülke" type="text"/>
+            <field uid="9" label="Telefon" type="phone"/>
+            <field uid="10" label="Eposta" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="İlgili kişi" iconid="47">
+            <field uid="0" label="Adı" type="text"/>
+            <field uid="1" label="Soyadı" type="text"/>
+            <field uid="2" label="Şirket" type="text"/>
+            <field uid="3" label="Telefon (E)" type="phone"/>
+            <field uid="4" label="Telefon (C)" type="phone"/>
+            <field uid="5" label="Telefon (O)" type="phone"/>
+            <field uid="6" label="Eposta" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="Acil numaralar" iconid="28">
+            <field uid="0" label="Polis" type="phone"/>
+            <field uid="1" label="İtfaiye" type="phone"/>
+            <field uid="2" label="Ambulans" type="phone"/>
+            <field uid="3" label="Doktor" type="phone"/>
+            <field uid="4" label="Dişçi" type="phone"/>
+            <field uid="5" label="Veteriner" type="phone"/>
+            <field uid="6" label="Elektrik şirketi" type="phone"/>
+            <field uid="7" label="Gaz şirketi" type="phone"/>
+            <field uid="8" label="Telefon şirketi" type="phone"/>
+            <field uid="9" label="Ev sahibi" type="phone"/>
+            <field uid="10" label="Diğer" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="Sosyal Güvenlik numarası" iconid="64">
+            <field uid="1" label="Numara" type="numeric"/>
+            <field uid="0" label="Adı" type="text"/>
+            <field uid="2" label="Tarih" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="Ödül programı" iconid="24">
+            <field uid="0" label="Şirket" type="text"/>
+            <field uid="1" label="Adı" type="text"/>
+            <field uid="10" label="Üye No" type="text"/>
+            <field uid="2" label="Numarası" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="5" label="Numara 2" type="numeric"/>
+            <field uid="6" label="Başlangıç" type="date"/>
+            <field uid="7" label="Yardım hattı" type="phone"/>
+            <field uid="8" label="Rezervasyon telefonu" type="phone"/>
+            <field uid="9" label="Web sitesi" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="Seri numarası" iconid="32">
+            <field uid="1" label="Seri" type="text" sensitive="true"/>
+            <field uid="0" label="Marka" type="text"/>
+            <field uid="2" label="Model" type="text"/>
+            <field uid="3" label="Fiyat" type="numeric"/>
+            <field uid="4" label="Satın alma tarihi" type="date"/>
+            <field uid="6" label="Garanti" type="date"/>
+            <field uid="5" label="Yeri" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="Mülk bilgisi" iconid="70">
+            <field uid="0" label="Sahibi" type="text"/>
+            <field uid="1" label="Adres" type="text"/>
+            <field uid="2" label="Tipi" type="text"/>
+            <field uid="3" label="Aidat tutarı" type="numeric"/>
+            <field uid="5" label="Mülk Kimliği" type="text"/>
+            <field uid="6" label="Vergi tutarı" type="numeric"/>
+            <field uid="7" label="Vergi son ödeme tarihi" type="date"/>
+            <field uid="8" label="Web sayfası" type="url"/>
+            <field uid="9" label="Kullanıcı adı" type="username"/>
+            <field uid="10" label="Şifre" type="password" sensitive="true"/>
+            <field uid="12" label="Sigorta" type="text"/>
+            <field uid="13" label="Sigorta primi" type="numeric"/>
+            <field uid="14" label="Poliçe numarası" type="numeric"/>
+            <field uid="15" label="Bitiş tarihi" type="date"/>
+            <field uid="16" label="Sigorta yardım hattı" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="Arama kartı" iconid="54">
+            <field uid="1" label="Erişim numarası" type="phone"/>
+            <field uid="0" label="Sağlayıcı" type="text"/>
+            <field uid="2" label="Kart numarası" type="numeric"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="Nabız sayısı" type="numeric"/>
+            <field uid="5" label="Son kullanma tarihi" type="date"/>
+            <field uid="6" label="Kullanım" type="numeric"/>
+            <field uid="8" label="Web sitesi" type="url"/>
+            <field uid="9" label="Kullanıcı adı" type="username"/>
+            <field uid="10" label="Şifre" type="password" sensitive="true"/>
+            <field uid="11" label="Kaybolduysa ara" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="Kimlik kartı" iconid="59">
+            <field uid="2" label="Kimlik No" type="numeric"/>
+            <field uid="0" label="İsim" type="text"/>
+            <field uid="1" label="Tam adı" type="text"/>
+            <field uid="3" label="PIN" type="pin" sensitive="true"/>
+            <field uid="4" label="Ülke" type="text"/>
+            <field uid="5" label="Verilme tarihi" type="date"/>
+            <field uid="6" label="Son kullanma tarihi" type="date"/>
+            <field uid="7" label="Kaybolduysa ara" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="ISIC kartı" iconid="65">
+            <field uid="2" label="Kart numarası" type="numeric"/>
+            <field uid="0" label="Okuduğu okul" type="text"/>
+            <field uid="1" label="Tam adı" type="text"/>
+            <field uid="3" label="Doğum yeri" type="date"/>
+            <field uid="4" label="Verilme tarihi" type="date"/>
+            <field uid="5" label="Son kullanma tarihi" type="date"/>
+            <field uid="6" label="Kaybolduysa ara" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="ITIC kartı" iconid="41">
+            <field uid="2" label="Kart numarası" type="numeric"/>
+            <field uid="0" label="Öğretmenlik yaptığı yer" type="text"/>
+            <field uid="1" label="Tam adı" type="text"/>
+            <field uid="3" label="Doğum yeri" type="date"/>
+            <field uid="4" label="Verilme tarihi" type="date"/>
+            <field uid="5" label="Son kullanma tarihi" type="date"/>
+            <field uid="6" label="Kaybolduysa ara" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="Kütüphane kartı" iconid="58">
+            <field uid="1" label="Kart numarası" type="numeric"/>
+            <field uid="0" label="Kütüphane" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Saat" type="numeric"/>
+            <field uid="4" label="Adres" type="text"/>
+            <field uid="5" label="Verilme tarihi" type="date"/>
+            <field uid="6" label="Son kullanma tarihi" type="date"/>
+            <field uid="8" label="Web sitesi" type="url"/>
+            <field uid="9" label="Kullanıcı adı" type="username"/>
+            <field uid="10" label="Şifre" type="password" sensitive="true"/>
+            <field uid="11" label="Kaybolduysa ara" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="Seçmen kartı" iconid="69">
+            <field uid="0" label="Tam adı" type="text"/>
+            <field uid="1" label="Seçmen kimliği" type="numeric"/>
+            <field uid="2" label="Adres" type="text"/>
+            <field uid="3" label="Bölge" type="text"/>
+            <field uid="4" label="Yeri" type="text"/>
+            <field uid="5" label="Kongre" type="text"/>
+            <field uid="6" label="Eyalet Senatosu" type="text"/>
+            <field uid="7" label="Temsilci" type="text"/>
+            <field uid="8" label="Adres" type="text"/>
+            <field uid="9" label="Verilme tarihi" type="date"/>
+            <field uid="11" label="Web sitesi" type="url"/>
+            <field uid="12" label="Kullanıcı adı" type="username"/>
+            <field uid="13" label="Şifre" type="password" sensitive="true"/>
+            <field uid="14" label="Kaybolduysa ara" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="ITZ kartı" iconid="67">
+            <field uid="1" label="Kart numarası" type="numeric"/>
+            <field uid="0" label="Sahibi" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Değeri" type="numeric"/>
+            <field uid="4" label="Son kullanma tarihi" type="date"/>
+            <field uid="5" label="Kullanım" type="numeric"/>
+            <field uid="7" label="Web sitesi" type="url"/>
+            <field uid="8" label="Kullanıcı adı" type="username"/>
+            <field uid="9" label="Şifre" type="password" sensitive="true"/>
+            <field uid="10" label="Kaybolduysa ara" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="Üyelik kartı" iconid="46">
+            <field uid="1" label="Üye No" type="numeric"/>
+            <field uid="10" label="Üye adı" type="text"/>
+            <field uid="0" label="Organizasyon" type="text"/>
+            <field uid="11" label="Grup" type="text"/>
+            <field uid="2" label="PIN" type="pin" sensitive="true"/>
+            <field uid="3" label="Telefon" type="phone"/>
+            <field uid="12" label="Üyelik tarihi" type="date"/>
+            <field uid="4" label="Son kullanma tarihi" type="date"/>
+            <field uid="6" label="Web sitesi" type="url"/>
+            <field uid="7" label="Kullanıcı adı" type="username"/>
+            <field uid="8" label="Şifre" type="password" sensitive="true"/>
+            <field uid="13" label="Eposta" type="email"/>
+            <field uid="9" label="Kaybolduysa ara" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="PAN kartı" iconid="68">
+            <field uid="3" label="Numarası" type="numeric"/>
+            <field uid="0" label="Adı" type="text"/>
+            <field uid="1" label="Baba adı" type="text"/>
+            <field uid="2" label="Doğum tarihi" type="date"/>
+            <field uid="5" label="Web sitesi" type="url"/>
+            <field uid="6" label="Kullanıcı adı" type="username"/>
+            <field uid="7" label="Şifre" type="password" sensitive="true"/>
+            <field uid="8" label="Kaybolduysa ara" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="Cep telefonu bilgisi" iconid="120">
+            <field uid="0" label="Modeli" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="Kilit kodu" type="numeric" sensitive="true"/>
+            <field uid="5" label="SIM türü" type="text"/>
+            <field uid="6" label="SIM numarası" type="numeric"/>
+            <field uid="7" label="PIN" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="Satın alma tarihi" type="date"/>
+            <field uid="10" label="Garanti" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="Servis sağlayıcı" iconid="121">
+            <field uid="0" label="Sağlayıcı" type="text"/>
+            <field uid="1" label="Servis tipi" type="text"/>
+            <field uid="2" label="Müşteri no" type="text"/>
+            <field uid="3" label="Abone No" type="numeric"/>
+            <field uid="4" label="Adres" type="text"/>
+            <field uid="5" label="Web sitesi" type="url"/>
+            <field uid="6" label="Kullanıcı adı" type="username"/>
+            <field uid="7" label="Oturum açma şifresi" type="password" sensitive="true"/>
+            <field uid="8" label="Yardım hattı" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="Diğer çeşitli" iconid="126">
+            <field uid="0" label="Alan 1" type="text"/>
+            <field uid="1" label="Alan 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="Cinsiyet" value="male" type="sex_options"/>
+            <field uid="4" label="Doğum tarihi" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="Şirket" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="Adres" type="address_firstline"/>
+            <field uid="10" label="Sokak" type="address_street"/>
+            <field uid="11" label="Şehir" type="address_city"/>
+            <field uid="12" label="Eyalet" type="address_state"/>
+            <field uid="13" label="Posta Kodu" type="address_zip"/>
+            <field uid="14" label="Ülke" value="US" type="country_options"/>
+            <field uid="15" label="Telefon" type="phone"/>
+            <field uid="16" label="Güvenlik sorusu" type="text"/>
+            <field uid="17" label="Güvenlik cevabı" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

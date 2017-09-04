@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="auto_lock_interval_entries">
+        <item>30 секунд бездіяльності</item>
+        <item>1 хвилина бездіяльності</item>
+        <item>5 хвилин бездіяльності</item>
+        <item>10 хв бездіяльності</item>
+        <item>30 хвилин бездіяльності</item>
+        <item>1 година бездіяльності</item>
+        <item>5 годин бездіяльності</item>
+        <item>12 годин бездіяльності</item>
+    </array>
+    <array name="auto_lock_interval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="browser_package_names">
+        <item>com.android.chrome</item>
+        <item>com.chrome.beta</item>
+        <item>com.google.android.browser</item>
+        <item>mobi.mgeek.TunnyBrowser</item>
+        <item>com.dolphin.browser.zero</item>
+        <item>com.opera.browser</item>
+        <item>com.opera.mini.android</item>
+        <item>com.nubelacorp.javelin</item>
+        <item>com.cloudmosa.puffinFree</item>
+        <item>com.cloudmosa.puffin</item>
+        <item>com.UCMobile.intl</item>
+        <item>com.uc.browser.en</item>
+        <item>com.uc.browser.hd</item>
+        <item>org.mozilla.firefox</item>
+        <item>org.mozilla.firefox_beta</item>
+        <item>com.ksmobile.cb</item>
+        <item>com.jiubang.browser</item>
+        <item>com.mx.browser</item>
+        <item>com.chrome.dev</item>
+    </array>
+    <array name="clearclipboard_intervals">
+        <item>30 секунд</item>
+        <item>1 Хвилина</item>
+        <item>2 Хвилини</item>
+        <item>5 Хвилин</item>
+        <item>Ніколи</item>
+    </array>
+    <array name="clearclipboard_intervals_num">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="default_search_engine_entry_list">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>Yahoo</item>
+        <item>Ask</item>
+        <item>Baidu</item>
+        <item>DuckDuckGo</item>
+        <item>Qwant</item>
+    </array>
+    <array name="default_search_engine_values_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="detailopenLinkInEntries">
+        <item>Браузер Enpass</item>
+        <item>Браузер за промовчанням</item>
+    </array>
+    <array name="dropdown">
+        <item>Усі елементи</item>
+        <item>Обране</item>
+        <item>Папки</item>
+        <item>CATEGORIES</item>
+        <item>Логін</item>
+        <item>Кредитна Картка</item>
+        <item>Фінанси</item>
+        <item>Комп&apos;ютер</item>
+        <item>Ліцензія</item>
+        <item>Пароль</item>
+        <item>Безпечна Замітка</item>
+        <item>Подорожі</item>
+        <item>Різне</item>
+    </array>
+    <array name="new_features_array">
+        <item>Швидке розблокування PIN-коду</item>
+        <item>Браузер з багатьма вкладками</item>
+        <item>Покращений Генератор паролів</item>
+        <item>Додана підтримка синхронізації для поля</item>
+        <item>Додаткові параметри налаштування</item>
+    </array>
+    <array name="openLinkInEntries">
+        <item>Завжди запитувати</item>
+        <item>Браузер Enpass</item>
+        <item>Браузер за промовчанням</item>
+    </array>
+    <array name="openLinkInValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="searchInCards_entries">
+        <item>Лише заголовок</item>
+        <item>Всі поля</item>
+    </array>
+    <array name="searchInCards_values">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="seprator_list">
+        <item>Кома</item>
+        <item>Долар</item>
+        <item>Решітка</item>
+        <item>Дефіс</item>
+        <item>Крапка</item>
+        <item>Пробіл</item>
+        <item>Знак підкреслення</item>
+    </array>
+    <array name="sex">
+        <item>Чоловічий</item>
+        <item>Жінка</item>
+    </array>
+    <array name="trail_version_text_array">
+        <item>Безкоштовна версія робочого столу для вашого ПК.</item>
+        <item>Enpass на інших мобільних пристроях, які ви використовуєте.</item>
+        <item>Синхронізація даних через кілька пристроїв, що використовують власні облі кові записи на iCloud, Dropbox, Box, Google Drive та OneDrive.</item>
+    </array>
+</resources>

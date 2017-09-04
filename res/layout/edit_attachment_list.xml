@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_marginRight="5dp">
+    <RelativeLayout android:id="@+id/edit_attachment_root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/edit_attachment_img_attach" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/attachment" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:ellipsize="end" android:id="@+id/edit_attachment_tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="40dp" android:maxLines="1" android:layout_toRightOf="@+id/edit_attachment_img_attach" android:layout_centerVertical="true" />
+        <ImageButton android:id="@+id/edit_attachment_img_btn_cross" android:background="@locationawarelogger/TRACE_INT" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close_attachment" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@+id/edit_attachment_img_btnInfo" android:background="@locationawarelogger/TRACE_INT" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/info_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content xmlns:android="http://schemas.android.com/apk/res/android">
+    <include domain="database" path="walletx.db" />
+    <include domain="sharedpref" path="isReordered.xml" />
+    <include domain="sharedpref" path="reorderedList.xml" />
+    <include domain="sharedpref" path="visibleCategories.xml" />
+</full-backup-content>

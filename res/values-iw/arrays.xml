@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="auto_lock_interval_entries">
+        <item>30 שניות של חוסר פעילות</item>
+        <item>1 דקה של חוסר פעילות</item>
+        <item>5 דקות של חוסר פעילות</item>
+        <item>10 דקות של חוסר פעילות</item>
+        <item>30 דקות של חוסר פעילות</item>
+        <item>שעה אחת של חוסר פעילות</item>
+        <item>5 שעות של חוסר פעילות</item>
+        <item>12 שעות של חוסר פעילות</item>
+    </array>
+    <array name="auto_lock_interval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="browser_package_names">
+        <item>com.android.chrome</item>
+        <item>com.chrome.beta</item>
+        <item>com.google.android.browser</item>
+        <item>mobi.mgeek.TunnyBrowser</item>
+        <item>com.dolphin.browser.zero</item>
+        <item>com.opera.browser</item>
+        <item>com.opera.mini.android</item>
+        <item>com.nubelacorp.javelin</item>
+        <item>com.cloudmosa.puffinFree</item>
+        <item>com.cloudmosa.puffin</item>
+        <item>com.UCMobile.intl</item>
+        <item>com.uc.browser.en</item>
+        <item>com.uc.browser.hd</item>
+        <item>org.mozilla.firefox</item>
+        <item>org.mozilla.firefox_beta</item>
+        <item>com.ksmobile.cb</item>
+        <item>com.jiubang.browser</item>
+        <item>com.mx.browser</item>
+        <item>com.chrome.dev</item>
+    </array>
+    <array name="clearclipboard_intervals">
+        <item>30 שניות</item>
+        <item>דקה אחת</item>
+        <item>2 דקות</item>
+        <item>5 דקות</item>
+        <item>לעולם לא</item>
+    </array>
+    <array name="clearclipboard_intervals_num">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="default_search_engine_entry_list">
+        <item>גוגל</item>
+        <item>בינג</item>
+        <item>יאהו</item>
+        <item>Ask</item>
+        <item>Baidu</item>
+        <item>DuckDuckGo</item>
+        <item>Qwant</item>
+    </array>
+    <array name="default_search_engine_values_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="detailopenLinkInEntries">
+        <item>דפדפן Enpass</item>
+        <item>דפדפן ברירת המחדל</item>
+    </array>
+    <array name="dropdown">
+        <item>כל הפריטים</item>
+        <item>מועדפים</item>
+        <item>תיקיות</item>
+        <item>CATEGORIES</item>
+        <item>התחבר</item>
+        <item>כרטיס אשראי</item>
+        <item>כספים</item>
+        <item>מחשב</item>
+        <item>רישיון</item>
+        <item>סיסמא</item>
+        <item>הערה מאובטחת</item>
+        <item>נסיעות</item>
+        <item>שונות</item>
+    </array>
+    <array name="new_features_array">
+        <item>שחרור PIN מהיר</item>
+        <item>דפדפן מרובה-לשוניות</item>
+        <item>מחולל סיסמאות משופר</item>
+        <item>נוספה תמיכה בסנכרון עם Box</item>
+        <item>אפשרויות התאמה אישית נוספות</item>
+    </array>
+    <array name="openLinkInEntries">
+        <item>שאל תמיד</item>
+        <item>דפדפן Enpass</item>
+        <item>דפדפן ברירת המחדל</item>
+    </array>
+    <array name="openLinkInValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="searchInCards_entries">
+        <item>שם בלבד</item>
+        <item>כל השדות</item>
+    </array>
+    <array name="searchInCards_values">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="seprator_list">
+        <item>פסיק</item>
+        <item>דולר</item>
+        <item>סולמית</item>
+        <item>מקף</item>
+        <item>נקודה</item>
+        <item>רווח</item>
+        <item>קו תחתון</item>
+    </array>
+    <array name="sex">
+        <item>זכר</item>
+        <item>נקבה</item>
+    </array>
+    <array name="trail_version_text_array">
+        <item>גירסה חינמית למחשב האישי שלך.</item>
+        <item>Enpass במכשירים ניידים אחרים בשימושך.</item>
+        <item>סנכרון נתונים בין מכשירים רבים באמצעות חשבונות הענן שלך כגון iCloud, Dropbox, Box, Google Drive, ו-OneDrive.</item>
+    </array>
+</resources>

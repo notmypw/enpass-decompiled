@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="Логин" type="login" iconid="1001">
+        <card templatetype="login.default" name="Логин" iconid="21">
+            <field uid="10" label="Имя пользователя" type="username"/>
+            <field uid="12" label="Email" type="email"/>
+            <field uid="11" label="Пароль" type="password" sensitive="true"/>
+            <field uid="14" label="Телефон" type="phone"/>
+            <field uid="13" label="Url" type="url"/>
+            <field uid="15" label="Секретный вопрос" type="text"/>
+            <field uid="16" label="Ответ на секретный вопрос" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="Кредитная карта" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="Кредитная карта" iconid="20">
+            <field uid="0" label="Владелец карты" type="cardholder_name"/>
+            <field uid="17" label="Вид" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="Номер" type="card_number"/>
+            <field uid="2" label="CVC-код" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="Пин" type="card_pin" sensitive="true"/>
+            <field uid="4" label="Дата окончания" type="expiry_date"/>
+            <field uid="18" label="Действительна с" type="date"/>
+            <field uid="10" label="Кредитный лимит" type="numeric"/>
+            <field uid="11" label="Расходный лимит" type="numeric"/>
+            <field uid="12" label="Процентная ставка" type="numeric"/>
+            <field uid="6" label="Банк-эмитент" type="bank_name"/>
+            <field uid="14" label="Веб-сайт" type="url"/>
+            <field uid="15" label="Имя пользователя" type="username"/>
+            <field uid="16" label="Пароль для входа" type="password" sensitive="true"/>
+            <field uid="9" label="Пароль транзакции" type="txn_password" sensitive="true"/>
+            <field uid="7" label="Выдана" type="date"/>
+            <field uid="8" label="В случае потери, звоните" type="phone"/>
+        </card>
+    </category>
+
+    <category name="Финансы" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="Банковский счет" iconid="45">
+            <field uid="4" label="Название банка" type="bank_name"/>
+            <field uid="0" label="Владелец счета" type="cardholder_name"/>
+            <field uid="1" label="Вид" type="text"/>
+            <field uid="2" label="Номер счета" type="numeric"/>
+            <field uid="16" label="ID пользователя" type="text"/>
+            <field uid="5" label="Код банка" type="numeric"/>
+            <field uid="6" label="Название филиала" type="text"/>
+            <field uid="7" label="Код филиала" type="numeric"/>
+            <field uid="8" label="SWIFT" type="text"/>
+            <field uid="9" label="IBAN" type="text"/>
+            <field uid="24" label="Адрес филиала" type="text"/>
+            <field uid="25" label="Телефон филиала" type="phone"/>
+            
+            <field uid="11" label="Номер дебетовой карты" type="card_number"/>
+            <field uid="26" label="Вид" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="Пин" type="card_pin" sensitive="true"/>
+            <field uid="14" label="CVV" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="Дата окончания" type="expiry_date"/>
+            <field uid="27" label="Расходный лимит" type="numeric"/>
+            
+            <field uid="17" label="Веб-сайт" type="url"/>
+            <field uid="18" label="Имя пользователя" type="username"/>
+            <field uid="19" label="Пароль для входа" type="password" sensitive="true"/>
+            <field uid="20" label="Пароль транзакции" type="txn_password" sensitive="true"/>
+            <field uid="22" label="Телефон службы поддержки" type="phone"/>
+            <field uid="23" label="T-Пин" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="Страховой полис" iconid="33">
+            <field uid="1" label="Наименование полиса" type="text"/>
+            <field uid="0" label="Компания" type="text"/>
+            <field uid="19" label="Страхователь" type="text"/>
+            <field uid="2" label="Номер" type="numeric"/>
+            <field uid="3" label="Вид" type="text"/>
+            <field uid="5" label="Страховой взнос" type="numeric"/>
+            <field uid="6" label="Сумма страховки" type="numeric"/>
+            <field uid="7" label="Дата выдачи" type="date"/>
+            <field uid="18" label="Дата окончания срока действия" type="date"/>
+            <field uid="8" label="Дата окончания" type="date"/>
+            <field uid="9" label="Cрок действия договора страхования" type="numeric"/>
+            <field uid="20" label="Получатель по доверенности" type="text"/>
+            <field uid="11" label="ID пользователя" type="numeric"/>
+            <field uid="12" label="Веб-сайт" type="url"/>
+            <field uid="13" label="Имя пользователя" type="username"/>
+            <field uid="14" label="Пароль" type="password" sensitive="true"/>
+            <field uid="16" label="Имя агента" type="text"/>
+            <field uid="17" label="Телефон службы поддержки" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="Инвестиции в товарные запасы" iconid="34">
+            <field uid="2" label="Биржевое название" type="text"/>
+            <field uid="0" label="Номер счета" type="numeric"/>
+            <field uid="1" label="Вид" type="text"/>
+            <field uid="3" label="Рынок" type="text"/>
+            <field uid="5" label="Выпущена " type="date"/>
+            <field uid="6" label="Приобретен в" type="date"/>
+            <field uid="7" label="Покупная цена" type="numeric"/>
+            <field uid="8" label="Количество" type="numeric"/>
+            <field uid="9" label="Текущая цена" type="numeric"/>
+            <field uid="11" label="Веб-сайт" type="url"/>
+            <field uid="12" label="Имя пользователя" type="username"/>
+            <field uid="13" label="Пароль" type="password" sensitive="true"/>
+            <field uid="15" label="Брокер" type="text"/>
+            <field uid="16" label="Телефон" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="Инвестиционный фонд" iconid="43">
+            <field uid="0" label="Название фонда" type="text"/>
+            <field uid="1" label="Тип фонда" type="text"/>
+            <field uid="2" label="Выпущена " type="date"/>
+            <field uid="3" label="Приобретен в" type="date"/>
+            <field uid="4" label="Количество" type="numeric"/>
+            <field uid="5" label="Стоимость чистых активов в момент приобретения" type="numeric"/>
+            <field uid="6" label="Текущая стоимость чистых активов" type="numeric"/>
+            <field uid="8" label="Веб-сайт" type="url"/>
+            <field uid="9" label="Имя пользователя" type="username"/>
+            <field uid="10" label="Пароль" type="password" sensitive="true"/>
+            <field uid="12" label="Брокер" type="text"/>
+            <field uid="13" label="Телефон" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="Ссуда/Ипотека" iconid="44">
+            <field uid="2" label="Кредитор" type="text"/>
+            <field uid="1" label="Вид" type="text"/>
+            <field uid="0" label="Номер счета" type="numeric"/>
+            <field uid="4" label="Капитал" type="numeric"/>
+            <field uid="5" label="Процентная ставка %" type="numeric"/>
+            <field uid="6" label="Дата" type="date"/>
+            <field uid="7" label="Cрок действия договора страхования" type="numeric"/>
+            <field uid="8" label="Баланс" type="numeric"/>
+            <field uid="9" label="Срок совершения платежа" type="numeric"/>
+            <field uid="10" label="Актив" type="text"/>
+            <field uid="12" label="Телефон" type="phone"/>
+            <field uid="13" label="Веб-сайт" type="url"/>
+            <field uid="14" label="Имя пользователя" type="username"/>
+            <field uid="15" label="Пароль" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="Другие финансы" iconid="122">
+            <field uid="0" label="Поле 1" type="text"/>
+            <field uid="1" label="Поле 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Компьютер" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="База данных" iconid="56">
+            <field uid="8" label="Вид" type="text"/>
+            <field uid="0" label="Сервер" type="text"/>
+            <field uid="1" label="Порт" type="numeric"/>
+            <field uid="2" label="База данных" type="text"/>
+            <field uid="3" label="Имя пользователя" type="username"/>
+            <field uid="4" label="Пароль" type="password" sensitive="true"/>
+            <field uid="5" label="Идентификатор защиты" type="text"/>
+            <field uid="6" label="Альтернативная точка входа" type="text"/>
+            <field uid="7" label="Параметры" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="Email адрес" iconid="48">
+            <field uid="0" label="Email" type="email"/>
+            <field uid="1" label="Имя пользователя" type="username"/>
+            <field uid="2" label="Пароль" type="password" sensitive="true"/>
+            <field uid="9" label="Вид" type="text"/>
+            <field uid="3" label="POP3 сервер" type="text"/>
+            <field uid="4" label="IMAP сервер" type="text"/>
+            <field uid="6" label="Порт" type="numeric"/>
+            <field uid="10" label="Тип системы безопасности" type="text"/>
+            <field uid="11" label="Метод проверки подлинности" type="text"/>
+            <field uid="21" label="Веб-ссылка" type="url"/>
+            <field uid="5" label="SMTP сервер" type="text"/>
+            <field uid="7" label="Порт" type="numeric"/>
+            <field uid="13" label="Имя пользователя" type="username"/>
+            <field uid="14" label="Пароль" type="password" sensitive="true"/>
+            <field uid="15" label="Тип системы безопасности" type="text"/>
+            <field uid="16" label="Метод проверки подлинности" type="text"/>
+            <field uid="18" label="Провайдер" type="text"/>
+            <field uid="8" label="Веб-сайт" type="url"/>
+            <field uid="19" label="Местный телефон" type="phone"/>
+            <field uid="20" label="Телефон службы поддержки" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="FTP аккаунт" iconid="55">
+            <field uid="0" label="Сервер" type="text"/>
+            <field uid="1" label="Путь" type="text"/>
+            <field uid="2" label="Имя пользователя" type="username"/>
+            <field uid="3" label="Пароль" type="password" sensitive="true"/>
+            <field uid="4" label="Провайдер" type="text"/>
+            <field uid="5" label="Веб-сайт" type="url"/>
+            <field uid="6" label="Телефон" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="Мгновенные сообщения" iconid="49">
+            <field uid="0" label="Вид" type="text"/>
+            <field uid="1" label="ID" type="text"/>
+            <field uid="2" label="Сервер" type="text"/>
+            <field uid="3" label="Порт" type="numeric"/>
+            <field uid="4" label="Ник" type="text"/>
+            <field uid="5" label="Имя пользователя" type="username"/>
+            <field uid="6" label="Пароль" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="Интернет провайдер" iconid="63">
+            <field uid="0" label="Имя пользователя" type="username"/>
+            <field uid="1" label="Пароль" type="password" sensitive="true"/>
+            <field uid="3" label="Коммутируемый доступ" type="phone"/>
+            <field uid="4" label="Протокол безопасности интернета/Система" type="text"/>
+            <field uid="5" label="IP адрес" type="numeric"/>
+            <field uid="6" label="Маска подсети" type="numeric"/>
+            <field uid="20" label="Шлюз" type="numeric"/>
+            <field uid="7" label="Первичный DNS" type="numeric"/>
+            <field uid="8" label="Вторичный DNS" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Telnet" type="text"/>
+            <field uid="17" label="Телефон службы поддержки" type="phone"/>
+            <field uid="18" label="Веб-сайт" type="url"/>
+            <field uid="19" label="Платежные данные" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="Сервер" iconid="51">
+            <field uid="11" label="Логин администратора" type="username"/>
+            <field uid="12" label="Пароль администратора" type="password" sensitive="true"/>
+            <field uid="16" label="URL администратора" type="url"/>
+            <field uid="0" label="Сервис" type="text"/>
+            <field uid="1" label="Задачи" type="text"/>
+            <field uid="2" label="Операционная система" type="text"/>
+            <field uid="3" label="Оперативная память" type="numeric"/>
+            <field uid="4" label="Память" type="numeric"/>
+            <field uid="5" label="Центральный процессор компьютера" type="numeric"/>
+            <field uid="6" label="RAID-массив" type="text"/>
+            <field uid="7" label="Местонахождение" type="text"/>
+            <field uid="8" label="IP адрес" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="Порт" type="numeric"/>
+            <field uid="17" label="Хостинг провайдер" type="text"/>
+            <field uid="14" label="Веб-сайт поддержка" type="url"/>
+            <field uid="18" label="Телефон службы поддержки" type="phone"/>
+            <field uid="15" label="Платежные данные" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="Беспроводной маршрутизатор" iconid="35">
+            <field uid="0" label="Название станции" type="text"/>
+            <field uid="9" label="Пароль станции" type="password" sensitive="true"/>
+            <field uid="2" label="Сетевое имя" type="text"/>
+            <field uid="5" label="Сетевой пароль" type="password" sensitive="true"/>
+            <field uid="3" label="Безопасность" type="text"/>
+            <field uid="1" label="Номер Mac/AirPort" type="numeric"/>
+            <field uid="12" label="Адрес сервера/IP" type="url"/>
+            <field uid="13" label="Имя пользователя" type="username"/>
+            <field uid="4" label="Пароль" type="password" sensitive="true"/>
+            <field uid="6" label="Пароль хранилища" type="password" sensitive="true"/>
+            <field uid="7" label="Веб-сайт поддержка" type="url"/>
+            <field uid="8" label="Платежные данные" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="Веб-хостинг" iconid="53">
+            <field uid="13" label="Провайдер" type="text"/>
+            <field uid="1" label="Имя пользователя" type="username"/>
+            <field uid="2" label="Пароль" type="password" sensitive="true"/>
+            <field uid="11" label="URL администратора" type="url"/>
+            <field uid="0" label="Операционная система" type="text"/>
+            <field uid="9" label="ID пользователя" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="База данных" type="text"/>
+            <field uid="7" label="Сервис" type="text"/>
+            <field uid="14" label="Веб-сайт поддержка" type="url"/>
+            <field uid="10" label="Телефон службы поддержки" type="phone"/>
+            <field uid="12" label="Взнос" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="Другой компьютер" iconid="123">
+            <field uid="0" label="Поле 1" type="text"/>
+            <field uid="1" label="Поле 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Удостоверение" type="license" iconid="1005">
+        <card templatetype="license.driving" name="Водительское удостоверение" iconid="60">
+            <field uid="1" label="Номер" type="numeric"/>
+            <field uid="0" label="Имя" type="text"/>
+            <field uid="8" label="Пол" type="text"/>
+            <field uid="9" label="Дата рождения" type="date"/>
+            <field uid="10" label="Адрес" type="text"/>
+            <field uid="11" label="Рост" type="text"/>
+            <field uid="2" label="Звание" type="text"/>
+            <field uid="13" label="Ограничения" type="text"/>
+            <field uid="3" label="Административная единица" type="text"/>
+            <field uid="4" label="Страна" type="text"/>
+            <field uid="5" label="Дата окончания" type="date"/>
+            <field uid="6" label="Выдана" type="date"/>
+            <field uid="7" label="В случае потери, звоните" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="Охотничий билет" iconid="42">
+            <field uid="1" label="Номер" type="numeric"/>
+            <field uid="0" label="Имя" type="text"/>
+            <field uid="2" label="Административная единица" type="text"/>
+            <field uid="3" label="Регион" type="text"/>
+            <field uid="4" label="Страна" type="text"/>
+            <field uid="5" label="Действительна с" type="date"/>
+            <field uid="6" label="Дата окончания" type="date"/>
+            <field uid="7" label="Разрешение на " type="text"/>
+            <field uid="8" label="Квота" type="text"/>
+        </card>
+        <card templatetype="license.software" name="Лицензия на программное обеспечение" iconid="52">
+            <field uid="0" label="Версия" type="numeric"/>
+            <field uid="16" label="Название продукта" type="text"/>
+            <field uid="17" label="Число пользователей" type="numeric"/>
+            <field uid="1" label="Ключ" type="text" sensitive="true"/>
+            <field uid="6" label="Страница загрузки" type="url"/>
+            <field uid="3" label="Лицензия выдана" type="text"/>
+            <field uid="18" label="Страница входа" type="url"/>
+            <field uid="19" label="Имя пользователя" type="username"/>
+            <field uid="20" label="Пароль" type="password" sensitive="true"/>
+            <field uid="4" label="Email" type="email"/>
+            <field uid="5" label="Компания" type="text"/>
+            <field uid="13" label="Дата приобретения" type="date"/>
+            <field uid="14" label="Номер заказа" type="numeric"/>
+            <field uid="12" label="Розничная цена" type="numeric"/>
+            <field uid="15" label="Итог" type="numeric"/>
+            <field uid="8" label="Издатель" type="text"/>
+            <field uid="9" label="Веб-сайт" type="url"/>
+            <field uid="10" label="Электронная почта службы поддержки" type="email"/>
+            <field uid="21" label="Телефон службы поддержки" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="Другие удостоверения" iconid="124">
+            <field uid="0" label="Поле 1" type="text"/>
+            <field uid="1" label="Поле 2" type="text"/>
+        </card>
+    </category>
+
+    <category name="Пароль" type="password" iconid="1006">
+        <card templatetype="password.default" name="Пароль" iconid="36">
+            <field uid="0" label="Логин" type="username"/>
+            <field uid="1" label="Пароль" type="password" sensitive="true"/>
+            <field uid="2" label="Доступ" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Защищенные записи" type="note" iconid="1007">
+        <card templatetype="note.default" name="Заметка" iconid="22">
+        </card>
+    </category>
+        
+    <category name="Путешествие" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="Паспорт" iconid="37">
+            <field uid="2" label="Номер" type="text"/>
+            <field uid="0" label="Полное имя" type="text"/>
+            <field uid="14" label="Пол" type="text"/>
+            <field uid="1" label="Вид" type="text"/>
+            <field uid="15" label="Гражданство" type="text"/>
+            <field uid="4" label="Место рождения" type="text"/>
+            <field uid="5" label="День рождения" type="date"/>
+            <field uid="6" label="Где выдан" type="text"/>
+            <field uid="7" label="Выдана" type="date"/>
+            <field uid="8" label="Дата окончания" type="date"/>
+            <field uid="9" label="Страна выдачи" type="text"/>
+            <field uid="10" label="Кем выдан паспорт" type="text"/>
+            <field uid="12" label="Замены" type="text"/>
+            <field uid="13" label="В случае потери, звоните" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="Виза" iconid="57">
+            <field uid="1" label="Вид" type="text"/>
+            <field uid="15" label="Страна" type="text"/>
+            <field uid="0" label="Полное имя" type="text"/>
+            <field uid="2" label="Номер" type="numeric"/>
+            <field uid="4" label="Действительна для" type="text"/>
+            <field uid="5" label="Действительна с" type="date"/>
+            <field uid="6" label="Действительна до" type="date"/>
+            <field uid="7" label="Длительность" type="numeric"/>
+            <field uid="8" label="Количество данных" type="numeric"/>
+            <field uid="10" label="Выдана (кем)" type="text"/>
+            <field uid="11" label="Дата выдачи" type="date"/>
+            <field uid="12" label="Номер паспорта" type="text"/>
+            <field uid="13" label="Примечания" type="text"/>
+            <field uid="14" label="В случае потери, звоните" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="Бонусная программа авиакомпании" iconid="39">
+            <field uid="1" label="Номер участника программы" type="numeric"/>
+            <field uid="0" label="Имя" type="text"/>
+            <field uid="8" label="Авиакомпания" type="text"/>
+            <field uid="2" label="Дата" type="date"/>
+            <field uid="3" label="Расстояние" type="numeric"/>
+            <field uid="5" label="Веб-сайт" type="url"/>
+            <field uid="6" label="Имя пользователя" type="username"/>
+            <field uid="7" label="Пароль" type="password" sensitive="true"/>
+            <field uid="9" label="Служба работы с покупателями" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="Бронирование отеля" iconid="27">
+            <field uid="0" label="Название гостиницы" type="text"/>
+            <field uid="4" label="Номер комнаты" type="numeric"/>
+            <field uid="1" label="Адрес" type="text"/>
+            <field uid="2" label="Номер заказа" type="numeric"/>
+            <field uid="3" label="Дата" type="date"/>
+            <field uid="5" label="Количество ночей" type="numeric"/>
+            <field uid="15" label="Поощрительные программы" type="numeric"/>
+            <field uid="7" label="Телефон" type="phone"/>
+            <field uid="8" label="Email" type="email"/>
+            <field uid="9" label="Веб-сайт" type="url"/>
+            <field uid="10" label="Имя пользователя" type="username"/>
+            <field uid="11" label="Пароль" type="password" sensitive="true"/>
+            <field uid="13" label="Консьерж" type="text"/>
+            <field uid="14" label="Ресторан" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="Подробности полета" iconid="38">
+            <field uid="2" label="Номер рейса" type="numeric"/>
+            <field uid="0" label="Авиакомпания" type="text"/>
+            <field uid="1" label="Дата" type="date"/>
+            <field uid="3" label="Откуда" type="text"/>
+            <field uid="4" label="Куда" type="text"/>
+            <field uid="5" label="Время/Выход" type="text"/>
+            <field uid="6" label="Номер электронного билета" type="numeric"/>
+            <field uid="7" label="Номер подтверждения" type="numeric"/>
+            <field uid="10" label="Веб-сайт" type="url"/>
+            <field uid="11" label="Имя пользователя" type="username"/>
+            <field uid="12" label="Пароль" type="password" sensitive="true"/>
+            <field uid="9" label="Телефон" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="Другие поездки" iconid="125">
+            <field uid="0" label="Поле 1" type="text"/>
+            <field uid="1" label="Поле 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Разное" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="Размер одежды" iconid="23">
+            <field uid="9" label="Имя" type="text"/>
+            <field uid="0" label="Костюм" type="text"/>
+            <field uid="1" label="Обувь" type="text"/>
+            <field uid="2" label="Рубашка" type="text"/>
+            <field uid="3" label="Брюки" type="text"/>
+            <field uid="4" label="Внутренний шов брюк" type="text"/>
+            <field uid="5" label="Юбка" type="text"/>
+            <field uid="6" label="Перчатки" type="text"/>
+            <field uid="7" label="Талия" type="text"/>
+            <field uid="8" label="Шея" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="Кодовый замок" iconid="61">
+            <field uid="0" label="Местонахождение" type="text"/>
+            <field uid="1" label="Код" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="Рецепт врача" iconid="40">
+            <field uid="2" label="Доктор" type="text"/>
+            <field uid="0" label="Номер рецепта" type="text"/>
+            <field uid="1" label="Имя" type="text"/>
+            <field uid="3" label="Аптека" type="text"/>
+            <field uid="4" label="Телефон" type="phone"/>
+            <field uid="6" label="Марка" type="text"/>
+            <field uid="7" label="Препарат" type="text"/>
+            <field uid="8" label="Количество" type="numeric"/>
+            <field uid="9" label="Прием" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="Рецепт на линзы" iconid="26">
+            <field uid="0" label="Вид" type="text"/>
+            <field uid="1" label="Правый(OD)" type="numeric"/>
+            <field uid="2" label="Левый(OS)" type="numeric"/>
+            <field uid="3" label="Доктор" type="text"/>
+            <field uid="4" label="Телефон" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="Регистрационный код" iconid="66">
+            <field uid="2" label="Имя" type="text"/>
+            <field uid="0" label="Номер" type="numeric" sensitive="true"/>
+            <field uid="1" label="Дата" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="Информация о транспортном средстве" iconid="25">
+            <field uid="3" label="Регистрационный №" type="text"/>
+            <field uid="11" label="Владелец" type="text"/>
+            <field uid="0" label="Модель" type="text"/>
+            <field uid="12" label="Тип транспортного средства" type="text"/>
+            <field uid="13" label="Дата приобретения" type="date"/>
+            <field uid="1" label="Изготовлен" type="text"/>
+            <field uid="2" label="Год" type="numeric"/>
+            <field uid="4" label="Идентификационный номер транспортного средства" type="text"/>
+            <field uid="5" label="Телефон сервиса" type="phone"/>
+            <field uid="14" label="Дорожная служба" type="phone"/>
+            <field uid="16" label="Страховая компания" type="text"/>
+            <field uid="7" label="Страховая сумма" type="text"/>
+            <field uid="8" label="Номер страхового полиса" type="numeric"/>
+            <field uid="10" label="Дата окончания" type="date"/>
+            <field uid="9" label="Телефон страховой компании" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="Голосовая почта" iconid="62">
+            <field uid="0" label="Номер доступа" type="numeric"/>
+            <field uid="1" label="Пин" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="Адрес" iconid="31">
+            <field uid="0" label="Имя" type="text"/>
+            <field uid="1" label="Номер квартиры" type="text"/>
+            <field uid="2" label="Улица" type="text"/>
+            <field uid="3" label="Район" type="text"/>
+            <field uid="4" label="Город" type="text"/>
+            <field uid="5" label="Административная единица" type="text"/>
+            <field uid="6" label="Индекс" type="text"/>
+            <field uid="7" label="Страна" type="text"/>
+            <field uid="9" label="Телефон" type="phone"/>
+            <field uid="10" label="Email" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="Контакт" iconid="47">
+            <field uid="0" label="Имя" type="text"/>
+            <field uid="1" label="Фамилия" type="text"/>
+            <field uid="2" label="Компания" type="text"/>
+            <field uid="3" label="Телефон (Домашний)" type="phone"/>
+            <field uid="4" label="Телефон (Мобильный)" type="phone"/>
+            <field uid="5" label="Телефон (Офис)" type="phone"/>
+            <field uid="6" label="Email" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="Номера служб экстренной помощи" iconid="28">
+            <field uid="0" label="Полиция" type="phone"/>
+            <field uid="1" label="Пожарная служба" type="phone"/>
+            <field uid="2" label="Скорая помощь" type="phone"/>
+            <field uid="3" label="Доктор" type="phone"/>
+            <field uid="4" label="Стоматолог" type="phone"/>
+            <field uid="5" label="Ветеринар" type="phone"/>
+            <field uid="6" label="Электроэнергетическая компания" type="phone"/>
+            <field uid="7" label="Компания по газоснабжению" type="phone"/>
+            <field uid="8" label="Телефонная компания" type="phone"/>
+            <field uid="9" label="Домовладелец" type="phone"/>
+            <field uid="10" label="Другое" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="Номер социального страхования" iconid="64">
+            <field uid="1" label="Номер" type="numeric"/>
+            <field uid="0" label="Имя" type="text"/>
+            <field uid="2" label="Дата" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="Программа выплаты вознаграждений" iconid="24">
+            <field uid="0" label="Компания" type="text"/>
+            <field uid="1" label="Имя" type="text"/>
+            <field uid="10" label="Идентификационный номер члена программы" type="text"/>
+            <field uid="2" label="Номер" type="numeric"/>
+            <field uid="3" label="Пин" type="pin" sensitive="true"/>
+            <field uid="5" label="Номер 2" type="numeric"/>
+            <field uid="6" label="Начиная с" type="date"/>
+            <field uid="7" label="Телефон службы поддержки" type="phone"/>
+            <field uid="8" label="Телефон бронирования" type="phone"/>
+            <field uid="9" label="Веб-сайт" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="Серийный номер" iconid="32">
+            <field uid="1" label="Серийный номер" type="text" sensitive="true"/>
+            <field uid="0" label="Марка" type="text"/>
+            <field uid="2" label="Модель" type="text"/>
+            <field uid="3" label="Стоимость" type="numeric"/>
+            <field uid="4" label="Приобретен в" type="date"/>
+            <field uid="6" label="Договорная гарантия" type="date"/>
+            <field uid="5" label="Местонахождение" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="Информация об имуществе" iconid="70">
+            <field uid="0" label="Владелец" type="text"/>
+            <field uid="1" label="Адрес" type="text"/>
+            <field uid="2" label="Вид" type="text"/>
+            <field uid="3" label="Сумма сбережений" type="numeric"/>
+            <field uid="5" label="Наименование имущества" type="text"/>
+            <field uid="6" label="Сумма налога" type="numeric"/>
+            <field uid="7" label="Дата выплаты налога" type="date"/>
+            <field uid="8" label="Веб-страница" type="url"/>
+            <field uid="9" label="Имя пользователя" type="username"/>
+            <field uid="10" label="Пароль" type="password" sensitive="true"/>
+            <field uid="12" label="Страховка" type="text"/>
+            <field uid="13" label="Страховая выплата" type="numeric"/>
+            <field uid="14" label="Номер страхового полиса" type="numeric"/>
+            <field uid="15" label="Дата окончания" type="date"/>
+            <field uid="16" label="Телефон службы поддержки страховой компании" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="Телефонная карта" iconid="54">
+            <field uid="1" label="Номер доступа" type="phone"/>
+            <field uid="0" label="Провайдер" type="text"/>
+            <field uid="2" label="Номер карты" type="numeric"/>
+            <field uid="3" label="Пин" type="pin" sensitive="true"/>
+            <field uid="4" label="Импульсный набор" type="numeric"/>
+            <field uid="5" label="Дата окончания" type="date"/>
+            <field uid="6" label="Частота использования" type="numeric"/>
+            <field uid="8" label="Веб-сайт" type="url"/>
+            <field uid="9" label="Имя пользователя" type="username"/>
+            <field uid="10" label="Пароль" type="password" sensitive="true"/>
+            <field uid="11" label="В случае потери, звоните" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="Удостоверение личности" iconid="59">
+            <field uid="2" label="Идентификационный номер" type="numeric"/>
+            <field uid="0" label="Название" type="text"/>
+            <field uid="1" label="Полное имя" type="text"/>
+            <field uid="3" label="Пин" type="pin" sensitive="true"/>
+            <field uid="4" label="Страна" type="text"/>
+            <field uid="5" label="Выдана" type="date"/>
+            <field uid="6" label="Дата окончания" type="date"/>
+            <field uid="7" label="В случае потери, звоните" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="Карта ISIC" iconid="65">
+            <field uid="2" label="Номер карты" type="numeric"/>
+            <field uid="0" label="Учится в" type="text"/>
+            <field uid="1" label="Полное имя" type="text"/>
+            <field uid="3" label="Дата рождения" type="date"/>
+            <field uid="4" label="Выдана" type="date"/>
+            <field uid="5" label="Дата окончания" type="date"/>
+            <field uid="6" label="В случае потери, звоните" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="Карта ITIC" iconid="41">
+            <field uid="2" label="Номер карты" type="numeric"/>
+            <field uid="0" label="Преподает в" type="text"/>
+            <field uid="1" label="Полное имя" type="text"/>
+            <field uid="3" label="Дата рождения" type="date"/>
+            <field uid="4" label="Выдана" type="date"/>
+            <field uid="5" label="Дата окончания" type="date"/>
+            <field uid="6" label="В случае потери, звоните" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="Библиотечная карта" iconid="58">
+            <field uid="1" label="Номер карты" type="numeric"/>
+            <field uid="0" label="Библиотека" type="text"/>
+            <field uid="2" label="Пин" type="pin" sensitive="true"/>
+            <field uid="3" label="Часы работы" type="numeric"/>
+            <field uid="4" label="Адрес" type="text"/>
+            <field uid="5" label="Выдана" type="date"/>
+            <field uid="6" label="Дата окончания" type="date"/>
+            <field uid="8" label="Веб-сайт" type="url"/>
+            <field uid="9" label="Имя пользователя" type="username"/>
+            <field uid="10" label="Пароль" type="password" sensitive="true"/>
+            <field uid="11" label="В случае потери, звоните" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="Карточка избирателя" iconid="69">
+            <field uid="0" label="Полное имя" type="text"/>
+            <field uid="1" label="Идентификационный номер избирателя" type="numeric"/>
+            <field uid="2" label="Адрес" type="text"/>
+            <field uid="3" label="Городской избирательный округ" type="text"/>
+            <field uid="4" label="Местонахождение" type="text"/>
+            <field uid="5" label="Федеральное собрание" type="text"/>
+            <field uid="6" label="Совет Федерации" type="text"/>
+            <field uid="7" label="Исполнительная власть" type="text"/>
+            <field uid="8" label="Адрес" type="text"/>
+            <field uid="9" label="Выдана" type="date"/>
+            <field uid="11" label="Веб-сайт" type="url"/>
+            <field uid="12" label="Имя пользователя" type="username"/>
+            <field uid="13" label="Пароль" type="password" sensitive="true"/>
+            <field uid="14" label="В случае потери, звоните" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="Карта ITZ" iconid="67">
+            <field uid="1" label="Номер карты" type="numeric"/>
+            <field uid="0" label="Владелец" type="text"/>
+            <field uid="2" label="Пин" type="pin" sensitive="true"/>
+            <field uid="3" label="Цена" type="numeric"/>
+            <field uid="4" label="Дата окончания" type="date"/>
+            <field uid="5" label="Частота использования" type="numeric"/>
+            <field uid="7" label="Веб-сайт" type="url"/>
+            <field uid="8" label="Имя пользователя" type="username"/>
+            <field uid="9" label="Пароль" type="password" sensitive="true"/>
+            <field uid="10" label="В случае потери, звоните" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="Членская карта" iconid="46">
+            <field uid="1" label="Идентификационный номер члена программы" type="numeric"/>
+            <field uid="10" label="Имя члена" type="text"/>
+            <field uid="0" label="Организация" type="text"/>
+            <field uid="11" label="Группа" type="text"/>
+            <field uid="2" label="Пин" type="pin" sensitive="true"/>
+            <field uid="3" label="Телефон" type="phone"/>
+            <field uid="12" label="Член с" type="date"/>
+            <field uid="4" label="Дата окончания" type="date"/>
+            <field uid="6" label="Веб-сайт" type="url"/>
+            <field uid="7" label="Имя пользователя" type="username"/>
+            <field uid="8" label="Пароль" type="password" sensitive="true"/>
+            <field uid="13" label="Email" type="email"/>
+            <field uid="9" label="В случае потери, звоните" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="PAN карта" iconid="68">
+            <field uid="3" label="Номер" type="numeric"/>
+            <field uid="0" label="Имя" type="text"/>
+            <field uid="1" label="Отчество" type="text"/>
+            <field uid="2" label="Дата рождения" type="date"/>
+            <field uid="5" label="Веб-сайт" type="url"/>
+            <field uid="6" label="Имя пользователя" type="username"/>
+            <field uid="7" label="Пароль" type="password" sensitive="true"/>
+            <field uid="8" label="В случае потери, звоните" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="Информация о мобильном телефоне" iconid="120">
+            <field uid="0" label="Модель телефона" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="Код блокировки" type="numeric" sensitive="true"/>
+            <field uid="5" label="Тип Сим-карты" type="text"/>
+            <field uid="6" label="Номер SIM-карты" type="numeric"/>
+            <field uid="7" label="Пин" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="Приобретен в" type="date"/>
+            <field uid="10" label="Договорная гарантия" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="Поставщик услуг" iconid="121">
+            <field uid="0" label="Провайдер" type="text"/>
+            <field uid="1" label="Тип услуг" type="text"/>
+            <field uid="2" label="ID потребителя" type="text"/>
+            <field uid="3" label="Идентификатор подписки" type="numeric"/>
+            <field uid="4" label="Адрес" type="text"/>
+            <field uid="5" label="Веб-сайт" type="url"/>
+            <field uid="6" label="Имя пользователя" type="username"/>
+            <field uid="7" label="Пароль для входа" type="password" sensitive="true"/>
+            <field uid="8" label="Телефон службы поддержки" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="Другие расходы" iconid="126">
+            <field uid="0" label="Поле 1" type="text"/>
+            <field uid="1" label="Поле 2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="Пол" value="male" type="sex_options"/>
+            <field uid="4" label="Дата рождения" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="Компания" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="Адрес" type="address_firstline"/>
+            <field uid="10" label="Улица" type="address_street"/>
+            <field uid="11" label="Город" type="address_city"/>
+            <field uid="12" label="Административная единица" type="address_state"/>
+            <field uid="13" label="Индекс" type="address_zip"/>
+            <field uid="14" label="Страна" value="US" type="country_options"/>
+            <field uid="15" label="Телефон" type="phone"/>
+            <field uid="16" label="Секретный вопрос" type="text"/>
+            <field uid="17" label="Ответ на секретный вопрос" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

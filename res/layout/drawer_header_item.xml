@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/sidebar_header_bg" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xac01"
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="@dimen/sidebar_header_top_margine" android:layout_marginRight="16dp">
+            <ImageView android:id="@+id/sidebar_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_settings" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@+id/sidebar_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30dp" android:src="@drawable/ic_lock" android:layout_toLeftOf="@+id/sidebar_generate_password" />
+            <ImageView android:id="@+id/sidebar_generate_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_generator" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/sidebar_sync_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true"
+            <RelativeLayout android:id="@+id/sidebar_cloud_image_layout" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x2c01" android:layout_centerVertical="true">
+                <View android:id="@+id/sync_password_mismatch" android:background="@drawable/sync_password_indicator" android:layout_width="UNKNOWN_DATA_0x2c01" android:layout_height="UNKNOWN_DATA_0x2c01" android:layout_marginLeft="8dp" />
+                <ImageView android:id="@+id/sidebar_cloud_image" android:layout_width="UNKNOWN_DATA_0x2801" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_marginLeft="10dp" android:src="@drawable/nocloud" android:layout_centerVertical="true" />
+                <ProgressBar android:id="@+id/sync_progress" android:visibility="invisible" android:layout_width="UNKNOWN_DATA_0x2a01" android:layout_height="UNKNOWN_DATA_0x2a01" android:layout_marginLeft="9dp" android:indeterminate="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_toRightOf="@+id/sidebar_cloud_image_layout" android:layout_centerVertical="true">
+                <TextView android:textAppearance="@*android:style/TextAppearance.Medium" android:textColor="@r$color/white" android:id="@+id/sidebar_active_cloud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DropBox" />
+                <TextView android:textColor="@r$color/white" android:ellipsize="end" android:id="@+id/sidebar_cloud_login_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="harrytesting80@gmail.com" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

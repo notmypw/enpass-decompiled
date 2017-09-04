@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:icon="@drawable/ic_star" app:id="@+id/menu_favorite" app:title="@string/unfavorite" app:showAsAction="always" />
+    <item app:icon="@drawable/ic_menu_edit" app:id="@+id/menu_edit" app:title="@string/menu_edit" app:showAsAction="always" />
+    <item app:icon="@drawable/go_to_browser" app:id="@+id/menu_browser_detail" app:title="@string/browser_title" app:showAsAction="always" />
+    <item app:icon="@drawable/ic_menu_delete" app:id="@+id/menu_delete" app:title="@string/menu_delete" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:icon="@drawable/ic_action_copy" app:id="@+id/menu_duplicate" app:title="@string/menu_duplicate" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:id="@+id/menu_password_history" app:title="@string/history" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:icon="@locationawarelogger/TRACE_INT" app:id="@+id/menu_change_category" app:title="@string/change_category_title" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:icon="@drawable/ic_share" app:id="@+id/menu_share" app:title="@string/menu_share" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:icon="@locationawarelogger/TRACE_INT" app:id="@+id/menu_lock_detail" app:orderInCategory="100" app:title="@string/menu_lock_title" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:icon="@locationawarelogger/TRACE_INT" app:id="@+id/add_to_watch" app:title="@string/add_to_watch" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:icon="@locationawarelogger/TRACE_INT" app:id="@+id/remove_from_watch" app:title="@string/remove_from_watch" app:showAsAction="UNKNOWN_DATA_0x0" />
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/drawer_layout" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="match_parent">
+    <RelativeLayout app:id="@+id/main_activity_mainlayout" app:layout_width="match_parent" app:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/drawer_toolbar" app:background="@r$color/enpass_colorPrimary" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f040007" app:minHeight="?attr/actionBarSize" app:popupTheme="@r$style/EnpassToolbarThemePopup" app:theme="@r$style/EnpassToolbarTheme" />
+        <android.support.v7.widget.CardView app:id="@+id/search_view_cardview" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:cardCornerRadius="0dp">
+            <in.sinew.enpass.MaterialSearchView app:id="@+id/search_view" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f040007" app:popupTheme="@r$style/EnpassToolbarThemePopup" />
+        </android.support.v7.widget.CardView>
+        <FrameLayout app:id="@+id/shadow_view" app:layout_width="match_parent" app:layout_height="wrap_content" app:foreground="?unknown_attr_ref: 1010059" app:layout_below="@+id/search_view_cardview">
+            <View app:background="@drawable/toolbar_shadow_on_pre_lollipop" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x401" />
+        </FrameLayout>
+        <FrameLayout app:id="@+id/content_frame" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/drawer_toolbar" />
+        <RelativeLayout app:id="@+id/bottom_overlay_layout" app:background="0x106000d" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="?attr/actionBarSize" app:layout_marginRight="15dp" app:layout_alignParentTop="true" app:layout_alignParentRight="true">
+            <TextView app:textColor="@r$color/white" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:background="@drawable/bg_overlay_top_right" app:paddingLeft="10dp" app:paddingTop="15dp" app:paddingRight="10dp" app:paddingBottom="10dp" app:layout_width="UNKNOWN_DATA_0xc801" app:layout_height="wrap_content" app:text="@string/go_to_enpass_browser" app:layout_toLeftOf="@+id/overlay_dummy_view" app:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <in.sinew.widget.ScrimInsetsFrameLayout app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/drawer_linearLayout" app:fitsSystemWindows="true" app:layout_width="UNKNOWN_DATA_0x13001" app:layout_height="match_parent" app:insetForeground="#0000">
+        <ListView app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/left_drawer" app:background="@r$color/drawer_bg" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="match_parent" app:drawSelectorOnTop="true" app:divider="@r$color/drawer_divider" app:dividerHeight="0px" app:choiceMode="singleChoice" />
+    </in.sinew.widget.ScrimInsetsFrameLayout>
+</android.support.v4.widget.DrawerLayout>

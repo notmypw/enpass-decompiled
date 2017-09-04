@@ -1,0 +1,711 @@
+<walletx>
+    
+    <category name="登錄" type="login" iconid="1001">
+        <card templatetype="login.default" name="登錄" iconid="21">
+            <field uid="10" label="用戶名稱" type="username"/>
+            <field uid="12" label="電子郵件" type="email"/>
+            <field uid="11" label="密碼" type="password" sensitive="true"/>
+            <field uid="14" label="電話" type="phone"/>
+            <field uid="13" label="網址" type="url"/>
+            <field uid="15" label="密碼保護的提問" type="text"/>
+            <field uid="16" label="密碼保護的答案" type="text" sensitive="true"/>
+        </card>
+    </category>
+    
+    <category name="信用卡" type="creditcard" iconid="1002">
+        <card templatetype="creditcard.default" name="信用卡" iconid="20">
+            <field uid="0" label="持卡人" type="cardholder_name"/>
+            <field uid="17" label="類型" value="default-Other" type="cardtype_options"/>
+            <field uid="1" label="號碼" type="card_number"/>
+            <field uid="2" label="驗證碼" type="card_cvc" sensitive="true"/>
+            <field uid="3" label="個人識別號碼" type="card_pin" sensitive="true"/>
+            <field uid="4" label="截止日期" type="expiry_date"/>
+            <field uid="18" label="有效自" type="date"/>
+            <field uid="10" label="信用額度" type="numeric"/>
+            <field uid="11" label="提款上限" type="numeric"/>
+            <field uid="12" label="利率" type="numeric"/>
+            <field uid="6" label="發卡銀行" type="bank_name"/>
+            <field uid="14" label="網站" type="url"/>
+            <field uid="15" label="用戶名稱" type="username"/>
+            <field uid="16" label="登錄密碼" type="password" sensitive="true"/>
+            <field uid="9" label="交易密碼" type="txn_password" sensitive="true"/>
+            <field uid="7" label="簽發於" type="date"/>
+            <field uid="8" label="若遺失，請撥" type="phone"/>
+        </card>
+    </category>
+
+    <category name="財務" type="finance" iconid="1003">
+        <card templatetype="finance.bankaccount" name="銀行賬戶" iconid="45">
+            <field uid="4" label="銀行名稱" type="bank_name"/>
+            <field uid="0" label="帳戶持有人" type="cardholder_name"/>
+            <field uid="1" label="類型" type="text"/>
+            <field uid="2" label="帳戶號碼" type="numeric"/>
+            <field uid="16" label="客戶 ID" type="text"/>
+            <field uid="5" label="匯款路徑號碼" type="numeric"/>
+            <field uid="6" label="分行名稱" type="text"/>
+            <field uid="7" label="分行代碼" type="numeric"/>
+            <field uid="8" label="銀行國際代碼" type="text"/>
+            <field uid="9" label="國際銀行賬號" type="text"/>
+            <field uid="24" label="分行地址" type="text"/>
+            <field uid="25" label="分行電話" type="phone"/>
+            
+            <field uid="11" label="借記卡卡號" type="card_number"/>
+            <field uid="26" label="類型" value="default-Other" type="cardtype_options"/>
+            <field uid="12" label="個人識別號碼" type="card_pin" sensitive="true"/>
+            <field uid="14" label="卡驗證值" type="card_cvc" sensitive="true"/>
+            <field uid="13" label="截止日期" type="expiry_date"/>
+            <field uid="27" label="提款上限" type="numeric"/>
+            
+            <field uid="17" label="網站" type="url"/>
+            <field uid="18" label="用戶名稱" type="username"/>
+            <field uid="19" label="登錄密碼" type="password" sensitive="true"/>
+            <field uid="20" label="交易密碼" type="txn_password" sensitive="true"/>
+            <field uid="22" label="熱線服務電話" type="phone"/>
+            <field uid="23" label="T-個人識別號碼" type="pin" sensitive="true"/>
+        </card>
+        
+        <card templatetype="finance.insurance" name="保險單" iconid="33">
+            <field uid="1" label="保險單名稱" type="text"/>
+            <field uid="0" label="公司" type="text"/>
+            <field uid="19" label="保單持有人" type="text"/>
+            <field uid="2" label="號碼" type="numeric"/>
+            <field uid="3" label="類型" type="text"/>
+            <field uid="5" label="保險費" type="numeric"/>
+            <field uid="6" label="保險金額" type="numeric"/>
+            <field uid="7" label="簽發日期" type="date"/>
+            <field uid="18" label="更新日期" type="date"/>
+            <field uid="8" label="截止日期" type="date"/>
+            <field uid="9" label="期限" type="numeric"/>
+            <field uid="20" label="被提名者" type="text"/>
+            <field uid="11" label="客戶 ID" type="numeric"/>
+            <field uid="12" label="網站" type="url"/>
+            <field uid="13" label="用戶名稱" type="username"/>
+            <field uid="14" label="密碼" type="password" sensitive="true"/>
+            <field uid="16" label="代理名稱" type="text"/>
+            <field uid="17" label="熱線服務電話" type="phone"/>
+        </card>
+        <card templatetype="finance.stock" name="股票投資" iconid="34">
+            <field uid="2" label="符號" type="text"/>
+            <field uid="0" label="帳戶號碼" type="numeric"/>
+            <field uid="1" label="類型" type="text"/>
+            <field uid="3" label="市場" type="text"/>
+            <field uid="5" label="推出于" type="date"/>
+            <field uid="6" label="購買于" type="date"/>
+            <field uid="7" label="購買價格" type="numeric"/>
+            <field uid="8" label="數量" type="numeric"/>
+            <field uid="9" label="現行價格" type="numeric"/>
+            <field uid="11" label="網站" type="url"/>
+            <field uid="12" label="用戶名稱" type="username"/>
+            <field uid="13" label="密碼" type="password" sensitive="true"/>
+            <field uid="15" label="經紀人" type="text"/>
+            <field uid="16" label="電話" type="phone"/>
+        </card>
+        <card templatetype="finance.mutualfund" name="共同基金" iconid="43">
+            <field uid="0" label="基金名稱" type="text"/>
+            <field uid="1" label="基金類型" type="text"/>
+            <field uid="2" label="推出于" type="date"/>
+            <field uid="3" label="購買于" type="date"/>
+            <field uid="4" label="數量" type="numeric"/>
+            <field uid="5" label="購買時淨資產價值" type="numeric"/>
+            <field uid="6" label="流動淨資產價值" type="numeric"/>
+            <field uid="8" label="網站" type="url"/>
+            <field uid="9" label="用戶名稱" type="username"/>
+            <field uid="10" label="密碼" type="password" sensitive="true"/>
+            <field uid="12" label="經紀人" type="text"/>
+            <field uid="13" label="電話" type="phone"/>
+        </card>
+        <card templatetype="finance.loan" name="貸款/抵押" iconid="44">
+            <field uid="2" label="貸款人" type="text"/>
+            <field uid="1" label="類型" type="text"/>
+            <field uid="0" label="帳戶號碼" type="numeric"/>
+            <field uid="4" label="貸款本金" type="numeric"/>
+            <field uid="5" label="利息 %" type="numeric"/>
+            <field uid="6" label="日期" type="date"/>
+            <field uid="7" label="期限" type="numeric"/>
+            <field uid="8" label="餘額" type="numeric"/>
+            <field uid="9" label="到期付款" type="numeric"/>
+            <field uid="10" label="資產" type="text"/>
+            <field uid="12" label="電話" type="phone"/>
+            <field uid="13" label="網站" type="url"/>
+            <field uid="14" label="用戶名稱" type="username"/>
+            <field uid="15" label="密碼" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="finance.other" name="其他財務" iconid="122">
+            <field uid="0" label="字段1" type="text"/>
+            <field uid="1" label="字段2" type="text"/>
+        </card>
+    </category>
+
+    <category name="電腦" type="computer" iconid="1004">
+        <card templatetype="computer.database" name="數據庫" iconid="56">
+            <field uid="8" label="類型" type="text"/>
+            <field uid="0" label="服務器" type="text"/>
+            <field uid="1" label="端口" type="numeric"/>
+            <field uid="2" label="數據庫" type="text"/>
+            <field uid="3" label="用戶名稱" type="username"/>
+            <field uid="4" label="密碼" type="password" sensitive="true"/>
+            <field uid="5" label="安全識別符" type="text"/>
+            <field uid="6" label="別名" type="text"/>
+            <field uid="7" label="選項" type="text"/>
+        </card>
+        <card templatetype="computer.emailaccount" name="電子郵件賬戶" iconid="48">
+            <field uid="0" label="電子郵件" type="email"/>
+            <field uid="1" label="用戶名稱" type="username"/>
+            <field uid="2" label="密碼" type="password" sensitive="true"/>
+            <field uid="9" label="類型" type="text"/>
+            <field uid="3" label="POP3服務器" type="text"/>
+            <field uid="4" label="IMAP服務器" type="text"/>
+            <field uid="6" label="端口" type="numeric"/>
+            <field uid="10" label="安全類型" type="text"/>
+            <field uid="11" label="驗證方法" type="text"/>
+            <field uid="21" label="網頁連結" type="url"/>
+            <field uid="5" label="SMTP服務器" type="text"/>
+            <field uid="7" label="端口" type="numeric"/>
+            <field uid="13" label="用戶名稱" type="username"/>
+            <field uid="14" label="密碼" type="password" sensitive="true"/>
+            <field uid="15" label="安全類型" type="text"/>
+            <field uid="16" label="驗證方法" type="text"/>
+            <field uid="18" label="供應商" type="text"/>
+            <field uid="8" label="網站" type="url"/>
+            <field uid="19" label="本地電話" type="phone"/>
+            <field uid="20" label="熱線服務電話" type="phone"/>
+        </card>
+        <card templatetype="computer.ftp" name="FTP賬戶" iconid="55">
+            <field uid="0" label="服務器" type="text"/>
+            <field uid="1" label="路徑" type="text"/>
+            <field uid="2" label="用戶名稱" type="username"/>
+            <field uid="3" label="密碼" type="password" sensitive="true"/>
+            <field uid="4" label="供應商" type="text"/>
+            <field uid="5" label="網站" type="url"/>
+            <field uid="6" label="電話" type="phone"/>
+        </card>
+        <card templatetype="computer.messaging" name="即時信息" iconid="49">
+            <field uid="0" label="類型" type="text"/>
+            <field uid="1" label="ID" type="text"/>
+            <field uid="2" label="服務器" type="text"/>
+            <field uid="3" label="端口" type="numeric"/>
+            <field uid="4" label="昵稱" type="text"/>
+            <field uid="5" label="用戶名稱" type="username"/>
+            <field uid="6" label="密碼" type="password" sensitive="true"/>
+        </card>
+        <card templatetype="computer.internetprovider" name="互聯網供應商" iconid="63">
+            <field uid="0" label="用戶名稱" type="username"/>
+            <field uid="1" label="密碼" type="password" sensitive="true"/>
+            <field uid="3" label="撥號電話" type="phone"/>
+            <field uid="4" label="ISP/系統" type="text"/>
+            <field uid="5" label="IP地址" type="numeric"/>
+            <field uid="6" label="子網掩碼" type="numeric"/>
+            <field uid="20" label="網關" type="numeric"/>
+            <field uid="7" label="首要DNS" type="numeric"/>
+            <field uid="8" label="次要DNS" type="numeric"/>
+            <field uid="9" label="WINS" type="text"/>
+            <field uid="11" label="SMTP" type="text"/>
+            <field uid="12" label="POP3" type="text"/>
+            <field uid="13" label="NNTP" type="text"/>
+            <field uid="14" label="FTP" type="text"/>
+            <field uid="15" label="Telnet" type="text"/>
+            <field uid="17" label="熱線服務電話" type="phone"/>
+            <field uid="18" label="網站" type="url"/>
+            <field uid="19" label="賬單資料" type="text"/>
+        </card>
+        <card templatetype="computer.server" name="服務器" iconid="51">
+            <field uid="11" label="管理員登錄" type="username"/>
+            <field uid="12" label="管理員密碼" type="password" sensitive="true"/>
+            <field uid="16" label="管理員網址" type="url"/>
+            <field uid="0" label="服務" type="text"/>
+            <field uid="1" label="任務" type="text"/>
+            <field uid="2" label="操作系統" type="text"/>
+            <field uid="3" label="記憶體" type="numeric"/>
+            <field uid="4" label="存儲器" type="numeric"/>
+            <field uid="5" label="中央處理器" type="numeric"/>
+            <field uid="6" label="RAID" type="text"/>
+            <field uid="7" label="位置" type="text"/>
+            <field uid="8" label="IP地址" type="numeric"/>
+            <field uid="9" label="DNS" type="numeric"/>
+            <field uid="19" label="端口" type="numeric"/>
+            <field uid="17" label="託管服務供應商" type="text"/>
+            <field uid="14" label="支援網站" type="url"/>
+            <field uid="18" label="熱線服務電話" type="phone"/>
+            <field uid="15" label="賬單資料" type="text"/>
+        </card>
+        <card templatetype="computer.wifi" name="無線路由器" iconid="35">
+            <field uid="0" label="站點名稱" type="text"/>
+            <field uid="9" label="站點密碼" type="password" sensitive="true"/>
+            <field uid="2" label="網絡名稱" type="text"/>
+            <field uid="5" label="網絡密碼" type="password" sensitive="true"/>
+            <field uid="3" label="安全" type="text"/>
+            <field uid="1" label="MAC/機場號碼" type="numeric"/>
+            <field uid="12" label="伺服器/ IP 位址" type="url"/>
+            <field uid="13" label="用戶名稱" type="username"/>
+            <field uid="4" label="密碼" type="password" sensitive="true"/>
+            <field uid="6" label="存儲密碼" type="password" sensitive="true"/>
+            <field uid="7" label="支援網站" type="url"/>
+            <field uid="8" label="賬單資料" type="text"/>
+        </card>
+        <card templatetype="computer.hosting" name="網站託管" iconid="53">
+            <field uid="13" label="供應商" type="text"/>
+            <field uid="1" label="用戶名稱" type="username"/>
+            <field uid="2" label="密碼" type="password" sensitive="true"/>
+            <field uid="11" label="管理員網址" type="url"/>
+            <field uid="0" label="操作系統" type="text"/>
+            <field uid="9" label="客戶 ID" type="text"/>
+            <field uid="4" label="HTTP" type="url"/>
+            <field uid="5" label="FTP" type="text"/>
+            <field uid="6" label="數據庫" type="text"/>
+            <field uid="7" label="服務" type="text"/>
+            <field uid="14" label="支援網站" type="url"/>
+            <field uid="10" label="熱線服務電話" type="phone"/>
+            <field uid="12" label="費用" type="numeric"/>
+        </card>
+        <card templatetype="computer.other" name="其他電腦" iconid="123">
+            <field uid="0" label="字段1" type="text"/>
+            <field uid="1" label="字段2" type="text"/>
+        </card>
+    </category>
+
+    <category name="許可證" type="license" iconid="1005">
+        <card templatetype="license.driving" name="駕駛執照" iconid="60">
+            <field uid="1" label="號碼" type="numeric"/>
+            <field uid="0" label="姓名" type="text"/>
+            <field uid="8" label="性別" type="text"/>
+            <field uid="9" label="出生日期" type="date"/>
+            <field uid="10" label="地址" type="text"/>
+            <field uid="11" label="身高" type="text"/>
+            <field uid="2" label="級別" type="text"/>
+            <field uid="13" label="限制" type="text"/>
+            <field uid="3" label="州" type="text"/>
+            <field uid="4" label="國家" type="text"/>
+            <field uid="5" label="截止日期" type="date"/>
+            <field uid="6" label="簽發於" type="date"/>
+            <field uid="7" label="若遺失，請撥" type="phone"/>
+        </card>
+        <card templatetype="license.hunting" name="室外許可證" iconid="42">
+            <field uid="1" label="號碼" type="numeric"/>
+            <field uid="0" label="姓名" type="text"/>
+            <field uid="2" label="州" type="text"/>
+            <field uid="3" label="地區" type="text"/>
+            <field uid="4" label="國家" type="text"/>
+            <field uid="5" label="有效自" type="date"/>
+            <field uid="6" label="截止日期" type="date"/>
+            <field uid="7" label="核准的野生動物" type="text"/>
+            <field uid="8" label="限額" type="text"/>
+        </card>
+        <card templatetype="license.software" name="軟體許可證" iconid="52">
+            <field uid="0" label="版本" type="numeric"/>
+            <field uid="16" label="產品名稱" type="text"/>
+            <field uid="17" label="用戶數量" type="numeric"/>
+            <field uid="1" label="鍵碼" type="text" sensitive="true"/>
+            <field uid="6" label="下載頁面" type="url"/>
+            <field uid="3" label="授權于" type="text"/>
+            <field uid="18" label="登錄頁面" type="url"/>
+            <field uid="19" label="用戶名稱" type="username"/>
+            <field uid="20" label="密碼" type="password" sensitive="true"/>
+            <field uid="4" label="電子郵件" type="email"/>
+            <field uid="5" label="公司" type="text"/>
+            <field uid="13" label="購買日期" type="date"/>
+            <field uid="14" label="訂單編號" type="numeric"/>
+            <field uid="12" label="零售價格" type="numeric"/>
+            <field uid="15" label="總額" type="numeric"/>
+            <field uid="8" label="出版社" type="text"/>
+            <field uid="9" label="網站" type="url"/>
+            <field uid="10" label="支援電子郵件" type="email"/>
+            <field uid="21" label="熱線服務電話" type="phone"/>
+        </card>
+        <card templatetype="license.other" name="其他許可證" iconid="124">
+            <field uid="0" label="字段1" type="text"/>
+            <field uid="1" label="字段2" type="text"/>
+        </card>
+    </category>
+
+    <category name="密碼" type="password" iconid="1006">
+        <card templatetype="password.default" name="密碼" iconid="36">
+            <field uid="0" label="登錄" type="username"/>
+            <field uid="1" label="密碼" type="password" sensitive="true"/>
+            <field uid="2" label="訪問" type="text"/>
+        </card>
+    </category>
+    
+    <category name="安全注釋" type="note" iconid="1007">
+        <card templatetype="note.default" name="注釋" iconid="22">
+        </card>
+    </category>
+        
+    <category name="旅遊" type="travel" iconid="1009">
+        <card templatetype="travel.passport" name="護照" iconid="37">
+            <field uid="2" label="號碼" type="text"/>
+            <field uid="0" label="全名" type="text"/>
+            <field uid="14" label="性別" type="text"/>
+            <field uid="1" label="類型" type="text"/>
+            <field uid="15" label="國籍" type="text"/>
+            <field uid="4" label="出生地" type="text"/>
+            <field uid="5" label="出生日" type="date"/>
+            <field uid="6" label="簽發地點" type="text"/>
+            <field uid="7" label="簽發於" type="date"/>
+            <field uid="8" label="截止日期" type="date"/>
+            <field uid="9" label="簽發國" type="text"/>
+            <field uid="10" label="當局" type="text"/>
+            <field uid="12" label="替換" type="text"/>
+            <field uid="13" label="若遺失，請撥" type="phone"/>
+        </card>
+        <card templatetype="travel.visa" name="旅行簽證" iconid="57">
+            <field uid="1" label="類型" type="text"/>
+            <field uid="15" label="國家" type="text"/>
+            <field uid="0" label="全名" type="text"/>
+            <field uid="2" label="號碼" type="numeric"/>
+            <field uid="4" label="有效" type="text"/>
+            <field uid="5" label="有效自" type="date"/>
+            <field uid="6" label="有效至" type="date"/>
+            <field uid="7" label="停留天數" type="numeric"/>
+            <field uid="8" label="入境次數" type="numeric"/>
+            <field uid="10" label="簽發人" type="text"/>
+            <field uid="11" label="簽發日期" type="date"/>
+            <field uid="12" label="護照號碼" type="text"/>
+            <field uid="13" label="備註" type="text"/>
+            <field uid="14" label="若遺失，請撥" type="phone"/>
+        </card>
+        <card templatetype="travel.freqflyer" name="常客" iconid="39">
+            <field uid="1" label="會員編號" type="numeric"/>
+            <field uid="0" label="姓名" type="text"/>
+            <field uid="8" label="航空公司" type="text"/>
+            <field uid="2" label="日期" type="date"/>
+            <field uid="3" label="里程" type="numeric"/>
+            <field uid="5" label="網站" type="url"/>
+            <field uid="6" label="用戶名稱" type="username"/>
+            <field uid="7" label="密碼" type="password" sensitive="true"/>
+            <field uid="9" label="客戶服務" type="numeric"/>
+        </card>
+        <card templatetype="travel.hotelreservation" name="旅館預訂" iconid="27">
+            <field uid="0" label="旅館名稱" type="text"/>
+            <field uid="4" label="房間號碼" type="numeric"/>
+            <field uid="1" label="地址" type="text"/>
+            <field uid="2" label="預訂 ID" type="numeric"/>
+            <field uid="3" label="日期" type="date"/>
+            <field uid="5" label="夜數" type="numeric"/>
+            <field uid="15" label="旅館獎勵" type="numeric"/>
+            <field uid="7" label="電話" type="phone"/>
+            <field uid="8" label="電子郵件" type="email"/>
+            <field uid="9" label="網站" type="url"/>
+            <field uid="10" label="用戶名稱" type="username"/>
+            <field uid="11" label="密碼" type="password" sensitive="true"/>
+            <field uid="13" label="禮賓" type="text"/>
+            <field uid="14" label="餐館" type="text"/>
+        </card>
+        <card templatetype="travel.flightdetails" name="航班資料" iconid="38">
+            <field uid="2" label="航班號碼" type="numeric"/>
+            <field uid="0" label="航空公司" type="text"/>
+            <field uid="1" label="日期" type="date"/>
+            <field uid="3" label="由" type="text"/>
+            <field uid="4" label="往" type="text"/>
+            <field uid="5" label="時間/登機口" type="text"/>
+            <field uid="6" label="電子機票號碼" type="numeric"/>
+            <field uid="7" label="確認號碼" type="numeric"/>
+            <field uid="10" label="網站" type="url"/>
+            <field uid="11" label="用戶名稱" type="username"/>
+            <field uid="12" label="密碼" type="password" sensitive="true"/>
+            <field uid="9" label="電話" type="phone"/>
+        </card>
+        <card templatetype="travel.other" name="其他旅遊" iconid="125">
+            <field uid="0" label="字段1" type="text"/>
+            <field uid="1" label="字段2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="雜項" type="misc" iconid="1010">
+        <card templatetype="misc.clothsize" name="服裝尺碼" iconid="23">
+            <field uid="9" label="姓名" type="text"/>
+            <field uid="0" label="套裝" type="text"/>
+            <field uid="1" label="鞋" type="text"/>
+            <field uid="2" label="襯衫" type="text"/>
+            <field uid="3" label="褲子" type="text"/>
+            <field uid="4" label="內接縫" type="text"/>
+            <field uid="5" label="裙子" type="text"/>
+            <field uid="6" label="手套" type="text"/>
+            <field uid="7" label="腰" type="text"/>
+            <field uid="8" label="頸" type="text"/>
+        </card>
+        <card templatetype="misc.combilock" name="密碼鎖" iconid="61">
+            <field uid="0" label="位置" type="text"/>
+            <field uid="1" label="代碼" type="numeric" sensitive="true"/>
+        </card>
+        <card templatetype="misc.prescription" name="藥方" iconid="40">
+            <field uid="2" label="醫生" type="text"/>
+            <field uid="0" label="處方號碼" type="text"/>
+            <field uid="1" label="姓名" type="text"/>
+            <field uid="3" label="藥房" type="text"/>
+            <field uid="4" label="電話" type="phone"/>
+            <field uid="6" label="品牌" type="text"/>
+            <field uid="7" label="藥" type="text"/>
+            <field uid="8" label="金額" type="numeric"/>
+            <field uid="9" label="服用" type="text"/>
+        </card>
+        <card templatetype="misc.lens" name="驗光處方" iconid="26">
+            <field uid="0" label="類型" type="text"/>
+            <field uid="1" label="右眼度數" type="numeric"/>
+            <field uid="2" label="左眼度數" type="numeric"/>
+            <field uid="3" label="醫生" type="text"/>
+            <field uid="4" label="電話" type="phone"/>
+        </card>
+        <card templatetype="misc.regcode" name="註冊碼" iconid="66">
+            <field uid="2" label="姓名" type="text"/>
+            <field uid="0" label="號碼" type="numeric" sensitive="true"/>
+            <field uid="1" label="日期" type="date"/>
+        </card>
+        <card templatetype="misc.vehicleinfo" name="車輛資料" iconid="25">
+            <field uid="3" label="註冊號" type="text"/>
+            <field uid="11" label="持有人" type="text"/>
+            <field uid="0" label="型號" type="text"/>
+            <field uid="12" label="車輛類型" type="text"/>
+            <field uid="13" label="購買日期" type="date"/>
+            <field uid="1" label="製造" type="text"/>
+            <field uid="2" label="年份" type="numeric"/>
+            <field uid="4" label="車輛識別號碼" type="text"/>
+            <field uid="5" label="服務電話" type="phone"/>
+            <field uid="14" label="路上求助熱線" type="phone"/>
+            <field uid="16" label="保險供應商" type="text"/>
+            <field uid="7" label="保險金額" type="text"/>
+            <field uid="8" label="保單號碼" type="numeric"/>
+            <field uid="10" label="截止日期" type="date"/>
+            <field uid="9" label="保險電話" type="phone"/>
+        </card>
+        <card templatetype="misc.voicemail" name="語音信箱" iconid="62">
+            <field uid="0" label="通路號碼" type="numeric"/>
+            <field uid="1" label="個人識別號碼" type="pin" sensitive="true"/>
+        </card>
+        <card templatetype="misc.address" name="地址" iconid="31">
+            <field uid="0" label="姓名" type="text"/>
+            <field uid="1" label="門號" type="text"/>
+            <field uid="2" label="街" type="text"/>
+            <field uid="3" label="地區" type="text"/>
+            <field uid="4" label="城市" type="text"/>
+            <field uid="5" label="州" type="text"/>
+            <field uid="6" label="郵編" type="text"/>
+            <field uid="7" label="國家" type="text"/>
+            <field uid="9" label="電話" type="phone"/>
+            <field uid="10" label="電子郵件" type="email"/>
+        </card>
+        <card templatetype="misc.contact" name="聯繫" iconid="47">
+            <field uid="0" label="名" type="text"/>
+            <field uid="1" label="姓" type="text"/>
+            <field uid="2" label="公司" type="text"/>
+            <field uid="3" label="電話 (住家)" type="phone"/>
+            <field uid="4" label="電話 (手機)" type="phone"/>
+            <field uid="5" label="電話 (辦公室)" type="phone"/>
+            <field uid="6" label="電子郵件" type="email"/>
+        </card>
+        <card templatetype="misc.emergencyno" name="緊急電話號碼" iconid="28">
+            <field uid="0" label="警察" type="phone"/>
+            <field uid="1" label="消防局" type="phone"/>
+            <field uid="2" label="救護車" type="phone"/>
+            <field uid="3" label="醫生" type="phone"/>
+            <field uid="4" label="牙醫" type="phone"/>
+            <field uid="5" label="獸醫" type="phone"/>
+            <field uid="6" label="電力公司" type="phone"/>
+            <field uid="7" label="煤氣公司" type="phone"/>
+            <field uid="8" label="電訊公司" type="phone"/>
+            <field uid="9" label="房東" type="phone"/>
+            <field uid="10" label="其他" type="phone"/>
+        </card>
+        <card templatetype="misc.socialsecurityno" name="社會保險號碼" iconid="64">
+            <field uid="1" label="號碼" type="numeric"/>
+            <field uid="0" label="姓名" type="text"/>
+            <field uid="2" label="日期" type="date"/>
+        </card>
+        <card templatetype="misc.rewardprogram" name="獎勵計畫" iconid="24">
+            <field uid="0" label="公司" type="text"/>
+            <field uid="1" label="姓名" type="text"/>
+            <field uid="10" label="會員ID" type="text"/>
+            <field uid="2" label="號碼" type="numeric"/>
+            <field uid="3" label="個人識別號碼" type="pin" sensitive="true"/>
+            <field uid="5" label="2號" type="numeric"/>
+            <field uid="6" label="自" type="date"/>
+            <field uid="7" label="熱線服務電話" type="phone"/>
+            <field uid="8" label="預訂電話" type="phone"/>
+            <field uid="9" label="網站" type="url"/>
+        </card>
+        <card templatetype="misc.serial" name="序號" iconid="32">
+            <field uid="1" label="串列" type="text" sensitive="true"/>
+            <field uid="0" label="品牌" type="text"/>
+            <field uid="2" label="型號" type="text"/>
+            <field uid="3" label="價格" type="numeric"/>
+            <field uid="4" label="購買于" type="date"/>
+            <field uid="6" label="保修" type="date"/>
+            <field uid="5" label="位置" type="text"/>
+        </card>
+        <card templatetype="misc.propertyinfo" name="資產資料" iconid="70">
+            <field uid="0" label="持有人" type="text"/>
+            <field uid="1" label="地址" type="text"/>
+            <field uid="2" label="類型" type="text"/>
+            <field uid="3" label="維護量" type="numeric"/>
+            <field uid="5" label="資產ID" type="text"/>
+            <field uid="6" label="稅額" type="numeric"/>
+            <field uid="7" label="繳稅日" type="date"/>
+            <field uid="8" label="網頁" type="url"/>
+            <field uid="9" label="用戶名稱" type="username"/>
+            <field uid="10" label="密碼" type="password" sensitive="true"/>
+            <field uid="12" label="保險" type="text"/>
+            <field uid="13" label="保險費" type="numeric"/>
+            <field uid="14" label="保單號碼" type="numeric"/>
+            <field uid="15" label="截止日期" type="date"/>
+            <field uid="16" label="保險服務熱線" type="phone"/>
+        </card>
+        <card templatetype="misc.calling" name="電話卡" iconid="54">
+            <field uid="1" label="通路號碼" type="phone"/>
+            <field uid="0" label="供應商" type="text"/>
+            <field uid="2" label="卡號" type="numeric"/>
+            <field uid="3" label="個人識別號碼" type="pin" sensitive="true"/>
+            <field uid="4" label="脈率" type="numeric"/>
+            <field uid="5" label="截止日期" type="date"/>
+            <field uid="6" label="使用率" type="numeric"/>
+            <field uid="8" label="網站" type="url"/>
+            <field uid="9" label="用戶名稱" type="username"/>
+            <field uid="10" label="密碼" type="password" sensitive="true"/>
+            <field uid="11" label="若遺失，請撥" type="phone"/>
+        </card>
+        <card templatetype="misc.identity" name="身份證" iconid="59">
+            <field uid="2" label="識別號碼" type="numeric"/>
+            <field uid="0" label="標題" type="text"/>
+            <field uid="1" label="全名" type="text"/>
+            <field uid="3" label="個人識別號碼" type="pin" sensitive="true"/>
+            <field uid="4" label="國家" type="text"/>
+            <field uid="5" label="簽發於" type="date"/>
+            <field uid="6" label="截止日期" type="date"/>
+            <field uid="7" label="若遺失，請撥" type="phone"/>
+        </card>
+        <card templatetype="misc.isic" name="國際學生證" iconid="65">
+            <field uid="2" label="卡號" type="numeric"/>
+            <field uid="0" label="就讀於" type="text"/>
+            <field uid="1" label="全名" type="text"/>
+            <field uid="3" label="出生" type="date"/>
+            <field uid="4" label="簽發於" type="date"/>
+            <field uid="5" label="截止日期" type="date"/>
+            <field uid="6" label="若遺失，請撥" type="phone"/>
+        </card>
+        <card templatetype="misc.itic" name="國際教師證" iconid="41">
+            <field uid="2" label="卡號" type="numeric"/>
+            <field uid="0" label="任教於" type="text"/>
+            <field uid="1" label="全名" type="text"/>
+            <field uid="3" label="出生" type="date"/>
+            <field uid="4" label="簽發於" type="date"/>
+            <field uid="5" label="截止日期" type="date"/>
+            <field uid="6" label="若遺失，請撥" type="phone"/>
+        </card>
+        <card templatetype="misc.library" name="圖書館卡" iconid="58">
+            <field uid="1" label="卡號" type="numeric"/>
+            <field uid="0" label="圖書館" type="text"/>
+            <field uid="2" label="個人識別號碼" type="pin" sensitive="true"/>
+            <field uid="3" label="小時" type="numeric"/>
+            <field uid="4" label="地址" type="text"/>
+            <field uid="5" label="簽發於" type="date"/>
+            <field uid="6" label="截止日期" type="date"/>
+            <field uid="8" label="網站" type="url"/>
+            <field uid="9" label="用戶名稱" type="username"/>
+            <field uid="10" label="密碼" type="password" sensitive="true"/>
+            <field uid="11" label="若遺失，請撥" type="phone"/>
+        </card>
+        <card templatetype="misc.voter" name="選民卡" iconid="69">
+            <field uid="0" label="全名" type="text"/>
+            <field uid="1" label="選民 ID" type="numeric"/>
+            <field uid="2" label="地址" type="text"/>
+            <field uid="3" label="病房" type="text"/>
+            <field uid="4" label="位置" type="text"/>
+            <field uid="5" label="國會" type="text"/>
+            <field uid="6" label="州參議員" type="text"/>
+            <field uid="7" label="代表" type="text"/>
+            <field uid="8" label="地址" type="text"/>
+            <field uid="9" label="簽發於" type="date"/>
+            <field uid="11" label="網站" type="url"/>
+            <field uid="12" label="用戶名稱" type="username"/>
+            <field uid="13" label="密碼" type="password" sensitive="true"/>
+            <field uid="14" label="若遺失，請撥" type="phone"/>
+        </card>
+        <card templatetype="misc.itz" name="ITZ卡" iconid="67">
+            <field uid="1" label="卡號" type="numeric"/>
+            <field uid="0" label="持有人" type="text"/>
+            <field uid="2" label="個人識別號碼" type="pin" sensitive="true"/>
+            <field uid="3" label="值" type="numeric"/>
+            <field uid="4" label="截止日期" type="date"/>
+            <field uid="5" label="使用率" type="numeric"/>
+            <field uid="7" label="網站" type="url"/>
+            <field uid="8" label="用戶名稱" type="username"/>
+            <field uid="9" label="密碼" type="password" sensitive="true"/>
+            <field uid="10" label="若遺失，請撥" type="phone"/>
+        </card>
+        <card templatetype="misc.membership" name="會員卡" iconid="46">
+            <field uid="1" label="會員ID" type="numeric"/>
+            <field uid="10" label="會員姓名" type="text"/>
+            <field uid="0" label="組織" type="text"/>
+            <field uid="11" label="集團" type="text"/>
+            <field uid="2" label="個人識別號碼" type="pin" sensitive="true"/>
+            <field uid="3" label="電話" type="phone"/>
+            <field uid="12" label="會員始於" type="date"/>
+            <field uid="4" label="截止日期" type="date"/>
+            <field uid="6" label="網站" type="url"/>
+            <field uid="7" label="用戶名稱" type="username"/>
+            <field uid="8" label="密碼" type="password" sensitive="true"/>
+            <field uid="13" label="電子郵件" type="email"/>
+            <field uid="9" label="若遺失，請撥" type="phone"/>
+        </card>
+        <card templatetype="misc.pan" name="永久性戶口卡" iconid="68">
+            <field uid="3" label="號碼" type="numeric"/>
+            <field uid="0" label="姓名" type="text"/>
+            <field uid="1" label="父親姓名" type="text"/>
+            <field uid="2" label="出生日期" type="date"/>
+            <field uid="5" label="網站" type="url"/>
+            <field uid="6" label="用戶名稱" type="username"/>
+            <field uid="7" label="密碼" type="password" sensitive="true"/>
+            <field uid="8" label="若遺失，請撥" type="phone"/>
+        </card>
+        <card templatetype="misc.cellphone" name="手機資料" iconid="120">
+            <field uid="0" label="手機型號" type="text"/>
+            <field uid="2" label="IMEI" type="numeric"/>
+            <field uid="3" label="上鎖代碼" type="numeric" sensitive="true"/>
+            <field uid="5" label="SIM類型" type="text"/>
+            <field uid="6" label="Sim 卡號碼" type="numeric"/>
+            <field uid="7" label="個人識別號碼" type="numeric" sensitive="true"/>
+            <field uid="8" label="PUK" type="numeric" sensitive="true"/>
+            <field uid="9" label="IMSI" type="numeric"/>
+            <field uid="1" label="購買于" type="date"/>
+            <field uid="10" label="保修" type="date"/>
+
+        </card>
+        <card templatetype="misc.service" name="服務供應商" iconid="121">
+            <field uid="0" label="供應商" type="text"/>
+            <field uid="1" label="服務種類" type="text"/>
+            <field uid="2" label="消費者ID" type="text"/>
+            <field uid="3" label="訂閱 ID" type="numeric"/>
+            <field uid="4" label="地址" type="text"/>
+            <field uid="5" label="網站" type="url"/>
+            <field uid="6" label="用戶名稱" type="username"/>
+            <field uid="7" label="登錄密碼" type="password" sensitive="true"/>
+            <field uid="8" label="熱線服務電話" type="phone"/>
+        </card>
+        <card templatetype="misc.other" name="其他雜項" iconid="126">
+            <field uid="0" label="字段1" type="text"/>
+            <field uid="1" label="字段2" type="text"/>
+        </card>
+    </category>
+    
+    <category name="Identity" type="identity" iconid="1018">
+        <card templatetype="identity.default" name="Identity" iconid="127">
+            <field uid="0" label="First name" type="first_name"/>
+            <field uid="1" label="Middle initial" type="name_initial"/>
+            <field uid="2" label="Last name" type="last_name"/>
+            <field uid="3" label="性別" value="male" type="sex_options"/>
+            <field uid="4" label="出生日期" type="birth_date"/>
+            <field uid="5" label="Occupation" type="occupation"/>
+            <field uid="6" label="公司" type="company"/>
+            <field uid="7" label="Department" type="department"/>
+            <field uid="8" label="Job title" type="job_title"/>
+            <field uid="9" label="地址" type="address_firstline"/>
+            <field uid="10" label="街" type="address_street"/>
+            <field uid="11" label="城市" type="address_city"/>
+            <field uid="12" label="州" type="address_state"/>
+            <field uid="13" label="郵編" type="address_zip"/>
+            <field uid="14" label="國家" value="US" type="country_options"/>
+            <field uid="15" label="電話" type="phone"/>
+            <field uid="16" label="密碼保護的提問" type="text"/>
+            <field uid="17" label="密碼保護的答案" type="text" sensitive="true"/>
+        </card>
+    </category>
+</walletx>
+

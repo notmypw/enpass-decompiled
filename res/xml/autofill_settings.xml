@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="autofill_settings">
+    <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/using_android_autofill" android:key="using_android_autofill" android:summary="@string/android_autofill_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:icon="@locationawarelogger/TRACE_INT" android:title="@string/using_accessibility_autofill" android:key="using_accessibility_autofill" android:defaultValue="false" />
+</PreferenceScreen>

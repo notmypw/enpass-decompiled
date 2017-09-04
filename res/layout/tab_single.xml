@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:padding="2dp" android:descendantFocusability="blocksDescendants" android:layout_width="UNKNOWN_DATA_0x7f0700a5" android:layout_height="UNKNOWN_DATA_0x7f0700a3"
+    <RelativeLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:padding="12dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="0x106000b" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/web_page_title" android:background="#0089ca" android:paddingLeft="5dp" android:layout_width="UNKNOWN_DATA_0x7f0700a5" android:layout_height="UNKNOWN_DATA_0x1901" android:maxLines="1" />
+        <ImageView android:id="@+id/screenshot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_below="@+id/web_page_title" />
+        <TextView android:id="@+id/web_page_url" android:background="0x106000f" android:layout_width="UNKNOWN_DATA_0x7f0700a5" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@+id/screenshot" />
+    </RelativeLayout>
+    <ImageView android:id="@+id/remove_tab" android:layout_width="UNKNOWN_DATA_0x2001" android:layout_height="UNKNOWN_DATA_0x2001" android:src="@drawable/closetab" android:layout_alignParentRight="true" />
+</RelativeLayout>

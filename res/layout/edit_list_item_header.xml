@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="5dp" android:paddingTop="0dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginBottom="15dp"
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp">
+        <ImageButton android:id="@+id/editItem_icon" android:background="@drawable/edit_title_border" android:layout_width="UNKNOWN_DATA_0x2d01" android:layout_height="UNKNOWN_DATA_0x2d01" android:src="@drawable/ic_launcher" android:scaleType="center" android:adjustViewBounds="true" android:layout_centerVertical="true" />
+        <EditText android:textAppearance="@*android:style/TextAppearance.Medium" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/editItem_title" android:background="@locationawarelogger/TRACE_INT" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2c01" android:layout_marginLeft="5dp" android:hint="@string/title_hint" android:layout_toRightOf="@+id/editItem_icon" android:layout_centerVertical="true" android:imeOptions="flagNoExtractUi" />
+    </RelativeLayout>
+</RelativeLayout>

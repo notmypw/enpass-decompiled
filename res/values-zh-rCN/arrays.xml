@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="auto_lock_interval_entries">
+        <item>30 秒处于非活动状态</item>
+        <item>1 分钟处于非活动状态</item>
+        <item>5 分钟处于非活动状态</item>
+        <item>10 分钟处于非活动状态</item>
+        <item>30 分钟处于非活动状态</item>
+        <item>1 个小时处于非活动状态</item>
+        <item>5 个小时处于非活动状态</item>
+        <item>12 个小时处于非活动状态</item>
+    </array>
+    <array name="auto_lock_interval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="browser_package_names">
+        <item>com.android.chrome</item>
+        <item>com.chrome.beta</item>
+        <item>com.google.android.browser</item>
+        <item>mobi.mgeek.TunnyBrowser</item>
+        <item>com.dolphin.browser.zero</item>
+        <item>com.opera.browser</item>
+        <item>com.opera.mini.android</item>
+        <item>com.nubelacorp.javelin</item>
+        <item>com.cloudmosa.puffinFree</item>
+        <item>com.cloudmosa.puffin</item>
+        <item>com.UCMobile.intl</item>
+        <item>com.uc.browser.en</item>
+        <item>com.uc.browser.hd</item>
+        <item>org.mozilla.firefox</item>
+        <item>org.mozilla.firefox_beta</item>
+        <item>com.ksmobile.cb</item>
+        <item>com.jiubang.browser</item>
+        <item>com.mx.browser</item>
+        <item>com.chrome.dev</item>
+    </array>
+    <array name="clearclipboard_intervals">
+        <item>30 秒</item>
+        <item>1分钟</item>
+        <item>2分钟</item>
+        <item>5分钟</item>
+        <item>从不</item>
+    </array>
+    <array name="clearclipboard_intervals_num">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="default_search_engine_entry_list">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>Yahoo</item>
+        <item>Ask</item>
+        <item>百度</item>
+        <item>DuckDuckGo</item>
+        <item>Qwant</item>
+    </array>
+    <array name="default_search_engine_values_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="detailopenLinkInEntries">
+        <item>Enpass浏览器</item>
+        <item>默认浏览器</item>
+    </array>
+    <array name="dropdown">
+        <item>所有项目</item>
+        <item>收藏夹</item>
+        <item>文件夹</item>
+        <item>类别</item>
+        <item>登录</item>
+        <item>信用卡</item>
+        <item>财务</item>
+        <item>电脑</item>
+        <item>许可证</item>
+        <item>密码</item>
+        <item>安全注释</item>
+        <item>旅游</item>
+        <item>杂项</item>
+    </array>
+    <array name="new_features_array">
+        <item>快速个人识别号码解锁</item>
+        <item>标签式浏览器</item>
+        <item>改进的密码生成器</item>
+        <item>已在Box添加同步支持</item>
+        <item>更多的自定义选项</item>
+    </array>
+    <array name="openLinkInEntries">
+        <item>每次提问</item>
+        <item>Enpass浏览器</item>
+        <item>默认浏览器</item>
+    </array>
+    <array name="openLinkInValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="searchInCards_entries">
+        <item>标题而已</item>
+        <item>所有字段</item>
+    </array>
+    <array name="searchInCards_values">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="seprator_list">
+        <item>逗号</item>
+        <item>金额符号</item>
+        <item>井号</item>
+        <item>连字符</item>
+        <item>句号</item>
+        <item>空格</item>
+        <item>下划线</item>
+    </array>
+    <array name="sex">
+        <item>男性</item>
+        <item>女性</item>
+    </array>
+    <array name="trail_version_text_array">
+        <item>计算机专用免费桌面 版本。</item>
+        <item>您在其他移动设备上的 Enpass。</item>
+        <item>使用您本身的云帐户在 iCloud、Dropbox、Box、Google Drive 及 OneDrive 多个设备上同步数据。</item>
+    </array>
+</resources>
